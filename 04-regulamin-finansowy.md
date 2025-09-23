@@ -91,6 +91,22 @@ Majątek SSPO powstaje z:
 1. Parlament, po zapoznaniu się z rocznym sprawozdaniem finansowym oraz opinią Komisji, podejmuje uchwałę w sprawie udzielenia absolutorium Zarządowi.
 2. Nieudzielenie absolutorium jest równoznaczne z odwołaniem Zarządu.
 
+## DZIAŁ VA. FUNDUSZ REZERWOWY
+
+### § 13a. Utworzenie i cel Funduszu
+1. Tworzy się Fundusz Rezerwowy SSPO, zwany dalej "Funduszem".
+2. Celem Funduszu jest zabezpieczenie płynności finansowej Samorządu w przypadku wystąpienia nieprzewidzianych i uzasadnionych wydatków, których nie można było zaplanować w rocznym Budżecie.
+
+### § 13b. Zasilanie i wysokość Funduszu
+1. Fundusz zasilany jest z nadwyżki budżetowej z lat ubiegłych.
+2. Wysokość Funduszu powinna być utrzymywana na poziomie nie niższym niż 20% kwoty rocznego Budżetu SSPO.
+3. Parlament, na wniosek Zarządu, może podjąć decyzję o dodatkowym zasileniu Funduszu w trakcie roku budżetowego.
+
+### § 13c. Uruchomienie środków z Funduszu
+1. Środki z Funduszu mogą być uruchomione wyłącznie na mocy uchwały Parlamentu, podjętej bezwzględną większością 2/3 głosów ustawowego składu Parlamentu.
+2. Wniosek o uruchomienie środków z Funduszu składa Zarząd, przedstawiając szczegółowe uzasadnienie konieczności poniesienia wydatku oraz jego preliminarz.
+3. Wydatki z Funduszu nie mogą być przeznaczone na bieżącą działalność organów, która powinna być finansowana z regularnego Budżetu.
+
 ## DZIAŁ VI. POSTANOWIENIA KOŃCOWE
 
 ### § 14. Zmiana Regulaminu
@@ -98,7 +114,9 @@ Zmiana niniejszego Regulaminu wymaga uchwały Parlamentu podjętej większości�
 
 ### § 15. Wejście w życie
 Regulamin wchodzi w życie z dniem uchwalenia.
-4. **Interpretacje**: W sprawach spornych dotyczących interpretacji postanowień regulaminu ostateczne stanowisko zajmuje Komisja Rewizyjna SSPO w porozumieniu z Parlamentem.
+
+### § 16. Interpretacje
+W sprawach spornych dotyczących interpretacji postanowień niniejszego Regulaminu ostateczne stanowisko zajmuje Parlament w porozumieniu z Komisją Rewizyjno-Wyborczą.
 
 
 *Regulamin Finansowy uchwalony przez Parlament Studentów Politechniki Opolskiej w dniu ... roku 2025*
