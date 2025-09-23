@@ -46,6 +46,7 @@ Parlamentu Studentów Politechniki Opolskiej z dnia __ ________ 2025 r.
 **Załącznik nr 17.** [Indeks Dokumentów](./18-indeks-dokumentow.md)
 **Załącznik nr 18.** [Macierz Powiązań Dokumentów](./19-macierz-powiazan.md)
 **Załącznik nr 19.** [Przewodnik Uchwalenia Systemu](./20-przewodnik-uchwalenia.md)  
+**Załącznik nr 20.** [Wizualizacje Procedur](./21-procedury-wizualizacje.md)  
 
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
@@ -181,7 +182,7 @@ Do wyłącznych kompetencji Parlamentu należy:
 1. Przewodniczący Samorządu jest jednoosobowym organem wykonawczym oraz najwyższym przedstawicielem Samorządu i ogółu studentów Politechniki Opolskiej.
 2. Reprezentuje Samorząd wobec władz Uczelni oraz w stosunkach zewnętrznych.
 3. Kieruje pracami Zarządu i zwołuje jego posiedzenia.
-4. Kadencja Przewodniczącego Samorządu trwa jeden rok. Ta sama osoba nie może pełnić tej funkcji dłużej niż przez dwie kolejne, pełne kadencje.
+4. Kadencja Przewodniczącego Samorządu trwa dwa lata, zgodnie z zasadami określonymi w [Reformie Kadencyjnej i Kompetencyjnej](./16-reforma-kadencyjna.md). Ta sama osoba nie może pełnić tej funkcji dłużej niż przez dwie kolejne, pełne kadencje.
 
 #### § 13.
 Do zadań Przewodniczącego Samorządu należy w szczególności:
@@ -302,95 +303,43 @@ Do zadań Przewodniczącego WRS należy w szczególności:
 2. Starostę wybierają studenci danej grupy lub roku na pierwszych zajęciach organizacyjnych. Wybór jest potwierdzany przez właściwą WRS.
 3. Do zadań starosty należy bieżąca reprezentacja interesów grupy wobec prowadzących zajęcia i władz wydziału, a także współpraca z WRS.
 
-## DZIAŁ III-A. PRAWA I OBOWIĄZKI STUDENTÓW W SYSTEMIE SAMORZĄDOWYM
+## DZIAŁ IV. PRAWA I OBOWIĄZKI CZŁONKÓW ORGANÓW SAMORZĄDU
 
-### Rozdział I. Prawa studentów
+### Rozdział I. Prawa i obowiązki
 
-#### § 36.
-Studenci mają prawo do:
-1) czynnego i biernego prawa wyborczego do organów Samorządu zgodnie z zasadami określonymi w Ordynacji Wyborczej,
-2) uczestnictwa w życiu społecznym Uczelni poprzez działalność w organach Samorządu,
-3) składania wniosków, interpelacji i zapytań do organów Samorządu,
-4) otrzymywania informacji o działalności organów Samorządu,
-5) odwoływania się od decyzji organów Samorządu zgodnie z procedurami określonymi w niniejszym Regulaminie,
-6) korzystania ze wsparcia Samorządu w sprawach socjalnych, bytowych i prawnych,
-7) inicjowania działań na rzecz społeczności studenckiej,
-8) uczestnictenia w konsultacjach społecznych organizowanych przez Samorząd.
+#### § 29.
+Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa w jego pracach, w tym do:
+1) udziału w posiedzeniach organów, których są członkami;
+2) zgłaszania wniosków, interpelacji i zapytań;
+3) uzyskiwania informacji o działalności wszystkich organów Samorządu;
+4) godnego reprezentowania społeczności studenckiej.
 
-#### § 37.
-Studenci mają prawo do reprezentacji przez Samorząd w następujących sprawach:
-1) postępowań dyscyplinarnych prowadzonych przez organy Uczelni,
-2) sporów ze współstudentami lub pracownikami Uczelni,
-3) kwestii dotyczących jakości kształcenia i organizacji studiów,
-4) spraw socjalno-bytowych i stypendialnych,
-5) innych spraw związanych ze statusem studenta.
+### Rozdział II. Zasady usprawiedliwiania nieobecności
 
-### Rozdział II. Obowiązki studentów
+#### § 30.
+1. Członek organu kolegialnego ma obowiązek poinformować przewodniczącego danego organu o przewidywanej nieobecności na posiedzeniu najpóźniej na 24 godziny przed jego terminem.
+2. W przypadku nieobecności nagłej, usprawiedliwienie należy złożyć niezwłocznie, nie później niż w terminie 7 dni od dnia posiedzenia.
+3. Usprawiedliwienie nieobecności może nastąpić z powodu choroby, ważnych spraw osobistych lub obowiązków wynikających z toku studiów.
+4. Decyzję o uznaniu usprawiedliwienia podejmuje przewodniczący organu.
+5. Trzy nieusprawiedliwione nieobecności na posiedzeniach organu w ciągu kadencji mogą stanowić podstawę do wszczęcia procedury odwoławczej.
 
-#### § 38.
-Studenci zobowiązani są do:
-1) przestrzegania postanowień niniejszego Regulaminu oraz aktów wykonawczych wydanych na jego podstawie,
-2) uczestniczenia w wyborach do organów Samorządu,
-3) współpracy z wybranymi reprezentantami w organach Samorządu,
-4) przekazywania informacji o problemach dotyczących społeczności studenckiej,
-5) aktywnego udziału w życiu społecznym Uczelni,
-6) przestrzegania zasad kultury osobistej w kontaktach z organami Samorządu,
-7) szanowania mienia Samorządu oraz jego symboli.
+### Rozdział III. Konflikt interesów
 
-#### § 39.
-Studenci pełniący funkcje w organach Samorządu dodatkowo zobowiązani są do:
-1) działania zgodnie z zasadami określonymi w Kodeksie Etycznym SSPO,
-2) regularnego uczestniczenia w posiedzeniach organów, których są członkami,
-3) składania sprawozdań z działalności zgodnie z wymogami regulaminowymi,
-4) reprezentowania interesów całej społeczności studenckiej, a nie tylko wybranych grup,
-5) utrzymywania stałej komunikacji z wyborcami,
-6) podnoszenia swoich kwalifikacji niezbędnych do pełnienia funkcji,
-7) zachowania poufności informacji objętych tajemnicą w rozumieniu przepisów prawa lub regulaminów wewnętrznych.
+#### § 31.
+1. Członek organu Samorządu podlega wyłączeniu od udziału w rozstrzyganiu spraw, w których może wystąpić konflikt interesów.
+2. Konflikt interesów zachodzi, gdy decyzja może dotyczyć bezpośrednio lub pośrednio interesów majątkowych lub osobistych członka organu, jego małżonka, krewnych lub powinowatych.
+3. O wyłączeniu decyduje przewodniczący organu na wniosek członka organu lub z urzędu.
 
-### Rozdział III. Procedury skargowe i odwoławcze
+### Rozdział IV. Procedury antymobbingowe i antydyskryminacyjne
 
-#### § 40.
-1. Studenci mają prawo składania skarg na działalność organów Samorządu lub ich członków.
-
-2. Skargi rozpatruje Komisja Rewizyjna w terminie nie dłuższym niż 30 dni od dnia złożenia.
-
-3. Od decyzji Komisji Rewizyjnej przysługuje odwołanie do Parlamentu w terminie 14 dni.
-
-#### § 41.
-1. W przypadku naruszenia praw studenta przez organy Samorządu, student może żądać:
-   a) przywrócenia stanu zgodnego z prawem,
-   b) zaniechania działań naruszających prawo,
-   c) złożenia publicznych przeprosin,
-   d) naprawienia szkody.
-
-2. Roszczenia, o których mowa w ust. 1, mogą być dochodzone na drodze wewnętrznej przed organami Samorządu lub na drodze sądowej.
-
-### Rozdział IV. System wsparcia i ochrony studentów
-
-#### § 42.
-1. Samorząd zapewnia studentom następujące formy wsparcia:
-   a) pomoc prawną w sprawach związanych ze statusem studenta,
-   b) wsparcie w procedurach administracyjnych prowadzonych przez Uczelnię,
-   c) pomoc w rozwiązywaniu konfliktów ze współstudentami lub pracownikami Uczelni,
-   d) informowanie o prawach i obowiązkach studenta,
-   e) organizację szkoleń i warsztatów podnoszących świadomość prawną.
-
-2. Wsparcie jest udzielane nieodpłatnie i na wniosek zainteresowanego studenta.
-
-#### § 43.
-1. Samorząd chroni studentów przed dyskryminacją ze względu na:
-   a) poglądy polityczne, religijne lub filozoficzne,
-   b) pochodzenie społeczne, etniczne lub narodowe,
-   c) płeć, orientację seksualną lub tożsamość płciową,
-   d) niepełnosprawność,
-   e) sytuację materialną,
-   f) inne cechy osobiste niepodlegające ocenie w procesie kształcenia.
-
-2. W przypadku stwierdzenia dyskryminacji Samorząd podejmuje działania zmierzające do jej zaprzestania oraz naprawienia wyrządzonej krzywdy.
+#### § 32.
+1. W Samorządzie obowiązuje całkowity zakaz mobbingu, molestowania i dyskryminacji.
+2. Każdy członek Samorządu ma prawo do działania w środowisku wolnym od wrogich i poniżających zachowań.
+3. W przypadku podejrzenia wystąpienia zjawisk, o których mowa w ust. 1, sprawę rozpatruje Komisja Etyki na zasadach określonych w [Regulaminie Komisji Etyki](./06-regulamin-komisji-etyki.md).
 
 ## DZIAŁ V. WYGAŚNIĘCIE MANDATU I ODWOŁYWANIE
 
-#### § 34.
+#### § 33.
 1. Mandat członka organu Samorządu wygasa w przypadku:
    a) utraty statusu studenta;
    b) pisemnej rezygnacji z pełnienia funkcji;
@@ -399,7 +348,7 @@ Studenci pełniący funkcje w organach Samorządu dodatkowo zobowiązani są do:
    e) upływu kadencji.
 2. Wygaśnięcie mandatu z przyczyn określonych w ust. 1 lit. a-c stwierdza Komisja Rewizyjno-Wyborcza.
 
-#### § 35.
+#### § 34.
 1. Odwołanie członka organu Samorządu może nastąpić w przypadku:
    a) rażącego lub uporczywego naruszania postanowień Regulaminu lub innych aktów prawnych Samorządu;
    b) działania na szkodę Samorządu lub Uczelni;
@@ -407,13 +356,13 @@ Studenci pełniący funkcje w organach Samorządu dodatkowo zobowiązani są do:
 2. Uchwałę o odwołaniu podejmuje organ, który dokonał wyboru, na wniosek Przewodniczącego Samorządu, Komisji Rewizyjno-Wyborczej lub co najmniej 1/3 członków Parlamentu.
 3. Osoba, której dotyczy wniosek o odwołanie, ma prawo do złożenia wyjaśnień przed podjęciem decyzji.
 
-#### § 36.
-1. W przypadku wygaśnięcia mandatu lub odwołania członka organu, przeprowadza się wybory uzupełniające zgodnie z zasadami określonymi w Ordynacji Wyborczej, o ile do końca kadencji pozostało więcej niż 3 miesiące.
+#### § 35.
+1. W przypadku wygaśnięcia mandatu lub odwołania członka organu, przeprowadza się wybory uzupełniające zgodnie z zasadami określonymi w [Ordynacji Wyborczej](./02-ordynacja-wyborcza.md), o ile do końca kadencji pozostało więcej niż 3 miesiące.
 2. Do czasu przeprowadzenia wyborów uzupełniających, organ działa w pomniejszonym składzie, o ile liczba jego członków jest wystarczająca do podejmowania prawomocnych decyzji.
 
 ## DZIAŁ VI. DZIAŁALNOŚĆ INFORMACYJNA I MEDIA
 
-#### § 37.
+#### § 36.
 1. Samorząd prowadzi działalność informacyjną w celu zapewnienia studentom stałego dostępu do informacji o jego pracach, podejmowanych decyzjach oraz organizowanych wydarzeniach.
 2. Oficjalnymi kanałami informacyjnymi Samorządu są:
    a) strona internetowa Samorządu;
@@ -421,314 +370,22 @@ Studenci pełniący funkcje w organach Samorządu dodatkowo zobowiązani są do:
    c) uczelniany system informatyczny.
 3. Za politykę informacyjną i komunikacyjną Samorządu odpowiada Zarząd.
 
-#### § 38.
+#### § 37.
 1. Samorząd może tworzyć i wspierać media studenckie, takie jak gazeta, radio internetowe czy telewizja studencka.
 2. Zasady funkcjonowania mediów studenckich określa odrębny regulamin, uchwalany przez Parlament, gwarantujący ich redakcyjną niezależność i pluralizm.
 3. Działalność mediów studenckich jest finansowana z budżetu Samorządu oraz z innych źródeł, zgodnie z obowiązującymi przepisami.
 
 ## DZIAŁ VII. POSTANOWIENIA KOŃCOWE, PRZEJŚCIOWE I DOSTOSOWUJĄCE
 
-#### § 39.
+#### § 38.
 Zmiany w niniejszym Regulaminie wymagają uchwały Parlamentu podjętej większością 2/3 głosów w obecności co najmniej połowy jego ustawowego składu.
 
-#### § 40.
+#### § 39.
 W sprawach nieuregulowanych w Regulaminie decyzje podejmuje Parlament, kierując się przepisami Ustawy, Statutu Uczelni oraz ogólnymi zasadami prawa.
 
-#### § 41.
+#### § 40.
 Regulamin wchodzi w życie z dniem uchwalenia. Z tym samym dniem traci moc dotychczasowy Regulamin Samorządu Studenckiego Politechniki Opolskiej.
 
 
 *Regulamin uchwalony przez Parlament Studentów Politechniki Opolskiej*
 *Wersja v2 - Data aktualizacji: 17 sierpnia 2025*
-
-4. Członkowie organów kolegialnych mają prawo do zgłaszania wniosków, poprawek oraz wyrażania stanowiska w sprawach będących przedmiotem obrad.
-
-### Paragraf 13. [Jawność działania]
-
-1. Działalność organów Samorządu jest jawna, z zastrzeżeniem spraw objętych tajemnicą ustawowo chronioną lub sprawami personalnymi.
-
-2. Protokoły z posiedzeń organów kolegialnych są udostępniane członkom społeczności akademickiej w sposób określony w przepisach szczegółowych.
-
-3. Członkowie społeczności studenckiej mają prawo do uczestniczenia w posiedzeniach organów jako obserwatorzy, z zastrzeżeniem części posiedzeń prowadzonych w trybie zamkniętym.
-
-### Paragraf 14. [Mandaty i kadencje]
-
-1. Kadencja organów kolegialnych trwa jeden rok akademicki, chyba że przepisy szczegółowe stanowią inaczej.
-
-2. Mandaty członków organów wygasają z upływem kadencji, rezygnacją, odwołaniem lub utratą statusu studenta bądź doktoranta.
-
-3. W przypadku wygaśnięcia mandatu przed upływem kadencji, przeprowadza się wybory uzupełniające według trybu określonego w Ordynacji Wyborczej.
-
-
-## DZIAŁ IV. GOSPODARKA FINANSOWA
-
-### Paragraf 15. [Źródła finansowania]
-
-1. Źródłami finansowania działalności Samorządu są:
-   a) środki przekazywane przez Uczelnię zgodnie z przepisami Ustawy,
-   b) dotacje i granty pozyskiwane z zewnętrznych źródeł finansowania,
-   c) wpływy z działalności gospodarczej prowadzonej zgodnie z przepisami prawa,
-   d) darowizny oraz inne świadczenia od osób fizycznych i prawnych,
-   e) inne źródła zgodne z przepisami prawa.
-
-2. Środki Samorządu są wykorzystywane wyłącznie na cele statutowe oraz zgodnie z obowiązującymi przepisami prawa.
-
-### Paragraf 16. [Zasady gospodarki finansowej]
-
-1. Gospodarką finansową Samorządu kierują zasady:
-   a) legalności — zgodności z przepisami prawa,
-   b) celowości — wykorzystania środków zgodnie z przeznaczeniem,
-   c) oszczędności — racjonalnego gospodarowania zasobami,
-   d) skuteczności — osiągania założonych celów,
-   e) efektywności — optymalnego stosunku nakładów do efektów,
-   f) transparentności — jawności procedur i decyzji finansowych.
-
-2. Za prawidłową gospodarkę finansową odpowiada Zarząd SSPO, pod nadzorem Komisji Rewizyjnej i kontrolą Parlamentu.
-
-
-## DZIAŁ V. WSPÓŁPRACA Z ORGANAMI UCZELNI
-
-### Paragraf 17. [Zasady reprezentacji w organach Uczelni]
-
-1. Samorząd zapewnia udział przedstawicieli studentów i doktorantów w organach Uczelni zgodnie z przepisami Ustawy oraz Statutu Uczelni.
-
-2. Przedstawiciele studenccy w organach Uczelni są wybierani lub delegowani przez właściwe organy Samorządu według zasad określonych w przepisach szczegółowych.
-
-3. Przedstawiciele studenccy są zobowiązani do reprezentowania interesów całej społeczności studenckiej oraz składania sprawozdań z działalności organom Samorządu.
-
-### Paragraf 18. [Opiniowanie aktów wewnętrznych Uczelni]
-
-1. Samorząd ma prawo do opiniowania projektów aktów wewnętrznych Uczelni w zakresie dotyczącym spraw studenckich.
-
-2. Opinie Samorządu są wyrażane przez właściwe organy w formie uchwał lub stanowisk, w terminach określonych przez organy Uczelni.
-
-3. W przypadku negatywnej opinii, Samorząd ma prawo do przedstawienia alternatywnych propozycji rozwiązań.
-
-
-## DZIAŁ VI. POSTANOWIENIA KOŃCOWE
-
-### Paragraf 19. [Zmiany Regulaminu]
-
-1. Zmiany niniejszego Regulaminu następują w drodze uchwały Parlamentu podjętej większością dwóch trzecich głosów w obecności co najmniej połowy składu.
-
-2. Projekt zmian może być zgłoszony przez członków Parlamentu, Zarząd SSPO lub grupę co najmniej 100 studentów i doktorantów.
-
-3. Projekt zmian podlega konsultacjom społecznym w sposób zapewniający możliwość zapoznania się z nim przez całą społeczność studencką.
-
-### Paragraf 20. [Przepisy przejściowe]
-
-1. Dotychczasowe akty prawa wewnętrznego zachowują moc w zakresie, w jakim nie są sprzeczne z niniejszym Regulaminem.
-
-2. Organy Samorządu dostosują swoje regulaminy szczegółowe do postanowień niniejszego Regulaminu w terminie 3 miesięcy od jego wejścia w życie.
-
-### Paragraf 21. [Wejście w życie]
-
-1. Regulamin wchodzi w życie z dniem podjęcia uchwały przez Parlament Studentów Politechniki Opolskiej.
-
-2. Z dniem wejścia w życie niniejszego Regulaminu traci moc dotychczasowy Regulamin Samorządu Studenckiego Politechniki Opolskiej.
-
-
-*Regulamin uchwalony przez Parlament Studentów Politechniki Opolskiej w dniu ... roku 2025*
-
-
-## ZAŁĄCZNIKI DO REGULAMINU SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-### ZAŁĄCZNIK NR 1 - ORDYNACJA WYBORCZA DO ORGANÓW SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa szczegółowe zasady, tryb i procedury przeprowadzania wyborów do wszystkich organów Samorządu Studenckiego Politechniki Opolskiej*
-
-Odesłanie: Zgodnie z Paragrafem 8, ust. 3, lit. b) Regulaminu SSPO  
-Status: Załącznik integralny - obowiązuje na mocy Regulaminu  
-Plik: `ordynacja-wyborcza-v2.md`
-
-
-### ZAŁĄCZNIK NR 2 - REGULAMIN POSIEDZEŃ ORGANÓW KOLEGIALNYCH SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa szczegółowe procedury zwoływania, prowadzenia i dokumentowania posiedzeń wszystkich organów kolegialnych SSPO*
-
-Odesłanie: Zgodnie z Paragrafem 8, ust. 4 Regulaminu SSPO  
-Status: Załącznik integralny - obowiązuje na mocy Regulaminu  
-
-
-### ZAŁĄCZNIK NR 3 - KODEKS ETYCZNY SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa normy etyczne, standardy postępowania oraz procedury rozstrzygania konfliktów etycznych dla członków wszystkich organów SSPO*
-
-Odesłanie: Zgodnie z Paragrafem 12, lit. b), 15, lit. c) oraz 18, lit. d) Regulaminu SSPO  
-Status: Załącznik integralny - obowiązuje na mocy Regulaminu  
-Plik: `kodeks-etyczny-v2.md`
-
-
-### ZAŁĄCZNIK NR 4 - REGULAMIN FINANSOWY SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa szczegółowe zasady planowania budżetu, dysponowania środkami finansowymi, kontroli finansowej oraz sprawozdawczości finansowej*
-
-Odesłanie: Zgodnie z Paragrafem 9, ust. 3, lit. c), Paragrafem 15 oraz Paragrafem 16 Regulaminu SSPO  
-Status: Załącznik integralny - obowiązuje na mocy Regulaminu  
-Plik: `regulamin-finansowy-v2.md`
-
-
-### ZAŁĄCZNIK NR 5 - REGULAMIN WYDZIAŁOWYCH RAD STUDENTÓW
-
-*Określa szczegółową organizację, kompetencje i tryb działania Wydziałowych Rad Studentów na poszczególnych wydziałach Politechniki Opolskiej*
-
-Odesłanie: Zgodnie z Działem III Regulaminu SSPO  
-Status: Załącznik integralny - obowiązuje na mocy Regulaminu  
-Plik: `regulamin-wrs-po-v2.md`
-
-
-### ZAŁĄCZNIK NR 6 - CEREMONIAL I PROTOKÓŁ HONOROWY SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa zasady ceremoniału, protokołu honorowego, nadawania tytułów honorowych oraz organizacji uroczystości oficjalnych SSPO*
-
-Odesłanie: Zgodnie z dobrymi praktykami protokołu akademickiego  
-Status: Załącznik pomocniczy - uzupełnia Regulamin w zakresie ceremonii  
-Plik: `ceremonial-honorowy-sspo-v2.md`
-
-
-### ZAŁĄCZNIK NR 7 - PROCEDURY KONSULTACYJNE SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa szczegółowe procedury przeprowadzania konsultacji społecznych, referendów oraz innych form demokracji bezpośredniej*
-
-Odesłanie: Zgodnie z zasadami transparentności określonymi w Kodeksie Etycznym  
-Status: Załącznik pomocniczy - precyzuje procedury demokratyczne  
-Plik: `procedury-konsultacyjne-sspo-v2.md`
-
-
-### ZAŁĄCZNIK NR 8 - REGULAMIN KOLEGIUM HONOROWYCH PRZEWODNICZĄCYCH SSPO
-
-*Określa zasady funkcjonowania Kolegium Honorowych Przewodniczących jako organu doradczego złożonego z byłych Przewodniczących SSPO*
-
-Odesłanie: Zgodnie z tradycjami samorządowymi i zasadami kontynuacji instytucjonalnej  
-Status: Załącznik pomocniczy - wspiera ciągłość działania SSPO  
-Plik: `regulamin-kolegium-honorowych-v2.md`
-
-
-### ZAŁĄCZNIK NR 9 - REGULAMIN RADY DORADCZEJ SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa organizację i tryb działania Rady Doradczej jako organu wspierającego Zarząd SSPO wiedzą ekspercką*
-
-Odesłanie: Zgodnie z dobrymi praktykami zarządczymi i regulaminem Zarządu SSPO  
-Status: Załącznik pomocniczy - wspiera proces decyzyjny Zarządu  
-Plik: `regulamin-rady-doradczej-v2.md`
-
-
-### ZAŁĄCZNIK NR 10 - STRATEGIA WSPÓŁPRACY ZEWNĘTRZNEJ SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa cele, kierunki i zasady nawiązywania oraz utrzymywania współpracy z organizacjami studenckimi, instytucjami oraz partnerami zewnętrznymi*
-
-Odesłanie: Zgodnie z celami statutowymi SSPO w zakresie reprezentacji studentów  
-Status: Załącznik strategiczny - określa długoterminowe cele rozwoju  
-Plik: `strategia-współpracy-zewnętrznej-v2.md`
-
-
-### ZAŁĄCZNIK NR 11 - SYSTEM ROZWOJU I WSPARCIA STUDENTÓW
-
-*Określa kompleksowy system wsparcia rozwoju osobistego, zawodowego i naukowego studentów przez Samorząd Studencki*
-
-Odesłanie: Zgodnie z celami statutowymi SSPO w zakresie spraw socjalno-bytowych i rozwoju studenckiego  
-Status: Załącznik strategiczny - określa system wsparcia studentów  
-Plik: `system-rozwoju-wsparcia-studentow-v2.md`
-
-
-### ZAŁĄCZNIK NR 12 - ZABEZPIECZENIA SYSTEMOWE SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa procedury zapewnienia ciągłości działania SSPO w sytuacjach kryzysowych oraz systemy zabezpieczeń organizacyjnych*
-
-Odesłanie: Zgodnie z zasadami odpowiedzialnego zarządzania organizacją studencką  
-Status: Załącznik pomocniczy - zapewnia stabilność funkcjonowania SSPO  
-Plik: `zabezpieczenia-systemowe-sspo-v2.md`
-
-
-### ZAŁĄCZNIK NR 13 - UZUPEŁNIONE PROCEDURY WYBORCZE
-
-*Określa szczegółowe procedury wyborcze uzupełniające Ordynację Wyborczą w zakresie procedur specjalnych i wyjątkowych*
-
-Odesłanie: Zgodnie z Załącznikiem Nr 1 - Ordynacja Wyborcza  
-Status: Załącznik procedural - rozszerza Ordynację Wyborczą  
-Plik: `uzupelnione-procedury-wyborcze-v2.md`
-
-
-### ZAŁĄCZNIK NR 14 - UPROSZCZENIA PROCEDURALNE SAMORZĄDU STUDENCKIEGO POLITECHNIKI OPOLSKIEJ
-
-*Określa katalog uproszczeń proceduralnych mających na celu zwiększenie efektywności działania organów SSPO*
-
-Odesłanie: Zgodnie z zasadą efektywności określoną w Paragrafie 16 Regulaminu SSPO  
-Status: Załącznik procedural - optymalizuje procesy administracyjne  
-Plik: `uproszczenia-proceduralne-v2.md`
-
-
-### ZAŁĄCZNIK NR 15 - REFORMA KADENCYJNA I KOMPETENCYJNA ORGANÓW SSPO
-
-*Określa nową strukturę kadencyjną organów SSPO oraz zmodyfikowany zakres kompetencji poszczególnych organów*
-
-Odesłanie: Zgodnie z modernizacją struktury organizacyjnej określonej w Dziale II Regulaminu SSPO  
-Status: Załącznik strategiczny - implementuje reformę organizacyjną  
-Plik: `reforma-kadencyjna-kompetencyjna-v2.md`
-
-
-## DOKUMENTY SYSTEMOWE (niezałącznikowe)
-
-### DOKUMENT SYSTEMOWY A - PODSUMOWANIE REFORMY SAMORZĄDU STUDENCKIEGO 2025
-
-*Kompleksowe podsumowanie wszystkich zmian wprowadzonych w systemie prawnym SSPO w roku 2025*
-
-Status: Dokument informacyjny - nie stanowi części Regulaminu  
-Plik: `podsumowanie-reformy-2025-v2.md`
-
-
-### DOKUMENT SYSTEMOWY B - INDEKS DOKUMENTÓW SYSTEMU PRAWNEGO SSPO v2
-
-*Katalog wszystkich dokumentów systemu prawnego SSPO z opisami i statusem implementacji*
-
-Status: Dokument informacyjny - nie stanowi części Regulaminu  
-Plik: `indeks-dokumentow-v2.md`
-
-
-### DOKUMENT SYSTEMOWY C - MACIERZ POWIĄZAŃ DOKUMENTÓW SSPO v2
-
-*System wzajemnych odwołań i powiązań między wszystkimi dokumentami systemu prawnego SSPO*
-
-Status: Dokument techniczny - wspomaga interpretację systemu  
-Plik: `MACIERZ-POWIAZAN-DOKUMENTOW-v2.md`
-
-
-### DOKUMENT SYSTEMOWY D - PRZEWODNIK UCHWALENIA SYSTEMU v2
-
-*Instrukcja dla Parlamentu SSPO dotycząca procedur uchwalenia całego systemu dokumentów v2*
-
-Status: Dokument techniczny - przeznaczony dla organów SSPO  
-Plik: `PRZEWODNIK-UCHWALENIA-SYSTEMU-v2.md`
-
-
-## PRZEPISY KOŃCOWE DOTYCZĄCE ZAŁĄCZNIKÓW
-
-### Paragraf ZAŁ-1 [Status prawny załączników]
-
-1. Załączniki nr 1-4 stanowią integralną część niniejszego Regulaminu i obowiązują na mocy jego postanowień.
-
-2. Załączniki nr 5-15 stanowią akty wykonawcze do niniejszego Regulaminu i mogą być zmieniane w trybie przewidzianym dla aktów wykonawczych.
-
-3. Dokumenty systemowe A-D mają charakter informacyjny i techniczny - nie stanowią źródła prawa wewnętrznego SSPO.
-
-### Paragraf ZAŁ-2 [Zmiany załączników]
-
-1. Zmiany załączników nr 1-4 wymagają zmiany Regulaminu zgodnie z Paragrafem 19.
-
-2. Zmiany załączników nr 5-15 następują w drodze uchwały Parlamentu podjętej zwykłą większością głosów.
-
-3. Dokumenty systemowe A-D mogą być aktualizowane przez Zarząd SSPO bez procedur uchwałodawczych.
-
-### Paragraf ZAŁ-3 [Hierarchia w przypadku sprzeczności]
-
-1. W przypadku sprzeczności między Regulaminem a załącznikami, pierwszeństwo ma Regulamin.
-
-2. W przypadku sprzeczności między załącznikami tej samej rangi, pierwszeństwo ma załącznik o niższym numerze.
-
-3. Załączniki nr 1-4 mają pierwszeństwo przed załącznikami nr 5-15.
-
-
-**SYSTEM ZAŁĄCZNIKÓW GOTOWY DO IMPLEMENTACJI**
-
-*Całkowita liczba dokumentów systemu: 19 (1 Regulamin + 15 załączników + 3 dokumenty systemowe)*  
-*Status: Kompletny system prawny przygotowany do uchwalenia przez Parlament SSPO*

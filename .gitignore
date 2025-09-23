@@ -1,0 +1,61 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Build output
+dist/
+build/
+out/
+coverage/
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Misc
+*.sublime-workspace
+*.sublime-project
+.idea/
+*.swp
+*.bak
+*.tmp
+
+# Git
+.git/
+
+# System files
+*.orig
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Test output
+test-output/
