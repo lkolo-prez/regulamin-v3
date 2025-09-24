@@ -1,6 +1,6 @@
 ﻿# UZUPEŁNIONE PROCEDURY WYBORCZE
 
-*Załącznik nr 14 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 13 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## Rozdział I. Postanowienia Ogólne
 

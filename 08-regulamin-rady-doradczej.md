@@ -1,6 +1,6 @@
 ﻿# REGULAMIN RADY DORADCZEJ
 
-*Załącznik nr 8 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 7 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](./01-regulamin-sspo.md)*
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
 

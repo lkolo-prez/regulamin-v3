@@ -1,6 +1,6 @@
 ﻿# UPROSZCZENIA PROCEDURALNE
 
-*Załącznik nr 15 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 14 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## Rozdział I. Cel i Zakres
 

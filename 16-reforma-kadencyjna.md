@@ -1,6 +1,6 @@
 ﻿# REFORMA KADENCYJNA I KOMPETENCYJNA
 
-*Załącznik nr 16 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 15 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## Rozdział I. Reforma Systemu Kadencyjnego
 
@@ -8,10 +8,9 @@
 W celu zapewnienia ciągłości instytucjonalnej, profesjonalizacji zarządzania oraz umożliwienia realizacji projektów strategicznych, wprowadza się zróżnicowane długości kadencji dla kluczowych organów i funkcji w Samorządzie.
 
 ### § 2. Model Kadencji
-1. Kadencja Przewodniczącego SSPO i Zarządu SSPO trwa dwa lata.
-2. Kadencja Marszałka Parlamentu trwa dwa lata.
-3. Kadencje, o których mowa w ust. 1 i 2, są przesunięte względem siebie, aby zapewnić rotację i transfer wiedzy.
-4. Kadencja pozostałych organów i funkcji, w tym Parlamentu i [Wydziałowych Rad Studentów](05-regulamin-wrs.md), trwa jeden rok akademicki, o ile [Ordynacja Wyborcza](02-ordynacja-wyborcza.md) nie stanowi inaczej.
+1. Kadencja wszystkich kluczowych organów Samorządu, w tym Parlamentu, Przewodniczącego SSPO, Zarządu, Komisji Rewizyjno-Wyborczej oraz Wydziałowych Rad Studentów, zostaje ujednolicona i wynosi dwa lata.
+2. Dwuletnia kadencja zapewnia stabilność, ciągłość instytucjonalną oraz umożliwia realizację długofalowych projektów strategicznych.
+3. Szczegółowe zasady dotyczące rozpoczęcia i zakończenia kadencji określa [Ordynacja Wyborcza](02-ordynacja-wyborcza.md).
 
 ### § 3. Harmonogram Wdrożenia
 Szczegółowy harmonogram wprowadzania zmian kadencyjnych, w tym przepisy przejściowe, określa [Ordynacja Wyborcza](02-ordynacja-wyborcza.md).
