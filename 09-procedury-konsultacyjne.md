@@ -1,6 +1,6 @@
 ﻿# PROCEDURY KONSULTACYJNE
 
-*Załącznik nr 9 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 8 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](./01-regulamin-sspo.md)*
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
 

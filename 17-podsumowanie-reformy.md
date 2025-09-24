@@ -1,6 +1,6 @@
 ﻿# PODSUMOWANIE REFORMY SYSTEMU PRAWNEGO 2025
 
-*Załącznik nr 17 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 16 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## Rozdział I. Zasady Fundamentalne Reformy
 

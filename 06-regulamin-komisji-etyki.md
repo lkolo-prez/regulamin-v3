@@ -1,70 +1,104 @@
 ﻿# REGULAMIN KOMISJI ETYKI
 
-*Załącznik nr 6 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 5 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](./01-regulamin-sspo.md)*
+
+---
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
 
 ### § 1. Status i cel
-1. Komisja Etyki, zwana dalej "Komisją", jest organem Samorządu Studenckiego powołanym do sprawowania pieczy nad przestrzeganiem zasad etycznych w działalności studenckiej.
-2. Komisja działa na podstawie [Regulaminu Samorządu Studenckiego](01-regulamin-sspo.md), [Kodeksu Etycznego](03-kodeks-etyczny.md) i niniejszego regulaminu.
-3. Celem Komisji jest promowanie wysokich standardów etycznych, rozpatrywanie spraw dotyczących ich naruszeń oraz prowadzenie działalności edukacyjnej.
+1. Komisja Etyki, zwana dalej "Komisją", jest niezależnym organem Samorządu Studenckiego powołanym do sprawowania pieczy nad przestrzeganiem zasad określonych w [Kodeksie Etycznym](03-kodeks-etyczny.md).
+2. Komisja działa na podstawie [Regulaminu Samorządu](01-regulamin-sspo.md), [Kodeksu Etycznego](03-kodeks-etyczny.md) i niniejszego regulaminu.
+3. Celem Komisji jest budowanie kultury etycznej w Samorządzie poprzez rozpatrywanie spraw dotyczących naruszeń, prowadzenie działalności prewencyjnej i edukacyjnej oraz interpretowanie zasad etycznych.
 
 ### § 2. Zasady działania
 Komisja w swoich działaniach kieruje się zasadami:
-1. **Niezależności** – członkowie Komisji są niezależni w swoich ocenach i nie podlegają naciskom.
-2. **Bezstronności** – sprawy rozpatrywane są obiektywnie, bez uprzedzeń.
-3. **Poufności** – postępowania prowadzone są z poszanowaniem prywatności i ochroną danych wrażliwych.
-4. **Jawności** – ogólne zasady i wyniki prac Komisji są jawne, z zastrzeżeniem poufności spraw indywidualnych.
+1. **Niezależności i bezstronności** – członkowie Komisji są niezależni w swoich ocenach i rozpatrują sprawy obiektywnie, bez uprzedzeń i nacisków zewnętrznych.
+2. **Poufności** – postępowania prowadzone są z poszanowaniem prywatności i ochroną danych wrażliwych. Posiedzenia Komisji są niejawne, chyba że wszystkie strony postępowania wyrażą zgodę na ich jawność.
+3. **Prawa do obrony** – każda strona postępowania ma prawo do przedstawienia swojego stanowiska, dowodów i odniesienia się do zarzutów.
+4. **Szybkości postępowania** – Komisja dąży do zakończenia postępowania bez zbędnej zwłoki.
 
-## DZIAŁ II. SKŁAD I ORGANIZACJA
+## DZIAŁ II. SKŁAD, WYBÓR I ORGANIZACJA
 
-### § 3. Skład Komisji
-1. Komisja składa się z 5 członków powoływanych przez Parlament na roczną kadencję.
-2. W skład Komisji wchodzi:
-    a) 3 studentów wybranych spośród członków Parlamentu.
-    b) 2 studentów cieszących się zaufaniem społeczności akademickiej, niebędących członkami organów wykonawczych Samorządu.
-3. Członkiem Komisji nie może być osoba pełniąca funkcję w Zarządzie lub w Komisji Rewizyjno-Wyborczej.
+### § 3. Skład i kadencja
+1. Komisja składa się z 5 członków, w tym Przewodniczącego.
+2. Kadencja Komisji trwa 2 lata i jest zbieżna z kadencją Parlamentu.
+3. Członkiem Komisji może zostać student Politechniki Opolskiej, który cieszy się nieposzlakowaną opinią, posiada co najmniej roczne doświadczenie w działalności w organach Samorządu i nie był karany dyscyplinarnie.
+4. Członkostwa w Komisji nie można łączyć z pełnieniem funkcji w Zarządzie, Komisji Rewizyjno-Wyborczej ani z funkcją Przewodniczącego Wydziałowej Rady Studentów.
 
-### § 4. Przewodniczący Komisji
+### § 4. Wybór i odwołanie
+1. Członków Komisji wybiera Parlament w głosowaniu tajnym, bezwzględną większością głosów. Kandydatów może zgłosić grupa co najmniej 5 członków Parlamentu.
+2. Wygaśnięcie mandatu członka Komisji następuje na skutek:
+   a) rezygnacji;
+   b) utraty statusu studenta;
+   c) prawomocnego ukarania dyscyplinarnego;
+   d) odwołania przez Parlament.
+3. Parlament może odwołać członka Komisji na jego wniosek lub w przypadku rażącego naruszenia przez niego postanowień regulaminów lub trwałej niemożności sprawowania funkcji. Uchwała o odwołaniu wymaga większości 2/3 głosów.
+4. W przypadku wygaśnięcia mandatu, Parlament przeprowadza wybory uzupełniające na najbliższym posiedzeniu.
+
+### § 5. Organizacja pracy
 1. Pracami Komisji kieruje Przewodniczący, wybierany przez członków Komisji spośród siebie na pierwszym posiedzeniu.
-2. Przewodniczący zwołuje posiedzenia, przewodniczy im i reprezentuje Komisję na zewnątrz.
+2. Do zadań Przewodniczącego należy zwoływanie posiedzeń, prowadzenie obrad, reprezentowanie Komisji na zewnątrz oraz zapewnienie sprawnego obiegu dokumentacji.
+3. Uchwały Komisji zapadają zwykłą większością głosów w obecności co najmniej 3 członków, w tym Przewodniczącego. W przypadku równej liczby głosów, decyduje głos Przewodniczącego.
 
 ## DZIAŁ III. ZADANIA I KOMPETENCJE
 
-### § 5. Główne zadania
+### § 6. Główne zadania
 Do zadań Komisji należy:
-1. Rozpatrywanie zgłoszeń dotyczących naruszenia [Kodeksu Etycznego](03-kodeks-etyczny.md).
-2. Wydawanie opinii i interpretacji w sprawach o charakterze etycznym.
-3. Prowadzenie działań edukacyjnych i prewencyjnych, w tym szkoleń dla członków organów Samorządu.
-4. Składanie Parlamentowi rocznego sprawozdania ze swojej działalności.
+1. Rozpatrywanie spraw dotyczących naruszeń [Kodeksu Etycznego](03-kodeks-etyczny.md).
+2. Wydawanie opinii i interpretacji w sprawach o charakterze etycznym, w tym analiza oświadczeń o konflikcie interesów.
+3. Prowadzenie działań edukacyjnych i prewencyjnych (szkolenia, publikacje).
+4. Mediacja w sporach o podłożu etycznym.
+5. Składanie Parlamentowi rocznego, zanonimizowanego sprawozdania ze swojej działalności, zawierającego wnioski i rekomendacje.
+6. Proponowanie zmian w [Kodeksie Etycznym](03-kodeks-etyczny.md).
 
 ## DZIAŁ IV. TRYB POSTĘPOWANIA
 
-### § 6. Wszczęcie postępowania
-1. Postępowanie wszczyna się na pisemny wniosek studenta, pracownika Uczelni lub z urzędu, jeśli Komisja uzyska wiarygodne informacje o możliwym naruszeniu.
-2. Wniosek powinien zawierać opis stanu faktycznego oraz wskazywać, które zasady etyczne mogły zostać naruszone.
+### § 7. Wszczęcie postępowania
+1. Postępowanie wszczyna się na pisemny, uzasadniony wniosek złożony do Przewodniczącego Komisji.
+2. Prawo złożenia wniosku przysługuje każdemu studentowi i pracownikowi Politechniki Opolskiej.
+3. Komisja może wszcząć postępowanie z urzędu, jeśli uzyska wiarygodne informacje o możliwym naruszeniu.
+4. Wniosek powinien zawierać:
+   a) dane wnioskodawcy;
+   b) wskazanie osoby, której zarzut dotyczy;
+   c) szczegółowy opis stanu faktycznego;
+   d) wskazanie, które zasady etyczne mogły zostać naruszone;
+   e) dowody na poparcie zarzutów.
+5. Przewodniczący Komisji dokonuje wstępnej oceny wniosku. Wniosek może zostać odrzucony, jeśli jest w sposób oczywisty bezzasadny, niekompletny lub nie należy do właściwości Komisji.
 
-### § 7. Postępowanie wyjaśniające
-1. Komisja prowadzi postępowanie wyjaśniające, w trakcie którego zbiera dowody, wysłuchuje strony oraz ewentualnych świadków.
-2. Każda strona ma prawo do przedstawienia swojego stanowiska i odniesienia się do zebranego materiału.
-3. Postępowanie powinno zakończyć się bez zbędnej zwłoki, nie później niż w ciągu 30 dni od dnia wszczęcia.
+### § 8. Postępowanie mediacyjne
+1. Po wszczęciu postępowania, Przewodniczący może, za zgodą stron, skierować sprawę do postępowania mediacyjnego.
+2. Mediację prowadzi wyznaczony członek Komisji. Celem mediacji jest polubowne rozwiązanie sporu.
+3. W przypadku zawarcia ugody, postępowanie jest umarzane. W przypadku jej braku, sprawa kierowana jest do postępowania wyjaśniającego.
 
-### § 8. Orzeczenia Komisji
-1. Po zakończeniu postępowania Komisja wydaje orzeczenie, w którym:
-    a) stwierdza brak naruszenia zasad etyki,
-    b) stwierdza naruszenie zasad etyki.
-2. W przypadku stwierdzenia naruszenia, Komisja może:
-    a) udzielić upomnienia,
-    b) zobowiązać do złożenia przeprosin,
-    c) wnioskować do Parlamentu o zastosowanie dalszych sankcji przewidzianych w [Regulaminie Samorządu](01-regulamin-sspo.md), w tym odwołania z pełnionej funkcji.
-3. Od orzeczenia Komisji przysługuje odwołanie do Parlamentu w terminie 14 dni od dnia jego doręczenia.
+### § 9. Postępowanie wyjaśniające
+1. Komisja prowadzi postępowanie wyjaśniające, w trakcie którego zbiera materiał dowodowy, w tym dokumenty i wyjaśnienia stron oraz świadków.
+2. Obwiniony ma prawo do wglądu w akta sprawy i ustosunkowania się do zebranego materiału dowodowego.
+3. Postępowanie powinno zakończyć się w terminie 30 dni od dnia jego wszczęcia. W sprawach szczególnie skomplikowanych termin ten może zostać przedłużony o kolejne 30 dni.
+
+### § 10. Orzeczenie
+1. Po zakończeniu postępowania Komisja wydaje orzeczenie, które zawiera:
+   a) oznaczenie stron;
+   b) opis zarzutów;
+   c) ustalenia faktyczne i prawne;
+   d) rozstrzygnięcie (stwierdzenie naruszenia lub jego braku);
+   e) uzasadnienie.
+2. W przypadku stwierdzenia naruszenia, Komisja może nałożyć kary przewidziane w [Kodeksie Etycznym](03-kodeks-etyczny.md), od upomnienia po wniosek o odwołanie z funkcji.
+3. Orzeczenie doręcza się stronom na piśmie.
+
+### § 11. Odwołanie
+1. Od orzeczenia Komisji stronom przysługuje odwołanie do Parlamentu w terminie 14 dni od dnia jego doręczenia.
+2. Parlament rozpatruje odwołanie na najbliższym posiedzeniu. Parlament nie prowadzi postępowania dowodowego, a jedynie ocenia, czy orzeczenie nie narusza postanowień regulaminów.
+3. Parlament może:
+   a) utrzymać orzeczenie w mocy;
+   b) uchylić orzeczenie i przekazać sprawę do ponownego rozpatrzenia przez Komisję.
 
 ## DZIAŁ V. POSTANOWIENIA KOŃCOWE
 
-### § 9. Zmiana Regulaminu
-Zmiana niniejszego Regulaminu może nastąpić w trybie przewidzianym dla zmiany [Regulaminu Samorządu Studenckiego](01-regulamin-sspo.md).
+### § 12. Zmiana Regulaminu
+Zmiana niniejszego Regulaminu wymaga uchwały Parlamentu podjętej większością 2/3 głosów.
 
-### § 10. Wejście w życie
+### § 13. Wejście w życie
 Regulamin wchodzi w życie z dniem uchwalenia.
 
 

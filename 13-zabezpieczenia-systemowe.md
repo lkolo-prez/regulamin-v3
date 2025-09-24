@@ -1,6 +1,6 @@
 ﻿# ZABEZPIECZENIA SYSTEMOWE
 
-*Załącznik nr 13 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 12 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## Rozdział I - Postanowienia ogólne
 

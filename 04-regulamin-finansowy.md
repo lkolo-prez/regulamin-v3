@@ -1,131 +1,79 @@
-﻿# Załącznik nr 3 do Regulaminu SSPO – Regulamin Finansowy
+﻿# Regulamin Finansowy Samorządu Studentów Politechniki Opolskiej
+
+*Dokument stanowi załącznik nr 3 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](./01-regulamin-sspo.md).*
+
+---
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
 
-### § 1. Zakres Regulaminu
-1. Regulamin Finansowy, zwany dalej "Regulaminem", określa zasady gospodarki finansowej Samorządu Studenckiego Politechniki Opolskiej, zwanej dalej "SSPO".
-2. Regulamin stosuje się do wszystkich organów SSPO oraz osób upoważnionych do dysponowania jego majątkiem.
-3. Gospodarka finansowa prowadzona jest zgodnie z obowiązującymi przepisami prawa, Statutem Uczelni oraz aktami wewnętrznymi SSPO, w tym [Regulaminem Samorządu](./01-regulamin-sspo.md), z zachowaniem zasad jawności, celowości i gospodarności.
+### § 1.
+1. Regulamin Finansowy, zwany dalej "Regulaminem", określa zasady gospodarki finansowej Samorządu Studentów Politechniki Opolskiej, zwanego dalej "Samorządem".
+2. Gospodarka finansowa Samorządu prowadzona jest w sposób jawny, celowy i oszczędny, z zachowaniem należytej staranności.
+3. Za gospodarkę finansową Samorządu odpowiada Zarząd, a w szczególności Skarbnik, który sprawuje bezpośredni nadzór nad finansami.
+4. Nadzór nad gospodarką finansową Samorządu sprawuje Komisja Rewizyjno-Wyborcza.
 
-### § 2. Definicje
-Ilekroć w Regulaminie jest mowa o:
-1. **Budżecie** – rocznym planie przychodów i wydatków SSPO, uchwalanym przez Parlament.
-2. **Skarbniku** – członku Zarządu odpowiedzialnym za bieżące zarządzanie finansami SSPO.
-3. **Komisji** – Komisji Rewizyjno-Wyborczej, sprawującej kontrolę nad gospodarką finansową.
-4. **Dysponencie środków** – organie lub osobie upoważnionej do podejmowania decyzji o wydatkowaniu środków SSPO.
+### § 2.
+1. Majątek Samorządu pochodzi z:
+   a) środków przyznawanych przez Uczelnię na działalność studencką;
+   b) dotacji, darowizn i zapisów;
+   c) przychodów z działalności gospodarczej, jeśli taka będzie prowadzona;
+   d) innych źródeł.
+2. Wszystkie środki finansowe Samorządu muszą być gromadzone na wyodrębnionym rachunku bankowym Uczelni przeznaczonym dla Samorządu lub na subkoncie Samorządu.
 
-## DZIAŁ II. ORGANY I ICH KOMPETENCJE FINANSOWE
+## DZIAŁ II. BUDŻET SAMORZĄDU
 
-### § 3. Parlament
-Do kompetencji Parlamentu w sprawach finansowych należy:
-1. Uchwalanie i zmiana Budżetu SSPO.
-2. Rozpatrywanie i zatwierdzanie rocznego sprawozdania finansowego przedstawionego przez Zarząd.
-3. Udzielanie Zarządowi absolutorium z wykonania Budżetu.
-4. Określanie ogólnych kierunków polityki finansowej SSPO.
-5. Podejmowanie decyzji o zaciąganiu zobowiązań finansowych przekraczających kwotę określoną w § 9 ust. 3.
+### § 3. Projekt budżetu
+1. Podstawą gospodarki finansowej Samorządu jest roczny budżet, zwany dalej "Budżetem".
+2. Projekt Budżetu na kolejny rok kalendarzowy przygotowuje Zarząd pod kierownictwem Skarbnika.
+3. Projekt Budżetu musi zawierać:
+   a) planowane przychody z poszczególnych źródeł;
+   b) planowane wydatki z podziałem na poszczególne obszary działalności (np. projekty, działalność organów, promocja, administracja);
+   c) rezerwę budżetową w wysokości co najmniej 5% planowanych wydatków.
+4. Projekt Budżetu jest przedstawiany do zaopiniowania Komisji Rewizyjno-Wyborczej najpóźniej do 30 listopada roku poprzedzającego rok budżetowy.
+5. Komisja Rewizyjno-Wyborcza wydaje opinię na temat projektu w terminie 14 dni od jego otrzymania. Opinia jest niewiążąca, ale musi zostać przedstawiona Parlamentowi wraz z projektem.
 
-### § 4. Zarząd
-Do kompetencji Zarządu w sprawach finansowych należy:
-1. Przygotowanie projektu Budżetu.
-2. Realizacja uchwalonego Budżetu.
-3. Zarządzanie bieżącą płynnością finansową SSPO.
-4. Składanie Parlamentowi okresowych i rocznych sprawozdań z wykonania Budżetu.
-5. Podejmowanie decyzji finansowych w granicach określonych niniejszym Regulaminem.
+### § 4. Uchwalanie budżetu
+1. Budżet jest uchwalany przez Parlament w drodze uchwały, bezwzględną większością głosów, najpóźniej do końca roku kalendarzowego poprzedzającego rok budżetowy.
+2. W przypadku nieuchwalenia Budżetu w terminie, do czasu jego uchwalenia, podstawą gospodarki finansowej jest prowizorium budżetowe, które stanowi 1/12 Budżetu z roku poprzedniego na każdy miesiąc.
 
-### § 5. Skarbnik
-Do obowiązków Skarbnika należy:
-1. Prowadzenie ewidencji finansowej i dokumentacji księgowej.
-2. Realizacja operacji bankowych i zarządzanie środkami pieniężnymi.
-3. Przygotowywanie projektów sprawozdań finansowych.
-4. Kontrola formalno-rachunkowa dokumentów finansowych.
-5. Współpraca z Komisją w zakresie kontroli finansowej.
+### § 5. Zmiany w budżecie
+1. Zmiany w Budżecie w trakcie roku budżetowego mogą być dokonywane wyłącznie w uzasadnionych przypadkach.
+2. Decyzję o przesunięciu środków między pozycjami wydatków w ramach jednego obszaru działalności podejmuje Zarząd na wniosek Skarbnika.
+3. Utworzenie nowej pozycji wydatków lub przesunięcie środków między różnymi obszarami działalności wymaga zgody Komisji Rewizyjno-Wyborczej.
+4. Zwiększenie lub zmniejszenie ogólnej kwoty Budżetu wymaga uchwały Parlamentu.
 
-### § 6. Komisja Rewizyjno-Wyborcza
-Do kompetencji Komisji w sprawach finansowych należy:
-1. Sprawowanie stałego nadzoru nad gospodarką finansową wszystkich organów SSPO.
-2. Przeprowadzanie kontroli prawidłowości i celowości wydatków.
-3. Badanie rocznego sprawozdania finansowego i przedstawianie Parlamentowi opinii w sprawie absolutorium dla Zarządu.
-4. Wnioskowanie do odpowiednich organów w przypadku stwierdzenia nieprawidłowości.
+## DZIAŁ III. REALIZACJA WYDATKÓW
 
-## DZIAŁ III. BUDŻET I PLANOWANIE
+### § 6. Zasady ogólne
+1. Każdy wydatek musi być zgodny z Budżetem, celowy i udokumentowany.
+2. Dysponentem środków finansowych jest Zarząd. Decyzje o wydatkach powyżej kwoty określonej w odrębnych przepisach Uczelni wymagają akceptacji co najmniej dwóch członków Zarządu, w tym Skarbnika.
+3. Wszystkie zobowiązania finansowe w imieniu Samorządu mogą być zaciągane wyłącznie do wysokości środków posiadanych w Budżecie.
 
-### § 7. Źródła przychodów
-Majątek SSPO powstaje z:
-1. Środków przekazywanych przez Uczelnię na działalność studencką.
-2. Dotacji, grantów i subwencji ze źródeł zewnętrznych.
-3. Darowizn i zapisów.
-4. Innych wpływów zgodnych z obowiązującymi przepisami.
+### § 7. Dokumentacja finansowa
+1. Podstawą dokonania wydatku jest prawidłowo wystawiony dokument księgowy (faktura, rachunek, umowa).
+2. Każdy dokument księgowy musi być opisany pod względem merytorycznym i formalnym przez osobę odpowiedzialną za dany projekt lub zadanie oraz zatwierdzony do wypłaty przez Skarbnika lub upoważnionego członka Zarządu.
+3. Opis merytoryczny musi zawierać informację o celu wydatku i jego zgodności z Budżetem.
+4. Skarbnik prowadzi ewidencję wszystkich operacji finansowych i przechowuje dokumentację zgodnie z przepisami Uczelni.
 
-### § 8. Procedura budżetowa
-1. Zarząd, w porozumieniu z Przewodniczącymi Wydziałowych Rad Studentów, przygotowuje projekt Budżetu na kolejny rok akademicki i przedstawia go Parlamentowi do 31 października.
-2. Parlament uchwala Budżet w terminie do 30 listopada.
-3. W przypadku nieuchwalenia Budżetu w terminie, gospodarka finansowa prowadzona jest na podstawie projektu Budżetu do czasu jego uchwalenia.
-4. Zmiany w Budżecie w trakcie roku budżetowego uchwala Parlament na wniosek Zarządu.
+## DZIAŁ IV. SPRAWOZDAWCZOŚĆ I KONTROLA
 
-## DZIAŁ IV. REALIZACJA WYDATKÓW
+### § 8. Sprawozdawczość
+1. Skarbnik przedstawia Zarządowi miesięczne raporty z wykonania Budżetu.
+2. Zarząd przedstawia Parlamentowi oraz Komisji Rewizyjno-Wyborczej sprawozdanie z wykonania Budżetu za każde półrocze w terminie do końca miesiąca następującego po okresie sprawozdawczym.
+3. Roczne sprawozdanie finansowe stanowi podstawę do udzielenia absolutorium Zarządowi przez Parlament.
 
-### § 9. Zasady wydatkowania środków
-1. Wydatki mogą być ponoszone wyłącznie na cele statutowe SSPO i muszą być zgodne z uchwalonym Budżetem.
-2. Każdy wydatek musi być udokumentowany fakturą, rachunkiem lub innym dowodem księgowym.
-3. Do podejmowania zobowiązań finansowych upoważnieni są:
-   a) Przewodniczący Zarządu lub Skarbnik jednoosobowo – do kwoty 1.000 zł,
-   b) Przewodniczący Zarządu i Skarbnik działający łącznie – do kwoty 5.000 zł,
-   c) Zarząd w formie uchwały – do kwoty 10.000 zł.
-4. Zaciągnięcie zobowiązania przekraczającego 10.000 zł wymaga uprzedniej zgody Parlamentu wyrażonej w formie uchwały.
+### § 9. Kontrola
+1. Komisja Rewizyjno-Wyborcza ma prawo do stałej kontroli gospodarki finansowej Samorządu.
+2. KRW ma prawo wglądu do wszystkich dokumentów finansowych Samorządu i żądania wyjaśnień od członków Zarządu.
+3. W przypadku stwierdzenia nieprawidłowości, KRW wzywa Zarząd do ich usunięcia w wyznaczonym terminie. W przypadku braku reakcji lub rażących naruszeń, KRW ma obowiązek zawnioskować do Parlamentu o podjęcie stosownych działań, włącznie z wnioskiem o odwołanie Zarządu.
 
-### § 10. Dokumentacja finansowa
-1. Wszystkie dokumenty finansowe muszą być zatwierdzone pod względem merytorycznym przez właściwego dysponenta środków oraz pod względem formalno-rachunkowym przez Skarbnika.
-2. Skarbnik jest odpowiedzialny za prawidłowe przechowywanie i archiwizację dokumentacji finansowej.
+## DZIAŁ V. POSTANOWIENIA KOŃCOWE
 
-## DZIAŁ V. KONTROLA I SPRAWOZDAWCZOŚĆ
+### § 10.
+W sprawach nieuregulowanych niniejszym Regulaminem zastosowanie mają odpowiednie przepisy Ustawy, Statutu Uczelni oraz wewnętrzne regulacje Uczelni dotyczące gospodarki finansowej organizacji studenckich.
 
-### § 11. Kontrola finansowa
-1. Komisja ma prawo wglądu do wszystkich dokumentów finansowych SSPO oraz żądania wyjaśnień od członków wszystkich organów.
-2. Z każdej przeprowadzonej kontroli Komisja sporządza protokół, który przedstawia kontrolowanemu organowi oraz Parlamentowi.
-
-### § 12. Sprawozdawczość
-1. Zarząd przedstawia Parlamentowi sprawozdanie z wykonania Budżetu za pierwsze półrocze roku akademickiego w terminie do 31 marca.
-2. Roczne sprawozdanie finansowe za poprzedni rok akademicki Zarząd przedstawia Parlamentowi w terminie do 30 listopada.
-
-### § 13. Absolutorium
-1. Parlament, po zapoznaniu się z rocznym sprawozdaniem finansowym oraz opinią Komisji, podejmuje uchwałę w sprawie udzielenia absolutorium Zarządowi.
-2. Nieudzielenie absolutorium jest równoznaczne z odwołaniem Zarządu.
-
-## DZIAŁ VA. FUNDUSZ REZERWOWY
-
-### § 13a. Utworzenie i cel Funduszu
-1. Tworzy się Fundusz Rezerwowy SSPO, zwany dalej "Funduszem".
-2. Celem Funduszu jest zabezpieczenie płynności finansowej Samorządu w przypadku wystąpienia nieprzewidzianych i uzasadnionych wydatków, których nie można było zaplanować w rocznym Budżecie.
-
-### § 13b. Zasilanie i wysokość Funduszu
-1. Fundusz zasilany jest z nadwyżki budżetowej z lat ubiegłych.
-2. Wysokość Funduszu powinna być utrzymywana na poziomie nie niższym niż 20% kwoty rocznego Budżetu SSPO.
-3. Parlament, na wniosek Zarządu, może podjąć decyzję o dodatkowym zasileniu Funduszu w trakcie roku budżetowego.
-
-### § 13c. Uruchomienie środków z Funduszu
-1. Środki z Funduszu mogą być uruchomione wyłącznie na mocy uchwały Parlamentu, podjętej bezwzględną większością 2/3 głosów ustawowego składu Parlamentu.
-2. Wniosek o uruchomienie środków z Funduszu składa Zarząd, przedstawiając szczegółowe uzasadnienie konieczności poniesienia wydatku oraz jego preliminarz.
-3. Wydatki z Funduszu nie mogą być przeznaczone na bieżącą działalność organów, która powinna być finansowana z regularnego Budżetu.
-
-## DZIAŁ VI. POSTANOWIENIA KOŃCOWE
-
-### § 14. Zmiana Regulaminu
-Zmiana niniejszego Regulaminu wymaga uchwały Parlamentu podjętej większością 2/3 głosów w obecności co najmniej połowy ustawowego składu Parlamentu.
-
-### § 15. Wejście w życie
+### § 11.
 Regulamin wchodzi w życie z dniem uchwalenia.
 
-### § 16. Interpretacje
-W sprawach spornych dotyczących interpretacji postanowień niniejszego Regulaminu ostateczne stanowisko zajmuje Parlament w porozumieniu z Komisją Rewizyjno-Wyborczą.
-
-
-*Regulamin Finansowy uchwalony przez Parlament Studentów Politechniki Opolskiej w dniu ... roku 2025*
-
-**ZAŁĄCZNIK: Wzory dokumentów finansowych**
-- Wzór wniosku o wydatek
-- Wzór sprawozdania z wykorzystania środków
-- Wzór protokołu kontroli finansowej
-- Wzór uchwały budżetowej
-- Wzór sprawozdania rocznego
-
+*Wersja v3 - Data aktualizacji: 23 września 2025*
 

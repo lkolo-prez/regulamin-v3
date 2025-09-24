@@ -13,7 +13,7 @@
 
 ### § 2. Definicje
 Ilekroć w Ordynacji jest mowa o:
-1) **Regulaminie** – rozumie się przez to [Regulamin Samorządu Studenckiego Politechniki Opolskiej](../01-regulamin-sspo.md);
+1) **Regulaminie** – rozumie się przez to [Regulamin Samorządu Studenckiego Politechniki Opolskiej](./01-regulamin-sspo.md);
 2) **Uczelni** – rozumie się przez to Politechnikę Opolską;
 3) **okręgu wyborczym** – rozumie się przez to wydział Uczelni;
 4) **terminarzu wyborczym** – rozumie się przez to harmonogram czynności wyborczych uchwalany przez Komisję Rewizyjno-Wyborczą;
@@ -45,7 +45,7 @@ Ilekroć w Ordynacji jest mowa o:
 
 ### § 6. Organizacja wyborów
 1. Wybory do Parlamentu zarządza Komisja Rewizyjno-Wyborcza, uchwalając **terminarz wyborczy** nie później niż 30 dni przed planowaną datą głosowania.
-2. Wybory odbywają się raz w roku akademickim, w terminie umożliwiającym ukonstytuowanie się nowego Parlamentu przed rozpoczęciem kolejnego roku akademickiego.
+2. Wybory odbywają się raz na dwa lata, w terminie umożliwiającym ukonstytuowanie się nowego Parlamentu przed rozpoczęciem kolejnego roku akademickiego.
 3. Terminarz wyborczy określa w szczególności:
    a) datę i godziny głosowania;
    b) termin zgłaszania kandydatów;
@@ -112,6 +112,12 @@ Ilekroć w Ordynacji jest mowa o:
 3. Wybrani zostają kandydaci, którzy uzyskali kolejno największą liczbę głosów.
 4. Nowo wybrana Komisja konstytuuje się na pierwszym posiedzeniu, wybierając ze swojego grona Przewodniczącego.
 
+### § 15a. Wybory Rzecznika Praw Studenta
+1. Parlament wybiera Rzecznika Praw Studenta zgodnie z procedurą określoną w § 22b Regulaminu.
+2. Wybory Rzecznika odbywają się na pierwszym posiedzeniu Parlamentu nowej kadencji, po wyborze Przewodniczącego Samorządu i Komisji Rewizyjno-Wyborczej.
+3. Kandydatów na Rzecznika mogą zgłaszać grupy co najmniej 5 posłów lub ustępujący Rzecznik.
+4. Wybór następuje w głosowaniu tajnym, bezwzględną większością głosów. W przypadku braku rozstrzygnięcia, stosuje się procedurę drugiej tury z udziałem dwóch kandydatów z najlepszymi wynikami.
+
 ## DZIAŁ IV. WYBORY DO WYDZIAŁOWYCH RAD STUDENTÓW
 
 ### § 16. Zasady ogólne
@@ -127,7 +133,7 @@ Ilekroć w Ordynacji jest mowa o:
 ## DZIAŁ V. WYBORY UZUPEŁNIAJĄCE I PRZEDTERMINOWE
 
 ### § 18. Wybory uzupełniające
-1. W przypadku wygaśnięcia mandatu członka Parlamentu lub WRS, Przewodniczący danego organu może zarządzić wybory uzupełniające, jeśli do końca kadencji pozostało więcej niż 3 miesiące.
+1. W przypadku wygaśnięcia mandatu członka Parlamentu lub WRS, Marszałek Parlamentu zarządza wybory uzupełniające, jeśli do końca kadencji pozostało więcej niż 6 miesięcy.
 2. Wybory uzupełniające organizuje Komisja Rewizyjno-Wyborcza w terminie 30 dni od dnia zarządzenia.
 3. Do wyborów uzupełniających stosuje się odpowiednio przepisy Ordynacji, z możliwością skrócenia terminów proceduralnych.
 

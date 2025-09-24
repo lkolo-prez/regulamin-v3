@@ -1,12 +1,14 @@
 ﻿# MACIERZ POWIĄZAŃ DOKUMENTÓW
 
-*Załącznik nr 19 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 18 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+
+---
 
 ## Rozdział I. Zasady Ogólne
 
 ### § 1. Cel i Zakres
 1.  Niniejszy załącznik ustanawia macierz powiązań między aktami prawnymi Samorządu, zapewniając ich spójność, hierarchiczność i brak sprzeczności.
-2.  Macierz definiuje kluczowe relacje nadrzędności, podrzędności i delegacji kompetencji między dokumentami systemu prawnego, które zostały zdefiniowane w [Indeksie Dokumentów](18-indeks-dokumentow.md).
+2.  Macierz definiuje kluczowe relacje nadrzędności, podrzędności i delegacji kompetencji między dokumentami systemu prawnego, które zostały zdefiniowane w [Indeksie Aktów Prawnych](18-indeks-dokumentow.md).
 
 ### § 2. Zasada Spójności Systemu
 Wszystkie akty prawne Samorządu muszą być interpretowane i stosowane w sposób zapewniający zgodność z [Regulaminem SSPO](01-regulamin-sspo.md) oraz z zasadami określonymi w niniejszej macierzy. W przypadku konfliktu norm, pierwszeństwo mają postanowienia aktu prawnego wyższego w hierarchii.
@@ -14,21 +16,23 @@ Wszystkie akty prawne Samorządu muszą być interpretowane i stosowane w sposó
 ## Rozdział II. Główne Powiązania Między Aktami
 
 ### § 3. Relacja Regulaminu SSPO do Innych Aktów
-1.  **[Regulamin SSPO](01-regulamin-sspo.md)** jest aktem najwyższej rangi.
-2.  Wszystkie inne akty prawne Samorządu, w tym załączniki i akty wykonawcze, muszą być z nim zgodne i służą jego uszczegółowieniu.
+1.  **[Regulamin SSPO](01-regulamin-sspo.md)** jest aktem najwyższej rangi (lex superior).
+2.  Wszystkie inne akty prawne Samorządu, w tym załączniki i akty wykonawcze, muszą być z nim zgodne i służą jego uszczegółowieniu (lex specialis).
 3.  Regulamin SSPO deleguje szczegółowe materie do uregulowania w następujących aktach podstawowych:
-    a)  **[Ordynacji Wyborczej](02-ordynacja-wyborcza.md)** (kwestie wyborcze).
-    b)  **[Kodeksie Etycznym](03-kodeks-etyczny.md)** (kwestie etyki i standardów).
-    c)  **[Regulaminie Finansowym](04-regulamin-finansowy.md)** (kwestie gospodarki finansowej).
+    a)  **[Ordynacji Wyborczej](02-ordynacja-wyborcza.md)** (całość materii wyborczej).
+    b)  **[Kodeksie Etycznym](03-kodeks-etyczny.md)** (standardy etyczne i odpowiedzialność).
+    c)  **[Regulaminie Finansowym](04-regulamin-finansowy.md)** (całość gospodarki finansowej).
 
-### § 4. Relacje Aktów Wykonawczych
-1.  **[Ordynacja Wyborcza](02-ordynacja-wyborcza.md)** jest aktem nadrzędnym dla wszelkich innych regulacji dotyczących wyborów, w tym dla [Uzupełnionych Procedur Wyborczych](14-uzupelnione-procedury.md) i [Uproszczeń Proceduralnych](15-uproszczenia-proceduralne.md).
-2.  **[Kodeks Etyczny](03-kodeks-etyczny.md)** stanowi podstawę dla działania [Komisji Etyki](06-regulamin-komisji-etyki.md) oraz jest wiążący dla wszystkich członków organów Samorządu.
-3.  **[Regulamin Finansowy](04-regulamin-finansowy.md)** jest nadrzędny wobec wszelkich planów finansowych, budżetów projektów i decyzji o wydatkowaniu środków.
+### § 4. Relacje Aktów Wykonawczych i Organizacyjnych
+1.  **[Kodeks Etyczny](03-kodeks-etyczny.md)** stanowi podstawę dla działania **[Komisji Etyki](06-regulamin-komisji-etyki.md)**. Regulamin Komisji Etyki jest aktem wykonawczym do Kodeksu.
+2.  **[Regulamin Finansowy](04-regulamin-finansowy.md)** jest nadrzędny wobec budżetów rocznych, planów finansowych projektów oraz preliminarzy budżetowych **[WRS-ów](05-regulamin-wrs.md)**.
+3.  **[Regulamin SSPO](01-regulamin-sspo.md)** i **[Ordynacja Wyborcza](02-ordynacja-wyborcza.md)** są nadrzędne wobec **[Regulaminu WRS](05-regulamin-wrs.md)**, który uszczegóławia działanie Samorządu na poziomie wydziału.
+4.  **[System Rozwoju i Wsparcia Członków Samorządu](12-system-rozwoju.md)** stanowi ramy dla programów szkoleniowych i mentoringowych prowadzonych przez Zarząd.
 
-### § 5. Relacje Aktów Ramowych (Pozostałych Załączników)
-1.  Pozostałe załączniki do Regulaminu SSPO stanowią ramy dla działania w określonych obszarach.
-2.  Organy Samorządu są uprawnione do wydawania aktów wykonawczych (uchwał, zarządzeń) w celu uszczegółowienia postanowień załączników, pod warunkiem zachowania ich zgodności z aktami wyższego rzędu.
+### § 5. Dokumenty Systemowe
+1.  **[Indeks Aktów Prawnych](18-indeks-dokumentow.md)** jest kompletnym, zamkniętym katalogiem obowiązujących dokumentów.
+2.  **[Macierz Powiązań Dokumentów](19-macierz-powiazan.md)** (niniejszy dokument) pełni funkcję interpretacyjną, wyjaśniając relacje między aktami.
+3.  **[Przewodnik Wdrożeniowy](20-przewodnik-wdrozeniowy.md)** ma charakter pomocniczy i instruktażowy, nie stanowi źródła prawa, lecz ułatwia jego stosowanie.
 
 ## Rozdział III. Postanowienia Końcowe
 

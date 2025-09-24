@@ -1,6 +1,6 @@
 ﻿# SYSTEM ROZWOJU I WSPARCIA
 
-*Załącznik nr 12 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 11 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## Rozdział I - Postanowienia ogólne
 

@@ -1,6 +1,6 @@
 # WIZUALIZACJE PROCEDUR
 
-*Załącznik nr 21 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 20 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 Ten dokument zawiera wizualne przedstawienie kluczowych procedur opisanych w systemie prawnym Samorządu Studenckiego Politechniki Opolskiej. Diagramy mają na celu ułatwienie zrozumienia złożonych procesów.
 
@@ -30,15 +30,36 @@ Diagram ilustruje ścieżkę postępowania w przypadku zgłoszenia naruszenia za
 
 ```mermaid
 flowchart TD
-    A[Start: Zgłoszenie naruszenia zasad etyki] --> B{Wszczęcie postępowania przez Komisję Etyki};
-    B --> C[Postępowanie wyjaśniające (do 30 dni)];
-    C --> D{Wydanie orzeczenia};
-    D -- Stwierdzono naruszenie --> E{Zastosowanie sankcji};
-    D -- Brak naruszenia --> F[Zakończenie postępowania];
-    E --> G{Czy strona składa odwołanie do Parlamentu?};
-    G -- Tak --> H[Rozpatrzenie odwołania przez Parlament];
-    G -- Nie --> F;
-    H --> F;
+    subgraph "Etap Wstępny"
+        A[Start: Zgłoszenie naruszenia zasad etyki] --> B{Weryfikacja formalna wniosku};
+        B -- Wniosek poprawny --> C{Wszczęcie postępowania};
+        B -- Braki formalne --> D[Wezwanie do uzupełnienia braków];
+    end
+
+    subgraph "Postępowanie Wyjaśniające (do 30 dni)"
+        C --> E[Zbieranie dowodów];
+        E --> F[Wysłuchanie stron i świadków];
+        F --> G[Analiza materiału dowodowego];
+    end
+
+    subgraph "Orzeczenie i Sankcje"
+        G --> H{Wydanie orzeczenia};
+        H -- Stwierdzono naruszenie --> I{Zastosowanie sankcji};
+        H -- Brak naruszenia --> J[Zakończenie i umorzenie postępowania];
+        I --> I1[1. Upomnienie];
+        I --> I2[2. Zobowiązanie do przeprosin];
+        I --> I3[3. Wniosek do Parlamentu o dalsze sankcje];
+    end
+
+    subgraph "Procedura Odwoławcza"
+        I1 --> K{Czy strona składa odwołanie do Parlamentu? (14 dni)};
+        I2 --> K;
+        I3 --> K;
+        K -- Tak --> L[Rozpatrzenie odwołania przez Parlament];
+        K -- Nie --> M[Koniec: Orzeczenie jest ostateczne];
+        L --> M;
+        J --> M;
+    end
 ```
 
 ## 3. Struktura Organizacyjna Samorządu Studenckiego (na podstawie [Regulaminu SSPO](01-regulamin-sspo.md))
@@ -47,42 +68,56 @@ Diagram przedstawia hierarchię oraz kluczowe relacje (wybór, powoływanie, kon
 
 ```mermaid
 graph TD;
-    subgraph "Społeczność Studencka"
+    subgraph "Ogół Studentów"
         A("Wszyscy Studenci Politechniki Opolskiej")
     end
 
-    subgraph "Władza Ustawodawcza i Wyborcza"
+    subgraph "Władza Ustawodawcza i Kontrolna"
         B(Parlament Studentów)
+        E(Komisja Rewizyjno-Wyborcza)
     end
 
     subgraph "Władza Wykonawcza"
         C(Przewodniczący Samorządu)
         D(Zarząd Samorządu)
     end
-
-    subgraph "Organy Kontrolne i Etyczne"
-        E(Komisja Rewizyjno-Wyborcza)
-        F(Komisja Etyki)
-    end
     
     subgraph "Struktury Wydziałowe"
-        G([Wydziałowe Rady Studentów](05-regulamin-wrs.md))
+        G([Wydziałowe Rady Studentów]);
+    click G "./05-regulamin-wrs.md" "Zobacz Regulamin WRS"
+    end
+
+    subgraph "Organy Specjalistyczne"
+        F(Komisja Etyki)
+        H(Zespoły Zadaniowe)
     end
 
     A --"Wybierają w wyborach bezpośrednich"--> B;
     A --"Wybierają w wyborach bezpośrednich"--> G;
     
-    B --"Wybiera w głosowaniu tajnym"--> C;
-    B --"Powołuje na wniosek Przewodniczącego"--> D;
+    B --"Wybiera"--> C;
     B --"Wybiera"--> E;
     B --"Wybiera"--> F;
-
-    C --"Kieruje pracami"--> D;
+    
+    C --"Powołuje i kieruje"--> D;
+    D --"Powołuje i nadzoruje"--> H;
     
     E --"Kontroluje działalność"--> D;
+    E --"Organizuje wybory"--> B;
+    E --"Organizuje wybory"--> G;
+
     D --"Składa sprawozdania"--> B;
     C --"Odpowiada przed"--> B;
+    G --"Delegują przedstawicieli do"--> B;
 
+    style A fill:#FFF,stroke:#333,stroke-width:2px
+    style B fill:#C1E1FF,stroke:#0056b3,stroke-width:3px
+    style C fill:#D4EDDA,stroke:#155724,stroke-width:2px
+    style D fill:#D4EDDA,stroke:#155724,stroke-width:2px
+    style E fill:#F8D7DA,stroke:#721c24,stroke-width:2px
+    style F fill:#F8D7DA,stroke:#721c24,stroke-width:2px
+    style G fill:#E2E3E5,stroke:#6c757d,stroke-width:2px
+    style H fill:#FFF3CD,stroke:#856404,stroke-width:2px
 ```
 
 ### 4. Hierarchia Aktów Prawnych SSPO
@@ -92,28 +127,39 @@ graph TD
     A(Ustawa Prawo o Szkolnictwie Wyższym i Nauce) --> B(Statut Politechniki Opolskiej);
     B --> C{Regulamin Samorządu Studenckiego PO};
     
-    subgraph "Akty Podstawowe (Integralna część Regulaminu)"
-        C --> D1([Zał. 1: Ordynacja Wyborcza]);
-        C --> D2([Zał. 2: Kodeks Etyczny]);
-        C --> D3([Zał. 3: Regulamin Finansowy]);
-        C --> D4([Zał. 4: Regulamin WRS]);
+    subgraph "Akty Podstawowe (Załączniki do Regulaminu)"
+        C --> D1([02 Ordynacja Wyborcza]);
+        C --> D2([03 Kodeks Etyczny]);
+        C --> D3([04 Regulamin Finansowy]);
+        C --> D4([05 Regulamin WRS]);
     end
 
     subgraph "Akty Wykonawcze i Szczegółowe (Załączniki do Regulaminu)"
-        C --> E1([Zał. 5: Regulamin Komisji Etyki]);
-        C --> E2([Zał. 6-8: Regulaminy Ciał Doradczych]);
-        C --> E3([Zał. 9-12: Dokumenty strategiczne i proceduralne]);
-        C --> E4([Zał. 13-16: Dokumenty reform i uzupełnień]);
+        C --> E1([06 Regulamin Komisji Etyki]);
+        C --> E2([07-08 Regulaminy Ciał Doradczych]);
+        C --> E3([09-12 Dokumenty strategiczne i proceduralne]);
+        C --> E4([13-16 Dokumenty reform i uzupełnień]);
     end
 
-    subgraph "Dokumenty Pomocnicze (poza systemem prawnym)"
-        F1(Indeks Dokumentów);
-        F2(Macierz Powiązań);
-        F3(Podsumowanie Reformy);
+    subgraph "Dokumenty Informacyjne i Pomocnicze"
+        C --> F1([17 Podsumowanie Reformy]);
+        C --> F2([18 Indeks Dokumentów]);
+        C --> F3([19 Macierz Powiązań]);
+        C --> F4([20 Przewodnik Wdrożeniowy]);
+        C --> F5([21 Wizualizacje Procedur]);
     end
 
     D1 --> E4;
     D2 --> E1;
+
+    click C "./01-regulamin-sspo.md" "Zobacz Regulamin SSPO"
+    click D1 "./02-ordynacja-wyborcza.md" "Zobacz Ordynację Wyborczą"
+    click D2 "./03-kodeks-etyczny.md" "Zobacz Kodeks Etyczny"
+    click D3 "./04-regulamin-finansowy.md" "Zobacz Regulamin Finansowy"
+    click D4 "./05-regulamin-wrs.md" "Zobacz Regulamin WRS"
+    click E1 "./06-regulamin-komisji-etyki.md" "Zobacz Regulamin Komisji Etyki"
+    click F4 "./20-przewodnik-wdrozeniowy.md" "Zobacz Przewodnik"
+    click F5 "./21-procedury-wizualizacje.md" "Zobacz Wizualizacje"
 
     style A fill:#FFDDC1,stroke:#333,stroke-width:2px
     style B fill:#FFE9CC,stroke:#333,stroke-width:2px
@@ -129,6 +175,8 @@ graph TD
     style F1 fill:#E2E3E5,stroke:#6c757d,stroke-width:2px
     style F2 fill:#E2E3E5,stroke:#6c757d,stroke-width:2px
     style F3 fill:#E2E3E5,stroke:#6c757d,stroke-width:2px
+    style F4 fill:#E2E3E5,stroke:#6c757d,stroke-width:2px
+    style F5 fill:#E2E3E5,stroke:#6c757d,stroke-width:2px
 ```
 
 ### 5. Proces Legislacyjny (Uchwalanie Zmian w Regulaminie)

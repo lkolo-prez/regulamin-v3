@@ -26,47 +26,75 @@ Działalność członków organów Samorządu opiera się na następujących war
 2. Niedopuszczalne jest faworyzowanie lub dyskryminowanie jakichkolwiek osób lub grup z powodów osobistych lub w celu osiągnięcia prywatnych korzyści.
 
 ### § 4. Konflikt interesów
-1. Członek organu Samorządu unika sytuacji, w których jego prywatny interes mógłby być sprzeczny z interesem publicznym lub wpływać na obiektywność jego decyzji.
-2. W przypadku zaistnienia konfliktu interesów, członek organu jest zobowiązany do:
-   a) niezwłocznego poinformowania o tym fakcie przewodniczącego danego organu;
+1. Przez konflikt interesów rozumie się sytuację, w której prywatny interes członka organu Samorządu jest sprzeczny lub może być postrzegany jako sprzeczny z interesem publicznym i może wpłynąć na jego obiektywizm.
+2. Interes prywatny obejmuje korzyść majątkową lub osobistą, zarówno własną, jak i małżonka, krewnych i powinowatych do drugiego stopnia, a także osób, z którymi członek organu pozostaje w bliskich stosunkach osobistych lub zawodowych.
+3. Członek organu Samorządu unika sytuacji mogących prowadzić do konfliktu interesów. W przypadku jego zaistnienia lub prawdopodobieństwa zaistnienia, jest zobowiązany do:
+   a) niezwłocznego poinformowania o tym fakcie przewodniczącego danego organu oraz Komisji Etyki;
    b) wyłączenia się z udziału w dyskusji i głosowaniu nad sprawą, której konflikt dotyczy.
+4. Członkowie Zarządu oraz Komisji Rewizyjno-Wyborczej są zobowiązani do złożenia Komisji Etyki, w terminie 30 dni od dnia wyboru, oświadczenia o potencjalnych konfliktach interesów. Oświadczenie aktualizuje się corocznie lub niezwłocznie po zaistnieniu nowej okoliczności. Wzór oświadczenia stanowi załącznik do niniejszego Kodeksu.
 
-### § 5. Gospodarowanie mieniem Samorządu
+### § 5. Korzyści majątkowe i osobiste
+1. Członek organu Samorządu nie może przyjmować żadnych korzyści majątkowych ani osobistych (prezentów, usług, pożyczek) o wartości przekraczającej kwotę 50 zł od osób lub podmiotów, które ubiegają się o rozstrzygnięcie ze strony Samorządu.
+2. W przypadku zaoferowania korzyści przekraczającej ww. kwotę, członek organu ma obowiązek odmówić jej przyjęcia i niezwłocznie poinformować o zdarzeniu Komisję Etyki.
+3. Zasada określona w ust. 1 nie dotyczy zwyczajowo przyjętych drobnych upominków i materiałów promocyjnych wręczanych podczas oficjalnych spotkań.
+
+### § 6. Gospodarowanie mieniem Samorządu
 1. Członek organu Samorządu dba o mienie i środki finansowe Samorządu, wykorzystując je w sposób oszczędny, celowy i zgodny z przeznaczeniem.
 2. Wykorzystywanie zasobów Samorządu do celów prywatnych jest zabronione.
 
-### § 6. Kultura komunikacji
+### § 7. Kultura komunikacji
 1. W relacjach z członkami społeczności akademickiej, a także w przestrzeni publicznej, członek organu Samorządu zachowuje wysokie standardy kultury osobistej.
-2. Wypowiedzi publiczne w imieniu Samorządu muszą być autoryzowane, rzetelne i zgodne z oficjalnym stanowiskiem organu. Prywatne opinie powinny być wyraźnie oddzielone od stanowiska oficjalnego.
+2. Wypowiedzi publiczne w imieniu Samorządu muszą być autoryzowane, rzetelne i zgodne z oficjalnym stanowiskiem organu. Występując publicznie, członek organu ma obowiązek jasno rozgraniczyć swoje prywatne opinie od stanowiska oficjalnego.
 
-### § 7. Poufność informacji
+### § 8. Poufność informacji
 1. Członek organu Samorządu jest zobowiązany do zachowania w tajemnicy informacji poufnych, uzyskanych w związku z pełnioną funkcją, których ujawnienie mogłoby narazić na szkodę interes Samorządu lub prywatność osób trzecich.
 2. Obowiązek zachowania poufności trwa również po zakończeniu kadencji.
 
+### § 8a. Okres karencji (Cooling-off)
+1. Osoby pełniące funkcję Przewodniczącego Samorządu lub Skarbnika nie mogą, w okresie 6 miesięcy od zakończenia pełnienia funkcji, podejmować odpłatnej współpracy ani być zatrudnione przez podmioty zewnętrzne, które w trakcie ich kadencji uzyskały od Samorządu znaczące korzyści finansowe lub niefinansowe w wyniku decyzji, w których podejmowaniu brali udział.
+2. Przez znaczące korzyści rozumie się umowy lub zlecenia, których łączna wartość w trakcie kadencji przekroczyła kwotę dwukrotności minimalnego wynagrodzenia za pracę obowiązującego w danym roku.
+
 ## DZIAŁ III. ODPOWIEDZIALNOŚĆ I PROCEDURY
 
-### § 8. Nadzór nad przestrzeganiem Kodeksu
+### § 9. Nadzór nad przestrzeganiem Kodeksu
 1. Nadzór nad przestrzeganiem postanowień Kodeksu sprawuje [Komisja Etyki](06-regulamin-komisji-etyki.md).
 2. Każdy student ma prawo zgłosić do Komisji Etyki uzasadnione podejrzenie naruszenia Kodeksu przez członka organu Samorządu.
 
-### § 9. Postępowanie wyjaśniające
+### § 10. Postępowanie wyjaśniające
 1. Komisja Etyki rozpatruje zgłoszenia w sposób bezstronny, zapewniając osobie, której dotyczy zgłoszenie, prawo do złożenia wyjaśnień.
-2. W przypadku stwierdzenia naruszenia Kodeksu, Komisja Etyki może:
+2. W przypadku stwierdzenia naruszenia Kodeksu, Komisja Etyki, w zależności od wagi naruszenia, może:
    a) udzielić upomnienia;
-   b) zobowiązać do złożenia publicznych przeprosin;
-   c) wystąpić do odpowiedniego organu z wnioskiem o odwołanie z pełnionej funkcji, zgodnie z procedurami określonymi w [Regulaminie Samorządu](01-regulamin-sspo.md).
+   b) udzielić nagany (formalnej reprymendy);
+   c) zobowiązać do złożenia publicznych przeprosin;
+   d) w przypadku rażącego lub powtarzającego się naruszenia, wystąpić do odpowiedniego organu z wnioskiem o odwołanie z pełnionej funkcji, zgodnie z procedurami określonymi w [Regulaminie Samorządu](01-regulamin-sspo.md).
 
 ## DZIAŁ IV. POSTANOWIENIA KOŃCOWE
 
-### § 10. Wejście w życie i stosowanie
+### § 11. Wejście w życie i stosowanie
 1. Kodeks Etyczny wchodzi w życie z dniem uchwalenia przez Parlament.
 2. Każdy członek organu Samorządu jest zobowiązany do zapoznania się z treścią Kodeksu i złożenia pisemnego oświadczenia o zobowiązaniu się do jego przestrzegania.
 3. Zmiany w Kodeksie wymagają uchwały Parlamentu podjętej większością 2/3 głosów.
 
 ---
-**OŚWIADCZENIE**
+**ZAŁĄCZNIK NR 1: OŚWIADCZENIE O PRZYSTĄPIENIU DO KODEKSU ETYCZNEGO**
 
 Ja, niżej podpisany/a ............................................................................, oświadczam, że zapoznałem/am się z treścią Kodeksu Etycznego Samorządu Studenckiego Politechniki Opolskiej i zobowiązuję się do jego sumiennego przestrzegania podczas pełnienia funkcji w organach Samorządu.
+
+.................................................
+*(Data i czytelny podpis)*
+
+---
+**ZAŁĄCZNIK NR 2: OŚWIADCZENIE O POTENCJALNYCH KONFLIKTACH INTERESÓW**
+
+Ja, niżej podpisany/a ............................................................................, członek organu ............................................................................, oświadczam, że:
+1. Nie pozostaję w stosunkach prawnych lub faktycznych, które mogłyby wzbudzić uzasadnione wątpliwości co do mojej bezstronności.
+2. Poniżej przedstawiam listę znanych mi potencjalnych konfliktów interesów (jeśli dotyczy):
+   a) Zatrudnienie lub stała współpraca: ............................................................................
+   b) Członkostwo w organach stowarzyszeń, fundacji, partii politycznych: ............................................................................
+   c) Posiadanie udziałów lub akcji w spółkach prawa handlowego: ............................................................................
+   d) Inne okoliczności (np. bliskie relacje z osobami prowadzącymi działalność gospodarczą, która może ubiegać się o współpracę z Samorządem): ............................................................................
+
+Zobowiązuję się do niezwłocznej aktualizacji niniejszego oświadczenia w przypadku zaistnienia nowych okoliczności mogących prowadzić do konfliktu interesów.
 
 .................................................
 *(Data i czytelny podpis)*
