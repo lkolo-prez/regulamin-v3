@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Błąd serwera - SSPO Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .error-message {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .button.primary {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .status-info {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid rgba(255, 255, 255, 0.3);
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .status-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .status-info p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            opacity: 0.8;
+        }
+
+        .refresh-timer {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+
+            .error-code {
+                font-size: 4rem;
+            }
+
+            .error-title {
+                font-size: 1.5rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">5XX</div>
+        <h1 class="error-title">Błąd serwera</h1>
+        <p class="error-message">
+            Wystąpił problem z serwerem. Nasze zespoły techniczne zostały powiadomione 
+            i pracują nad rozwiązaniem problemu.
+        </p>
+        
+        <div class="buttons">
+            <a href="/" class="button primary">Strona główna</a>
+            <button onclick="window.location.reload()" class="button">Odśwież stronę</button>
+            <button onclick="checkStatus()" class="button">Sprawdź status</button>
+        </div>
+
+        <div class="status-info">
+            <h3>Informacje o problemie:</h3>
+            <p><strong>Czas wystąpienia:</strong> <span id="error-time"></span></p>
+            <p><strong>Możliwe przyczyny:</strong></p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li style="margin-bottom: 0.3rem;">Przeciążenie serwera</li>
+                <li style="margin-bottom: 0.3rem;">Trwająca aktualizacja systemu</li>
+                <li style="margin-bottom: 0.3rem;">Tymczasowe problemy z bazą danych</li>
+                <li style="margin-bottom: 0.3rem;">Problemy sieciowe</li>
+            </ul>
+            <p><strong>Co możesz zrobić:</strong> Spróbuj ponownie za kilka minut lub skontaktuj się z administratorem.</p>
+        </div>
+
+        <div class="refresh-timer" id="refresh-timer">
+            Automatyczne odświeżenie za: <span id="countdown">60</span> sekund
+        </div>
+    </div>
+
+    <script>
+        // Ustaw czas wystąpienia błędu
+        document.getElementById('error-time').textContent = new Date().toLocaleString('pl-PL');
+
+        // Automatyczne odświeżanie
+        let countdown = 60;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                window.location.reload();
+            }
+        }, 1000);
+
+        // Funkcja sprawdzania statusu
+        async function checkStatus() {
+            try {
+                const response = await fetch('/health');
+                if (response.ok) {
+                    alert('Serwer działa poprawnie! Odświeżam stronę...');
+                    window.location.reload();
+                } else {
+                    alert('Serwer nadal ma problemy. Spróbuj za kilka minut.');
+                }
+            } catch (error) {
+                alert('Nie można połączyć się z serwerem. Sprawdź połączenie internetowe.');
+            }
+        }
+
+        // Zatrzymaj timer gdy użytkownik opuszcza stronę
+        window.addEventListener('beforeunload', () => {
+            clearInterval(timer);
+        });
+
+        // Sprawdź status po 30 sekundach
+        setTimeout(async () => {
+            try {
+                const response = await fetch('/health');
+                if (response.ok) {
+                    const refreshTimer = document.getElementById('refresh-timer');
+                    refreshTimer.innerHTML = '<span style="color: #90EE90;">✅ Serwer działa! Odświeżanie...</span>';
+                    setTimeout(() => window.location.reload(), 2000);
+                }
+            } catch (error) {
+                // Serwer nadal niedostępny
+            }
+        }, 30000);
+    </script>
+</body>
+</html>

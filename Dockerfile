@@ -1,18 +1,42 @@
-# Użyj oficjalnego obrazu Nginx jako bazy
-FROM nginx:alpine
+# SSPO Regulamin Platform v3.0 - Production
+FROM node:18-alpine
 
-# Skopiuj konfigurację Nginx
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Metadata
+LABEL maintainer="SSPO Team"
+LABEL version="3.0.0"
+LABEL description="Interactive platform for SSPO legal system with collaborative governance"
 
-# Skopiuj zawartość projektu (pliki Docsify/HTML/MD)
-# do domyślnego katalogu serwera Nginx
-COPY . /usr/share/nginx/html
+# Install system dependencies
+RUN apk add --no-cache curl git
 
-# Usuń pliki które nie powinny być w katalogu www
-RUN rm -f /usr/share/nginx/html/Dockerfile /usr/share/nginx/html/nginx.conf /usr/share/nginx/html/deploy.sh /usr/share/nginx/html/.git* /usr/share/nginx/html/desktop.ini
+# Ustaw zmienne środowiskowe
+ENV NODE_ENV=production
+ENV PORT=3000
 
-# Ujawnij porty 80 i 443
-EXPOSE 80 443
+# Stwórz katalog aplikacji
+WORKDIR /app
 
-# Komenda startowa
-CMD ["nginx", "-g", "daemon off;"]
+# Skopiuj pliki package.json
+COPY package*.json ./
+
+# Zainstaluj zależności (tylko production)
+RUN npm ci --only=production && npm cache clean --force
+
+# Skopiuj kod aplikacji
+COPY . .
+
+# Utwórz katalog na dane
+RUN mkdir -p /app/data && chown -R node:node /app
+
+# Przełącz na użytkownika node (bezpieczeństwo)
+USER node
+
+# Expose port
+EXPOSE 3000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:3000/api/analytics || exit 1
+
+# Uruchom aplikację
+CMD ["node", "app.js"]

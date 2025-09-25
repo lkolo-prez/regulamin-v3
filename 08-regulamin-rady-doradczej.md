@@ -4,11 +4,19 @@
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
 
-### § 1. Status i cel
-1. Rada Doradcza, zwana dalej "Radą", jest organem opiniodawczo-doradczym Zarządu Samorządu Studenckiego.
-2. Celem Rady jest wspieranie Zarządu wiedzą i doświadczeniem ekspertów zewnętrznych oraz byłych działaczy studenckich w kluczowych obszarach działalności Samorządu.
+### § 1. Cel i zakres działania
+1. Rada Doradcza SSPO jest organem doradczym Przewodniczącego Samorządu.
+2. Celem Rady jest wspieranie działalności Samorządu poprzez doradztwo strategiczne, merytoryczne i ekspercie w kluczowych obszarach funkcjonowania.
 
 ## DZIAŁ II. SKŁAD I ORGANIZACJA
+
+### § 2. Skład Rady
+1. W skład Rady wchodzi od 3 do 7 członków powoływanych przez Przewodniczącego Samorządu, posiadających znaczące doświadczenie w obszarach istotnych dla działalności studenckiej, w szczególności:
+    a) byli przewodniczący Samorządu,
+    b) eksperci z dziedziny prawa, finansów, zarządzenia lub marketingu,
+    c) przedstawiciele partnerów biznesowych i instytucjonalnych Samorządu.
+2. Kadencja członków Rady jest zbieżna z kadencją Przewodniczącego Samorządu, który ich powołał.
+3. Kworum Rady stanowi co najmniej 3 członków, w tym Przewodniczący Rady lub jego zastępca.
 
 ### § 2. Skład Rady
 1. W skład Rady wchodzą osoby powoływane przez Przewodniczącego Samorządu, posiadające znaczące doświadczenie w obszarach istotnych dla działalności studenckiej, w szczególności:

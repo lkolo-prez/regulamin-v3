@@ -231,6 +231,7 @@ Do zadań Zarządu należy w szczególności:
 1. Komisja Rewizyjno-Wyborcza (KRW) jest niezależnym organem kontrolnym i wyborczym Samorządu.
 2. W skład KRW wchodzi od 3 do 5 członków wybieranych przez Parlament, przy czym z jednego wydziału nie może pochodzić więcej niż jeden członek.
 3. Członkowie KRW nie mogą pełnić funkcji w żadnym innym organie Samorządu.
+4. Kworum KRW stanowi co najmniej 3 członków. Uchwały podejmowane są zwykłą większością głosów obecnych członków.
 
 #### § 18.
 Do zadań kontrolnych KRW należy:

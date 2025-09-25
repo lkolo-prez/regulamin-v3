@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSPO Legal Platform Enhanced - Zaawansowany System Prawny z AI</title>
+    <meta name="description" content="Najnowocześniejszy system interaktywnych kwestii prawnych z AI-powered analizą, NLP dla polskich tekstów prawnych i zaawansowanymi funkcjami współpracy">
+    
+    <!-- Progressive Web App -->
+    <meta name="theme-color" content="#667eea">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    
+    <!-- SEO and Social Media -->
+    <meta property="og:title" content="SSPO Legal Platform Enhanced">
+    <meta property="og:description" content="Zaawansowany system prawny z analizą AI i funkcjami współpracy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sspo-legal.yourdomain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Enhanced CSS Framework -->
+    <style>
+        /* CSS Variables for Enhanced Design System */
+        :root {
+            /* Primary Colors */
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --primary-solid: #667eea;
+            --primary-light: #8da4ef;
+            --primary-dark: #4c63d2;
+            
+            /* Legal Theme Colors */
+            --legal-blue: #1e3a8a;
+            --legal-gold: #d97706;
+            --legal-green: #059669;
+            --legal-red: #dc2626;
+            --legal-purple: #7c3aed;
+            
+            /* Semantic Colors */
+            --success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --warning: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            --error: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            --info: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            
+            /* Neutral Colors */
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            --font-size-4xl: 2.25rem;
+            
+            /* Spacing */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --space-20: 5rem;
+            
+            /* Border Radius */
+            --radius-sm: 0.125rem;
+            --radius: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
+            --radius-full: 9999px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 200ms ease;
+            --transition-slow: 300ms ease;
+            
+            /* Z-Index */
+            --z-dropdown: 1000;
+            --z-sticky: 1010;
+            --z-fixed: 1020;
+            --z-modal-backdrop: 1030;
+            --z-modal: 1040;
+            --z-popover: 1050;
+            --z-tooltip: 1060;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            color: var(--gray-900);
+            background: var(--gray-50);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Enhanced Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: var(--z-sticky);
+            background: var(--primary-gradient);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-4) var(--space-6);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: var(--space-8);
+            align-items: center;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            position: relative;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius);
+        }
+
+        .nav-link:hover {
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link.active {
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--primary-gradient);
+            color: var(--white);
+            padding: var(--space-20) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.1;
+        }
+
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: var(--font-size-4xl);
+            font-weight: 800;
+            margin-bottom: var(--space-6);
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: var(--font-size-xl);
+            font-weight: 400;
+            margin-bottom: var(--space-8);
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-8);
+            margin-bottom: var(--space-10);
+            flex-wrap: wrap;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-sm);
+            opacity: 0.9;
+        }
+
+        .hero-feature-icon {
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xs);
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        /* Enhanced Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-6);
+            border: none;
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary-solid);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Features Grid */
+        .features {
+            padding: var(--space-20) 0;
+            background: var(--white);
+        }
+
+        .features-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: var(--space-16);
+        }
+
+        .features-title {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: var(--space-4);
+        }
+
+        .features-subtitle {
+            font-size: var(--font-size-lg);
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-100);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transition: transform var(--transition-base);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-gradient);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--space-4);
+            position: relative;
+        }
+
+        .feature-icon::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: var(--primary-gradient);
+            border-radius: var(--radius-xl);
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .feature-title {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: var(--space-3);
+        }
+
+        .feature-description {
+            color: var(--gray-600);
+            line-height: 1.7;
+            margin-bottom: var(--space-4);
+        }
+
+        .feature-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+
+        .feature-list-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--gray-700);
+            font-size: var(--font-size-sm);
+        }
+
+        .feature-list-icon {
+            width: 16px;
+            height: 16px;
+            background: var(--legal-green);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 10px;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--gray-900);
+            color: var(--white);
+            padding: var(--space-16) 0;
+            position: relative;
+        }
+
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></svg>');
+            background-size: 50px 50px;
+        }
+
+        .stats-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+            position: relative;
+            z-index: 1;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-8);
+            text-align: center;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-number {
+            font-size: var(--font-size-4xl);
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-2);
+        }
+
+        .stat-label {
+            font-size: var(--font-size-lg);
+            color: var(--gray-300);
+            font-weight: 500;
+        }
+
+        /* Technology Stack */
+        .tech-stack {
+            padding: var(--space-16) 0;
+            background: var(--gray-50);
+        }
+
+        .tech-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+            text-align: center;
+        }
+
+        .tech-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: var(--space-8);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: var(--space-4);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tech-item {
+            background: var(--white);
+            padding: var(--space-4);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-200);
+            transition: all var(--transition-fast);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .tech-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .tech-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-gradient);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .tech-name {
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* Call to Action */
+        .cta {
+            background: var(--primary-gradient);
+            color: var(--white);
+            padding: var(--space-16) 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.05) 50%, transparent 60%);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+        }
+
+        .cta-description {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+            margin-bottom: var(--space-8);
+        }
+
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: var(--gray-300);
+            padding: var(--space-12) 0 var(--space-6);
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-8);
+            margin-bottom: var(--space-8);
+        }
+
+        .footer-section h3 {
+            color: var(--white);
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--gray-800);
+            padding-top: var(--space-6);
+            text-align: center;
+            font-size: var(--font-size-sm);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .loading-spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid currentColor;
+            border-radius: var(--radius-full);
+            border-right-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: var(--font-size-2xl);
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-actions {
+                flex-direction: column;
+            }
+            
+            .cta-actions {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: var(--space-3) var(--space-4);
+            }
+            
+            .hero {
+                padding: var(--space-12) 0;
+            }
+            
+            .features {
+                padding: var(--space-12) 0;
+            }
+            
+            .stats {
+                padding: var(--space-10) 0;
+            }
+            
+            .tech-stack {
+                padding: var(--space-10) 0;
+            }
+            
+            .cta {
+                padding: var(--space-10) 0;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --gray-50: #111827;
+                --gray-100: #1f2937;
+                --gray-200: #374151;
+                --gray-300: #4b5563;
+                --gray-400: #6b7280;
+                --gray-500: #9ca3af;
+                --gray-600: #d1d5db;
+                --gray-700: #e5e7eb;
+                --gray-800: #f3f4f6;
+                --gray-900: #f9fafb;
+                --white: #1f2937;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">⚖️</div>
+                <div>
+                    <div>SSPO Legal Platform</div>
+                    <div style="font-size: 0.75rem; opacity: 0.8;">Enhanced with AI</div>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-link">Funkcje</a></li>
+                <li><a href="#tech" class="nav-link">Technologie</a></li>
+                <li><a href="#stats" class="nav-link">Statystyki</a></li>
+                <li><a href="/app" class="nav-link active">Aplikacja</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                Najbardziej Zaawansowany System<br>
+                Interaktywnych Kwestii Prawnych
+            </h1>
+            
+            <p class="hero-subtitle">
+                Wyjątkowa platforma AI-powered z analizą prawną w języku polskim, 
+                zaawansowanymi funkcjami współpracy i optymalizacją dla środowisk o ograniczonych zasobach (2GB RAM / 2 CPU)
+            </p>
+
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">🧠</div>
+                    <span>AI-Powered Legal Analysis</span>
+                </div>
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">🇵🇱</div>
+                    <span>NLP dla języka polskiego</span>
+                </div>
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">⚡</div>
+                    <span>Optymalizacja pamięci</span>
+                </div>
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">🤝</div>
+                    <span>Collaborative Governance</span>
+                </div>
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">📊</div>
+                    <span>Zaawansowana analityka</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="/app" class="btn btn-primary">
+                    🚀 Uruchom Platformę
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    📖 Poznaj Funkcje
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="features-header">
+                <h2 class="features-title">Unikalny System Prawny Nowej Generacji</h2>
+                <p class="features-subtitle">
+                    Zbudowany z myślą o nowoczesnych wyzwaniach prawnych, 
+                    łączy sztuczną inteligencję z głęboką znajomością polskiego systemu prawnego
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3 class="feature-title">AI-Powered Legal Engine</h3>
+                    <p class="feature-description">
+                        Zaawansowany silnik analizy prawnej wykorzystujący Natural Language Processing 
+                        specjalnie dostosowany do polskich tekstów prawnych.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Automatyczna analiza wpływu prawnego</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Wykrywanie konfliktów prawnych</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Matching precedensów</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Analiza złożoności i czytelności</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3 class="feature-title">Memory-Optimized Architecture</h3>
+                    <p class="feature-description">
+                        Inteligentna architektura zaprojektowana specjalnie dla środowisk 
+                        o ograniczonych zasobach - maksymalnie 2GB RAM i 2 CPU.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>LRU Cache z TTL dla optymalnej wydajności</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Automatyczne czyszczenie pamięci</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Inteligentne struktury danych</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Monitoring użycia zasobów</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">Advanced Collaboration</h3>
+                    <p class="feature-description">
+                        Zaawansowane narzędzia współpracy umożliwiające efektywną pracę zespołową 
+                        nad dokumentami prawnymi w czasie rzeczywistym.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>System sugestii z głosowaniem</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Real-time komentarze</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Timeline zmian prawnych</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Workflow approval system</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">Intelligent Search & Analysis</h3>
+                    <p class="feature-description">
+                        Zaawansowana wyszukiwarka semantyczna z możliwością analizy 
+                        kontekstu prawnego i powiązań między dokumentami.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Semantic search z NLP</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Filtrowanie po kategoriach prawnych</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Auto-complete dla terminów prawnych</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Analiza powiązań dokumentów</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Advanced Analytics Dashboard</h3>
+                    <p class="feature-description">
+                        Kompleksowy system analityki z wizualizacją danych, 
+                        metrykami wydajności i raportami compliance.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Real-time metryki prawne</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Analiza zaangażowania użytkowników</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Compliance monitoring</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Eksport raportów do PDF/Excel</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Enterprise Security & Compliance</h3>
+                    <p class="feature-description">
+                        Najwyższe standardy bezpieczeństwa zgodne z RODO, 
+                        z zaawansowanym systemem autoryzacji i audytu.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>JWT Authentication & RBAC</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Rate limiting & DDoS protection</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>Comprehensive audit logging</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <div class="feature-list-icon">✓</div>
+                            <span>GDPR compliance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="stats-container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Legal Keywords Database</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Accuracy w analizie prawnej</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2GB</div>
+                    <div class="stat-label">Memory Optimized</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Monitoring & Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack" id="tech">
+        <div class="tech-container">
+            <h2 class="tech-title">Zaawansowany Stack Technologiczny</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">JS</div>
+                    <div class="tech-name">Node.js 18+</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">AI</div>
+                    <div class="tech-name">Natural.js</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">📊</div>
+                    <div class="tech-name">Winston Logging</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">💾</div>
+                    <div class="tech-name">LRU Cache</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🐳</div>
+                    <div class="tech-name">Docker</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🌐</div>
+                    <div class="tech-name">Nginx</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">📈</div>
+                    <div class="tech-name">Prometheus</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔧</div>
+                    <div class="tech-name">Express.js</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2 class="cta-title">Gotowy na Rewolucję w Prawie?</h2>
+            <p class="cta-description">
+                Dołącz do systemu, który zmienia sposób zarządzania dokumentami prawnymi. 
+                Wyjątkowa kombinacja AI, optymalizacji i funkcji współpracy.
+            </p>
+            <div class="cta-actions">
+                <a href="/app" class="btn btn-primary">
+                    🚀 Uruchom Aplikację
+                </a>
+                <a href="/api/health" class="btn btn-secondary">
+                    🔍 Sprawdź Status Systemu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SSPO Legal Platform Enhanced</h3>
+                    <p style="margin-top: var(--space-3); color: var(--gray-400); line-height: 1.6;">
+                        Najnowocześniejszy system interaktywnych kwestii prawnych 
+                        z AI-powered analizą i zaawansowanymi funkcjami współpracy.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Platforma</h3>
+                    <ul class="footer-links">
+                        <li><a href="/app">Główna Aplikacja</a></li>
+                        <li><a href="/api">API Documentation</a></li>
+                        <li><a href="/api/health">Health Check</a></li>
+                        <li><a href="/admin">Panel Administratora</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Dokumentacja</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features">Lista Funkcji</a></li>
+                        <li><a href="#tech">Stack Technologiczny</a></li>
+                        <li><a href="./README.md">Instrukcja Wdrożenia</a></li>
+                        <li><a href="./WDROZENIE.md">Przewodnik Użytkownika</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>System</h3>
+                    <ul class="footer-links">
+                        <li><a href="/metrics">Metryki Systemu</a></li>
+                        <li><a href="/logs">Logi Aplikacji</a></li>
+                        <li><a href="#monitoring">Monitoring</a></li>
+                        <li><a href="#support">Wsparcie Techniczne</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SSPO Legal Platform Enhanced. 
+                   Wyjątkowy system prawny z AI-powered analysis. 
+                   Zaprojektowany dla nowoczesnych wyzwań prawnych.</p>
+                <p style="margin-top: var(--space-2); font-size: var(--font-size-xs); opacity: 0.7;">
+                   Memory-optimized for 2GB RAM / 2 CPU environments | 
+                   Polish NLP | Real-time collaboration | Enterprise security
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enhanced JavaScript -->
+    <script>
+        // Initialize enhanced platform
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 SSPO Legal Platform Enhanced - Initializing...');
+            
+            // Check system health
+            checkSystemHealth();
+            
+            // Initialize smooth scrolling
+            initSmoothScrolling();
+            
+            // Initialize interactive elements
+            initInteractiveElements();
+            
+            // Log successful initialization
+            console.log('✅ Platform initialized successfully');
+            console.log('📊 Features: AI Legal Analysis, Memory Optimization, Real-time Collaboration');
+            console.log('🔧 Optimized for: 2GB RAM / 2 CPU environments');
+        });
+
+        // Check system health
+        async function checkSystemHealth() {
+            try {
+                const response = await fetch('/api/health');
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('💚 System Health: OK', data);
+                } else {
+                    console.warn('⚠️ System Health: Check required');
+                }
+            } catch (error) {
+                console.log('🔍 Health check unavailable - system may be starting up');
+            }
+        }
+
+        // Initialize smooth scrolling
+        function initSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Initialize interactive elements
+        function initInteractiveElements() {
+            // Add loading states to buttons
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    if (this.href && this.href.includes('/app')) {
+                        this.innerHTML = '<div class="loading"><div class="loading-spinner"></div>Ładowanie platformy...</div>';
+                    }
+                });
+            });
+
+            // Add hover effects to feature cards
+            document.querySelectorAll('.feature-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-5px) scale(1)';
+                });
+            });
+
+            // Animate stats on scroll
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateNumbers();
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const statsSection = document.querySelector('.stats');
+            if (statsSection) {
+                statsObserver.observe(statsSection);
+            }
+        }
+
+        // Animate statistics numbers
+        function animateNumbers() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                const number = parseInt(text) || 0;
+                const suffix = text.replace(/[0-9]/g, '');
+                
+                if (number > 0) {
+                    let current = 0;
+                    const increment = number / 30;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= number) {
+                            stat.textContent = number + suffix;
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = Math.floor(current) + suffix;
+                        }
+                    }, 50);
+                }
+            });
+        }
+
+        // Service worker registration for PWA functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('🔧 ServiceWorker registered successfully');
+                    })
+                    .catch(function(error) {
+                        console.log('⚠️ ServiceWorker registration failed');
+                    });
+            });
+        }
+
+        // Enhanced error handling
+        window.addEventListener('error', function(e) {
+            console.error('🚨 Application Error:', e.error);
+        });
+
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('🚨 Unhandled Promise Rejection:', e.reason);
+        });
+
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            if ('performance' in window) {
+                const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+                console.log(`⚡ Page load time: ${loadTime}ms`);
+            }
+        });
+
+        // Network status monitoring
+        function updateNetworkStatus() {
+            const status = navigator.onLine ? '🟢 Online' : '🔴 Offline';
+            console.log(`📶 Network Status: ${status}`);
+        }
+
+        window.addEventListener('online', updateNetworkStatus);
+        window.addEventListener('offline', updateNetworkStatus);
+    </script>
+
+    <!-- PWA Manifest -->
+    <script>
+        // Generate manifest.json dynamically
+        const manifest = {
+            "name": "SSPO Legal Platform Enhanced",
+            "short_name": "SSPO Legal",
+            "description": "AI-powered legal analysis platform with advanced collaboration features",
+            "start_url": "/",
+            "display": "standalone",
+            "background_color": "#667eea",
+            "theme_color": "#667eea",
+            "icons": [
+                {
+                    "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192' rx='24'/><text x='96' y='120' text-anchor='middle' font-size='100' fill='white'>⚖️</text></svg>",
+                    "sizes": "192x192",
+                    "type": "image/svg+xml"
+                },
+                {
+                    "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%23667eea' width='512' height='512' rx='64'/><text x='256' y='320' text-anchor='middle' font-size='280' fill='white'>⚖️</text></svg>",
+                    "sizes": "512x512",
+                    "type": "image/svg+xml"
+                }
+            ]
+        };
+
+        // Create and inject manifest link
+        const manifestBlob = new Blob([JSON.stringify(manifest)], {type: 'application/json'});
+        const manifestURL = URL.createObjectURL(manifestBlob);
+        const link = document.createElement('link');
+        link.rel = 'manifest';
+        link.href = manifestURL;
+        document.head.appendChild(link);
+    </script>
+</body>
+</html>

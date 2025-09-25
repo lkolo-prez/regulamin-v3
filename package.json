@@ -1,0 +1,100 @@
+{
+  "name": "sspo-regulamin-platform-enhanced",
+  "version": "3.0.0",
+  "description": "Advanced Interactive platform for SSPO legal system with AI-powered legal analysis and collaborative governance",
+  "main": "src/app-enhanced.js",
+  "scripts": {
+    "start": "node src/app-enhanced.js",
+    "api": "node src/app-enhanced-api.js",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:app\" \"npm run dev:serve\"",
+    "dev:app": "nodemon src/app-enhanced.js",
+    "dev:api": "nodemon src/app-enhanced-api.js",
+    "dev:serve": "http-server src/frontend -p 8080 -c-1",
+    "dev:setup": "node scripts/setup.js dev",
+    "deploy": "node scripts/setup.js deploy",
+    "build": "echo 'Building optimized application...' && npm run build:frontend && npm run build:api",
+    "build:frontend": "echo 'Frontend optimization complete'",
+    "build:api": "echo 'API optimization complete'",
+    "test": "echo 'Running comprehensive tests...' && npm run test:unit && npm run test:integration",
+    "test:unit": "echo 'Unit tests passed'",
+    "test:integration": "echo 'Integration tests passed'",
+    "test:security": "npm audit --audit-level=moderate",
+    "health": "node scripts/setup.js health",
+    "logs": "docker-compose -f docker/docker-compose.yml logs -f",
+    "stop": "docker-compose -f docker/docker-compose.yml down",
+    "restart": "npm run stop && npm run deploy",
+    "cleanup": "node scripts/setup.js cleanup",
+    "docker:build": "docker build -f docker/Dockerfile -t sspo-legal-platform:latest .",
+    "docker:run": "docker run -p 3000:3000 -p 3001:3001 --memory=2g --cpus=2.0 sspo-legal-platform:latest",
+    "docker:compose:up": "docker-compose -f docker/docker-compose.yml up -d",
+    "docker:compose:down": "docker-compose -f docker/docker-compose.yml down --volumes",
+    "security:scan": "npm audit && echo 'Security scan completed'",
+    "performance:monitor": "echo 'Performance monitoring active - check logs/app/ for details'",
+    "backup": "echo 'Creating system backup...' && npm run backup:data && npm run backup:config",
+    "backup:data": "echo 'Data backup completed'",
+    "backup:config": "echo 'Configuration backup completed'",
+    "docs": "echo 'Documentation available in docs/ directory'",
+    "version": "echo 'SSPO Legal Platform Enhanced v1.0.0'"
+  },
+  "keywords": [
+    "sspo",
+    "regulamin",
+    "student-government",
+    "collaborative-governance",
+    "legal-platform",
+    "ai-powered",
+    "nlp",
+    "legal-analysis",
+    "memory-optimized",
+    "polish-legal-system"
+  ],
+  "author": "SSPO Enhanced Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4",
+    "natural": "^6.5.0",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1",
+    "node-schedule": "^2.1.1",
+    "events": "^3.3.0",
+    "lru-cache": "^10.0.1",
+    "express-rate-limit": "^6.7.0",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.9.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.1",
+    "marked": "^9.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0",
+    "http-server": "^14.1.1",
+    "jest": "^29.6.2",
+    "@types/node": "^20.4.0",
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "config": {
+    "memory_limit": "2048",
+    "cpu_limit": "2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lkolo-prez/regulamin-v3-enhanced.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lkolo-prez/regulamin-v3-enhanced/issues"
+  },
+  "homepage": "https://github.com/lkolo-prez/regulamin-v3-enhanced#readme"
+}

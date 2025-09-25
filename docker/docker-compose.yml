@@ -1,0 +1,187 @@
+version: '3.8'
+
+services:
+  # Enhanced SSPO Legal Platform with AI-powered analysis
+  sspo-legal-enhanced:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: sspo-legal-enhanced
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - API_PORT=3001
+      - MEMORY_LIMIT=2048m
+      - CPU_LIMIT=2.0
+      # AI and NLP settings
+      - NATURAL_LANGUAGE=polish
+      - LEGAL_ANALYSIS_ENABLED=true
+      - LEGAL_KEYWORDS_CACHE_SIZE=1000
+      - PRECEDENT_MATCHING_THRESHOLD=0.7
+      - CONFLICT_DETECTION_ENABLED=true
+      # Memory optimization
+      - LRU_CACHE_MAX_SIZE=1000
+      - TTL_CACHE_DURATION=3600000
+      - MEMORY_CLEANUP_INTERVAL=300000
+      - MAX_HEAP_SIZE=1800m
+      # Logging configuration
+      - LOG_LEVEL=info
+      - LOG_MAX_FILES=5
+      - LOG_MAX_SIZE=100m
+      - LOG_ROTATE_DAILY=true
+      # Rate limiting
+      - RATE_LIMIT_WINDOW=900000
+      - RATE_LIMIT_MAX_REQUESTS=100
+      # Email notifications (optional)
+      - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+      # Authentication (optional)
+      - JWT_SECRET=${JWT_SECRET:-sspo-legal-enhanced-secret-key}
+      - SESSION_SECRET=${SESSION_SECRET:-sspo-session-secret}
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./documents:/app/documents:ro
+      - /etc/localtime:/etc/localtime:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2048M
+        reservations:
+          cpus: '1.0'
+          memory: 1024M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "3"
+
+  # Redis for caching (optional but recommended for production)
+  redis-cache:
+    image: redis:7-alpine
+    container_name: sspo-redis-cache
+    ports:
+      - "6379:6379"
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru --save 60 1
+    volumes:
+      - redis-data:/data
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 256M
+        reservations:
+          cpus: '0.1'
+          memory: 128M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx reverse proxy with load balancing
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: sspo-nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-enhanced.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - sspo-legal-enhanced
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 128M
+        reservations:
+          cpus: '0.1'
+          memory: 64M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Monitoring with Prometheus (optional)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: sspo-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 256M
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+  # Grafana for visualization (optional)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: sspo-grafana
+    ports:
+      - "3003:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    depends_on:
+      - prometheus
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 256M
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+volumes:
+  redis-data:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+
+networks:
+  default:
+    name: sspo-legal-network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

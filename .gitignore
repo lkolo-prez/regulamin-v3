@@ -1,5 +1,152 @@
 # Node.js
+# SSPO Legal Platform Enhanced - Security Configuration
+
+# Sensitive Environment Files - DO NOT COMMIT
+.env
+.env.local
+.env.production
+.env.staging
+
+# Logs and Debug Files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime Data and Process Files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage Directory Used by Tools like Istanbul
+coverage/
+.nyc_output
+
+# Node.js Dependencies
 node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Temporary Files and Directories
+tmp/
+temp/
+.tmp/
+uploads/
+.cache/
+
+# Database Files (if using local database)
+*.sqlite
+*.sqlite3
+*.db
+
+# Docker Build Context - Exclude Unnecessary Files
+.git/
+.gitignore
+README.md
+docs/
+
+# Security Keys and Certificates
+*.key
+*.pem
+*.p12
+*.crt
+*.cer
+secrets/
+keys/
+
+# Backup Files
+*.backup
+*.bak
+backup/
+
+# System and Application Data
+data/
+storage/
+
+# Build Artifacts
+dist/
+build/
+public/build/
+.next/
+
+# Package Lock Files (choose one based on package manager)
+# package-lock.json  # Uncomment if using yarn
+# yarn.lock          # Uncomment if using npm
+
+# Performance and Monitoring
+.clinic/
+flamegraph.html
+*.prof
+
+# Test Coverage and Reports
+test-results/
+coverage-reports/
+junit.xml
+
+# Application Specific
+legal-analysis-cache/
+nlp-models/
+training-data/
+
+# Memory Dumps and Core Files
+*.dmp
+core.*
+
+# PM2 Process Manager
+.pm2/
+ecosystem.config.js.backup
+
+# Docker Secrets (if mounted)
+/run/secrets/
+
+# Kubernetes Secrets
+secrets.yaml
+
+# Local Development Override
+docker-compose.override.yml
+
+# Application Cache Files
+.cache/
+cache/
+*.cache
+
+# Legal Document Uploads (if sensitive)
+# Uncomment if handling sensitive documents
+# legal-docs/
+# case-files/
+
+# Configuration Backups
+config/*.backup
+config/*.old
+
+# SSL/TLS Certificates
+ssl/
+tls/
+certificates/
+
+# Shell Scripts for Security (keeping setup.js)
+*.sh/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -13,6 +160,8 @@ yarn.lock
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+*.ini
+
 
 # Logs
 logs/
