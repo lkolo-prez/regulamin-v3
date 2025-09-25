@@ -1,4 +1,42 @@
-﻿# Załącznik nr 1 do Regulaminu SSPO – Ordynacja Wyborcza
+﻿# ORDYNACJA WYBORCZA
+
+*Załącznik nr 1 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+
+---
+
+## DZIAŁ I. POSTANOWIENIA OGÓLNE
+
+### § 1. Cele i zakres Ordynacji
+1. Ordynacja Wyborcza określa zasady przeprowadzania wyborów do organów Samorządu Studentów Politechniki Opolskiej.
+2. Ordynacja reguluje w szczególności wybory:
+   a) posłów do Parlamentu SSPO;
+   b) Przewodniczącego i Wiceprzewodniczącego Samorządu;
+   c) członków Komisji Rewizyjno-Wyborczej;
+   d) przedstawicieli do organów Uczelni;
+   e) członków Kolegium Elektorów.
+
+### § 2. Zasady ogólne wyborów
+1. Wybory do organów Samorządu są powszechne, równe, bezpośrednie i tajne.
+2. Czynne prawo wyborcze przysługuje każdemu studentowi studiów pierwszego i drugiego stopnia oraz jednolitych studiów magisterskich.
+3. Bierne prawo wyborcze przysługuje studentom spełniającym warunki określone w niniejszej Ordynacji.
+4. Wszystkie wybory przeprowadza Komisja Rewizyjno-Wyborcza.
+
+### § 3. Okręgi wyborcze
+1. Dla celów wyborów do Parlamentu każdy wydział stanowi jeden okręg wyborczy.
+2. Wykaz okręgów wyborczych ustala Komisja Rewizyjno-Wyborcza przed ogłoszeniem wyborów.
+
+### § 4. Terminarz wyborczy
+1. Wybory do Parlamentu i na Przewodniczącego Samorządu odbywają się jednocześnie, co dwa lata, w terminie do 30 kwietnia.
+2. Wybory wyznacza Komisja Rewizyjno-Wyborcza nie później niż 60 dni przed planowanym terminem głosowania.
+3. Terminarz wyborczy określa wszystkie istotne terminy procesu wyborczego.
+
+## DZIAŁ II. WYBORY DO PARLAMENTU SAMORZĄDU
+
+### § 5. Mandaty
+1. W skład Parlamentu wchodzi od 15 do 25 członków, zwanych posłami.
+2. Liczbę mandatów przypadających na dany okręg wyborczy ustala Komisja Rewizyjno-Wyborcza na podstawie liczby studentów na danym wydziale, z zastrzeżeniem, że każdemu wydziałowi przysługuje co najmniej jeden mandat.
+3. W okręgach, gdzie przyznano więcej niż jeden mandat, wyborca może oddać głos na liczbę kandydatów nie większą niż liczba mandatów przypadających na ten okręg.
+4. Szczegółowy algorytm podziału mandatów (np. metoda D'Hondta) oraz liczbę mandatów w danej kadencji określa uchwała Komisji Rewizyjno-Wyborczej, ogłaszana wraz z terminarzem wyborczym.cja Wyborcza
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
 
@@ -70,8 +108,8 @@ Ilekroć w Ordynacji jest mowa o:
 ### § 9. Głosowanie
 1. Głosowanie odbywa się w formie elektronicznej za pośrednictwem systemu informatycznego Uczelni (np. USOS).
 2. W przypadku awarii systemu, Komisja Rewizyjno-Wyborcza może zarządzić głosowanie tradycyjne przy użyciu kart do głosowania.
-3. Wyborca oddaje głos na jednego kandydata ze swojego okręgu wyborczego.
-4. Głos jest nieważny, jeśli wyborca nie dokona wyboru lub zagłosuje na więcej niż jednego kandydata.
+3. Wyborca oddaje głos na kandydatów ze swojego okręgu wyborczego w liczbie nie większej niż liczba mandatów przypadająca na ten okręg.
+4. Głos jest nieważny, jeśli wyborca nie dokona wyboru lub zagłosuje na liczbę kandydatów większą niż liczba mandatów w danym okręgu.
 
 ### § 10. Ustalanie wyników
 1. Niezwłocznie po zakończeniu głosowania Komisja Rewizyjno-Wyborcza przystępuje do ustalenia wyników.
@@ -84,6 +122,8 @@ Ilekroć w Ordynacji jest mowa o:
 1. Każdy wyborca ma prawo złożyć protest wyborczy do Komisji Rewizyjno-Wyborczej w terminie 3 dni od ogłoszenia wyników.
 2. Protest może dotyczyć naruszenia przepisów Ordynacji lub fałszerstwa wyborczego.
 3. Komisja rozpatruje protest w ciągu 7 dni. W przypadku stwierdzenia istotnych nieprawidłowości, które miały wpływ na wynik, może zarządzić powtórzenie głosowania w danym okręgu.
+4. Od decyzji Komisji Rewizyjno-Wyborczej w sprawie protestu wyborczego przysługuje odwołanie do Parlamentu w terminie 3 dni od doręczenia decyzji.
+5. Parlament rozpatruje odwołanie na najbliższym posiedzeniu, a jego decyzja jest ostateczna.
 
 ## DZIAŁ III. WYBORY WEWNĘTRZNE W PARLAMENCIE
 

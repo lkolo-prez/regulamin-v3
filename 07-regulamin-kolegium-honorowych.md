@@ -24,7 +24,7 @@
 ### § 4. Główne zadania
 Do zadań Kolegium należy:
 1. Opiniowanie na wniosek Zarządu lub Parlamentu strategicznych dokumentów i kierunków rozwoju Samorządu.
-2. Mediacja w sporach pomiędzy organami Samorządu.
+2. Mediacja w sporach pomiędzy osobami sprawującymi funkcje w Samorządzie, z wyłączeniem sporów kompetencyjnych między organami, które rozstrzyga Komisja Rewizyjno-Wyborcza.
 3. Reprezentowanie Samorządu podczas uroczystości państwowych i akademickich.
 4. Pełnienie roli mentorów dla liderów studenckich.
 

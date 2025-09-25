@@ -18,14 +18,14 @@ System zabezpieczeń SSPO opiera się na następujących filarach:
 ## Rozdział II - Zabezpieczenia Instytucjonalne
 
 ### § 3 [Ciągłość działania organów]
-1. W przypadku niemożności sprawowania funkcji przez Przewodniczącego SSPO, jego obowiązki automatycznie przejmuje Wiceprzewodniczący ds. Ogólnych.
+1. W przypadku niemożności sprawowania funkcji przez Przewodniczącego SSPO, jego obowiązki automatycznie przejmuje Wicemarszałek Parlamentu lub wyznaczony przez Parlament zastępca do czasu wyboru nowego Przewodniczącego.
 2. W przypadku wakatów w organach kolegialnych, stosuje się procedury wyborów uzupełniających określone w [Ordynacji Wyborczej](02-ordynacja-wyborcza.md).
 3. Zarząd SSPO jest zobowiązany do opracowania i corocznej aktualizacji planu ciągłości działania, określającego procedury na wypadek sytuacji kryzysowych.
 
 ### § 4 [Ochrona przed nadużyciami]
 1. Wprowadza się limit dwóch kolejnych kadencji na tym samym stanowisku w Zarządzie SSPO.
-2. Komisja Rewizyjna posiada uprawnienia do kontroli wszystkich organów Samorządu i może wnioskować do Parlamentu o odwołanie członków Zarządu.
-3. Istotne decyzje o charakterze strategicznym lub finansowym wymagają kontrasygnaty Skarbnika lub opinii Komisji Rewizyjnej.
+2. Komisja Rewizyjno-Wyborcza posiada uprawnienia do kontroli wszystkich organów Samorządu i może wnioskować do Parlamentu o odwołanie członków Zarządu.
+3. Istotne decyzje o charakterze strategicznym lub finansowym wymagają kontrasygnaty Skarbnika lub opinii Komisji Rewizyjno-Wyborczej.
 
 ## Rozdział III - Zabezpieczenia Finansowe
 

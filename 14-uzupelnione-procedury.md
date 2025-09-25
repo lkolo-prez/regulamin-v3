@@ -11,14 +11,14 @@ Niniejszy załącznik określa ogólne ramy dla wszystkich procedur wyborczych i
 1. Centralnym organem odpowiedzialnym za organizację, nadzór i prawidłowy przebieg wszystkich wyborów w Samorządzie jest Komisja Rewizyjno-Wyborcza, zwana dalej „Komisją Wyborczą”.
 2. Do zadań Komisji Wyborczej należy w szczególności tworzenie, aktualizowanie i publikowanie szczegółowych przepisów wykonawczych.
 
-## Rozdział II. Kodeks Wyborczy
+## Rozdział II. Przepisy Wykonawcze do Ordynacji Wyborczej
 
-### § 3. Obowiązek Stworzenia Kodeksu
-1. Komisja Wyborcza jest zobowiązana do opracowania i uchwalenia **Kodeksu Wyborczego**, stanowiącego zbiór wszystkich szczegółowych procedur, terminów, wzorów dokumentów oraz standardów technicznych dotyczących wyborów.
-2. Kodeks Wyborczy musi być publicznie dostępny i opublikowany na co najmniej 30 dni przed terminem wyborów, których dotyczy.
+### § 3. Obowiązek Opracowania Szczegółowych Procedur
+1. Komisja Wyborcza jest zobowiązana do opracowania **Szczegółowych Przepisów Wykonawczych do Ordynacji Wyborczej**, stanowiących zbiór wszystkich procedur, terminów, wzorów dokumentów oraz standardów technicznych dotyczących wyborów.
+2. Przepisy wykonawcze uchwala Parlament na wniosek Komisji Rewizyjno-Wyborczej i muszą być publicznie dostępne oraz opublikowane na co najmniej 30 dni przed terminem wyborów, których dotyczą.
 
-### § 4. Zawartość Kodeksu Wyborczego
-Kodeks Wyborczy musi kompleksowo regulować co najmniej:
+### § 4. Zawartość Przepisów Wykonawczych
+Przepisy wykonawcze do Ordynacji Wyborczej muszą kompleksowo regulować co najmniej:
 1.  **Kategorie wyborów:** powszechnych, wewnętrznych oraz delegacji do organów Uczelni.
 2.  **Kalendarz wyborczy:** szczegółowe harmonogramy dla wszystkich typów wyborów.
 3.  **Procedury:** przygotowawcze, rejestracji kandydatów, prowadzenia kampanii, głosowania i liczenia głosów.
@@ -30,7 +30,10 @@ Kodeks Wyborczy musi kompleksowo regulować co najmniej:
 
 ### § 5. Zarządzanie Wakatami
 1. W przypadku powstania wakatu w organie pochodzącym z wyboru, Komisja Wyborcza niezwłocznie zarządza procedurę jego uzupełnienia.
-2. Dopuszcza się uzupełnienie składu z list rezerwowych, przez kooptację lub przez przeprowadzenie wyborów uzupełniających, zgodnie z zasadami określonymi w Kodeksie Wyborczym.
+2. Dopuszcza się uzupełnienie składu z list rezerwowych, przez kooptację lub przez przeprowadzenie wyborów uzupełniających, zgodnie z zasadami określonymi w przepisach wykonawczych do Ordynacji Wyborczej.
+
+### § 6. Wybory Przedterminowe
+W przypadku skrócenia kadencji organu, Komisja Wyborcza jest zobowiązana do przeprowadzenia wyborów przedterminowych w trybie i terminach zapewniających ciągłość instytucjonalną Samorządu.
 
 ### § 6. Wybory Przedterminowe
 W przypadku skrócenia kadencji organu, Komisja Wyborcza jest zobowiązana do przeprowadzenia wyborów przedterminowych w trybie i terminach zapewniających ciągłość instytucjonalną Samorządu.

@@ -22,13 +22,15 @@ Parlamentu Studentów Politechniki Opolskiej z dnia __ ________ 2025 r.
 - Rozdział II. Przewodniczący Wydziałowej Rady Studentów  
 - Rozdział III. Starosta  
 **Dział IV.** Prawa i obowiązki członków organów Samorządu
-- Rozdział I. Zasady usprawiedliwiania nieobecności
-- Rozdział II. Konflikt interesów
-- Rozdział III. Procedury antymobbingowe i antydyskryminacyjne
+- Rozdział I. Prawa i obowiązki
+- Rozdział II. Zasady usprawiedliwiania nieobecności
+- Rozdział III. Konflikt interesów
+- Rozdział IV. Procedury antymobbingowe i antydyskryminacyjne
 **Dział V.** Wygaśnięcie mandatu i odwoływanie  
-**Dział VI.** Działalność informacyjna i media
-**Dział VII.** Rozwój członków Samorządu
-**Dział VIII.** Postanowienia końcowe, przejściowe i dostosowujące  
+**Dział VI.** Posiedzenia organów kolegialnych
+**Dział VII.** Głosowania i uchwały
+**Dział VIII.** Rozwój członków Samorządu
+**Dział IX.** Postanowienia końcowe, przejściowe i dostosowujące  
 
 **Załącznik nr 1.** [Ordynacja Wyborcza do organów Samorządu Studenckiego Politechniki Opolskiej](./02-ordynacja-wyborcza.md)  
 **Załącznik nr 2.** [Kodeks Etyczny Samorządu Studenckiego Politechniki Opolskiej](./03-kodeks-etyczny.md)  
@@ -85,7 +87,7 @@ W treści Regulaminu stosuje się następujące określenia i skróty:
 14) Zarząd – Zarząd Samorządu Studenckiego Politechniki Opolskiej;
 15) Wydziałowa Rada Studentów – Wydziałowa Rada Studentów Samorządu Studenckiego Politechniki Opolskiej, określana również skrótem WRS;
 16) Przewodniczący WRS – Przewodniczący Wydziałowej Rady Studentów Samorządu Studenckiego Politechniki Opolskiej;
-17) Komisja Rewizyjna-Wyborcza – Komisja Rewizyjno-Wyborcza Samorządu Studenckiego Politechniki Opolskiej, określana również skrótem KRW;
+17) Komisja Rewizyjno-Wyborcza – Komisja Rewizyjno-Wyborcza Samorządu Studenckiego Politechniki Opolskiej, określana również skrótem KRW;
 18) Przewodniczący KRW – Przewodniczący Komisji Rewizyjno-Wyborczej Samorządu Studenckiego Politechniki Opolskiej;
 19) Regulamin Studiów – Regulamin studiów w Politechnice Opolskiej w Opolu.
 
@@ -148,7 +150,7 @@ Do zadań Samorządu należy w szczególności:
 3. Kontrolno-wyborczymi organami Samorządu są:
    1) Komisja Rewizyjno-Wyborcza – jako organ kolegialny;
    2) Przewodniczący KRW – jako organ jednoosobowy.
-4. Zasady organizacji oraz tryb zwoływania i odbywania posiedzeń organów Samorządu określa Regulamin Posiedzeń.
+4. Zasady organizacji oraz tryb zwoływania i odbywania posiedzeń organów Samorządu określają odpowiednie działy niniejszego Regulaminu.
 5. Organy kolegialne Samorządu podejmują decyzje oraz dokonują uzgodnień i wyrażają opinie w formie uchwał.
 6. Członek kolegialnego organu Samorządu zobowiązany jest do czynnego udziału w pracach tego organu.
 7. Pracami organów kolegialnych Samorządu kierują ich przewodniczący.
@@ -173,7 +175,7 @@ Do wyłącznych kompetencji Parlamentu należy:
 1. uchwalanie i zmiana Regulaminu Samorządu oraz jego załączników, w tym Ordynacji Wyborczej;
 2. wybór i odwoływanie Przewodniczącego Samorządu;
 3. wybór i odwoływanie członków Komisji Rewizyjno-Wyborczej;
-4. wybór i odwoływanie przedstawicieli studentów do Senatu Uczelni oraz innych organów kolegialnych Uczelni, w których przepisy wymagają udziału przedstawicieli studentów;
+4. wybór i odwoływanie przedstawicieli studentów do Senatu Uczelni oraz innych organów kolegialnych Uczelni, w których przepisy wymagają udziału przedstawicieli studentów, w tym kolegium elektorów;
 5. wybór i odwoływanie Marszałka, Wicemarszałka i Sekretarza Parlamentu;
 6. uchwalanie budżetu Samorządu i zatwierdzanie sprawozdań z jego wykonania;
 7. udzielanie absolutorium Zarządowi na wniosek Komisji Rewizyjno-Wyborczej;
@@ -208,7 +210,8 @@ Do zadań Przewodniczącego Samorządu należy w szczególności:
    a) Przewodniczący Samorządu jako Przewodniczący Zarządu;
    b) od 2 do 7 członków Zarządu powoływanych przez Przewodniczącego Samorządu.
 2. Przewodniczący Samorządu, powołując członków Zarządu, może przydzielić im stałe obszary odpowiedzialności (np. ds. dydaktyki, ds. finansów, ds. komunikacji), tworząc elastyczną strukturę dostosowaną do potrzeb kadencji.
-3. W przypadku małej liczby chętnych do działania, Przewodniczący może powołać mniejszy skład Zarządu, który skupi się na kluczowych zadaniach, delegując resztę działań do Zespołów Zadaniowych.
+3. Przewodniczący Samorządu wyznacza spośród członków Zarządu Skarbnika, który odpowiada za gospodarowanie finansami Samorządu zgodnie z [Regulaminem Finansowym](./04-regulamin-finansowy.md).
+4. W przypadku braku wystarczającej liczby chętnych kandydatów, Przewodniczący może powołać Zarząd w składzie nie mniejszym niż 3 osoby (licząc z Przewodniczącym), który skupi się na kluczowych zadaniach, delegując resztę działań do Zespołów Zadaniowych.
 
 #### § 16.
 Do zadań Zarządu należy w szczególności:
@@ -293,7 +296,7 @@ Do zadań Rzecznika Praw Studenta należy w szczególności:
 2. Rada Doradcza jest organem opiniodawczo-doradczym, wspierającym statutowe organy Samorządu w kluczowych i strategicznych decyzjach.
 3. Szczegółowe zasady działania Rady Doradczej, jej skład oraz tryb powoływania członków określa [Regulamin Rady Doradczej SSPO](./08-regulamin-rady-doradczej.md).
 
-## DZIAŁ IV. ORGANY SAMORZĄDU NA SZCZEBLU WYDZIAŁU
+## DZIAŁ III. ORGANY SAMORZĄDU NA SZCZEBLU WYDZIAŁU
 
 ### Rozdział I. Wydziałowa Rada Studentów
 
@@ -349,7 +352,7 @@ Do zadań Przewodniczącego WRS należy w szczególności:
 4. W celu zapewnienia sprawnego przepływu informacji, starosta jest obsługiwany w dziekanacie oraz innych jednostkach administracyjnych w pierwszej kolejności.
 5. Kadencja starosty trwa jeden rok akademicki.
 
-## DZIAŁ V. PRAWA I OBOWIĄZKI CZŁONKÓW ORGANÓW SAMORZĄDU
+## DZIAŁ IV. PRAWA I OBOWIĄZKI CZŁONKÓW ORGANÓW SAMORZĄDU
 
 ### Rozdział I. Prawa i obowiązki
 
@@ -383,7 +386,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 2. Każdy członek Samorządu ma prawo do działania w środowisku wolnym od wrogich i poniżających zachowań.
 3. W przypadku podejrzenia wystąpienia zjawisk, o których mowa w ust. 1, sprawę rozpatruje Komisja Etyki na zasadach określonych w [Regulaminie Komisji Etyki](./06-regulamin-komisji-etyki.md).
 
-## DZIAŁ VI. WYGAŚNIĘCIE MANDATU I ODWOŁYWANIE
+## DZIAŁ V. WYGAŚNIĘCIE MANDATU I ODWOŁYWANIE
 
 #### § 33.
 1. Mandat członka organu Samorządu wygasa w przypadku:
@@ -409,7 +412,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 1. W przypadku wygaśnięcia mandatu lub odwołania członka organu, przeprowadza się wybory uzupełniające zgodnie z zasadami określonymi w [Ordynacji Wyborczej](./02-ordynacja-wyborcza.md), o ile do końca kadencji pozostało więcej niż 6 miesięcy.
 2. Do czasu przeprowadzenia wyborów uzupełniających, organ działa w pomniejszonym składzie, o ile liczba jego członków jest wystarczająca do podejmowania prawomocnych decyzji.
 
-## DZIAŁ VII. POSIEDZENIA ORGANÓW KOLEGIALNYCH
+## DZIAŁ VI. POSIEDZENIA ORGANÓW KOLEGIALNYCH
 
 ### § 36. Zwoływanie i prowadzenie posiedzeń
 1. Organy kolegialne Samorządu obradują na posiedzeniach zwyczajnych i nadzwyczajnych.
@@ -438,12 +441,12 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 6. Głosowania tajne odbywają się przy użyciu bezpiecznego systemu do głosowania online, który zapewnia anonimowość i jest administrowany przez co najmniej dwóch członków Komisji Rewizyjno-Wyborczej.
 7. Posiedzenia zdalne, które zgodnie z Regulaminem są jawne, muszą być transmitowane publicznie lub udostępniane w formie nagrania na stronie internetowej Samorządu.
 
-## DZIAŁ VIII. GŁOSOWANIA I UCHWAŁY
+## DZIAŁ VII. GŁOSOWANIA I UCHWAŁY
 
 ### § 38. Kworum i rodzaje większości
 1. Do podjęcia prawomocnej uchwały przez organ kolegialny wymagana jest obecność co najmniej połowy jego ustawowego składu (kworum).
 2. Jeżeli Regulamin nie stanowi inaczej, uchwały podejmowane są **zwykłą większością głosów**. Oznacza to, że liczba głosów "za" jest większa od liczby głosów "przeciw", bez uwzględniania głosów "wstrzymujących się".
-3. Do podjęcia uchwały **bezwzględną większością głosów** wymagane jest, aby liczba głosów "za" była większa od sumy głosów "przeciw" i "wstrzymujących się".
+3. Do podjęcia uchwały **bezwzględną większością głosów** wymagane jest, aby liczba głosów "za" była większa od połowy głosów oddanych (za, przeciw, wstrzymujące się). Oznacza to, że liczba głosów "za" musi stanowić więcej niż 50% wszystkich oddanych głosów.
 4. Do podjęcia uchwały **większością kwalifikowaną** (np. 2/3, 3/5) wymagane jest, aby liczba głosów "za" stanowiła co najmniej określony w regulaminie ułamek liczby głosów oddanych (za, przeciw, wstrzymujące się).
 
 ### § 39. Wymagane większości
@@ -462,7 +465,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 3. Głosowanie tajne można zarządzić również w każdej innej sprawie na wniosek przewodniczącego obrad lub co najmniej 1/5 członków organu obecnych na posiedzeniu.
 4. W uzasadnionych przypadkach dopuszcza się podejmowanie uchwał w trybie obiegowym (online), przy użyciu środków komunikacji elektronicznej zapewniających identyfikację członków organu oraz tajność głosowań w sprawach, które tego wymagają.
 
-## DZIAŁ IX. ROZWÓJ CZŁONKÓW SAMORZĄDU
+## DZIAŁ VIII. ROZWÓJ CZŁONKÓW SAMORZĄDU
 
 ### § 41.
 1. Samorząd dba o stały rozwój kompetencji społecznych, organizacyjnych i liderskich swoich członków.
@@ -477,7 +480,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 1. W Samorządzie działa program mentorski, w ramach którego doświadczeni członkowie wspierają w rozwoju nowo przyjęte osoby.
 2. Zasady programu mentorskiego, w tym sposób doboru mentorów i podopiecznych, określa Zarząd w drodze uchwały.
 
-## DZIAŁ X. POSTANOWIENIA KOŃCOWE, PRZEJŚCIOWE I DOSTOSOWUJĄCE
+## DZIAŁ IX. POSTANOWIENIA KOŃCOWE, PRZEJŚCIOWE I DOSTOSOWUJĄCE
 
 ### § 44.
 Zmiany w niniejszym Regulaminie wymagają uchwały Parlamentu podjętej większością 2/3 głosów w obecności co najmniej połowy jego ustawowego składu.

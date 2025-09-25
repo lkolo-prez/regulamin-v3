@@ -1,6 +1,6 @@
 ﻿# PRZEWODNIK UCHWALENIA SYSTEMU
 
-*Załącznik nr 20 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Dokument pomocniczy do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## Rozdział I. Cel i Zakres Przewodnika
 

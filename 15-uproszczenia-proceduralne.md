@@ -7,13 +7,14 @@
 ### § 1. Cel Uproszczeń
 Niniejszy załącznik wprowadza ramy dla uproszczenia i uelastycznienia procedur wyborczych w celu zwiększenia ich efektywności, dostępności oraz zapobiegania paraliżowi instytucjonalnemu Samorządu.
 
-### § 2. Delegacja Kompetencji
-Szczegółowe zasady wdrażania uproszczeń, w tym obniżone progi, skrócone terminy i procedury awaryjne, określa Komisja Rewizyjno-Wyborcza w Kodeksie Wyborczym, o którym mowa w [Uzupełnionych Procedurach Wyborczych](14-uzupelnione-procedury.md).
+### § 2. Podstawa Prawna i Delegacja Kompetencji
+1. Szczegółowe zasady wdrażania uproszczeń, w tym obniżone progi, skrócone terminy i procedury awaryjne, określa Komisja Rewizyjno-Wyborcza w przepisach wykonawczych do Ordynacji Wyborczej.
+2. Komisja Rewizyjno-Wyborcza może wydawać regulaminy szczegółowe i instrukcje techniczne w zakresie organizacji wyborów, po uprzednim zaopiniowaniu przez Zarząd i zatwierdzeniu przez Parlament.
 
 ## Rozdział II. Kluczowe Uproszczenia
 
 ### § 3. Uelastycznienie Wymagań Formalnych
-1. Kodeks Wyborczy powinien dążyć do racjonalizacji wymogów formalnych dla kandydatów, takich jak progi poparcia czy wymagana średnia ocen, aby zwiększyć dostępność funkcji w Samorządzie.
+1. Przepisy wykonawcze wydawane przez Komisję Rewizyjno-Wyborczą powinny dążyć do racjonalizacji wymogów formalnych dla kandydatów, takich jak progi poparcia czy wymagana średnia ocen, aby zwiększyć dostępność funkcji w Samorządzie.
 2. Wymagania muszą pozostać na poziomie gwarantującym minimalny standard jakości i reprezentatywności kandydatów.
 
 ### § 4. Optymalizacja Harmonogramów
@@ -22,7 +23,7 @@ Komisja Rewizyjno-Wyborcza jest upoważniona do stosowania skróconych, lecz rea
 ## Rozdział III. Procedury Awaryjne
 
 ### § 5. Mechanizmy Antykryzysowe
-1. Kodeks Wyborczy musi zawierać procedury awaryjne na wypadek zaistnienia sytuacji kryzysowych, takich jak brak kandydatów, niska frekwencja lub inne okoliczności zagrażające ciągłości działania organów.
+1. Przepisy wykonawcze muszą zawierać procedury awaryjne na wypadek zaistnienia sytuacji kryzysowych, takich jak brak kandydatów, niska frekwencja lub inne okoliczności zagrażające ciągłości działania organów.
 2. Procedury te mogą obejmować m.in. dodatkowe terminy zgłoszeń, przedłużenie głosowania lub zastosowanie uproszczonych form wyborów.
 
 ### § 6. Procedury dla Małych Jednostek

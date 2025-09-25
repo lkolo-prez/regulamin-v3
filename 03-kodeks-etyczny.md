@@ -1,6 +1,6 @@
 ﻿# KODEKS ETYCZNY
 
-*Załącznik nr 3 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
+*Załącznik nr 2 do [Regulaminu Samorządu Studenckiego Politechniki Opolskiej](01-regulamin-sspo.md)*
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
 

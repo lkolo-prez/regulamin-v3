@@ -148,8 +148,9 @@ Aktywni studenci mogą ubiegać się o wsparcie w formie:
    - nierównego traktowania w procesie selekcji
    - jakości świadczonych usług rozwojowych
    - funkcjonowania systemu wsparcia
-2. Skargi rozpatruje Komisja Rewizyjna w terminie 14 dni.
-3. Od decyzji Komisji Rewizyjnej przysługuje odwołanie do Parlamentu SSPO.
+2. Skargi rozpatruje Komisja Rewizyjno-Wyborcza w terminie 14 dni.
+3. Od decyzji Komisji Rewizyjno-Wyborczej przysługuje odwołanie do Parlamentu SSPO w terminie 14 dni od doręczenia decyzji.
+4. Parlament rozpatruje odwołanie na najbliższym posiedzeniu, podejmując decyzję większością głosów. Decyzja Parlamentu w sprawach odwoławczych jest ostateczna.
 
 
 ## ROZDZIAŁ VII - FINANSOWANIE I ZASOBY

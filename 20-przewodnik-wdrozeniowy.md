@@ -23,7 +23,7 @@ Nowy system prawny opiera się na trzech filarach:
 2.  **Kworum:** Przed rozpoczęciem obrad zawsze upewnij się, że na sali (lub w spotkaniu online) jest obecna co najmniej połowa składu organu. Bez kworum żadna uchwała nie będzie ważna.
 3.  **Większość zwykła vs. bezwzględna:**
     *   **Zwykła większość:** Używana przy większości standardowych uchwał. Wystarczy, że głosów "za" jest więcej niż "przeciw" (głosy wstrzymujące się nie liczą się do wyniku).
-    *   **Bezwzględna większość:** Wymagana przy kluczowych decyzjach (np. wybór Przewodniczącego, zmiany w budżecie, odwołanie członka organu). Liczba głosów "za" musi być większa niż suma głosów "przeciw" i "wstrzymujących się".
+    *   **Bezwzględna większość:** Wymagana przy kluczowych decyzjach (np. wybór Przewodniczącego, zmiany w budżecie, odwołanie członka organu). Liczba głosów "za" musi stanowić więcej niż 50% wszystkich oddanych głosów (za, przeciw i wstrzymujące się).
 4.  **Posiedzenia zdalne/hybrydowe (§ 37a):** Organizując takie posiedzenie, upewnij się, że wybrana platforma umożliwia weryfikację tożsamości uczestników oraz tajne głosowanie, jeśli jest ono wymagane. Każdy musi mieć możliwość swobodnego zabrania głosu.
 
 ### § 4. Gospodarka Finansowa (zgodnie z Regulaminem Finansowym)
@@ -35,7 +35,7 @@ Nowy system prawny opiera się na trzech filarach:
 1.  **Konflikt interesów:** Jeśli sprawa, nad którą głosujesz, dotyczy Ciebie, Twojej rodziny, bliskiej osoby lub firmy, z którą jesteś powiązany – masz obowiązek wyłączyć się z głosowania i poinformować o tym Przewodniczącego posiedzenia. To nie jest zła wola, a dowód Twojej uczciwości.
 2.  **Oświadczenia o konflikcie interesów (Załącznik do Kodeksu):** Jako członek Zarządu, KRW lub Przewodniczący Parlamentu, musisz złożyć takie oświadczenie na początku kadencji. To standardowa procedura zapewniająca przejrzystość.
 3.  **Prezenty i korzyści:** Możesz przyjąć drobny upominek (np. uczelniany długopis, smycz), ale nigdy gotówkę lub prezent o wartości przekraczającej 50 zł. W razie wątpliwości – odmów lub skonsultuj się z Komisją Etyki.
-4.  **Okres "karencji" (§ 8a Kodeksu):** Jeśli pełniłeś funkcję Przewodniczącego SSPO, Przewodniczącego Parlamentu lub Przewodniczącego KRW, przez rok po zakończeniu kadencji nie możesz być zatrudniony przez podmioty, wobec których podejmowałeś kluczowe decyzje (np. jako główny organizator juwenaliów).
+4.  **Okres "karencji" (§ 8a Kodeksu):** Jeśli pełniłeś funkcję Przewodniczącego SSPO lub Skarbnika, przez 6 miesięcy po zakończeniu kadencji nie możesz być zatrudniony przez podmioty, wobec których podejmowałeś kluczowe decyzje finansowe, które uzyskały od Samorządu znaczące korzyści (np. główny organizator juwenaliów, którego Samorząd finansował).
 
 ## CZĘŚĆ III: NAJCZĘŚCIEJ ZADAWANE PYTANIA (FAQ)
 
