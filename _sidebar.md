@@ -1,7 +1,14 @@
-*   **[Strona Główna](README.md)**
+*   **[🏠 Strona Główna](README.md)**
+
+*   **📜 GŁÓWNY DOKUMENT**
+    *   **[📋 Regulamin SSPO](01-regulamin-sspo.md)** 🧠
+
+*   **📚 DOKUMENTACJA SYSTEMU**
+    *   [📖 Specyfikacja Techniczna](SPECYFIKACJA-TECHNICZNA.md)
+    *   [🛠️ Panel Administracyjny](ADMIN-PANEL.md)
+    *   [🎯 Scenariusze Użycia](SCENARIUSZE-UZYCIA.md)
 
 *   **Dokumenty Główne**
-    *   [01 Regulamin SSPO](01-regulamin-sspo.md)
     *   [02 Ordynacja Wyborcza](02-ordynacja-wyborcza.md)
     *   [03 Kodeks Etyczny](03-kodeks-etyczny.md)
     *   [04 Regulamin Finansowy](04-regulamin-finansowy.md)

@@ -1,0 +1,52 @@
+# SSPO Regulamin Platform v3.0 - Testing Environment
+FROM node:18-alpine
+
+# Metadata
+LABEL maintainer="SSPO Team"
+LABEL version="3.0.0-testing"
+LABEL description="Interactive platform for SSPO legal system with comprehensive testing"
+
+# Install system dependencies including Puppeteer dependencies
+RUN apk add --no-cache \
+    curl \
+    git \
+    chromium \
+    nss \
+    freetype \
+    freetype-dev \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont \
+    && rm -rf /var/cache/apk/*
+
+# Set environment variables for Puppeteer
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+ENV NODE_ENV=development
+ENV PORT=80
+
+# Create app directory
+WORKDIR /app
+
+# Copy package.json and install ALL dependencies (including devDependencies)
+COPY package*.json ./
+RUN npm install && npm cache clean --force
+
+# Copy application code
+COPY . .
+
+# Create data directory
+RUN mkdir -p /app/data && chown -R node:node /app
+
+# Switch to node user (security)
+USER node
+
+# Expose port
+EXPOSE 80
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost/api/health || exit 1
+
+# Run tests and then the application
+CMD ["sh", "-c", "npm test; node app.js"]

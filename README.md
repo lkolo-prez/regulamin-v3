@@ -19,6 +19,40 @@ To nie jest zwykła dokumentacja! To **rewolucyjny system prawny** wyposażony w
 - **📱 Dostępność:** Responsywny interfejs dostępny dla każdego studenta
 - **🔒 Spójność:** AI zapewnia logiczną całość wszystkich dokumentów
 
+## 📚 **DOKUMENTACJA ROZSZERZONA**
+
+### **🔧 Specyfikacje Techniczne:**
+- **[📖 Specyfikacja Techniczna](SPECYFIKACJA-TECHNICZNA.md)** - Pełny opis architektury i funkcji
+- **[🛠️ Panel Administracyjny](ADMIN-PANEL.md)** - Dokumentacja zarządzania systemem
+- **[🎯 Scenariusze Użycia](SCENARIUSZE-UZYCIA.md)** - Praktyczne przykłady zastosowania
+
+### **🎨 Komponenty Systemu:**
+- **AI Engine:** Natural.js + TF-IDF + Machine Learning
+- **Conflict Detection:** Algorytm wykrywania sprzeczności prawnych
+- **Precedent Matching:** Inteligentne dopasowywanie podobnych przypadków
+- **Smart Annotations:** AI-powered adnotacje przy każdym artykule
+- **Real-time Analytics:** Live monitoring i statystyki użytkowania
+
+## 🌟 **FUNKCJE ZAAWANSOWANE**
+
+### **🎯 Dla Studentów:**
+- **Zaznacz & Analizuj** - zaznacz tekst → natychmiastowa analiza AI
+- **Smart Search** - wyszukiwanie semantyczne w dokumentach
+- **Precedent Explorer** - przeglądanie podobnych przypadków
+- **Legal Explanations** - uproszczone wyjaśnienia przepisów
+
+### **⚖️ Dla Zespołu Prawnego:**
+- **Conflict Scanner** - wykrywanie sprzeczności w przepisach
+- **Recommendation Engine** - AI sugestie ulepszeń
+- **Version Control** - śledzenie zmian w dokumentach
+- **Collaboration Tools** - wspólne komentowanie i edycja
+
+### **🛠️ Dla Administratorów:**
+- **Document Manager** - zarządzanie bazą dokumentów
+- **Precedent Database** - administracja bazą precedensów  
+- **AI Configuration** - dostrojenie parametrów algorytmów
+- **Analytics Dashboard** - szczegółowe statystyki systemu
+
 ## 🌟 **STRUKTURA SYSTEMU ENHANCED v3.0**
 
 System składa się z **21 inteligentnych dokumentów** wspartych przez **AI Backend**:
