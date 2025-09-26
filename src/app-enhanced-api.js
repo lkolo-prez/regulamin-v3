@@ -1,7 +1,26 @@
-// Advanced API endpoints continuation
+/**
+ * SSPO Legal Platform Enhanced - Advanced API Server
+ * Zaawansowany serwer API z AI-powered analizą prawną
+ * Obsługuje NLP, machine learning, i advanced legal analysis
+ */
 
-// Vote on suggestion
-app.post('/api/suggestions/:id/vote', (req, res) => {
+const express = require('express');
+const cors = require('cors');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const compression = require('compression');
+const morgan = require('morgan');
+const natural = require('natural');
+const winston = require('winston');
+const bodyParser = require('body-parser');
+const { EventEmitter } = require('events');
+const crypto = require('crypto');
+const fs = require('fs').promises;
+const path = require('path');
+
+// Initialize Express app
+const app = express();
+const port = process.env.API_PORT || 3001;
   try {
     const id = parseFloat(req.params.id);
     const { type, userId = 'anonymous' } = req.body;

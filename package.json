@@ -69,7 +69,8 @@
     "nodemailer": "^6.9.3",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.1",
-    "marked": "^9.1.0"
+    "marked": "^9.1.0",
+    "highlight.js": "^11.8.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",

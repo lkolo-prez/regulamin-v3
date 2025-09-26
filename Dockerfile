@@ -16,11 +16,9 @@ ENV PORT=3000
 # Stwórz katalog aplikacji
 WORKDIR /app
 
-# Skopiuj pliki package.json
-COPY package*.json ./
-
-# Zainstaluj zależności (tylko production)
-RUN npm ci --only=production && npm cache clean --force
+    # Skopiuj package.json i zainstaluj zależności
+    COPY package*.json ./
+    RUN npm install --omit=dev && npm cache clean --force
 
 # Skopiuj kod aplikacji
 COPY . .
