@@ -1,0 +1,302 @@
+# ========================================# ========================================
+
+# SSPO Regulamin v3 - Complete .gitignore# SSPO Regulamin v3 - Complete .gitignore
+
+# ========================================# ========================================
+
+
+
+# === Python ===# === Python ===
+
+__pycache__/__pycache__/
+
+*.py[cod]*.py[cod]
+
+*$py.class*$py.class
+
+*.so*.so
+
+.Python.Python
+
+build/build/
+
+develop-eggs/develop-eggs/
+
+dist/dist/
+
+downloads/downloads/
+
+eggs/eggs/
+
+.eggs/.eggs/
+
+lib/lib/
+
+lib64/lib64/
+
+parts/parts/
+
+sdist/sdist/
+
+var/var/
+
+wheels/wheels/
+
+pip-wheel-metadata/pip-wheel-metadata/
+
+share/python-wheels/share/python-wheels/
+
+*.egg-info/*.egg-info/
+
+.installed.cfg.installed.cfg
+
+*.egg*.egg
+
+MANIFESTMANIFEST
+
+*.pyc*.pyc
+
+*.pyo*.pyo
+
+*.pyd*.pyd
+
+.pytest_cache/.pytest_cache/
+
+.coverage.coverage
+
+.tox/.tox/
+
+.venv/.venv/
+
+venv/venv/
+
+ENV/ENV/
+
+env/env/
+
+
+
+# === Flask specific ===# === Flask specific ===
+
+instance/instance/
+
+.webassets-cache.webassets-cache
+
+.flask_session.flask_session
+
+
+
+# === Database ===# === Database ===
+
+*.db*.db
+
+*.sqlite*.sqlite
+
+*.sqlite3*.sqlite3
+
+
+
+# === Node.js ===# === Node.js ===
+
+node_modules/node_modules/
+
+npm-debug.log*npm-debug.log*
+
+yarn-debug.log*yarn-debug.log*
+
+yarn-error.log*yarn-error.log*
+
+lerna-debug.log*lerna-debug.log*
+
+.pnpm-debug.log*.pnpm-debug.log*
+
+jspm_packages/jspm_packages/
+
+.npm.npm
+
+.eslintcache.eslintcache
+
+.stylelintcache.stylelintcache
+
+.rpt2_cache/.rpt2_cache/
+
+.rts2_cache_cjs/.rts2_cache_cjs/
+
+.rts2_cache_es/.rts2_cache_es/
+
+.rts2_cache_umd/.rts2_cache_umd/
+
+.node_repl_history.node_repl_history
+
+*.tgz*.tgz
+
+.yarn-integrity.yarn-integrity
+
+
+
+# === Environment files ===# === Environment files ===
+
+.env.env
+
+.env.local.env.local
+
+.env.development.local.env.development.local
+
+.env.test.local.env.test.local
+
+.env.production.local.env.production.local
+
+.env.example
+
+# === Docker ===
+
+.dockerignore# === Docker ===
+
+.dockerignore
+
+# === IDE & Editors ===
+
+.vscode/# === IDE & Editors ===
+
+.idea/.vscode/
+
+*.swp.idea/
+
+*.swo*.swp
+
+*~*.swo
+
+*~
+
+# === OS ===
+
+.DS_Store# === OS ===
+
+.DS_Store?.DS_Store
+
+._*.DS_Store?
+
+.Spotlight-V100._*
+
+.Trashes.Spotlight-V100
+
+ehthumbs.db.Trashes
+
+Thumbs.dbehthumbs.db
+
+desktop.iniThumbs.db
+
+desktop.ini
+
+# === Logs ===
+
+logs/# === Logs ===
+
+*.loglogs/
+
+*.log
+
+# === Temporary files ===
+
+temp/# === Temporary files ===
+
+tmp/temp/
+
+*.tmptmp/
+
+*.temp*.tmp
+
+*.bak*.temp
+
+*.backup*.bak
+
+*.backup
+
+# === Build outputs ===
+
+dist/# === Build outputs ===
+
+build/dist/
+
+out/build/
+
+.next/out/
+
+.nuxt/.next/
+
+.cache/.nuxt/
+
+.parcel-cache/.cache/
+
+.parcel-cache/
+
+# === Testing ===
+
+.pytest_cache/# === Testing ===
+
+.coverage.pytest_cache/
+
+.nyc_output.coverage
+
+coverage/.nyc_output
+
+*.lcovcoverage/
+
+*.lcov
+
+# === Uploads & User content ===
+
+uploads/*.pdf# === Uploads & User content ===
+
+uploads/*.docxuploads/*.pdf
+
+uploads/*.docuploads/*.docx
+
+uploads/*.xlsxuploads/*.doc
+
+static/exports/*.pdfuploads/*.xlsx
+
+static/exports/*.docxstatic/exports/*.pdf
+
+static/exports/*.docx
+
+# === Sensitive data ===
+
+*.key# === Sensitive data ===
+
+*.pem*.key
+
+*.p12*.pem
+
+*.crt*.p12
+
+secrets/*.crt
+
+secrets/
+
+# === Legacy & Archive ===
+
+archive/# === Legacy & Archive ===
+
+old/archive/
+
+backup/old/
+
+backup/
+
+# === Aircloud Platform specific ===
+
+aircloud-platform/instance/aircloud_legal_platform.db# === Aircloud Platform specific ===
+
+aircloud-platform/uploads/aircloud-platform/instance/aircloud_legal_platform.db
+
+aircloud-platform/static/exports/aircloud-platform/uploads/
+
+*.debug.htmlaircloud-platform/static/exports/
+
+debug_*.log*.debug.html
+
+test_response.*debug_*.log
+
+curl_debug.logtest_response.*
+curl_debug.log
