@@ -1,0 +1,125 @@
+# =================================================
+# AIRCLOUD LEGAL PLATFORM - CRON JOBS
+# =================================================
+# Author: Łukasz Kołodziej | Aircloud
+#
+# Add these entries to crontab using: crontab -e
+# Or install using: crontab /opt/aircloud-legal/deploy/crontab
+# =================================================
+
+# Environment variables
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+SHELL=/bin/bash
+
+# =================================================
+# BACKUP OPERATIONS
+# =================================================
+
+# Daily backup at 2:00 AM
+0 2 * * * /opt/aircloud-legal/deploy/backup.sh >> /var/log/aircloud/backup.log 2>&1
+
+# Weekly cleanup at 3:00 AM on Sunday
+0 3 * * 0 find /opt/aircloud-legal/backups/daily -type f -mtime +7 -delete >> /var/log/aircloud/cleanup.log 2>&1
+
+# =================================================
+# MONITORING AND HEALTH CHECKS
+# =================================================
+
+# Health check every 5 minutes
+*/5 * * * * /opt/aircloud-legal/deploy/monitor.sh > /var/log/aircloud/health-$(date +\%Y\%m\%d).log 2>&1
+
+# Daily health report at 9:00 AM
+0 9 * * * /opt/aircloud-legal/deploy/monitor.sh | mail -s "Aircloud Daily Health Report" admin@yourcompany.com
+
+# =================================================
+# LOG ROTATION AND CLEANUP
+# =================================================
+
+# Rotate application logs daily at 1:00 AM
+0 1 * * * /usr/sbin/logrotate /opt/aircloud-legal/deploy/logrotate.conf --state /var/log/aircloud/logrotate.state
+
+# Clean old log files (older than 30 days) at 1:30 AM
+30 1 * * * find /var/log/aircloud -name "*.log.*" -mtime +30 -delete
+
+# Clean old health check logs (older than 7 days) at 1:45 AM
+45 1 * * * find /var/log/aircloud -name "health-*.log" -mtime +7 -delete
+
+# =================================================
+# DATABASE MAINTENANCE
+# =================================================
+
+# Database vacuum and analyze at 4:00 AM on Sunday
+0 4 * * 0 PGPASSWORD="aircloud_db_2025!" psql -h localhost -U aircloud_user -d aircloud_legal -c "VACUUM ANALYZE;" >> /var/log/aircloud/db-maintenance.log 2>&1
+
+# Database statistics update at 5:00 AM daily
+0 5 * * * PGPASSWORD="aircloud_db_2025!" psql -h localhost -U aircloud_user -d aircloud_legal -c "ANALYZE;" >> /var/log/aircloud/db-stats.log 2>&1
+
+# =================================================
+# SYSTEM MAINTENANCE
+# =================================================
+
+# Update package cache at 6:00 AM daily
+0 6 * * * apt update -qq >> /var/log/aircloud/system-updates.log 2>&1
+
+# System cleanup at 6:30 AM on Sunday
+30 6 * * 0 apt autoremove -y && apt autoclean >> /var/log/aircloud/system-cleanup.log 2>&1
+
+# Check for security updates at 7:00 AM daily
+0 7 * * * unattended-upgrade --dry-run >> /var/log/aircloud/security-updates.log 2>&1
+
+# =================================================
+# SSL CERTIFICATE RENEWAL
+# =================================================
+
+# Check and renew SSL certificates at 3:30 AM daily
+30 3 * * * /usr/bin/certbot renew --quiet --post-hook "systemctl reload nginx" >> /var/log/aircloud/ssl-renewal.log 2>&1
+
+# =================================================
+# APPLICATION SPECIFIC TASKS
+# =================================================
+
+# Clear Redis cache at 2:30 AM daily
+30 2 * * * redis-cli FLUSHDB >> /var/log/aircloud/redis-cleanup.log 2>&1
+
+# Generate daily reports at 8:00 AM
+0 8 * * * cd /opt/aircloud-legal && python3 -c "from aircloud_legal_platform import generate_daily_report; generate_daily_report()" >> /var/log/aircloud/reports.log 2>&1
+
+# Clean temporary files at 11:00 PM daily
+0 23 * * * find /tmp -name "aircloud*" -mtime +1 -delete >> /var/log/aircloud/temp-cleanup.log 2>&1
+
+# =================================================
+# DISK SPACE MONITORING
+# =================================================
+
+# Check disk space every hour and alert if usage > 90%
+0 * * * * df -h | awk '$5 > "90%" {print "ALERT: "$0}' | mail -s "Disk Space Alert" admin@yourcompany.com
+
+# =================================================
+# NETWORK MONITORING
+# =================================================
+
+# Check external connectivity every 15 minutes
+*/15 * * * * ping -c 1 8.8.8.8 > /dev/null 2>&1 || echo "$(date): Network connectivity issue" >> /var/log/aircloud/network.log
+
+# =================================================
+# PERFORMANCE MONITORING
+# =================================================
+
+# Log system performance metrics every 30 minutes
+*/30 * * * * echo "$(date): $(uptime)" >> /var/log/aircloud/performance.log
+
+# Monitor application memory usage every hour
+0 * * * * ps aux | grep -E "(gunicorn|aircloud)" | grep -v grep | awk '{sum+=$6} END {print "$(date): Memory usage: "sum/1024" MB"}' >> /var/log/aircloud/memory-usage.log
+
+# =================================================
+# CUSTOM MAINTENANCE TASKS
+# =================================================
+
+# Archive old documents monthly at 2:00 AM on 1st day
+0 2 1 * * cd /opt/aircloud-legal && python3 -c "from aircloud_legal_platform import archive_old_documents; archive_old_documents()" >> /var/log/aircloud/archive.log 2>&1
+
+# Generate monthly reports at 9:00 AM on 1st day
+0 9 1 * * cd /opt/aircloud-legal && python3 -c "from aircloud_legal_platform import generate_monthly_report; generate_monthly_report()" >> /var/log/aircloud/monthly-reports.log 2>&1
+
+# User session cleanup at 4:30 AM daily
+30 4 * * * cd /opt/aircloud-legal && python3 -c "from aircloud_legal_platform import cleanup_expired_sessions; cleanup_expired_sessions()" >> /var/log/aircloud/session-cleanup.log 2>&1
