@@ -1,0 +1,332 @@
+{% extends "base.html" %}
+
+{% block title %}Analityka Dokumentu - {{ document.title }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Document Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1 class="h3 mb-1">
+                                <i class="fas fa-chart-line"></i> Analityka Dokumentu
+                            </h1>
+                            <p class="mb-0">{{ document.title }}</p>
+                            <small class="opacity-75">{{ document.legal_system.name }}</small>
+                        </div>
+                        <div class="text-end">
+                            <a href="{{ url_for('document_view', slug=document.slug) }}" 
+                               class="btn btn-light btn-sm">
+                                <i class="fas fa-arrow-left"></i> Powrót do dokumentu
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Cards -->
+    <div class="row mb-4">
+        <!-- Word Count -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="text-primary mb-2">
+                        <i class="fas fa-font fa-2x"></i>
+                    </div>
+                    <h3 class="text-primary">{{ analytics.word_count }}</h3>
+                    <p class="text-muted mb-0">Liczba słów</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Readability Score -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="text-success mb-2">
+                        <i class="fas fa-eye fa-2x"></i>
+                    </div>
+                    <h3 class="text-success">{{ "%.1f"|format(analytics.readability_score) }}%</h3>
+                    <p class="text-muted mb-0">Czytelność</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Complexity -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="{% if analytics.complexity_level == 'high' %}text-danger{% elif analytics.complexity_level == 'medium' %}text-warning{% else %}text-success{% endif %} mb-2">
+                        <i class="fas fa-layer-group fa-2x"></i>
+                    </div>
+                    <h3 class="{% if analytics.complexity_level == 'high' %}text-danger{% elif analytics.complexity_level == 'medium' %}text-warning{% else %}text-success{% endif %}">
+                        {{ analytics.complexity_level.title() }}
+                    </h3>
+                    <p class="text-muted mb-0">Złożoność</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Structure Score -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-sitemap fa-2x"></i>
+                    </div>
+                    <h3 class="text-info">{{ analytics.structure_score }}%</h3>
+                    <p class="text-muted mb-0">Struktura</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Analytics -->
+    <div class="row">
+        <!-- Document Statistics -->
+        <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <h5 class="mb-0">
+                        <i class="fas fa-chart-bar text-primary"></i> Statystyki dokumentu
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex justify-content-between py-2">
+                                <span>Liczba znaków:</span>
+                                <strong>{{ analytics.character_count }}</strong>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <span>Liczba paragrafów:</span>
+                                <strong>{{ analytics.paragraph_count }}</strong>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <span>Terminy prawne:</span>
+                                <strong>{{ analytics.legal_terms_count }}</strong>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-between py-2">
+                                <span>Typ dokumentu:</span>
+                                <strong>{{ document.document_type }}</strong>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <span>Status:</span>
+                                <span class="badge bg-{% if document.status == 'published' %}success{% elif document.status == 'draft' %}secondary{% else %}warning{% endif %}">
+                                    {{ document.status }}
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <span>Ostatnia zmiana:</span>
+                                <strong>{{ document.updated_at.strftime('%d.%m.%Y') }}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compliance Analysis -->
+        <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <h5 class="mb-0">
+                        <i class="fas fa-shield-alt text-success"></i> Analiza zgodności
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-3">
+                        <div class="d-inline-block position-relative" style="width: 120px; height: 120px;">
+                            <svg width="120" height="120" class="position-absolute">
+                                <circle cx="60" cy="60" r="50" stroke="#e9ecef" stroke-width="10" fill="none"></circle>
+                                <circle cx="60" cy="60" r="50" stroke="#28a745" stroke-width="10" fill="none"
+                                        stroke-dasharray="{{ (compliance.compliance_score / 100) * 314 }}, 314"
+                                        transform="rotate(-90 60 60)"></circle>
+                            </svg>
+                            <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <h4 class="mb-0 text-success">{{ compliance.compliance_score }}%</h4>
+                                    <small class="text-muted">Zgodność</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Issues -->
+                    {% if compliance.issues %}
+                    <div class="mb-3">
+                        <h6 class="text-danger"><i class="fas fa-exclamation-triangle"></i> Wykryte problemy:</h6>
+                        <ul class="list-unstyled">
+                            {% for issue in compliance.issues %}
+                            <li class="text-danger small">
+                                <i class="fas fa-times-circle"></i> {{ issue }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                    <!-- Suggestions -->
+                    {% if compliance.suggestions %}
+                    <div class="mb-3">
+                        <h6 class="text-info"><i class="fas fa-lightbulb"></i> Sugestie:</h6>
+                        <ul class="list-unstyled">
+                            {% for suggestion in compliance.suggestions %}
+                            <li class="text-info small">
+                                <i class="fas fa-arrow-right"></i> {{ suggestion }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Readability Chart -->
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <h5 class="mb-0">
+                        <i class="fas fa-chart-area text-primary"></i> Ocena czytelności
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar 
+                                    {% if analytics.readability_score >= 80 %}bg-success
+                                    {% elif analytics.readability_score >= 60 %}bg-warning
+                                    {% else %}bg-danger{% endif %}"
+                                     role="progressbar" 
+                                     style="width: {{ analytics.readability_score }}%"
+                                     aria-valuenow="{{ analytics.readability_score }}" 
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    {{ "%.1f"|format(analytics.readability_score) }}%
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2">
+                                <small class="text-muted">Trudny</small>
+                                <small class="text-muted">Średni</small>
+                                <small class="text-muted">Łatwy</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                {% if analytics.readability_score >= 80 %}
+                                    <i class="fas fa-smile fa-3x text-success"></i>
+                                    <p class="text-success mb-0">Bardzo czytelny</p>
+                                {% elif analytics.readability_score >= 60 %}
+                                    <i class="fas fa-meh fa-3x text-warning"></i>
+                                    <p class="text-warning mb-0">Średnio czytelny</p>
+                                {% else %}
+                                    <i class="fas fa-frown fa-3x text-danger"></i>
+                                    <p class="text-danger mb-0">Trudny do czytania</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted mb-3">Akcje dokumentu</h6>
+                    <div class="btn-group" role="group">
+                        <a href="{{ url_for('extended.export_document_pdf', slug=document.slug) }}" 
+                           class="btn btn-outline-danger">
+                            <i class="fas fa-file-pdf"></i> Eksport PDF
+                        </a>
+                        <a href="{{ url_for('extended.export_document_docx', slug=document.slug) }}" 
+                           class="btn btn-outline-primary">
+                            <i class="fas fa-file-word"></i> Eksport DOCX
+                        </a>
+                        <a href="{{ url_for('extended.document_workflow', slug=document.slug) }}" 
+                           class="btn btn-outline-success">
+                            <i class="fas fa-tasks"></i> Workflow
+                        </a>
+                        <button class="btn btn-outline-info" onclick="compareDocument()">
+                            <i class="fas fa-code-compare"></i> Porównaj
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aircloud Branding Footer -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="text-center text-muted small">
+                <p class="mb-1">
+                    <i class="fas fa-chart-line text-primary"></i>
+                    Analityka wygenerowana przez <strong>Aircloud Legal Platform</strong>
+                </p>
+                <p class="mb-0">
+                    © 2025 Łukasz Kołodziej | Aircloud Professional Legal Solutions
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function compareDocument() {
+    // Placeholder dla funkcji porównywania dokumentów
+    alert('Funkcja porównywania dokumentów będzie dostępna wkrótce!');
+    // W pełnej wersji tutaj byłoby modal do wyboru drugiego dokumentu
+}
+
+// Animation for progress bar
+document.addEventListener('DOMContentLoaded', function() {
+    const progressBar = document.querySelector('.progress-bar');
+    if (progressBar) {
+        const targetWidth = progressBar.style.width;
+        progressBar.style.width = '0%';
+        
+        setTimeout(() => {
+            progressBar.style.transition = 'width 2s ease-in-out';
+            progressBar.style.width = targetWidth;
+        }, 500);
+    }
+});
+</script>
+
+<style>
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.progress {
+    border-radius: 15px;
+}
+
+.progress-bar {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.btn-group .btn {
+    min-width: 120px;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,412 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard Rozszerzony - Aircloud Legal{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card bg-gradient-primary text-white border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1 class="display-5 fw-bold mb-1">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard Rozszerzony
+                            </h1>
+                            <p class="lead mb-0">Zaawansowana analityka i zarządzanie dokumentami</p>
+                            <small class="opacity-75">Witaj, {{ current_user.full_name }}!</small>
+                        </div>
+                        <div class="text-end">
+                            <div class="badge bg-light text-primary fs-6 p-2">
+                                <i class="fas fa-crown"></i> Aircloud Professional
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="row mb-4">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-primary mb-3">
+                        <i class="fas fa-file-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-primary fw-bold">{{ stats.total_documents }}</h3>
+                    <p class="text-muted mb-0">Wszystkie dokumenty</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-success mb-3">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                    </div>
+                    <h3 class="text-success fw-bold">{{ stats.published_documents }}</h3>
+                    <p class="text-muted mb-0">Opublikowane</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-warning mb-3">
+                        <i class="fas fa-edit fa-3x"></i>
+                    </div>
+                    <h3 class="text-warning fw-bold">{{ stats.draft_documents }}</h3>
+                    <p class="text-muted mb-0">Szkice</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-info mb-3">
+                        <i class="fas fa-sitemap fa-3x"></i>
+                    </div>
+                    <h3 class="text-info fw-bold">{{ stats.total_systems }}</h3>
+                    <p class="text-muted mb-0">Systemy prawne</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advanced Statistics -->
+    <div class="row mb-4">
+        <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <h5 class="mb-0">
+                        <i class="fas fa-chart-pie text-primary"></i> Przegląd zawartości
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <i class="fas fa-font fa-2x text-primary"></i>
+                                <h4 class="text-primary mt-2">{{ "{:,}".format(stats.total_words).replace(',', ' ') }}</h4>
+                                <small class="text-muted">Wszystkie słowa</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <i class="fas fa-eye fa-2x text-success"></i>
+                                <h4 class="text-success mt-2">{{ "%.1f"|format(stats.avg_readability) }}%</h4>
+                                <small class="text-muted">Średnia czytelność</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <i class="fas fa-tasks fa-2x text-info"></i>
+                                <h4 class="text-info mt-2">{{ stats.total_documents }}</h4>
+                                <small class="text-muted">Aktywne projekty</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <h5 class="mb-0">
+                        <i class="fas fa-trophy text-warning"></i> Osiągnięcia Aircloud
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="achievement mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="achievement-icon me-3">
+                                <i class="fas fa-medal text-warning"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1">Professional Legal Platform</h6>
+                                <small class="text-muted">Licencja komercyjna aktywna</small>
+                            </div>
+                            <div class="badge bg-warning text-dark">PRO</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="achievement-icon me-3">
+                                <i class="fas fa-shield-alt text-success"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1">Zgodność prawna</h6>
+                                <small class="text-muted">Dokumenty zgodne z polskim prawem</small>
+                            </div>
+                            <div class="badge bg-success">✓</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement mb-0">
+                        <div class="d-flex align-items-center">
+                            <div class="achievement-icon me-3">
+                                <i class="fas fa-cloud text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1">Aircloud Ecosystem</h6>
+                                <small class="text-muted">Pełna integracja z ekosystemem</small>
+                            </div>
+                            <div class="badge bg-primary">ACTIVE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Documents -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <i class="fas fa-clock text-primary"></i> Ostatnie dokumenty
+                        </h5>
+                        <a href="{{ url_for('extended.template_gallery') }}" class="btn btn-sm btn-primary">
+                            <i class="fas fa-plus"></i> Nowy dokument
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    {% if recent_documents %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Dokument</th>
+                                        <th>System</th>
+                                        <th>Status</th>
+                                        <th>Ostatnia zmiana</th>
+                                        <th>Akcje</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for doc in recent_documents %}
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="document-icon me-3">
+                                                    <i class="fas fa-file-alt text-primary"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">{{ doc.title }}</h6>
+                                                    <small class="text-muted">{{ doc.document_type }}</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-light text-dark">{{ doc.legal_system.name }}</span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-{% if doc.status == 'published' %}success{% elif doc.status == 'draft' %}secondary{% else %}warning{% endif %}">
+                                                {{ doc.status }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <small class="text-muted">{{ doc.updated_at.strftime('%d.%m.%Y %H:%M') }}</small>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group btn-group-sm">
+                                                <a href="{{ url_for('document_view', slug=doc.slug) }}" 
+                                                   class="btn btn-outline-primary btn-sm" title="Otwórz">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                                <a href="{{ url_for('extended.document_analytics', slug=doc.slug) }}" 
+                                                   class="btn btn-outline-info btn-sm" title="Analityka">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </a>
+                                                <a href="{{ url_for('extended.export_document_pdf', slug=doc.slug) }}" 
+                                                   class="btn btn-outline-danger btn-sm" title="PDF">
+                                                    <i class="fas fa-file-pdf"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-file-plus fa-3x text-muted mb-3"></i>
+                            <h5 class="text-muted">Brak dokumentów</h5>
+                            <p class="text-muted">Zacznij od utworzenia pierwszego dokumentu prawnego</p>
+                            <a href="{{ url_for('extended.template_gallery') }}" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Utwórz dokument
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal Systems Overview -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-transparent">
+                    <h5 class="mb-0">
+                        <i class="fas fa-sitemap text-primary"></i> Systemy prawne
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% if systems %}
+                        <div class="row">
+                            {% for system in systems %}
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="card border system-card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="system-icon me-3">
+                                                <i class="fas fa-university text-primary"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">{{ system.name }}</h6>
+                                                <small class="text-muted">{{ system.system_type }}</small>
+                                            </div>
+                                        </div>
+                                        <p class="text-muted small mb-2">{{ system.description[:80] }}...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-light text-dark">{{ system.jurisdiction }}</span>
+                                            <a href="{{ url_for('legal_system_view', system_id=system.id) }}" 
+                                               class="btn btn-sm btn-outline-primary">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-plus-circle fa-3x text-muted mb-3"></i>
+                            <h5 class="text-muted">Brak systemów prawnych</h5>
+                            <p class="text-muted">Utwórz pierwszy system prawny dla swojej organizacji</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aircloud Branding Footer -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-0 bg-light">
+                <div class="card-body text-center">
+                    <h5 class="text-primary mb-3">
+                        <i class="fas fa-cloud"></i> Aircloud Legal Platform Professional
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <i class="fas fa-file-contract fa-2x text-primary mb-2"></i>
+                            <h6>Dokumenty prawne</h6>
+                            <small class="text-muted">Professional templates</small>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-users fa-2x text-success mb-2"></i>
+                            <h6>Współpraca</h6>
+                            <small class="text-muted">Real-time collaboration</small>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-chart-line fa-2x text-info mb-2"></i>
+                            <h6>Analityka</h6>
+                            <small class="text-muted">Advanced insights</small>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-shield-alt fa-2x text-warning mb-2"></i>
+                            <h6>Bezpieczeństwo</h6>
+                            <small class="text-muted">Enterprise security</small>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="text-muted mb-0">
+                        © 2025 Łukasz Kołodziej | Aircloud Professional Legal Solutions<br>
+                        <small>50 PLN + 23% VAT/miesiąc dla użytku komercyjnego | Bezpłatny dla celów społecznych/edukacyjnych</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.stats-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.achievement-icon {
+    width: 40px;
+    text-align: center;
+}
+
+.document-icon {
+    width: 30px;
+    text-align: center;
+}
+
+.system-icon {
+    width: 30px;
+    text-align: center;
+}
+
+.system-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.system-card:hover {
+    transform: translateY(-3px);
+}
+
+.table-responsive {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.btn-group .btn {
+    margin-right: 2px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate statistics cards on load
+    const statsCards = document.querySelectorAll('.stats-card');
+    statsCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 100);
+    });
+});
+</script>
+{% endblock %}

@@ -13,9 +13,9 @@
                         <h1 class="display-5 mb-2">{{ legal_system.name }}</h1>
                         <p class="lead mb-0">{{ legal_system.description }}</p>
                         <div class="mt-2">
-                            <span class="badge bg-light text-dark">{{ legal_system.type.title() }}</span>
+                            <span class="badge bg-light text-dark">{{ legal_system.system_type.title() }}</span>
                             <span class="badge bg-light text-dark">{{ legal_system.jurisdiction }}</span>
-                            <span class="badge bg-light text-dark">{{ documents|length }} dokumentów</span>
+                            <span class="badge bg-light text-dark">{{ document_count }} dokumentów</span>
                         </div>
                     </div>
                     <div class="col-md-4 text-end">
@@ -104,7 +104,7 @@
                                         <i class="fas fa-user"></i> {{ document.author.full_name or document.author.username }}<br>
                                         <i class="fas fa-calendar"></i> {{ document.updated_at.strftime('%d.%m.%Y') }}<br>
                                         <i class="fas fa-tag"></i> {{ document.document_type.title() }}<br>
-                                        <i class="fas fa-comments"></i> {{ document.comments|length }} komentarzy
+                                        <i class="fas fa-comments"></i> {{ document.comments.count() }} komentarzy
                                     </small>
                                 </div>
                                 

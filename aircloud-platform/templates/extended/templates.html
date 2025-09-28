@@ -1,0 +1,285 @@
+{% extends "base.html" %}
+
+{% block title %}Galeria Szablonów - Aircloud Legal{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Header Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="bg-gradient-primary p-4 rounded-3 text-white">
+                <h1 class="display-4 fw-bold">
+                    <i class="fas fa-file-contract"></i> Galeria Szablonów Prawnych
+                </h1>
+                <p class="lead mb-0">
+                    Profesjonalne szablony dokumentów prawnych w systemie Aircloud Legal Platform
+                </p>
+                <small>© 2025 Łukasz Kołodziej | Aircloud Professional</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates Grid -->
+    <div class="row">
+        {% for template in templates %}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm border-0 template-card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="template-icon me-3">
+                            <i class="{{ template.icon }} fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="card-title mb-1">{{ template.name }}</h5>
+                            <small class="text-muted">{{ template.category }}</small>
+                        </div>
+                    </div>
+                    
+                    <p class="card-text text-muted">
+                        {{ template.description }}
+                    </p>
+                    
+                    <div class="template-features mb-3">
+                        <small class="text-success">
+                            <i class="fas fa-check-circle"></i> Zgodność z przepisami
+                        </small><br>
+                        <small class="text-success">
+                            <i class="fas fa-check-circle"></i> Profesjonalny format
+                        </small><br>
+                        <small class="text-success">
+                            <i class="fas fa-check-circle"></i> Łatwa customizacja
+                        </small>
+                    </div>
+                </div>
+                
+                <div class="card-footer bg-transparent">
+                    <button class="btn btn-primary w-100" 
+                            onclick="showTemplateModal('{{ template.id }}', '{{ template.name }}')">
+                        <i class="fas fa-plus"></i> Użyj szablonu
+                    </button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Aircloud Features Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card bg-light border-0">
+                <div class="card-body text-center">
+                    <h3 class="text-primary mb-3">
+                        <i class="fas fa-star"></i> Zalety Szablonów Aircloud
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <i class="fas fa-shield-alt fa-2x text-success mb-2"></i>
+                            <h6>Zgodność prawna</h6>
+                            <small class="text-muted">Szablony zgodne z polskim prawem</small>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-cogs fa-2x text-info mb-2"></i>
+                            <h6>Automatyzacja</h6>
+                            <small class="text-muted">Inteligentne generowanie treści</small>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-users fa-2x text-warning mb-2"></i>
+                            <h6>Współpraca</h6>
+                            <small class="text-muted">Wsparcie dla zespołowego edytowania</small>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-download fa-2x text-primary mb-2"></i>
+                            <h6>Eksport</h6>
+                            <small class="text-muted">PDF, DOCX, HTML</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Template Generation Modal -->
+<div class="modal fade" id="templateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-file-contract"></i> Generowanie szablonu
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="templateForm">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nazwa organizacji/instytucji:</label>
+                        <input type="text" class="form-control" id="organizationName" 
+                               placeholder="np. Samorząd Studentów, Fundacja XYZ" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">System prawny:</label>
+                        <select class="form-select" id="legalSystemSelect" required>
+                            <option value="">Wybierz system prawny...</option>
+                            {% if current_user.is_authenticated %}
+                                <!-- Tu będą systemy prawne użytkownika -->
+                            {% endif %}
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nazwa systemu:</label>
+                        <input type="text" class="form-control" id="systemName" 
+                               placeholder="np. Regulamin Wewnętrzny" required>
+                    </div>
+                    
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Informacja:</strong> Szablon zostanie wygenerowany z podstawową strukturą.
+                        Możesz go następnie edytować i dostosować do swoich potrzeb.
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i> Anuluj
+                </button>
+                <button type="button" class="btn btn-primary" onclick="generateTemplate()">
+                    <i class="fas fa-magic"></i> Generuj szablon
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.template-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.template-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border-radius: 50%;
+    color: white !important;
+}
+
+.template-features {
+    font-size: 0.9em;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+</style>
+
+<script>
+let currentTemplateId = '';
+
+function showTemplateModal(templateId, templateName) {
+    currentTemplateId = templateId;
+    document.getElementById('templateModal').querySelector('.modal-title').innerHTML = 
+        `<i class="fas fa-file-contract"></i> Generowanie: ${templateName}`;
+    
+    // Load legal systems
+    loadLegalSystems();
+    
+    new bootstrap.Modal(document.getElementById('templateModal')).show();
+}
+
+function loadLegalSystems() {
+    // Placeholder - w rzeczywistej aplikacji załadowałby systemy prawne użytkownika
+    const select = document.getElementById('legalSystemSelect');
+    select.innerHTML = '<option value="1">SSPO - Samorząd Studentów Politechniki Opolskiej</option>';
+}
+
+function generateTemplate() {
+    const form = document.getElementById('templateForm');
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+    
+    const data = {
+        template_id: currentTemplateId,
+        organization: document.getElementById('organizationName').value,
+        system_name: document.getElementById('systemName').value,
+        legal_system_id: document.getElementById('legalSystemSelect').value
+    };
+    
+    // Show loading state
+    const btn = document.querySelector('[onclick="generateTemplate()"]');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generowanie...';
+    btn.disabled = true;
+    
+    fetch(`/extended/templates/${currentTemplateId}/generate`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            // Close modal and redirect
+            bootstrap.Modal.getInstance(document.getElementById('templateModal')).hide();
+            
+            // Show success message
+            showSuccessAlert('Szablon został wygenerowany pomyślnie!');
+            
+            // Redirect to document
+            setTimeout(() => {
+                window.location.href = result.redirect_url;
+            }, 1500);
+        } else {
+            showErrorAlert(result.error || 'Wystąpił błąd podczas generowania szablonu');
+        }
+    })
+    .catch(error => {
+        showErrorAlert('Błąd połączenia z serwerem');
+        console.error('Error:', error);
+    })
+    .finally(() => {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+    });
+}
+
+function showSuccessAlert(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-success alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        <i class="fas fa-check-circle"></i> ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => alert.remove(), 5000);
+}
+
+function showErrorAlert(message) {
+    const alert = document.createElement('div');
+    alert.className = 'alert alert-danger alert-dismissible fade show position-fixed';
+    alert.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    alert.innerHTML = `
+        <i class="fas fa-exclamation-circle"></i> ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(alert);
+    
+    setTimeout(() => alert.remove(), 5000);
+}
+</script>
+{% endblock %}

@@ -1,0 +1,632 @@
+{% extends "base.html" %}
+
+{% block title %}Workflow Management - Aircloud Legal{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card bg-gradient-info text-white border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1 class="display-5 fw-bold mb-1">
+                                <i class="fas fa-project-diagram"></i> Workflow Management
+                            </h1>
+                            <p class="lead mb-0">Zarządzanie przepływem pracy i zatwierdzeniami dokumentów</p>
+                        </div>
+                        <div class="text-end">
+                            <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#createWorkflowModal">
+                                <i class="fas fa-plus"></i> Nowy workflow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workflow Stats -->
+    <div class="row mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-primary mb-3">
+                        <i class="fas fa-clock fa-3x"></i>
+                    </div>
+                    <h3 class="text-primary fw-bold">{{ workflow_stats.pending }}</h3>
+                    <p class="text-muted mb-0">Oczekujące</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-warning mb-3">
+                        <i class="fas fa-eye fa-3x"></i>
+                    </div>
+                    <h3 class="text-warning fw-bold">{{ workflow_stats.in_review }}</h3>
+                    <p class="text-muted mb-0">W recenzji</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-success mb-3">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                    </div>
+                    <h3 class="text-success fw-bold">{{ workflow_stats.approved }}</h3>
+                    <p class="text-muted mb-0">Zatwierdzone</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card border-0 shadow-sm stats-card">
+                <div class="card-body text-center">
+                    <div class="text-danger mb-3">
+                        <i class="fas fa-times-circle fa-3x"></i>
+                    </div>
+                    <h3 class="text-danger fw-bold">{{ workflow_stats.rejected }}</h3>
+                    <p class="text-muted mb-0">Odrzucone</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workflow Tabs -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-transparent">
+            <ul class="nav nav-tabs card-header-tabs" id="workflowTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="my-tasks-tab" data-bs-toggle="tab" 
+                            data-bs-target="#my-tasks" type="button" role="tab">
+                        <i class="fas fa-user"></i> Moje zadania ({{ my_tasks|length }})
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="all-workflows-tab" data-bs-toggle="tab" 
+                            data-bs-target="#all-workflows" type="button" role="tab">
+                        <i class="fas fa-list"></i> Wszystkie workflow ({{ all_workflows|length }})
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="templates-tab" data-bs-toggle="tab" 
+                            data-bs-target="#templates" type="button" role="tab">
+                        <i class="fas fa-copy"></i> Szablony workflow
+                    </button>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="card-body">
+            <div class="tab-content" id="workflowTabsContent">
+                <!-- My Tasks Tab -->
+                <div class="tab-pane fade show active" id="my-tasks" role="tabpanel">
+                    {% if my_tasks %}
+                        <div class="row">
+                            {% for task in my_tasks %}
+                            <div class="col-lg-6 col-xl-4 mb-4">
+                                <div class="card task-card border-left-{{ task.priority_color }}">
+                                    <div class="card-header bg-transparent">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="mb-0">{{ task.title }}</h6>
+                                            <span class="badge bg-{{ task.status_color }}">{{ task.status }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-file-alt text-primary me-2"></i>
+                                            <small class="text-muted">{{ task.document_title }}</small>
+                                        </div>
+                                        
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="fas fa-clock text-info me-2"></i>
+                                            <small class="text-muted">{{ task.due_date.strftime('%d.%m.%Y') if task.due_date else 'Brak terminu' }}</small>
+                                        </div>
+
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="fas fa-user text-success me-2"></i>
+                                            <small class="text-muted">{{ task.assigned_by }}</small>
+                                        </div>
+
+                                        <div class="progress mb-3" style="height: 4px;">
+                                            <div class="progress-bar bg-{{ task.status_color }}" 
+                                                 style="width: {{ task.progress }}%"></div>
+                                        </div>
+
+                                        <div class="btn-group w-100">
+                                            <button class="btn btn-sm btn-primary" onclick="openTaskModal('{{ task.id }}')">
+                                                <i class="fas fa-eye"></i> Szczegóły
+                                            </button>
+                                            {% if task.can_approve %}
+                                            <button class="btn btn-sm btn-success" onclick="approveTask('{{ task.id }}')">
+                                                <i class="fas fa-check"></i> Zatwierdź
+                                            </button>
+                                            {% endif %}
+                                            {% if task.can_reject %}
+                                            <button class="btn btn-sm btn-danger" onclick="rejectTask('{{ task.id }}')">
+                                                <i class="fas fa-times"></i> Odrzuć
+                                            </button>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-tasks fa-4x text-muted mb-3"></i>
+                            <h4 class="text-muted">Brak zadań do wykonania</h4>
+                            <p class="text-muted">Wszystkie zadania zostały ukończone lub nie masz przypisanych zadań.</p>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- All Workflows Tab -->
+                <div class="tab-pane fade" id="all-workflows" role="tabpanel">
+                    {% if all_workflows %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Nazwa workflow</th>
+                                        <th>Dokument</th>
+                                        <th>Utworzony przez</th>
+                                        <th>Status</th>
+                                        <th>Etap</th>
+                                        <th>Termin</th>
+                                        <th>Akcje</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for workflow in all_workflows %}
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="workflow-icon me-3">
+                                                    <i class="fas fa-project-diagram text-primary"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">{{ workflow.name }}</h6>
+                                                    <small class="text-muted">{{ workflow.workflow_type }}</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="{{ url_for('document_view', slug=workflow.document.slug) }}" 
+                                               class="text-decoration-none">
+                                                {{ workflow.document.title }}
+                                            </a>
+                                        </td>
+                                        <td>{{ workflow.created_by.full_name }}</td>
+                                        <td>
+                                            <span class="badge bg-{{ workflow.status_color }}">
+                                                {{ workflow.status }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="progress" style="height: 20px; min-width: 100px;">
+                                                <div class="progress-bar" style="width: {{ workflow.progress }}%">
+                                                    {{ workflow.current_step }}/{{ workflow.total_steps }}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <small class="text-muted">
+                                                {{ workflow.due_date.strftime('%d.%m.%Y') if workflow.due_date else 'Brak terminu' }}
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group btn-group-sm">
+                                                <button class="btn btn-outline-primary" 
+                                                        onclick="viewWorkflowDetails('{{ workflow.id }}')">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                {% if workflow.can_edit %}
+                                                <button class="btn btn-outline-secondary"
+                                                        onclick="editWorkflow('{{ workflow.id }}')">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                {% endif %}
+                                                {% if workflow.can_delete %}
+                                                <button class="btn btn-outline-danger"
+                                                        onclick="deleteWorkflow('{{ workflow.id }}')">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                                {% endif %}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-project-diagram fa-4x text-muted mb-3"></i>
+                            <h4 class="text-muted">Brak workflow</h4>
+                            <p class="text-muted">Utwórz pierwszy workflow dla swojego dokumentu.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createWorkflowModal">
+                                <i class="fas fa-plus"></i> Utwórz workflow
+                            </button>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Workflow Templates Tab -->
+                <div class="tab-pane fade" id="templates" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card template-card border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="template-icon mb-3">
+                                        <i class="fas fa-gavel fa-3x text-primary"></i>
+                                    </div>
+                                    <h5 class="card-title">Zatwierdzenie regulaminu</h5>
+                                    <p class="card-text text-muted">
+                                        Standardowy proces zatwierdzania dokumentów regulaminowych z etapami recenzji prawnej i zarządczej.
+                                    </p>
+                                    <div class="workflow-steps mb-3">
+                                        <small class="text-muted">
+                                            <i class="fas fa-arrow-right"></i> Recenzja prawna 
+                                            <i class="fas fa-arrow-right"></i> Zatwierdzenie kierownictwa 
+                                            <i class="fas fa-arrow-right"></i> Publikacja
+                                        </small>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="useTemplate('regulation_approval')">
+                                        <i class="fas fa-copy"></i> Użyj szablonu
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card template-card border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="template-icon mb-3">
+                                        <i class="fas fa-file-contract fa-3x text-success"></i>
+                                    </div>
+                                    <h5 class="card-title">Przegląd kontraktu</h5>
+                                    <p class="card-text text-muted">
+                                        Workflow dla dokumentów kontraktowych z etapami weryfikacji prawnej i biznesowej.
+                                    </p>
+                                    <div class="workflow-steps mb-3">
+                                        <small class="text-muted">
+                                            <i class="fas fa-arrow-right"></i> Analiza prawna 
+                                            <i class="fas fa-arrow-right"></i> Weryfikacja finansowa 
+                                            <i class="fas fa-arrow-right"></i> Podpis
+                                        </small>
+                                    </div>
+                                    <button class="btn btn-success" onclick="useTemplate('contract_review')">
+                                        <i class="fas fa-copy"></i> Użyj szablonu
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card template-card border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="template-icon mb-3">
+                                        <i class="fas fa-clipboard-check fa-3x text-info"></i>
+                                    </div>
+                                    <h5 class="card-title">Szybkie zatwierdzenie</h5>
+                                    <p class="card-text text-muted">
+                                        Uproszczony proces dla dokumentów o niskim ryzyku prawnym.
+                                    </p>
+                                    <div class="workflow-steps mb-3">
+                                        <small class="text-muted">
+                                            <i class="fas fa-arrow-right"></i> Szybka recenzja 
+                                            <i class="fas fa-arrow-right"></i> Zatwierdzenie
+                                        </small>
+                                    </div>
+                                    <button class="btn btn-info" onclick="useTemplate('quick_approval')">
+                                        <i class="fas fa-copy"></i> Użyj szablonu
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Workflow Modal -->
+<div class="modal fade" id="createWorkflowModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-plus"></i> Nowy workflow
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="createWorkflowForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nazwa workflow</label>
+                            <input type="text" class="form-control" name="workflow_name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Dokument</label>
+                            <select class="form-select" name="document_id" required>
+                                <option value="">Wybierz dokument...</option>
+                                {% for doc in available_documents %}
+                                <option value="{{ doc.id }}">{{ doc.title }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Typ workflow</label>
+                            <select class="form-select" name="workflow_type" required>
+                                <option value="approval">Zatwierdzenie</option>
+                                <option value="review">Recenzja</option>
+                                <option value="validation">Walidacja</option>
+                                <option value="custom">Niestandardowy</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Termin ukończenia</label>
+                            <input type="date" class="form-control" name="due_date">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Opis workflow</label>
+                        <textarea class="form-control" name="description" rows="3" 
+                                  placeholder="Opisz cel i zakres tego workflow..."></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Uczestnicy workflow</label>
+                        <div id="workflowSteps">
+                            <div class="workflow-step border rounded p-3 mb-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="form-label small">Nazwa etapu</label>
+                                        <input type="text" class="form-control form-control-sm" 
+                                               name="step_name[]" placeholder="np. Recenzja prawna">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label small">Przypisany użytkownik</label>
+                                        <select class="form-select form-select-sm" name="step_assignee[]">
+                                            <option value="">Wybierz użytkownika...</option>
+                                            {% for user in available_users %}
+                                            <option value="{{ user.id }}">{{ user.full_name }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label small">Dni na wykonanie</label>
+                                        <input type="number" class="form-control form-control-sm" 
+                                               name="step_days[]" value="3" min="1">
+                                    </div>
+                                    <div class="col-md-1">
+                                        <label class="form-label small">&nbsp;</label>
+                                        <button type="button" class="btn btn-sm btn-outline-danger d-block" 
+                                                onclick="removeWorkflowStep(this)">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="addWorkflowStep()">
+                            <i class="fas fa-plus"></i> Dodaj etap
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+                <button type="button" class="btn btn-primary" onclick="createWorkflow()">
+                    <i class="fas fa-save"></i> Utwórz workflow
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.bg-gradient-info {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+}
+
+.stats-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.task-card {
+    border-left: 4px solid #007bff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+}
+
+.border-left-primary { border-left-color: #007bff !important; }
+.border-left-warning { border-left-color: #ffc107 !important; }
+.border-left-danger { border-left-color: #dc3545 !important; }
+.border-left-success { border-left-color: #28a745 !important; }
+
+.workflow-icon {
+    width: 30px;
+    text-align: center;
+}
+
+.template-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.template-icon {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workflow-steps {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.workflow-step {
+    position: relative;
+}
+
+.nav-tabs .nav-link {
+    color: #6c757d;
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+}
+</style>
+
+<script>
+// Workflow management functions
+function openTaskModal(taskId) {
+    // Implementation for opening task details modal
+    console.log('Opening task details for:', taskId);
+}
+
+function approveTask(taskId) {
+    if (confirm('Czy na pewno chcesz zatwierdzić to zadanie?')) {
+        // Implementation for task approval
+        console.log('Approving task:', taskId);
+    }
+}
+
+function rejectTask(taskId) {
+    if (confirm('Czy na pewno chcesz odrzucić to zadanie?')) {
+        // Implementation for task rejection
+        console.log('Rejecting task:', taskId);
+    }
+}
+
+function viewWorkflowDetails(workflowId) {
+    // Implementation for viewing workflow details
+    console.log('Viewing workflow details:', workflowId);
+}
+
+function editWorkflow(workflowId) {
+    // Implementation for editing workflow
+    console.log('Editing workflow:', workflowId);
+}
+
+function deleteWorkflow(workflowId) {
+    if (confirm('Czy na pewno chcesz usunąć ten workflow?')) {
+        // Implementation for workflow deletion
+        console.log('Deleting workflow:', workflowId);
+    }
+}
+
+function useTemplate(templateType) {
+    // Implementation for using workflow template
+    console.log('Using template:', templateType);
+    $('#createWorkflowModal').modal('show');
+}
+
+// Workflow step management
+function addWorkflowStep() {
+    const container = document.getElementById('workflowSteps');
+    const stepDiv = container.querySelector('.workflow-step').cloneNode(true);
+    
+    // Clear input values
+    stepDiv.querySelectorAll('input, select').forEach(input => {
+        if (input.type === 'number') {
+            input.value = '3';
+        } else {
+            input.value = '';
+        }
+    });
+    
+    container.appendChild(stepDiv);
+}
+
+function removeWorkflowStep(button) {
+    const container = document.getElementById('workflowSteps');
+    if (container.children.length > 1) {
+        button.closest('.workflow-step').remove();
+    } else {
+        alert('Workflow musi mieć co najmniej jeden etap.');
+    }
+}
+
+function createWorkflow() {
+    const form = document.getElementById('createWorkflowForm');
+    const formData = new FormData(form);
+    
+    // Implementation for workflow creation
+    console.log('Creating workflow with data:', formData);
+    
+    // Close modal after creation
+    $('#createWorkflowModal').modal('hide');
+    
+    // Show success message
+    showNotification('Workflow został utworzony pomyślnie!', 'success');
+}
+
+function showNotification(message, type = 'info') {
+    // Simple notification system
+    const notification = document.createElement('div');
+    notification.className = `alert alert-${type} position-fixed top-0 end-0 m-3`;
+    notification.style.zIndex = '9999';
+    notification.innerHTML = message;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+// Initialize tooltips and animations on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate stats cards
+    const statsCards = document.querySelectorAll('.stats-card');
+    statsCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 100);
+    });
+    
+    // Initialize Bootstrap tooltips if available
+    if (typeof bootstrap !== 'undefined') {
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    }
+});
+</script>
+{% endblock %}

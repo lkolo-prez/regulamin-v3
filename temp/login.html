@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie - Legal System Platform</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CodeMirror for code editing -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: #1e3c72 !important;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 30px;
+        }
+        
+        .legal-system-card {
+            border-left: 5px solid #2a5298;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .legal-system-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .document-card {
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.2s;
+        }
+        
+        .document-card:hover {
+            border-color: #2a5298;
+            transform: translateY(-2px);
+        }
+        
+        .hierarchy-badge {
+            font-size: 0.8em;
+            padding: 4px 8px;
+        }
+        
+        .hierarchy-1 { background-color: #dc3545; }
+        .hierarchy-2 { background-color: #fd7e14; }
+        .hierarchy-3 { background-color: #ffc107; }
+        .hierarchy-4 { background-color: #20c997; }
+        .hierarchy-5 { background-color: #0dcaf0; }
+        
+        .comment-thread {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #2a5298;
+        }
+        
+        .inline-comment {
+            position: absolute;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 8px;
+            max-width: 250px;
+            font-size: 0.9em;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .consistency-issue {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        
+        .issue-error {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .issue-warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .issue-info {
+            background-color: #d1ecf1;
+            border-left: 4px solid #0dcaf0;
+        }
+        
+        .editor-toolbar {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            border: 1px solid #dee2e6;
+        }
+        
+        .editor-content {
+            border: 1px solid #dee2e6;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            min-height: 400px;
+        }
+        
+        .legal-analysis {
+            background: #e7f1ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .legal-concept {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            margin: 2px;
+        }
+        
+        .user-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .role-admin { background-color: #dc3545; color: white; }
+        .role-editor { background-color: #fd7e14; color: white; }
+        .role-contributor { background-color: #20c997; color: white; }
+        .role-viewer { background-color: #6c757d; color: white; }
+        
+        .document-content {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        
+        .document-content h1,
+        .document-content h2,
+        .document-content h3 {
+            color: #1e3c72;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .document-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .footer {
+            background: rgba(255,255,255,0.9);
+            padding: 20px 0;
+            margin-top: 50px;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .stats-card {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #2a5298, #1e3c72);
+            color: white;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        
+        .stats-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stats-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-balance-scale"></i>
+                Legal System Platform
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            <i class="fas fa-home"></i> Dashboard
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/auth/login">
+                                <i class="fas fa-sign-in-alt"></i> Logowanie
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/auth/register">
+                                <i class="fas fa-user-plus"></i> Rejestracja
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+            
+        
+        
+        <div class="main-content">
+            
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-header text-center bg-primary text-white">
+                <h3><i class="fas fa-sign-in-alt"></i> Logowanie</h3>
+            </div>
+            <div class="card-body p-4">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">
+                            <i class="fas fa-user"></i> Nazwa użytkownika
+                        </label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="password" class="form-label">
+                            <i class="fas fa-lock"></i> Hasło
+                        </label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                        <label class="form-check-label" for="remember">
+                            Zapamiętaj mnie
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-sign-in-alt"></i> Zaloguj się
+                    </button>
+                </form>
+                
+                <hr>
+                
+                <div class="text-center">
+                    <p class="mb-0">Nie masz konta?</p>
+                    <a href="/auth/register" class="btn btn-outline-success">
+                        <i class="fas fa-user-plus"></i> Zarejestruj się
+                    </a>
+                </div>
+                
+                <div class="mt-4 p-3 bg-light rounded">
+                    <h6><i class="fas fa-info-circle"></i> Demo Account:</h6>
+                    <p class="mb-0">
+                        <strong>Login:</strong> admin<br>
+                        <strong>Hasło:</strong> admin123
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6><i class="fas fa-balance-scale"></i> Legal System Platform</h6>
+                    <p class="text-muted">Współpraca nad systemami prawnymi</p>
+                </div>
+                <div class="col-md-4">
+                    <h6><i class="fas fa-users"></i> Społeczność</h6>
+                    <p class="text-muted">Transparent, collaborative, professional</p>
+                </div>
+                <div class="col-md-4">
+                    <h6><i class="fas fa-code"></i> Open Source</h6>
+                    <p class="text-muted">Powered by Flask & Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/markdown/markdown.min.js"></script>
+    
+    <script>
+        // Global JavaScript functions
+        function showNotification(message, type = 'success') {
+            const toast = document.createElement('div');
+            toast.className = `alert alert-${type} position-fixed`;
+            toast.style.cssText = 'top: 20px; right: 20px; z-index: 1050; min-width: 250px;';
+            toast.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" onclick="this.parentElement.remove()"></button>
+            `;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => toast.remove(), 5000);
+        }
+        
+        // AJAX helper
+        async function apiCall(url, method = 'GET', data = null) {
+            const options = {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            
+            if (data) {
+                options.body = JSON.stringify(data);
+            }
+            
+            const response = await fetch(url, options);
+            return await response.json();
+        }
+    </script>
+    
+    
+</body>
+</html>

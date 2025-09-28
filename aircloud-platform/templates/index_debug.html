@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Legal Systems Dashboard - DEBUG{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-6 text-primary mb-4">
+            <i class="fas fa-gavel"></i> Legal Systems Dashboard - DEBUG MODE
+        </h1>
+        <p>DEBUG: legal_systems count = {{ legal_systems|length }}</p>
+        <p>DEBUG: recent_documents count = {{ recent_documents|length }}</p>
+    </div>
+</div>
+
+<div class="row">
+    {% for system in legal_systems %}
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm system-card">
+            <div class="card-body">
+                <h5 class="card-title text-primary">
+                    <i class="fas fa-university"></i> {{ system.name }}
+                </h5>
+                <p class="card-text text-muted">{{ system.description }}</p>
+                
+                <div class="d-flex align-items-center">
+                    <span class="badge bg-primary me-2">{{ system.system_type.title() }}</span>
+                    <span class="badge bg-secondary me-2">{{ system.jurisdiction }}</span>
+                    <span class="text-muted small">
+                        <i class="fas fa-file-alt"></i> 
+                        DEBUG: {{ system.documents.count() }} dokumentów
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

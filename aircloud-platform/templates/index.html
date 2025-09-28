@@ -62,11 +62,11 @@
                                 <p class="card-text text-muted">{{ system.description }}</p>
                                 
                                 <div class="d-flex align-items-center">
-                                    <span class="badge bg-primary me-2">{{ system.type.title() }}</span>
+                                    <span class="badge bg-primary me-2">{{ system.system_type.title() }}</span>
                                     <span class="badge bg-secondary me-2">{{ system.jurisdiction }}</span>
                                     <span class="text-muted small">
                                         <i class="fas fa-file-alt"></i> 
-                                        {{ system.documents|length }} dokumentów
+                                        {{ system.documents.count() }} dokumentów
                                     </span>
                                 </div>
                             </div>
@@ -174,7 +174,7 @@
                 {% else %}
                     <div class="text-center">
                         <p class="small text-muted">Zaloguj się aby uzyskać więcej opcji</p>
-                        <a href="{{ url_for('login') }}" class="btn btn-primary btn-sm">
+                        <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-sm">
                             <i class="fas fa-sign-in-alt"></i> Zaloguj się
                         </a>
                     </div>
