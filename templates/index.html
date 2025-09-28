@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+
+{% block title %}Legal Systems Dashboard{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h1 class="display-4 text-center mb-4">
+            <i class="fas fa-balance-scale text-primary"></i>
+            Legal System Collaborative Platform
+        </h1>
+        <p class="lead text-center text-muted">
+            Profesjonalna platforma do współpracy nad systemami prawnymi
+        </p>
+    </div>
+</div>
+
+<!-- Statistics Overview -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="stats-card">
+            <span class="stats-number">{{ legal_systems|length }}</span>
+            <span class="stats-label">Systemów Prawnych</span>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-card">
+            <span class="stats-number">{{ recent_documents|length }}</span>
+            <span class="stats-label">Dokumentów</span>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-card">
+            <span class="stats-number">∞</span>
+            <span class="stats-label">Możliwości</span>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-card">
+            <span class="stats-number">100%</span>
+            <span class="stats-label">Open Source</span>
+        </div>
+    </div>
+</div>
+
+<!-- Legal Systems -->
+<div class="row">
+    <div class="col-md-8">
+        <h2><i class="fas fa-building"></i> Systemy Prawne</h2>
+        
+        {% if legal_systems %}
+            {% for system in legal_systems %}
+                <div class="card legal-system-card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5 class="card-title">
+                                    <a href="{{ url_for('legal_system_view', system_id=system.id) }}" class="text-decoration-none">
+                                        {{ system.name }}
+                                    </a>
+                                </h5>
+                                <p class="card-text text-muted">{{ system.description }}</p>
+                                
+                                <div class="d-flex align-items-center">
+                                    <span class="badge bg-primary me-2">{{ system.type.title() }}</span>
+                                    <span class="badge bg-secondary me-2">{{ system.jurisdiction }}</span>
+                                    <span class="text-muted small">
+                                        <i class="fas fa-file-alt"></i> 
+                                        {{ system.documents|length }} dokumentów
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-end">
+                                <div class="btn-group" role="group">
+                                    <a href="{{ url_for('legal_system_view', system_id=system.id) }}" 
+                                       class="btn btn-outline-primary btn-sm">
+                                        <i class="fas fa-eye"></i> Przeglądaj
+                                    </a>
+                                    {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
+                                        <button class="btn btn-outline-secondary btn-sm" 
+                                                onclick="checkConsistency({{ system.id }})">
+                                            <i class="fas fa-check-circle"></i> Sprawdź Spójność
+                                        </button>
+                                    {% endif %}
+                                </div>
+                                
+                                <div class="text-muted small mt-2">
+                                    Utworzony: {{ system.created_at.strftime('%d.%m.%Y') }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="text-center py-5">
+                <i class="fas fa-folder-open fa-3x text-muted mb-3"></i>
+                <h4 class="text-muted">Brak systemów prawnych</h4>
+                <p class="text-muted">Stwórz pierwszy system prawny aby rozpocząć pracę</p>
+                {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createSystemModal">
+                        <i class="fas fa-plus"></i> Utwórz System Prawny
+                    </button>
+                {% endif %}
+            </div>
+        {% endif %}
+        
+        {% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
+            <div class="text-center mt-3">
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createSystemModal">
+                    <i class="fas fa-plus"></i> Nowy System Prawny
+                </button>
+            </div>
+        {% endif %}
+    </div>
+    
+    <!-- Recent Activity Sidebar -->
+    <div class="col-md-4">
+        <h3><i class="fas fa-clock"></i> Ostatnie Dokumenty</h3>
+        
+        {% if recent_documents %}
+            {% for doc in recent_documents %}
+                <div class="card document-card mb-2">
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-2">
+                            <a href="{{ url_for('document_view', slug=doc.slug) }}" class="text-decoration-none">
+                                {{ doc.title }}
+                            </a>
+                        </h6>
+                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge hierarchy-badge hierarchy-{{ doc.hierarchy_level }}">
+                                Level {{ doc.hierarchy_level }}
+                            </span>
+                            <small class="text-muted">
+                                {{ doc.updated_at.strftime('%d.%m.%Y') }}
+                            </small>
+                        </div>
+                        
+                        <div class="mt-2">
+                            <span class="badge bg-light text-dark">{{ doc.document_type.title() }}</span>
+                            <span class="badge bg-info">{{ doc.status.title() }}</span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="text-center py-4">
+                <i class="fas fa-file-alt fa-2x text-muted"></i>
+                <p class="text-muted mt-2">Brak dokumentów</p>
+            </div>
+        {% endif %}
+        
+        <!-- Quick Actions -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h6><i class="fas fa-bolt"></i> Szybkie Akcje</h6>
+            </div>
+            <div class="card-body">
+                {% if current_user.is_authenticated %}
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-plus"></i> Nowy Dokument
+                        </button>
+                        <button class="btn btn-outline-success btn-sm">
+                            <i class="fas fa-comment"></i> Wszystkie Komentarze
+                        </button>
+                        {% if current_user.role == 'admin' %}
+                            <a href="{{ url_for('admin_dashboard') }}" class="btn btn-outline-warning btn-sm">
+                                <i class="fas fa-cog"></i> Panel Admina
+                            </a>
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <div class="text-center">
+                        <p class="small text-muted">Zaloguj się aby uzyskać więcej opcji</p>
+                        <a href="{{ url_for('login') }}" class="btn btn-primary btn-sm">
+                            <i class="fas fa-sign-in-alt"></i> Zaloguj się
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create System Modal -->
+{% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
+<div class="modal fade" id="createSystemModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-plus-circle"></i> 
+                    Utwórz Nowy System Prawny
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form id="createSystemForm">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nazwa systemu prawnego</label>
+                        <input type="text" class="form-control" name="name" required 
+                               placeholder="np. SSPO - Samorząd Studentów Politechniki Opolskiej">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Opis</label>
+                        <textarea class="form-control" name="description" rows="3" 
+                                  placeholder="Krótki opis systemu prawnego i jego zastosowania"></textarea>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label">Typ organizacji</label>
+                            <select class="form-select" name="type" required>
+                                <option value="">Wybierz typ...</option>
+                                <option value="university">Uczelnia</option>
+                                <option value="company">Firma</option>
+                                <option value="organization">Organizacja</option>
+                                <option value="government">Instytucja publiczna</option>
+                                <option value="other">Inne</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Jurysdykcja</label>
+                            <select class="form-select" name="jurisdiction">
+                                <option value="Poland">Polska</option>
+                                <option value="EU">Unia Europejska</option>
+                                <option value="International">Międzynarodowe</option>
+                                <option value="Other">Inne</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Utwórz System
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Create system form submission
+{% if current_user.is_authenticated and current_user.role in ['admin', 'editor'] %}
+document.getElementById('createSystemForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    
+    try {
+        const result = await apiCall('/api/systems', 'POST', data);
+        
+        if (result.success) {
+            showNotification('System prawny utworzony pomyślnie!', 'success');
+            location.reload();
+        } else {
+            showNotification('Błąd podczas tworzenia systemu: ' + result.error, 'danger');
+        }
+    } catch (error) {
+        showNotification('Błąd połączenia: ' + error.message, 'danger');
+    }
+});
+
+// Consistency check
+async function checkConsistency(systemId) {
+    try {
+        showNotification('Sprawdzanie spójności systemu...', 'info');
+        
+        const result = await apiCall(`/api/consistency-check/${systemId}`);
+        
+        if (result.success) {
+            if (result.issues_found === 0) {
+                showNotification('✅ System jest spójny! Nie znaleziono problemów.', 'success');
+            } else {
+                showNotification(`⚠️ Znaleziono ${result.issues_found} problemów spójności. Sprawdź szczegóły w widoku systemu.`, 'warning');
+            }
+        }
+    } catch (error) {
+        showNotification('Błąd podczas sprawdzania spójności: ' + error.message, 'danger');
+    }
+}
+{% endif %}
+</script>
+{% endblock %}

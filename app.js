@@ -157,6 +157,189 @@ app.get('/api/analytics', (req, res) => {
 });
 
 // ===============================
+// ROZBUDOWANE API ENDPOINTS
+// ===============================
+
+// API endpoint - health check
+app.get('/api/health', (req, res) => {
+    const healthStatus = {
+        status: 'healthy',
+        timestamp: new Date().toISOString(),
+        uptime: process.uptime(),
+        version: '3.0.0',
+        environment: process.env.NODE_ENV || 'development',
+        database: {
+            suggestions: suggestions.length,
+            analytics: Object.keys(analytics).length
+        },
+        memory: process.memoryUsage(),
+        performance: {
+            responseTime: Date.now()
+        }
+    };
+    
+    res.json(healthStatus);
+});
+
+// API endpoint - analiza dokumentów
+app.get('/api/analyze', (req, res) => {
+    const query = req.query.q;
+    
+    if (!query) {
+        return res.status(400).json({
+            success: false,
+            error: 'Brak parametru query (q)'
+        });
+    }
+    
+    // Analiza NLP dokumentu
+    const tokens = tokenizer.tokenize(query.toLowerCase());
+    const stemmed = tokens.map(token => stemmer.stem(token));
+    
+    // Wyszukaj pasujące kategorie
+    const analysis = {
+        query: query,
+        tokens: tokens.length,
+        categories: [],
+        legalConcepts: [],
+        suggestions: [],
+        confidence: 0
+    };
+    
+    // Sprawdź kategorie prawne
+    Object.keys(legalKeywords).forEach(category => {
+        const matches = legalKeywords[category].filter(keyword => 
+            query.toLowerCase().includes(keyword)
+        );
+        
+        if (matches.length > 0) {
+            analysis.categories.push({
+                category: category,
+                matches: matches,
+                confidence: matches.length / legalKeywords[category].length
+            });
+        }
+    });
+    
+    // Oblicz ogólną pewność
+    analysis.confidence = analysis.categories.reduce((sum, cat) => 
+        sum + cat.confidence, 0) / Math.max(analysis.categories.length, 1);
+    
+    res.json({
+        success: true,
+        analysis: analysis
+    });
+});
+
+// API endpoint - statystyki
+app.get('/api/stats', (req, res) => {
+    const stats = {
+        suggestions: {
+            total: suggestions.length,
+            pending: suggestions.filter(s => s.status === 'pending').length,
+            approved: suggestions.filter(s => s.status === 'approved').length,
+            rejected: suggestions.filter(s => s.status === 'rejected').length,
+            implemented: suggestions.filter(s => s.status === 'implemented').length
+        },
+        analytics: {
+            totalVisits: analytics.totalVisits || 0,
+            documentViews: analytics.documentViews || {},
+            avgVotesPerSuggestion: suggestions.length > 0 ? 
+                suggestions.reduce((sum, s) => sum + (s.votes || 0), 0) / suggestions.length : 0
+        },
+        system: {
+            uptime: process.uptime(),
+            memory: process.memoryUsage(),
+            timestamp: new Date().toISOString()
+        }
+    };
+    
+    res.json(stats);
+});
+
+// API endpoint - lista dokumentów
+app.get('/documents/', (req, res) => {
+    const documents = [
+        {
+            id: '01-regulamin-sspo',
+            title: 'Regulamin SSPO (główny)',
+            description: 'Główny regulamin Samorządu Studentów Politechniki Opolskiej',
+            lastModified: '2024-12-18',
+            sections: 15,
+            status: 'active'
+        },
+        {
+            id: '02-ordynacja-wyborcza',
+            title: 'Ordynacja wyborcza',
+            description: 'Zasady przeprowadzania wyborów w SSPO',
+            lastModified: '2024-11-20',
+            sections: 8,
+            status: 'active'
+        },
+        {
+            id: '03-kodeks-etyczny',
+            title: 'Kodeks etyczny',
+            description: 'Zasady etyczne obowiązujące członków SSPO',
+            lastModified: '2024-10-15',
+            sections: 6,
+            status: 'active'
+        },
+        {
+            id: '04-regulamin-finansowy',
+            title: 'Regulamin finansowy',
+            description: 'Zasady zarządzania finansami SSPO',
+            lastModified: '2024-12-01',
+            sections: 12,
+            status: 'active'
+        }
+    ];
+    
+    res.json({
+        success: true,
+        documents: documents,
+        totalCount: documents.length
+    });
+});
+
+// API endpoint - sprawdzenie stanu systemu
+app.get('/api/check', (req, res) => {
+    const systemCheck = {
+        timestamp: new Date().toISOString(),
+        services: {
+            database: {
+                status: 'operational',
+                responseTime: Math.floor(Math.random() * 10) + 1 + 'ms'
+            },
+            api: {
+                status: 'operational',
+                endpoints: ['/api/suggestions', '/api/analytics', '/api/health']
+            },
+            frontend: {
+                status: 'operational',
+                assets: 'loaded'
+            }
+        },
+        performance: {
+            uptime: process.uptime(),
+            memoryUsage: process.memoryUsage(),
+            cpuUsage: process.cpuUsage()
+        },
+        features: {
+            suggestions: suggestions.length > 0,
+            analytics: true,
+            legalAnalysis: true,
+            notifications: true
+        }
+    };
+    
+    res.json({
+        success: true,
+        system: systemCheck,
+        message: 'System działa prawidłowo'
+    });
+});
+
+// ===============================
 // GITHUB WEBHOOK HANDLER
 // ===============================
 

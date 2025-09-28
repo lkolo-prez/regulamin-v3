@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+{% block title %}Rejestracja - Legal System Platform{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header text-center bg-success text-white">
+                <h3><i class="fas fa-user-plus"></i> Rejestracja</h3>
+            </div>
+            <div class="card-body p-4">
+                <form method="POST" id="registerForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">
+                                    <i class="fas fa-user"></i> Nazwa użytkownika *
+                                </label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i> Email *
+                                </label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="password" class="form-label">
+                                    <i class="fas fa-lock"></i> Hasło *
+                                </label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="confirm_password" class="form-label">
+                                    <i class="fas fa-lock"></i> Potwierdź hasło *
+                                </label>
+                                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="full_name" class="form-label">
+                            <i class="fas fa-id-card"></i> Imię i nazwisko
+                        </label>
+                        <input type="text" class="form-control" id="full_name" name="full_name" 
+                               placeholder="np. Jan Kowalski">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="institution" class="form-label">
+                            <i class="fas fa-building"></i> Instytucja/Organizacja
+                        </label>
+                        <input type="text" class="form-control" id="institution" name="institution" 
+                               placeholder="np. Politechnika Opolska">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="expertise_areas" class="form-label">
+                            <i class="fas fa-brain"></i> Obszary ekspertyz prawnych
+                        </label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="prawo_administracyjne" id="exp1">
+                                    <label class="form-check-label" for="exp1">Prawo administracyjne</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="prawo_studenckie" id="exp2">
+                                    <label class="form-check-label" for="exp2">Prawo studenckie</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="prawo_pracy" id="exp3">
+                                    <label class="form-check-label" for="exp3">Prawo pracy</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="prawo_cywilne" id="exp4">
+                                    <label class="form-check-label" for="exp4">Prawo cywilne</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="prawo_karne" id="exp5">
+                                    <label class="form-check-label" for="exp5">Prawo karne</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="inne" id="exp6">
+                                    <label class="form-check-label" for="exp6">Inne</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                Akceptuję regulamin platformy i zasady przetwarzania danych osobowych *
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success w-100">
+                        <i class="fas fa-user-plus"></i> Zarejestruj się
+                    </button>
+                </form>
+                
+                <hr>
+                
+                <div class="text-center">
+                    <p class="mb-0">Masz już konto?</p>
+                    <a href="{{ url_for('login') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-sign-in-alt"></i> Zaloguj się
+                    </a>
+                </div>
+                
+                <div class="mt-4 p-3 bg-info bg-opacity-10 rounded">
+                    <h6><i class="fas fa-info-circle"></i> Informacje o koncie:</h6>
+                    <ul class="mb-0">
+                        <li>Nowi użytkownicy otrzymują rolę "contributor"</li>
+                        <li>Możesz przeglądać wszystkie dokumenty bez logowania</li>
+                        <li>Komentowanie wymaga zalogowania</li>
+                        <li>Role "editor" i "admin" przyznawane są przez administratorów</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm_password').value;
+    
+    if (password !== confirmPassword) {
+        e.preventDefault();
+        showNotification('Hasła nie są identyczne!', 'danger');
+        return;
+    }
+    
+    if (password.length < 6) {
+        e.preventDefault();
+        showNotification('Hasło musi mieć co najmniej 6 znaków!', 'danger');
+        return;
+    }
+    
+    // Collect expertise areas
+    const expertiseAreas = [];
+    document.querySelectorAll('input[type="checkbox"]:checked').forEach(checkbox => {
+        if (checkbox.value !== 'on') { // Skip the terms checkbox
+            expertiseAreas.push(checkbox.value);
+        }
+    });
+    
+    // Add hidden input with expertise areas
+    const expertiseInput = document.createElement('input');
+    expertiseInput.type = 'hidden';
+    expertiseInput.name = 'expertise_areas';
+    expertiseInput.value = JSON.stringify(expertiseAreas);
+    this.appendChild(expertiseInput);
+});
+</script>
+{% endblock %}
