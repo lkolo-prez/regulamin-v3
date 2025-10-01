@@ -4,8 +4,8 @@ services:
   # Aircloud Legal Platform - Flask Application
   aircloud-legal:
     build:
-      context: .
-      dockerfile: Dockerfile.flask
+      context: ./aircloud-platform
+      dockerfile: docker/Dockerfile.flask
     container_name: aircloud-legal-platform
     ports:
       - "5001:5001"
@@ -15,9 +15,9 @@ services:
       - FLASK_RUN_HOST=0.0.0.0
       - FLASK_RUN_PORT=5001
     volumes:
-      - ./instance:/app/instance
-      - ./uploads:/app/uploads
-      - ./static/exports:/app/static/exports
+      - ./aircloud-platform/instance:/app/instance
+      - ./aircloud-platform/uploads:/app/uploads
+      - ./aircloud-platform/static/exports:/app/static/exports
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:5001/"]
