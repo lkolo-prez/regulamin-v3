@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utwórz dokument - {{ template.name }} | Aircloud Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+        
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .template-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        
+        .form-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control, .form-select {
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 0.75rem;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .field-help {
+            font-size: 0.875rem;
+            color: #718096;
+            margin-top: 0.25rem;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .preview-btn {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .preview-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .required-mark {
+            color: #e53e3e;
+            margin-left: 0.25rem;
+        }
+        
+        .field-counter {
+            font-size: 0.875rem;
+            color: #a0aec0;
+            text-align: right;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="template-header">
+                <h2>
+                    <i class="fas fa-file-plus me-2"></i>
+                    Utwórz dokument z szablonu
+                </h2>
+                <p class="mb-0 mt-2">{{ template.name }}</p>
+                <small>{{ template.description }}</small>
+            </div>
+
+            <form method="POST" id="templateForm">
+                <!-- Basic Information -->
+                <div class="form-section">
+                    <h5 class="mb-3">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Informacje podstawowe
+                    </h5>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Tytuł dokumentu
+                            <span class="required-mark">*</span>
+                        </label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="document_title" 
+                               required
+                               placeholder="Wprowadź tytuł dokumentu">
+                        <div class="field-help">Główny tytuł dokumentu, który będzie widoczny w systemie</div>
+                    </div>
+                </div>
+
+                <!-- Template-specific fields -->
+                {% if template.id == 'reg_basic' %}
+                <div class="form-section">
+                    <h5 class="mb-3">
+                        <i class="fas fa-balance-scale me-2"></i>
+                        Szczegóły regulaminu
+                    </h5>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Preambuła <span class="required-mark">*</span></label>
+                        <textarea class="form-control" 
+                                  name="preamble" 
+                                  rows="4" 
+                                  required
+                                  placeholder="Na podstawie..."></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">§ 1 - Zakres regulaminu</label>
+                        <textarea class="form-control" 
+                                  name="article_1" 
+                                  rows="3"
+                                  placeholder="Regulamin określa..."></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">§ 2 - Definicje</label>
+                        <textarea class="form-control" 
+                                  name="article_2" 
+                                  rows="3"
+                                  placeholder="Użyte w regulaminie określenia oznaczają..."></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">§ 3 - Przepisy szczegółowe</label>
+                        <textarea class="form-control" 
+                                  name="article_3" 
+                                  rows="4"
+                                  placeholder="Szczegółowe przepisy..."></textarea>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Data wejścia w życie</label>
+                            <input type="text" 
+                                   class="form-control" 
+                                   name="effective_date"
+                                   placeholder="np. z dniem uchwalenia">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Data uchwalenia</label>
+                            <input type="date" 
+                                   class="form-control" 
+                                   name="adoption_date">
+                        </div>
+                    </div>
+                </div>
+
+                {% elif template.id == 'res_standard' %}
+                <div class="form-section">
+                    <h5 class="mb-3">
+                        <i class="fas fa-gavel me-2"></i>
+                        Szczegóły uchwały
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Numer uchwały <span class="required-mark">*</span></label>
+                            <input type="text" 
+                                   class="form-control" 
+                                   name="number" 
+                                   required
+                                   placeholder="np. 01/2025">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Data <span class="required-mark">*</span></label>
+                            <input type="date" 
+                                   class="form-control" 
+                                   name="date" 
+                                   required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Przedmiot uchwały <span class="required-mark">*</span></label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="subject" 
+                               required
+                               placeholder="w sprawie...">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Podstawa prawna</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="legal_basis"
+                               placeholder="np. § 10 ust. 1 Regulaminu SSPO">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Treść uchwały <span class="required-mark">*</span></label>
+                        <textarea class="form-control" 
+                                  name="content" 
+                                  rows="6" 
+                                  required
+                                  placeholder="Zarząd postanawia..."></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Wykonanie uchwały powierza się</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="execution"
+                               placeholder="np. Prezydium Zarządu">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Przewodniczący Zarządu</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="chairman"
+                               placeholder="Imię i nazwisko">
+                    </div>
+                </div>
+
+                {% elif template.id == 'form_application' %}
+                <div class="form-section">
+                    <h5 class="mb-3">
+                        <i class="fas fa-user me-2"></i>
+                        Dane wnioskodawcy
+                    </h5>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Imię i nazwisko <span class="required-mark">*</span></label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="applicant_name" 
+                               required>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Telefon</label>
+                            <input type="tel" 
+                                   class="form-control" 
+                                   name="phone"
+                                   placeholder="+48">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" 
+                                   class="form-control" 
+                                   name="email">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h5 class="mb-3">
+                        <i class="fas fa-project-diagram me-2"></i>
+                        Informacje o projekcie
+                    </h5>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Nazwa projektu <span class="required-mark">*</span></label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="project_name" 
+                               required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Opis projektu <span class="required-mark">*</span></label>
+                        <textarea class="form-control" 
+                                  name="description" 
+                                  rows="5" 
+                                  required
+                                  maxlength="1000"
+                                  onkeyup="updateCounter(this, 'descCounter')"></textarea>
+                        <div class="field-counter" id="descCounter">0 / 1000 znaków</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Uzasadnienie <span class="required-mark">*</span></label>
+                        <textarea class="form-control" 
+                                  name="justification" 
+                                  rows="4" 
+                                  required
+                                  maxlength="800"
+                                  onkeyup="updateCounter(this, 'justCounter')"></textarea>
+                        <div class="field-counter" id="justCounter">0 / 800 znaków</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Budżet (tabela w formacie Markdown)</label>
+                        <textarea class="form-control" 
+                                  name="budget_table" 
+                                  rows="3"
+                                  placeholder="| Pozycja 1 | 100 PLN |"></textarea>
+                        <div class="field-help">Format: | Nazwa pozycji | Kwota |</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Łączna kwota</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="total_amount"
+                               placeholder="np. 1000 PLN">
+                    </div>
+                </div>
+
+                {% elif template.id == 'letter_official' %}
+                <div class="form-section">
+                    <h5 class="mb-3">
+                        <i class="fas fa-envelope me-2"></i>
+                        Szczegóły pisma
+                    </h5>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Adresat <span class="required-mark">*</span></label>
+                        <textarea class="form-control" 
+                                  name="recipient" 
+                                  rows="3" 
+                                  required
+                                  placeholder="Nazwa instytucji&#10;Ulica&#10;Miasto"></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Dotyczy <span class="required-mark">*</span></label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="subject" 
+                               required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Treść pisma <span class="required-mark">*</span></label>
+                        <textarea class="form-control" 
+                                  name="content" 
+                                  rows="8" 
+                                  required></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Podpis</label>
+                        <input type="text" 
+                               class="form-control" 
+                               name="signature"
+                               placeholder="np. Zarząd SSPO">
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Action Buttons -->
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="{{ url_for('collab_routes.template_gallery') }}" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        Wróć do galerii
+                    </a>
+                    
+                    <div>
+                        <button type="button" class="preview-btn me-2" onclick="previewDocument()">
+                            <i class="fas fa-eye me-2"></i>
+                            Podgląd
+                        </button>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Utwórz dokument
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Preview Modal -->
+    <div class="modal fade" id="previewModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-eye me-2"></i>
+                        Podgląd dokumentu
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="previewContent" style="max-height: 70vh; overflow-y: auto;">
+                    <!-- Preview will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                    <button type="button" class="btn btn-primary" onclick="submitForm()">
+                        <i class="fas fa-check-circle me-2"></i>
+                        Zatwierdź i utwórz
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        function updateCounter(textarea, counterId) {
+            const counter = document.getElementById(counterId);
+            const current = textarea.value.length;
+            const max = textarea.maxLength;
+            counter.textContent = `${current} / ${max} znaków`;
+            
+            if (current > max * 0.9) {
+                counter.style.color = '#e53e3e';
+            } else {
+                counter.style.color = '#a0aec0';
+            }
+        }
+        
+        function previewDocument() {
+            const formData = new FormData(document.getElementById('templateForm'));
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            // Generate preview (simplified - would call backend in production)
+            let preview = '<div class="p-4">';
+            preview += `<h2>${data.document_title || 'Dokument bez tytułu'}</h2>`;
+            preview += '<hr>';
+            
+            for (const [key, value] of Object.entries(data)) {
+                if (key !== 'document_title' && value) {
+                    const label = key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                    preview += `<h5>${label}</h5>`;
+                    preview += `<p>${value.replace(/\n/g, '<br>')}</p>`;
+                }
+            }
+            
+            preview += '</div>';
+            
+            document.getElementById('previewContent').innerHTML = preview;
+            new bootstrap.Modal(document.getElementById('previewModal')).show();
+        }
+        
+        function submitForm() {
+            document.getElementById('templateForm').submit();
+        }
+        
+        // Form validation
+        document.getElementById('templateForm').addEventListener('submit', function(e) {
+            if (!this.checkValidity()) {
+                e.preventDefault();
+                e.stopPropagation();
+                alert('Proszę wypełnić wszystkie wymagane pola');
+            }
+            this.classList.add('was-validated');
+        });
+    </script>
+</body>
+</html>
