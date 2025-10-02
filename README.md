@@ -1,188 +1,261 @@
-# SSPO Regulamin v3 - Kompleksowy System Zarządzania Dokumentami Prawnymi# 🧠 AI System Prawny SSPO v3.0 - Enhanced Edition
+# 🏛️ SSPO Regulamin v3 - Zaawansowany System Kolaboracyjny
 
+[![Wersja](https://img.shields.io/badge/wersja-3.0.0-blue.svg)](https://github.com/lkolo-prez/regulamin-v3)
+[![Status](https://img.shields.io/badge/status-Production%20Ready-green.svg)]()
+[![Licencja](https://img.shields.io/badge/licencja-Open%20Source%20%2F%20Commercial-blue.svg)]()
 
+## 🚀 **AIRCLOUD COLLABORATION PLATFORM v3.0**
 
-[![Wersja](https://img.shields.io/badge/wersja-3.0.0-blue.svg)](https://github.com/lkolo-prez/regulamin-v3)## 🚀 **ZAAWANSOWANY SYSTEM Z SZTUCZNĄ INTELIGENCJĄ**
+### ✨ **NAJNOWSZE FUNKCJE:**
 
-[![Status](https://img.shields.io/badge/status-Aktywny-green.svg)]()
+- 🤝 **Real-time Collaborative Editing** - Współdzielona edycja dokumentów w czasie rzeczywistym
+- 📄 **Smart Document Templates** - System inteligentnych szablonów dla regulaminów, uchwał i pism
+- 🔄 **Advanced Workflow Engine** - Kompleksowy system zatwierdzania dokumentów
+- 💬 **Context-aware Comments** - Komentarze kontekstowe z zaznaczeniami
+- 🔗 **Document Relationships** - System powiązań między dokumentami
+- 🔔 **Smart Notifications** - Inteligentny system powiadomień
+- 📊 **Live Analytics** - Analityka w czasie rzeczywistym
+- � **Multi-user Presence** - Śledzenie aktywnych użytkowników
 
-[![Licencja](https://img.shields.io/badge/licencja-Open%20Source-blue.svg)]()To nie jest zwykła dokumentacja! To **rewolucyjny system prawny** wyposażony w **sztuczną inteligencję**, **analizę NLP** i **wykrywanie konfliktów prawnych** w czasie rzeczywistym.
+---
 
+## 🎯 **DLA KOGO JEST TEN SYSTEM?**
 
+### 👨‍🎓 **Studenci SSPO:**
+- Łatwe tworzenie dokumentów z gotowych szablonów
+- Współpraca nad regulaminami w czasie rzeczywistym
+- Komentowanie i sugerowanie zmian
+- Śledzenie statusu dokumentów
 
-## 🏛️ Przegląd Projektu### ✨ **NOWE FUNKCJE AI:**
+### ⚖️ **Zarząd i Komisje:**
+- Zaawansowany workflow zatwierdzania
+- Pełna kontrola wersji dokumentów
+- System powiązań między regulaminami
+- Export do PDF/DOCX
 
-- 🧠 **Analiza NLP w języku polskim** - Zaawansowane przetwarzanie języka naturalnego
+### 👨‍💼 **Administratorzy:**
+- Zarządzanie uprawnieniami
+- Monitoring aktywności
+- Analityka użytkowania
+- Automatyczne backupy
 
-Ten projekt zawiera kompleksowy system zarządzania dokumentami prawnymi składający się z dwóch głównych komponentów:- ⚖️ **Wykrywanie konfliktów prawnych** - Automatyczna identyfikacja niespójności
+---
 
-- 📊 **Dopasowywanie precedensów** - Inteligentne wyszukiwanie podobnych przypadków  
+## 🏛️ Przegląd Projektu
 
-### 1. 📋 System Regulaminów SSPO (Legacy)- 💡 **Rekomendacje AI** - Sugestie popraw i usprawnień
+Ten projekt zawiera kompleksowy system zarządzania dokumentami prawnymi składający się z:
 
-Statyczny system regulaminów i procedur Studenckiego Samorządu Politechniki Opolskiej- 📈 **Analityka w czasie rzeczywistym** - Live monitoring i statystyki
+### 1. 📋 System Regulaminów SSPO
+Statyczny system regulaminów i procedur Studenckiego Samorządu Politechniki Opolskiej
 
-- 🔍 **TF-IDF i sentiment analysis** - Analiza semantyczna dokumentów
-
-### 2. 🚀 Aircloud Legal Platform 
-
-Nowoczesna platforma współpracy nad dokumentami prawnymi z funkcjami:### 🎯 **GŁÓWNE CELE PROJEKTU:**
-
-- ✏️ Edycja dokumentów Markdown w czasie rzeczywistym- **🤖 Automatyzacja:** AI wspomaga analizę i tworzenie dokumentów prawnych
-
-- 💬 Zaawansowany system komentowania- **⚡ Efektywność:** Błyskawiczne wyszukiwanie i analiza precedensów  
-
-- 🔄 Kontrola wersji z wizualizacją zmian- **🎨 Interaktywność:** Nowoczesny dashboard z wizualnymi rezultatami
-
-- 📄 Export do PDF/DOCX- **📱 Dostępność:** Responsywny interfejs dostępny dla każdego studenta
-
-- 👥 Zarządzanie użytkownikami i uprawnieniami- **🔒 Spójność:** AI zapewnia logiczną całość wszystkich dokumentów
-
+### 2. 🚀 Aircloud Legal Platform
+Nowoczesna platforma współpracy nad dokumentami prawnymi z funkcjami:
+- ✏️ Edycja dokumentów Markdown w czasie rzeczywistym
+- 💬 Zaawansowany system komentowania
+- 🔄 Kontrola wersji z wizualizacją zmian
+- 📄 Export do PDF/DOCX
+- 👥 Zarządzanie użytkownikami i uprawnieniami
 - 📊 Analityka i raporty
 
-## 📚 **DOKUMENTACJA ROZSZERZONA**
+### 3. 🤝 Aircloud Collaboration Features (NOWOŚĆ v3.0)
+Zaawansowane funkcjonalności kolaboracyjne:
+- 🌐 **Real-time collaborative editing** z WebSocket
+- 📑 **7 kategorii szablonów** dokumentów (regulaminy, uchwały, formularze, pisma...)
+- 🔁 **Workflow management** z wielopoziomowym zatwierdzaniem
+- � **Contextual comments** z zaznaczeniami tekstu
+- 🔗 **Document relationships** (references, amends, replaces...)
+- 🔔 **Smart notifications** system
+- 👥 **Live user presence** tracking
+
+---
 
 ## 📁 Struktura Projektu
 
-### **🔧 Specyfikacje Techniczne:**
+```
+regulamin-v3/
+├── 📂 aircloud-platform/          # Główna aplikacja Aircloud Legal Platform
+│   ├── 🐍 aircloud_legal_platform.py           # Główna aplikacja Flask
+│   ├── 🚀 aircloud_advanced_features.py        # Zaawansowane funkcje
+│   ├── 🔧 aircloud_extended_routes.py          # Dodatkowe endpointy
+│   ├── 🤝 aircloud_collaboration_engine.py     # ✨ NOWY: Silnik kolaboracji
+│   ├── 🌐 aircloud_collaboration_routes.py     # ✨ NOWY: Routing kolaboracji
+│   ├── 📋 requirements.txt                     # Dependencje Python
+│   ├── 📂 templates/                           # Szablony HTML/Jinja2
+│   │   ├── 📂 collaboration/                   # ✨ NOWY: Szablony kolaboracji
+│   │   │   ├── editor.html                    # Edytor real-time
+│   │   │   ├── templates.html                 # Galeria szablonów
+│   │   │   ├── create_from_template.html      # Tworzenie z szablonu
+│   │   │   ├── workflow.html                  # Workflow management
+│   │   │   └── relationships.html             # Powiązania dokumentów
+│   ├── 📂 static/                              # Pliki statyczne (CSS, JS)
+│   ├── 📂 instance/                            # Dane aplikacji (SQLite DB)
+│   ├── 📂 uploads/                             # Przesłane pliki
+│   ├── 📂 docker/                              # Konfiguracja Docker
+│   │   ├── 🐳 Dockerfile.flask                # Docker dla Flask app
+│   │   └── 🐳 docker-compose.yml              # Docker Compose
+│   └── 📂 tests/                               # Testy aplikacji
+│       ├── 🧪 test_comprehensive.py           # Kompleksowe testy
+│       ├── 💬 test_comment_system.py          # Testy systemu komentowania
+│       ├── 🤝 test_collaboration.py           # ✨ NOWY: Testy kolaboracji
+│       └── ⚡ quick_test.py                   # Szybkie testy
+├── 📂 docs/                                    # Dokumentacja
+│   └── 📂 regulaminy/                          # Wszystkie pliki regulaminów MD
+├── 📂 legacy/                                  # Stare wersje i kod legacy
+├── 📂 temp/                                    # Pliki tymczasowe
+├── 📄 README.md                                # Ten plik
+├── 📄 COLLABORATION_FEATURES.md                # ✨ NOWY: Dokumentacja kolaboracji
+├── 🔧 setup_collaboration.bat                  # ✨ NOWY: Instalacja funkcji kolaboracji
+└── 🚀 start_collaboration.bat                  # ✨ NOWY: Szybkie uruchomienie
+```
 
-```- **[📖 Specyfikacja Techniczna](SPECYFIKACJA-TECHNICZNA.md)** - Pełny opis architektury i funkcji
+---
 
-regulamin-v3/- **[🛠️ Panel Administracyjny](ADMIN-PANEL.md)** - Dokumentacja zarządzania systemem
+## 🚀 Szybki Start - Aircloud Legal Platform
 
-├── 📂 aircloud-platform/          # Główna aplikacja Aircloud Legal Platform- **[🎯 Scenariusze Użycia](SCENARIUSZE-UZYCIA.md)** - Praktyczne przykłady zastosowania
-
-│   ├── 🐍 aircloud_legal_platform.py     # Główna aplikacja Flask
-
-│   ├── 🚀 aircloud_advanced_features.py  # Zaawansowane funkcje### **🎨 Komponenty Systemu:**
-
-│   ├── 🔧 aircloud_extended_routes.py    # Dodatkowe endpointy- **AI Engine:** Natural.js + TF-IDF + Machine Learning
-
-│   ├── 📋 requirements.txt               # Dependencje Python- **Conflict Detection:** Algorytm wykrywania sprzeczności prawnych
-
-│   ├── 📂 templates/                     # Szablony HTML/Jinja2- **Precedent Matching:** Inteligentne dopasowywanie podobnych przypadków
-
-│   ├── 📂 static/                        # Pliki statyczne (CSS, JS)- **Smart Annotations:** AI-powered adnotacje przy każdym artykule
-
-│   ├── 📂 instance/                      # Dane aplikacji (SQLite DB)- **Real-time Analytics:** Live monitoring i statystyki użytkowania
-
-│   ├── 📂 uploads/                       # Przesłane pliki
-
-│   ├── 📂 docker/                        # Konfiguracja Docker## 🌟 **FUNKCJE ZAAWANSOWANE**
-
-│   │   ├── 🐳 Dockerfile.flask           # Docker dla Flask app
-
-│   │   └── 🐳 docker-compose.yml         # Docker Compose### **🎯 Dla Studentów:**
-
-│   └── 📂 tests/                         # Testy aplikacji- **Zaznacz & Analizuj** - zaznacz tekst → natychmiastowa analiza AI
-
-│       ├── 🧪 test_comprehensive.py      # Kompleksowe testy- **Smart Search** - wyszukiwanie semantyczne w dokumentach
-
-│       ├── 💬 test_comment_system.py     # Testy systemu komentowania- **Precedent Explorer** - przeglądanie podobnych przypadków
-
-│       └── ⚡ quick_test.py              # Szybkie testy- **Legal Explanations** - uproszczone wyjaśnienia przepisów
-
-├── 📂 docs/                             # Dokumentacja
-
-│   └── 📂 regulaminy/                   # Wszystkie pliki regulaminów MD### **⚖️ Dla Zespołu Prawnego:**
-
-├── 📂 legacy/                           # Stare wersje i kod legacy- **Conflict Scanner** - wykrywanie sprzeczności w przepisach
-
-├── 📂 temp/                             # Pliki tymczasowe- **Recommendation Engine** - AI sugestie ulepszeń
-
-└── 📄 README.md                         # Ten plik- **Version Control** - śledzenie zmian w dokumentach
-
-```- **Collaboration Tools** - wspólne komentowanie i edycja
-
-
-
-## 🚀 Szybki Start - Aircloud Legal Platform### **🛠️ Dla Administratorów:**
-
-- **Document Manager** - zarządzanie bazą dokumentów
-
-### 1. 📋 Wymagania- **Precedent Database** - administracja bazą precedensów  
-
-- Python 3.11+- **AI Configuration** - dostrojenie parametrów algorytmów
-
-- Flask i dependencje (patrz requirements.txt)- **Analytics Dashboard** - szczegółowe statystyki systemu
-
+### 1. 📋 Wymagania
+- Python 3.11+
+- Flask i dependencje (patrz requirements.txt)
 - Opcjonalnie: Docker i Docker Compose
 
-## 🌟 **STRUKTURA SYSTEMU ENHANCED v3.0**
-
-### 2. ⚡ Uruchomienie (Lokalne)
-
-```bashSystem składa się z **21 inteligentnych dokumentów** wspartych przez **AI Backend**:
-
-cd aircloud-platform
-
-pip install -r requirements.txt### 📚 **Dokumenty Główne:**
-
-python aircloud_legal_platform.py- **`01-regulamin-sspo.md`**: 📜 Konstytucja Samorządu z analizą AI
-
-```- **`02-ordynacja-wyborcza.md` do `21-procedury-wizualizacje.md`**: 🗂️ Inteligentne załączniki z wykrywaniem konfliktów
-
-Aplikacja dostępna na: http://localhost:5001
-
-### 🧠 **AI Infrastructure:**
-
-**Demo Login:**- **`src/app-enhanced-v2.js`**: 🚀 Main AI Engine z Natural.js
-
-- Użytkownik: `lukasz.kolodziej`- **`docker/Dockerfile`**: 🐳 Production deployment environment
-
-- Hasło: `aircloud2025`- **`nginx/nginx.conf`**: 🔧 Load balancer & reverse proxy
-
-
-
-### 3. 🐳 Uruchomienie (Docker)### 🎨 **Frontend Enhanced:**
-
-```bash- **`index.html`**: 💻 Interactive AI Dashboard z live analytics
-
-cd aircloud-platform/docker- **`_sidebar.md`**: 🧭 Smart navigation system
-
-docker-compose up -d
-
-```## 🚀 **URUCHOMIENIE SYSTEMU AI**
-
-
-
-### 4. 🧪 Uruchomienie TestówSystem działa w pełni **skonteneryzowaej architekturze Docker** z **mikroserwisami**:
+### 2. ⚡ Uruchomienie Podstawowe (Lokalne)
 
 ```bash
+cd aircloud-platform
+pip install -r requirements.txt
+python aircloud_legal_platform.py
+```
 
-cd aircloud-platform/tests### ⚡ **System Already Running:**
+Aplikacja dostępna na: **http://localhost:5001**
 
-python test_comprehensive.py          # Wszystkie testy```bash
+**Demo Login:**
+- Użytkownik: `lukasz.kolodziej`
+- Hasło: `aircloud2025`
 
-python test_comment_system.py         # Testy komentowania# Dostęp do AI Dashboard:
+### 3. 🤝 Uruchomienie z Funkcjami Kolaboracyjnymi (NOWOŚĆ v3.0)
 
-```http://localhost/         # 🎨 Interactive AI Interface
+#### Krok 1: Instalacja
+```bash
+# W głównym katalogu projektu (regulamin-v3)
+setup_collaboration.bat
+```
 
+Ten skrypt:
+- ✅ Sprawdzi instalację Python
+- ✅ Utworzy środowisko wirtualne
+- ✅ Zainstaluje wszystkie zależności (Flask-SocketIO, Eventlet, etc.)
+- ✅ Zainicjalizuje bazę danych
+- ✅ Zweryfikuje moduły kolaboracyjne
 
+#### Krok 2: Uruchomienie
+```bash
+start_collaboration.bat
+```
 
-## 🔧 Główne Funkcjonalności# API Endpoints:
+Lub ręcznie:
+```bash
+cd aircloud-platform
+.venv\Scripts\activate
+python aircloud_legal_platform.py
+```
 
-http://localhost/api/health    # 📊 System Health Check
+#### Krok 3: Dostęp do Funkcji Kolaboracyjnych
+Po uruchomieniu dostępne są:
+- 🌐 **Edytor współdzielony:** http://localhost:5001/collaboration/editor/<document_id>
+- � **Galeria szablonów:** http://localhost:5001/collaboration/templates
+- 🔄 **Workflow:** http://localhost:5001/collaboration/workflow/<document_id>
+- 🔗 **Powiązania:** http://localhost:5001/collaboration/relationships/<document_id>
 
-### 📝 System Zarządzania Dokumentamihttp://localhost/api/analyze   # 🧠 AI Legal Analysis
+### 4. 🐳 Uruchomienie (Docker)
 
-- ✅ Tworzenie i edycja dokumentów Markdownhttp://localhost/api/stats     # 📈 Real-time Statistics
+```bash
+cd aircloud-platform/docker
+docker-compose up -d
+```
 
-- ✅ Podgląd na żywo z renderowaniem```
+### 5. 🧪 Uruchomienie Testów
 
+```bash
+cd aircloud-platform
+
+# Testy podstawowe
+python tests/test_comprehensive.py
+
+# Testy systemu komentowania  
+python tests/test_comment_system.py
+
+# ✨ NOWY: Testy funkcji kolaboracyjnych
+python tests/test_collaboration.py
+```
+
+---
+
+## 🔧 Główne Funkcjonalności
+
+### 📝 System Zarządzania Dokumentami
+- ✅ Tworzenie i edycja dokumentów Markdown
+- ✅ Podgląd na żywo z renderowaniem
 - ✅ Hierarchiczna organizacja (systemy prawne)
+- ✅ Wyszukiwanie pełnotekstowe
 
-- ✅ Wyszukiwanie pełnotekstowe### 🐳 **Architektura Mikroserwisów:**
+### 🤝 Kolaboracja Real-time (NOWOŚĆ v3.0)
+- ✅ **Współdzielona edycja** - wielu użytkowników edytuje dokument jednocześnie
+- ✅ **Live cursor tracking** - widzisz kursory innych użytkowników
+- ✅ **Auto-save** - automatyczny zapis co 3 sekundy
+- ✅ **Presence indicators** - lista aktywnych użytkowników
+- ✅ **Paragraph locking** - blokowanie akapitów podczas edycji
 
-- **sspo-awesome-system**: 🧠 Main AI Engine (port 3000-3001)
+### � System Szablonów (NOWOŚĆ v3.0)
+- ✅ **7 kategorii szablonów:**
+  - 📜 Regulaminy (2 szablony)
+  - ⚖️ Uchwały (2 szablony)
+  - 📋 Formularze (2 szablony)
+  - ✉️ Pisma oficjalne (2 szablony)
+  - 📊 Raporty
+  - 🔧 Procedury
+  - 📣 Ogłoszenia
+- ✅ **Smart forms** - inteligentne formularze z walidacją
+- ✅ **Template preview** - podgląd przed utworzeniem
 
-### 💬 System Komentowania- **sspo-nginx-proxy**: ⚡ Reverse Proxy (port 80/443) 
-
-- ✅ Komentarze do konkretnych paragrafów- **sspo-redis-cache**: 💾 High-Performance Cache (port 6379)
-
+### 💬 System Komentowania
+- ✅ Komentarze do konkretnych paragrafów
+- ✅ **Contextual comments** (NOWOŚĆ) - komentarze z zaznaczeniem tekstu
 - ✅ Threading i odpowiedzi
+- ✅ **Comment types** - sugestie, pytania, zgłoszenia problemów
+- ✅ **Resolve comments** - oznaczanie jako rozwiązane
 
-- ✅ Powiadomienia o nowych komentarzach### 🔧 **Zaawansowane Funkcje:**
+### � Workflow i Zatwierdzanie (NOWOŚĆ v3.0)
+- ✅ **Multi-stage approval** - wielopoziomowe zatwierdzanie
+- ✅ **7 stanów dokumentu:**
+  - 📝 Draft (Projekt)
+  - 👀 Review (W recenzji)
+  - 💬 Consultation (Konsultacje)
+  - ⏳ Approval (Oczekuje na zatwierdzenie)
+  - ✅ Approved (Zatwierdzony)
+  - ❌ Rejected (Odrzucony)
+  - 📦 Archived (Zarchiwizowany)
+- ✅ **Role-based permissions** - uprawnienia według ról
+- ✅ **Action history** - pełna historia akcji workflow
+
+### 🔗 Powiązania Dokumentów (NOWOŚĆ v3.0)
+- ✅ **5 typów relacji:**
+  - 📖 References (Powołuje się na)
+  - ✏️ Amends (Zmienia)
+  - 🔄 Replaces (Zastępuje)
+  - 🎯 Implements (Implementuje)
+  - 🔗 Related (Powiązany z)
+- ✅ **Bidirectional relationships** - powiązania dwukierunkowe
+- ✅ **Relationship graph** - wizualizacja powiązań
+
+### � System Notyfikacji (NOWOŚĆ v3.0)
+- ✅ **6 typów powiadomień:**
+  - 💬 Nowy komentarz
+  - @️⃣ Wzmianka o Tobie
+  - 🔄 Zmiana statusu dokumentu
+  - ✅ Prośba o zatwierdzenie
+  - ⏰ Zbliżający się termin
+  - 📄 Nowa wersja dokumentu
+- ✅ **Priority levels** - poziomy ważności (low, normal, high, urgent)
+- ✅ **Real-time delivery** - dostarczanie w czasie rzeczywistym
 
 - ✅ Historia i auditowanie- **Real-time NLP Processing**: Analiza tekstu w czasie rzeczywistym
 
