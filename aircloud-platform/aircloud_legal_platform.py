@@ -52,6 +52,16 @@ except ImportError as e:
     print(f"⚠️  Extended features not available: {e}")
     EXTENDED_FEATURES_AVAILABLE = False
 
+# Import collaboration features
+try:
+    from aircloud_collaboration_engine import *
+    from aircloud_collaboration_routes import collab_routes
+    COLLABORATION_FEATURES_AVAILABLE = True
+    print("✅ Collaboration features loaded successfully")
+except ImportError as e:
+    print(f"⚠️  Collaboration features not available: {e}")
+    COLLABORATION_FEATURES_AVAILABLE = False
+
 # Email functionality - can be enabled later
 # import smtplib
 # from email.mime.text import MimeText  
@@ -84,6 +94,16 @@ migrate = Migrate(app, db)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'auth.login'
+
+# Initialize SocketIO for real-time collaboration
+try:
+    from flask_socketio import SocketIO
+    socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
+    SOCKETIO_AVAILABLE = True
+    print("✅ SocketIO initialized for real-time collaboration")
+except ImportError:
+    SOCKETIO_AVAILABLE = False
+    print("⚠️  SocketIO not available - real-time features disabled")
 
 # =====================================
 # ENHANCED DATABASE MODELS
@@ -809,6 +829,12 @@ def logout():
 # Register blueprint
 app.register_blueprint(auth_bp, url_prefix='/auth')
 
+# Register collaboration blueprint if available
+if COLLABORATION_FEATURES_AVAILABLE:
+    app.register_blueprint(collab_routes, url_prefix='/collaboration')
+    print("✅ Collaboration routes registered")
+
+
 # =====================================
 # SAMPLE DATA CREATION
 # =====================================
@@ -991,9 +1017,132 @@ if __name__ == '__main__':
    • Workflow management
    • Dashboard rozszerzony
 
+{f"🤝 KOLABORACJA: {'AKTYWNA' if COLLABORATION_FEATURES_AVAILABLE else 'NIEDOSTĘPNA'}" }
+   • Real-time collaborative editing
+   • Live cursor tracking
+   • Smart document templates
+   • Context-aware comments
+   • Document relationships
+
 🚀 DEMO: lukasz.kolodziej / aircloud2025
 
 🌐 Platforma gotowa do produkcji!
 """)
     
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    # =====================================
+    # SOCKETIO EVENT HANDLERS
+    # =====================================
+    
+    if SOCKETIO_AVAILABLE and COLLABORATION_FEATURES_AVAILABLE:
+        @socketio.on('connect')
+        def handle_connect():
+            print(f"✅ Client connected: {request.sid}")
+        
+        @socketio.on('disconnect')
+        def handle_disconnect():
+            print(f"⚠️  Client disconnected: {request.sid}")
+        
+        @socketio.on('join_document')
+        def handle_join_document(data):
+            """User joins document editing session"""
+            document_id = data.get('document_id')
+            user_id = data.get('user_id')
+            username = data.get('username')
+            
+            # Join room for this document
+            from flask_socketio import join_room, emit
+            join_room(f"doc_{document_id}")
+            
+            # Add to collaboration session
+            session_data = collab_sessions.join_session(document_id, user_id, username)
+            
+            # Notify other users
+            emit('user_joined', {
+                'user_id': user_id,
+                'username': username,
+                'users': session_data['users']
+            }, room=f"doc_{document_id}", skip_sid=request.sid)
+            
+            print(f"👤 {username} joined document {document_id}")
+        
+        @socketio.on('leave_document')
+        def handle_leave_document(data):
+            """User leaves document editing session"""
+            document_id = data.get('document_id')
+            user_id = data.get('user_id')
+            
+            from flask_socketio import leave_room, emit
+            leave_room(f"doc_{document_id}")
+            
+            # Remove from collaboration session
+            collab_sessions.leave_session(document_id, user_id)
+            
+            # Notify other users
+            emit('user_left', {
+                'user_id': user_id,
+                'users': collab_sessions.active_sessions.get(document_id, {}).get('users', {})
+            }, room=f"doc_{document_id}")
+        
+        @socketio.on('content_change')
+        def handle_content_change(data):
+            """Handle document content changes"""
+            document_id = data.get('document_id')
+            user_id = data.get('user_id')
+            content = data.get('content')
+            change = data.get('change')
+            
+            # Record edit
+            collab_sessions.record_edit(document_id, user_id, {
+                'content': content,
+                'change': change
+            })
+            
+            # Broadcast to other users
+            from flask_socketio import emit
+            emit('content_changed', {
+                'user_id': user_id,
+                'content': content,
+                'change': change
+            }, room=f"doc_{document_id}", skip_sid=request.sid)
+        
+        @socketio.on('cursor_move')
+        def handle_cursor_move(data):
+            """Handle cursor position updates"""
+            document_id = data.get('document_id')
+            user_id = data.get('user_id')
+            position = data.get('position')
+            
+            # Update cursor position
+            collab_sessions.update_cursor(document_id, user_id, position)
+            
+            # Broadcast to other users
+            from flask_socketio import emit
+            emit('cursor_moved', {
+                'user_id': user_id,
+                'position': position
+            }, room=f"doc_{document_id}", skip_sid=request.sid)
+        
+        @socketio.on('lock_paragraph')
+        def handle_lock_paragraph(data):
+            """Lock paragraph for editing"""
+            document_id = data.get('document_id')
+            user_id = data.get('user_id')
+            paragraph_id = data.get('paragraph_id')
+            
+            success = collab_sessions.lock_paragraph(document_id, user_id, paragraph_id)
+            
+            if success:
+                from flask_socketio import emit
+                emit('paragraph_locked', {
+                    'user_id': user_id,
+                    'paragraph_id': paragraph_id,
+                    'username': current_user.username if current_user.is_authenticated else 'Unknown'
+                }, room=f"doc_{document_id}")
+        
+        print("✅ SocketIO event handlers registered")
+    
+    # Start application
+    if SOCKETIO_AVAILABLE:
+        socketio.run(app, debug=True, host='0.0.0.0', port=5001)
+    else:
+        app.run(debug=True, host='0.0.0.0', port=5001)
