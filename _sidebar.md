@@ -30,3 +30,6 @@
     *   [19 Macierz Powiązań](19-macierz-powiazan.md)
     *   [20 Przewodnik Uchwalenia](20-przewodnik-uchwalenia.md)
     *   [21 Wizualizacje Procedur](21-procedury-wizualizacje.md)
+
+*   **System Współpracy** 🤝
+    *   [22 System Współpracy i Poprawek](22-system-wspolpracy.md)
