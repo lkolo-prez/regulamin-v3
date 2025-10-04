@@ -1,5 +1,53 @@
 # 📋 Changelog v2.1 - System Współpracy SSPO
 
+## 🐛 Wersja 2.1.1 - Naprawki błędów (2025-10-04)
+
+### Naprawione błędy
+
+#### 🔐 Reset hasła - działanie poprawne
+- **Problem**: Reset hasła przez administratora nie działał prawidłowo
+- **Rozwiązanie**:
+  - Dodano pełną walidację hasła w endpoint (min. 8 znaków)
+  - Zmieniono format błędów z `{ errors: [] }` na `{ error: string }`
+  - Dodano try/catch i szczegółowe logowanie
+  - Backend zwraca teraz jednolite odpowiedzi JSON
+- **Commit**: e3ec682 (backend)
+
+#### 🐞 Błąd JSON w komentarzach - naprawiony
+- **Problem**: `Błąd: Unexpected token 'Z', "Za dużo żą"... is not valid JSON`
+- **Przyczyna**: 
+  - Backend czasami zwracał plain text zamiast JSON (np. rate limiting)
+  - Frontend zawsze próbował parsować odpowiedź jako JSON
+  - Powodowało to crash przy błędach tekstowych
+- **Rozwiązanie**:
+  - Enhanced `request()` method w `collaboration-integrated.js`
+  - Sprawdzanie `Content-Type` header przed parsowaniem
+  - Fallback do text parsing z try/catch
+  - Graceful handling non-JSON responses
+- **Commit**: 00369f1 (frontend)
+
+#### ⚠️ Walidacja błędów - ujednolicona
+- **Problem**: Backend zwracał `{ errors: array }` w 8 różnych endpointach
+- **Rozwiązanie**: Zamieniono WSZYSTKIE na `{ error: string }` używając `errors.array()[0].msg`
+- **Zmienione endpointy**:
+  - POST /api/auth/register
+  - POST /api/auth/login
+  - POST /api/comments
+  - PATCH /api/comments/:id
+  - POST /api/amendments
+  - PATCH /api/amendments/:id
+  - PATCH /api/users/me/password
+  - PATCH /api/amendments/:id/vote
+
+### Testy
+- ✅ Backend health check: OK
+- ✅ Login endpoint: Zwraca JWT token
+- ✅ Reset password API: `{"message":"Hasło zresetowane pomyślnie"}`
+- ✅ Frontend deployed: Docker container aktualny
+- ✅ JSON parsing: Obsługuje zarówno text jak i JSON responses
+
+---
+
 ## 🎯 Wersja 2.1.0 - Zarządzanie użytkownikami i wyszukiwarka (2025-10-04)
 
 ### ✨ Nowe funkcje
