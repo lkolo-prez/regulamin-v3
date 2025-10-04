@@ -786,6 +786,114 @@ body.sspo-has-toolbar {
 .sspo-hidden { display: none !important; }
 .sspo-visible { display: block !important; }
 
+/* ==================== PARAGRAPH COMMENTS ==================== */
+
+.sspo-paragraph-wrapper {
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.sspo-comment-icon {
+    position: absolute;
+    left: -45px;
+    top: 0;
+    background: var(--sspo-primary);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.sspo-paragraph-wrapper:hover .sspo-comment-icon {
+    opacity: 0.7;
+}
+
+.sspo-comment-icon:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+}
+
+.sspo-comment-icon.has-comments {
+    opacity: 1;
+    background: var(--sspo-success);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.sspo-has-comments {
+    background: rgba(102, 126, 234, 0.03);
+    border-left: 3px solid var(--sspo-primary) !important;
+    padding-left: 12px !important;
+    margin-left: -15px !important;
+    transition: all 0.2s ease;
+}
+
+.sspo-has-comments:hover {
+    background: rgba(102, 126, 234, 0.06);
+}
+
+.sspo-paragraph-preview {
+    padding: 1rem;
+    background: var(--sspo-bg-gray);
+    border-left: 4px solid var(--sspo-primary);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sspo-paragraph-preview blockquote {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    border: none;
+    font-style: italic;
+    color: var(--sspo-text-light);
+}
+
+.sspo-comment-form {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--sspo-border);
+}
+
+.sspo-form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--sspo-border);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    resize: vertical;
+    transition: all 0.2s;
+}
+
+.sspo-form-control:focus {
+    outline: none;
+    border-color: var(--sspo-primary);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Responsywność dla małych ekranów */
+@media (max-width: 768px) {
+    .sspo-comment-icon {
+        position: static;
+        margin: 0.5rem 0;
+        opacity: 1;
+    }
+    
+    .sspo-has-comments {
+        margin-left: 0 !important;
+    }
+}
+
 @keyframes sspoFadeOut {
     from { opacity: 1; }
     to { opacity: 0; }

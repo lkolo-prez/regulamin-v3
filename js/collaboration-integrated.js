@@ -1039,6 +1039,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const api = new CollaborationAPI();
     const ui = new CollaborationUI(api);
     
+    // Initialize paragraph comments if available
+    if (window.ParagraphComments) {
+        window.paragraphComments = new ParagraphComments(api);
+        window.paragraphComments.init();
+        console.log('✅ Paragraph Comments Extension loaded');
+    }
+    
     collaborationSystem = {
         api,
         ui,
@@ -1058,9 +1065,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Watch for route changes
     window.addEventListener('hashchange', () => {
         ui.updateArticleButtons();
+        // Reinit paragraph comments on page change
+        if (window.paragraphComments) {
+            setTimeout(() => window.paragraphComments.addCommentIcons(), 100);
+        }
     });
     
-    console.log('✅ Collaboration System v2.0.0 loaded');
+    console.log('✅ Collaboration System v2.1.0 loaded');
     console.log('🔌 Backend:', api.baseURL);
     console.log('👤 User:', api.getCurrentUser()?.name || 'Not logged in');
 });

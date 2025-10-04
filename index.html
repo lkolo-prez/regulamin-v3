@@ -14,26 +14,54 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'System Prawny SSPO',
-      repo: '',
+      name: '📚 System Prawny SSPO',
+      repo: 'https://github.com/lkolo-prez/regulamin-v3',
       loadSidebar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       homepage: 'README.md',
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      // Wyszukiwarka
+      search: {
+        maxAge: 86400000, // 24h cache
+        paths: 'auto',
+        placeholder: '🔍 Szukaj w dokumentach...',
+        noData: 'Brak wyników',
+        depth: 3,
+        hideOtherSidebarContent: false
+      },
+      // Pagination
+      pagination: {
+        previousText: '← Poprzedni',
+        nextText: 'Następny →',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      // Copy code button
+      copyCode: {
+        buttonText: 'Kopiuj',
+        errorText: 'Błąd',
+        successText: '✓ Skopiowano'
       }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Search Plugin -->
+  <!-- Search Plugin - Wyszukiwarka -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- Pagination Plugin - Nawigacja między stronami -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- Copy Code Plugin - Kopiowanie kodu -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <!-- Mermaid Diagram Support -->
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
   <script>mermaid.initialize({ startOnLoad: true });</script>
   
-  <!-- System Współpracy v2.0 - Pełna integracja z Backend API -->
+  <!-- System Współpracy v2.1 - Pełna integracja z Backend API -->
   <script src="js/collaboration-integrated.js"></script>
+  <!-- Paragraph Comments Extension - Komentarze przy konkretnych punktach -->
+  <script src="js/paragraph-comments.js"></script>
 </body>
 </html>
