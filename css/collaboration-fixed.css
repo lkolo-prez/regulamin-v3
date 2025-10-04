@@ -1,0 +1,792 @@
+/**
+ * 🎨 System Współpracy SSPO - Non-conflicting CSS
+ * Version: 2.1.0 - Fixed conflicts with Docsify
+ * Wszystkie style są namespace'owane aby nie kolidować z Docsify
+ */
+
+:root {
+    /* Kolory główne */
+    --sspo-primary: #667eea;
+    --sspo-primary-dark: #5568d3;
+    --sspo-secondary: #764ba2;
+    --sspo-success: #10b981;
+    --sspo-warning: #f59e0b;
+    --sspo-error: #ef4444;
+    --sspo-info: #3b82f6;
+    
+    /* Neutralne */
+    --sspo-text-dark: #1f2937;
+    --sspo-text-light: #6b7280;
+    --sspo-bg-white: #ffffff;
+    --sspo-bg-gray: #f9fafb;
+    --sspo-border: #e5e7eb;
+    
+    /* Cienie */
+    --sspo-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --sspo-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --sspo-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --sspo-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    
+    /* Z-index layers */
+    --sspo-z-toolbar: 999;
+    --sspo-z-modal: 10000;
+    --sspo-z-dropdown: 10001;
+    --sspo-z-notification: 10002;
+}
+
+/* ==================== TOOLBAR (tylko toolbar, bez body) ==================== */
+
+.sspo-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--sspo-primary) 0%, var(--sspo-secondary) 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    box-shadow: var(--sspo-shadow-lg);
+    z-index: var(--sspo-z-toolbar);
+    animation: sspoSlideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes sspoSlideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Dodaj padding TYLKO gdy toolbar istnieje */
+body.sspo-has-toolbar {
+    padding-top: 70px !important;
+}
+
+.sspo-toolbar-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.sspo-toolbar-left {
+    flex: 1;
+    min-width: 200px;
+}
+
+.sspo-toolbar-left h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sspo-toolbar-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.sspo-user-info {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sspo-user-role-badge {
+    display: inline-flex;
+    padding: 2px 6px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 0.25rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sspo-toolbar-right {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* ==================== BUTTONS ==================== */
+
+.sspo-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    background: var(--sspo-primary);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    user-select: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.sspo-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--sspo-shadow-lg);
+    filter: brightness(1.1);
+}
+
+.sspo-btn:active {
+    transform: translateY(0);
+}
+
+.sspo-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.sspo-btn.primary {
+    background: white;
+    color: var(--sspo-primary);
+}
+
+.sspo-btn.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.sspo-btn.success {
+    background: var(--sspo-success);
+}
+
+.sspo-btn.warning {
+    background: var(--sspo-warning);
+}
+
+.sspo-btn.danger {
+    background: var(--sspo-error);
+}
+
+.sspo-btn.ghost {
+    background: transparent;
+    color: inherit;
+}
+
+.sspo-btn.sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+/* ==================== ARTICLE ACTIONS ==================== */
+
+.sspo-article-actions {
+    position: sticky;
+    top: 90px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 0 1rem 1rem;
+    z-index: 100;
+}
+
+/* ==================== MODALS ==================== */
+
+.sspo-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--sspo-z-modal);
+    padding: 1rem;
+    animation: sspoFadeIn 0.3s ease;
+}
+
+@keyframes sspoFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.sspo-modal {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--sspo-shadow-xl);
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: sspoSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes sspoSlideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sspo-modal.large {
+    max-width: 900px;
+}
+
+.sspo-modal-header {
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--sspo-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--sspo-primary) 0%, var(--sspo-secondary) 100%);
+    color: white;
+}
+
+.sspo-modal-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.sspo-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+}
+
+.sspo-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
+}
+
+.sspo-modal-body {
+    padding: 1.25rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.sspo-modal-footer {
+    padding: 1.25rem;
+    border-top: 1px solid var(--sspo-border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    background: var(--sspo-bg-gray);
+}
+
+/* ==================== FORMS ==================== */
+
+.sspo-form-group {
+    margin-bottom: 1rem;
+}
+
+.sspo-form-group label {
+    display: block;
+    margin-bottom: 0.375rem;
+    font-weight: 600;
+    color: var(--sspo-text-dark);
+    font-size: 0.875rem;
+}
+
+.sspo-form-group input,
+.sspo-form-group textarea,
+.sspo-form-group select {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    border: 2px solid var(--sspo-border);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-family: inherit;
+    transition: all 0.25s;
+    background: white;
+}
+
+.sspo-form-group input:focus,
+.sspo-form-group textarea:focus,
+.sspo-form-group select:focus {
+    outline: none;
+    border-color: var(--sspo-primary);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.sspo-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.sspo-auth-error {
+    padding: 0.75rem;
+    background: #fee;
+    border: 1px solid var(--sspo-error);
+    border-radius: 0.5rem;
+    color: var(--sspo-error);
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* ==================== TABS ==================== */
+
+.sspo-auth-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid var(--sspo-border);
+}
+
+.sspo-auth-tab {
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--sspo-text-light);
+    transition: all 0.25s;
+    position: relative;
+    bottom: -2px;
+}
+
+.sspo-auth-tab:hover {
+    color: var(--sspo-primary);
+}
+
+.sspo-auth-tab.active {
+    color: var(--sspo-primary);
+    border-bottom-color: var(--sspo-primary);
+}
+
+.sspo-auth-form {
+    display: none;
+}
+
+.sspo-auth-form.active {
+    display: block;
+}
+
+/* ==================== COMMENTS ==================== */
+
+.sspo-comments-section {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--sspo-bg-gray);
+    border-radius: 0.75rem;
+}
+
+.sspo-comments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.sspo-comments-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sspo-comment-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 0.375rem;
+    background: var(--sspo-primary);
+    color: white;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.sspo-comment-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: var(--sspo-shadow-sm);
+    margin-bottom: 1rem;
+    transition: all 0.25s;
+    border-left: 3px solid transparent;
+}
+
+.sspo-comment-card:hover {
+    box-shadow: var(--sspo-shadow-md);
+    border-left-color: var(--sspo-primary);
+}
+
+.sspo-comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.75rem;
+}
+
+.sspo-comment-author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sspo-comment-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--sspo-primary), var(--sspo-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.sspo-comment-author-info h4 {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--sspo-text-dark);
+}
+
+.sspo-comment-date {
+    font-size: 0.7rem;
+    color: var(--sspo-text-light);
+}
+
+.sspo-comment-text {
+    color: var(--sspo-text-dark);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* ==================== AMENDMENTS ==================== */
+
+.sspo-amendments-section {
+    margin: 1.5rem 0;
+}
+
+.sspo-amendment-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: var(--sspo-shadow-sm);
+    margin-bottom: 1.25rem;
+    border: 2px solid var(--sspo-border);
+    transition: all 0.25s;
+}
+
+.sspo-amendment-card:hover {
+    border-color: var(--sspo-primary);
+    box-shadow: var(--sspo-shadow-md);
+}
+
+.sspo-amendment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.sspo-amendment-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sspo-amendment-status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.sspo-amendment-status.approved {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.sspo-amendment-status.rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.sspo-amendment-text-block {
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+    border: 2px solid;
+    margin-bottom: 0.875rem;
+}
+
+.sspo-amendment-text-block.original {
+    background: #fee;
+    border-color: #fcc;
+}
+
+.sspo-amendment-text-block.proposed {
+    background: #efe;
+    border-color: #cfc;
+}
+
+.sspo-amendment-text-block h5 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.sspo-amendment-reason {
+    padding: 0.875rem;
+    background: var(--sspo-bg-gray);
+    border-left: 4px solid var(--sspo-info);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sspo-amendment-reason h5 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.sspo-amendment-voting {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.sspo-vote-option {
+    text-align: center;
+}
+
+.sspo-vote-count {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.sspo-vote-count.for { color: var(--sspo-success); }
+.sspo-vote-count.against { color: var(--sspo-error); }
+.sspo-vote-count.abstain { color: var(--sspo-text-light); }
+
+.sspo-vote-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--sspo-text-light);
+    font-weight: 600;
+}
+
+/* ==================== ADMIN PANEL ==================== */
+
+.sspo-admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+.sspo-admin-table thead {
+    background: var(--sspo-bg-gray);
+}
+
+.sspo-admin-table th,
+.sspo-admin-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--sspo-border);
+}
+
+.sspo-admin-table th {
+    font-weight: 700;
+    color: var(--sspo-text-dark);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.sspo-admin-table tr:hover {
+    background: var(--sspo-bg-gray);
+}
+
+/* ==================== USER MENU DROPDOWN ==================== */
+
+.sspo-user-menu {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: var(--sspo-shadow-xl);
+    min-width: 250px;
+    z-index: var(--sspo-z-dropdown);
+    animation: sspoSlideUp 0.2s ease;
+    overflow: hidden;
+}
+
+.sspo-user-menu-item {
+    padding: 0.875rem;
+    cursor: pointer;
+    transition: background 0.15s;
+    color: var(--sspo-text-dark);
+    font-size: 0.875rem;
+}
+
+.sspo-user-menu-item:hover {
+    background: var(--sspo-bg-gray);
+}
+
+.sspo-user-menu hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid var(--sspo-border);
+}
+
+/* ==================== LOADING & STATES ==================== */
+
+.sspo-loading-spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: sspoSpin 0.8s linear infinite;
+}
+
+@keyframes sspoSpin {
+    to { transform: rotate(360deg); }
+}
+
+.sspo-empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--sspo-text-light);
+}
+
+.sspo-empty-state-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.875rem;
+    opacity: 0.5;
+}
+
+/* ==================== ALERTS & NOTIFICATIONS ==================== */
+
+.sspo-alert {
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.875rem;
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.sspo-alert.success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+}
+
+.sspo-alert.warning {
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #f59e0b;
+}
+
+.sspo-alert.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+}
+
+.sspo-alert.info {
+    background: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #3b82f6;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+    body.sspo-has-toolbar {
+        padding-top: 130px !important;
+    }
+    
+    .sspo-toolbar-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .sspo-toolbar-right {
+        width: 100%;
+        justify-content: stretch;
+    }
+    
+    .sspo-toolbar-right .sspo-btn {
+        flex: 1;
+    }
+    
+    .sspo-article-actions {
+        float: none;
+        position: static;
+        flex-direction: row;
+        margin: 0.875rem 0;
+    }
+    
+    .sspo-modal {
+        margin: 0.5rem;
+    }
+}
+
+/* ==================== UTILITIES ==================== */
+
+.sspo-hidden { display: none !important; }
+.sspo-visible { display: block !important; }
+
+@keyframes sspoFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

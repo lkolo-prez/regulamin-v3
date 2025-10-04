@@ -23,10 +23,14 @@ class CollaborationAPI {
 
     detectAPIURL() {
         const hostname = window.location.hostname;
-        if (hostname === 'localhost' || hostname === '127.0.0.1') {
-            return 'http://localhost:3000/api';
+        
+        // W produkcji używamy relatywnej ścieżki (nginx proxy)
+        if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
+            return '/api';
         }
-        return `http://api.regulamin.sspo.com.pl/api`;
+        
+        // Lokalnie bezpośrednio do backendu
+        return 'http://localhost:3000/api';
     }
 
     async request(endpoint, options = {}) {
@@ -332,27 +336,30 @@ class CollaborationUI {
     // ==================== TOOLBAR ====================
 
     createToolbar() {
+        // Dodaj klasę do body aby aktywować padding
+        document.body.classList.add('sspo-has-toolbar');
+        
         const toolbar = document.createElement('div');
-        toolbar.className = 'collab-toolbar';
+        toolbar.className = 'sspo-toolbar';
         toolbar.innerHTML = `
-            <div class="collab-toolbar-content">
-                <div class="collab-toolbar-left">
+            <div class="sspo-toolbar-content">
+                <div class="sspo-toolbar-left">
                     <h3>
                         📚 System Prawny SSPO
-                        <span class="toolbar-badge">v2.0</span>
+                        <span class="sspo-toolbar-badge">v2.1</span>
                     </h3>
-                    <div class="user-info" id="user-info">
+                    <div class="sspo-user-info" id="sspo-user-info">
                         <span>👋 Niezalogowany</span>
                     </div>
                 </div>
-                <div class="collab-toolbar-right">
-                    <button class="collab-btn secondary" onclick="collaborationSystem.showAmendments()">
+                <div class="sspo-toolbar-right">
+                    <button class="sspo-btn secondary" onclick="collaborationSystem.showAmendments()">
                         📝 Poprawki
                     </button>
-                    <button class="collab-btn secondary" onclick="collaborationSystem.showAbout()">
+                    <button class="sspo-btn secondary" onclick="collaborationSystem.showAbout()">
                         ℹ️ O systemie
                     </button>
-                    <button class="collab-btn primary" id="auth-button">
+                    <button class="sspo-btn primary" id="sspo-auth-button">
                         🔐 Zaloguj się
                     </button>
                 </div>
@@ -362,7 +369,7 @@ class CollaborationUI {
         document.body.insertBefore(toolbar, document.body.firstChild);
         
         // Setup auth button
-        document.getElementById('auth-button').addEventListener('click', () => {
+        document.getElementById('sspo-auth-button').addEventListener('click', () => {
             if (this.api.isLoggedIn()) {
                 this.showUserMenu();
             } else {
@@ -373,8 +380,8 @@ class CollaborationUI {
 
     updateAuthUI() {
         const user = this.api.getCurrentUser();
-        const userInfo = document.getElementById('user-info');
-        const authButton = document.getElementById('auth-button');
+        const userInfo = document.getElementById('sspo-user-info');
+        const authButton = document.getElementById('sspo-auth-button');
         
         if (user) {
             const roleColors = {
@@ -386,15 +393,15 @@ class CollaborationUI {
             
             userInfo.innerHTML = `
                 <span>${roleColors[user.role] || '👤'} ${user.name}</span>
-                <span class="user-role-badge">${user.role}</span>
+                <span class="sspo-user-role-badge">${user.role}</span>
             `;
             
             authButton.textContent = `👤 ${user.name.split(' ')[0]}`;
-            authButton.className = 'collab-btn primary';
+            authButton.className = 'sspo-btn primary';
         } else {
             userInfo.innerHTML = '<span>👋 Niezalogowany</span>';
             authButton.textContent = '🔐 Zaloguj się';
-            authButton.className = 'collab-btn primary';
+            authButton.className = 'sspo-btn primary';
         }
         
         this.updateArticleButtons();
@@ -402,23 +409,23 @@ class CollaborationUI {
 
     updateArticleButtons() {
         // Usuń istniejące przyciski
-        const existingActions = document.querySelectorAll('.article-actions');
+        const existingActions = document.querySelectorAll('.sspo-article-actions');
         existingActions.forEach(el => el.remove());
         
         // Dodaj nowe jeśli na stronie artykułu
         const article = document.querySelector('article');
         if (article) {
             const actions = document.createElement('div');
-            actions.className = 'article-actions';
+            actions.className = 'sspo-article-actions';
             
             const articleId = this.extractArticleId();
             
             actions.innerHTML = `
-                <button class="collab-btn secondary sm" onclick="collaborationSystem.showCommentsModal('${articleId}')">
+                <button class="sspo-btn secondary sm" onclick="collaborationSystem.showCommentsModal('${articleId}')">
                     💬 Komentarze
                 </button>
                 ${this.api.hasRole(['contributor', 'reviewer', 'admin']) ? `
-                    <button class="collab-btn secondary sm" onclick="collaborationSystem.showAmendmentModal('${articleId}')">
+                    <button class="sspo-btn secondary sm" onclick="collaborationSystem.showAmendmentModal('${articleId}')">
                         ✏️ Zaproponuj poprawkę
                     </button>
                 ` : ''}
@@ -437,51 +444,51 @@ class CollaborationUI {
 
     showLoginModal() {
         const modal = this.createModal(`
-            <div class="auth-tabs">
-                <button class="auth-tab active" data-tab="login">Zaloguj się</button>
-                <button class="auth-tab" data-tab="register">Zarejestruj się</button>
+            <div class="sspo-sspo-auth-tabs">
+                <button class="sspo-auth-tab active" data-tab="login">Zaloguj się</button>
+                <button class="sspo-auth-tab" data-tab="register">Zarejestruj się</button>
             </div>
             
-            <form id="login-form" class="auth-form active">
-                <div class="form-group">
+            <form id="login-form" class="sspo-auth-form active">
+                <div class="sspo-form-group">
                     <label>📧 Email:</label>
                     <input type="email" id="login-email" required placeholder="twoj@email.pl">
                 </div>
-                <div class="form-group">
+                <div class="sspo-form-group">
                     <label>🔒 Hasło:</label>
                     <input type="password" id="login-password" required placeholder="••••••••">
                 </div>
-                <button type="submit" class="collab-btn primary" style="width: 100%;">
+                <button type="submit" class="sspo-btn primary" style="width: 100%;">
                     Zaloguj się
                 </button>
-                <div class="auth-error" style="display:none;"></div>
+                <div class="sspo-auth-error" style="display:none;"></div>
             </form>
             
-            <form id="register-form" class="auth-form">
-                <div class="form-group">
+            <form id="register-form" class="sspo-auth-form">
+                <div class="sspo-form-group">
                     <label>👤 Imię i nazwisko:</label>
                     <input type="text" id="register-name" required placeholder="Jan Kowalski">
                 </div>
-                <div class="form-group">
+                <div class="sspo-form-group">
                     <label>📧 Email:</label>
                     <input type="email" id="register-email" required placeholder="twoj@email.pl">
                 </div>
-                <div class="form-group">
+                <div class="sspo-form-group">
                     <label>🔒 Hasło (min. 8 znaków):</label>
                     <input type="password" id="register-password" required minlength="8" placeholder="••••••••">
                 </div>
-                <button type="submit" class="collab-btn primary" style="width: 100%;">
+                <button type="submit" class="sspo-btn primary" style="width: 100%;">
                     Zarejestruj się
                 </button>
-                <div class="auth-error" style="display:none;"></div>
+                <div class="sspo-auth-error" style="display:none;"></div>
             </form>
         `, '🔐 Logowanie do systemu SSPO');
 
         // Tab switching
-        modal.querySelectorAll('.auth-tab').forEach(tab => {
+        modal.querySelectorAll('.sspo-auth-tab').forEach(tab => {
             tab.addEventListener('click', () => {
-                modal.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
-                modal.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
+                modal.querySelectorAll('.sspo-auth-tab').forEach(t => t.classList.remove('active'));
+                modal.querySelectorAll('.sspo-auth-form').forEach(f => f.classList.remove('active'));
                 tab.classList.add('active');
                 const formId = tab.dataset.tab === 'login' ? 'login-form' : 'register-form';
                 modal.querySelector(`#${formId}`).classList.add('active');
@@ -493,7 +500,7 @@ class CollaborationUI {
             e.preventDefault();
             const email = modal.querySelector('#login-email').value;
             const password = modal.querySelector('#login-password').value;
-            const errorDiv = modal.querySelector('#login-form .auth-error');
+            const errorDiv = modal.querySelector('#login-form .sspo-auth-error');
             const button = e.target.querySelector('button[type="submit"]');
 
             button.disabled = true;
@@ -517,7 +524,7 @@ class CollaborationUI {
             const name = modal.querySelector('#register-name').value;
             const email = modal.querySelector('#register-email').value;
             const password = modal.querySelector('#register-password').value;
-            const errorDiv = modal.querySelector('#register-form .auth-error');
+            const errorDiv = modal.querySelector('#register-form .sspo-auth-error');
             const button = e.target.querySelector('button[type="submit"]');
 
             button.disabled = true;
@@ -581,9 +588,9 @@ class CollaborationUI {
                 </div>
                 
                 ${this.api.isLoggedIn() ? `
-                    <form id="add-comment-form" class="form-group">
+                    <form id="add-comment-form" class="sspo-form-group">
                         <textarea id="comment-text" placeholder="Dodaj komentarz..." required></textarea>
-                        <button type="submit" class="collab-btn primary">Dodaj komentarz</button>
+                        <button type="submit" class="sspo-btn primary">Dodaj komentarz</button>
                     </form>
                 ` : '<div class="alert alert-info">🔐 Zaloguj się aby dodawać komentarze</div>'}
                 
@@ -634,7 +641,7 @@ class CollaborationUI {
                     </div>
                     ${this.api.getCurrentUser()?.id === comment.user_id || this.api.hasRole(['admin']) ? `
                         <div class="comment-actions">
-                            <button class="collab-btn ghost sm" onclick="collaborationSystem.deleteComment(${comment.id})">
+                            <button class="sspo-btn ghost sm" onclick="collaborationSystem.deleteComment(${comment.id})">
                                 🗑️ Usuń
                             </button>
                         </div>
@@ -653,7 +660,7 @@ class CollaborationUI {
             this.showNotification('Komentarz usunięty', 'success');
             
             if (this.currentArticle) {
-                const modal = document.querySelector('.collaboration-modal-overlay');
+                const modal = document.querySelector('.sspo-modal-overlay');
                 if (modal) {
                     const updated = await this.api.getComments(this.currentArticle);
                     modal.querySelector('#comments-list').innerHTML = updated.map(c => this.renderComment(c)).join('');
@@ -675,27 +682,27 @@ class CollaborationUI {
 
         const modal = this.createModal(`
             <form id="amendment-form">
-                <div class="form-group">
+                <div class="sspo-form-group">
                     <label>📄 Artykuł:</label>
                     <input type="text" value="${articleId}" disabled>
                 </div>
                 
-                <div class="form-group">
+                <div class="sspo-form-group">
                     <label>❌ Tekst oryginalny (do zmiany):</label>
                     <textarea id="original-text" required placeholder="Skopiuj fragment tekstu, który chcesz zmienić..."></textarea>
                 </div>
                 
-                <div class="form-group">
+                <div class="sspo-form-group">
                     <label>✅ Tekst proponowany (nowy):</label>
                     <textarea id="proposed-text" required placeholder="Wpisz nową wersję tekstu..."></textarea>
                 </div>
                 
-                <div class="form-group">
+                <div class="sspo-form-group">
                     <label>💡 Uzasadnienie (min. 10 znaków):</label>
                     <textarea id="amendment-reason" required minlength="10" placeholder="Wyjaśnij dlaczego proponujesz tę zmianę..."></textarea>
                 </div>
                 
-                <button type="submit" class="collab-btn primary" style="width: 100%;">
+                <button type="submit" class="sspo-btn primary" style="width: 100%;">
                     ✅ Prześlij poprawkę
                 </button>
             </form>
@@ -789,21 +796,21 @@ class CollaborationUI {
                 
                 <div class="amendment-actions">
                     ${canVote && amendment.status === 'pending' ? `
-                        <button class="collab-btn success sm" onclick="collaborationSystem.voteAmendment(${amendment.id}, 'for')">
+                        <button class="sspo-btn success sm" onclick="collaborationSystem.voteAmendment(${amendment.id}, 'for')">
                             👍 Za
                         </button>
-                        <button class="collab-btn danger sm" onclick="collaborationSystem.voteAmendment(${amendment.id}, 'against')">
+                        <button class="sspo-btn danger sm" onclick="collaborationSystem.voteAmendment(${amendment.id}, 'against')">
                             👎 Przeciw
                         </button>
-                        <button class="collab-btn secondary sm" onclick="collaborationSystem.voteAmendment(${amendment.id}, 'abstain')">
+                        <button class="sspo-btn secondary sm" onclick="collaborationSystem.voteAmendment(${amendment.id}, 'abstain')">
                             ⏸️ Wstrzymuję się
                         </button>
                     ` : ''}
                     ${isAdmin && amendment.status === 'pending' ? `
-                        <button class="collab-btn success sm" onclick="collaborationSystem.updateAmendmentStatus(${amendment.id}, 'approved')">
+                        <button class="sspo-btn success sm" onclick="collaborationSystem.updateAmendmentStatus(${amendment.id}, 'approved')">
                             ✅ Zatwierdź
                         </button>
-                        <button class="collab-btn danger sm" onclick="collaborationSystem.updateAmendmentStatus(${amendment.id}, 'rejected')">
+                        <button class="sspo-btn danger sm" onclick="collaborationSystem.updateAmendmentStatus(${amendment.id}, 'rejected')">
                             ❌ Odrzuć
                         </button>
                     ` : ''}
@@ -817,7 +824,7 @@ class CollaborationUI {
             await this.api.voteOnAmendment(amendmentId, voteType);
             
             // Refresh amendments list
-            const modal = document.querySelector('.collaboration-modal-overlay');
+            const modal = document.querySelector('.sspo-modal-overlay');
             if (modal) {
                 const amendments = await this.api.getAmendments();
                 modal.querySelector('.amendments-section').innerHTML = amendments.map(a => this.renderAmendment(a)).join('');
@@ -832,7 +839,7 @@ class CollaborationUI {
             await this.api.updateAmendmentStatus(amendmentId, status);
             
             // Refresh amendments list
-            const modal = document.querySelector('.collaboration-modal-overlay');
+            const modal = document.querySelector('.sspo-modal-overlay');
             if (modal) {
                 const amendments = await this.api.getAmendments();
                 modal.querySelector('.amendments-section').innerHTML = amendments.map(a => this.renderAmendment(a)).join('');
@@ -970,14 +977,14 @@ class CollaborationUI {
 
     createModal(content, title = 'Modal', size = '') {
         const overlay = document.createElement('div');
-        overlay.className = 'collaboration-modal-overlay';
+        overlay.className = 'sspo-modal-overlay';
         overlay.innerHTML = `
-            <div class="collaboration-modal ${size}">
-                <div class="collaboration-modal-header">
+            <div class="sspo-modal ${size}">
+                <div class="sspo-modal-header">
                     <h3>${title}</h3>
-                    <button class="close-btn">×</button>
+                    <button class="sspo-close-btn">×</button>
                 </div>
-                <div class="collaboration-modal-body">
+                <div class="sspo-modal-body">
                     ${content}
                 </div>
             </div>
@@ -985,7 +992,7 @@ class CollaborationUI {
         
         document.body.appendChild(overlay);
         
-        overlay.querySelector('.close-btn').addEventListener('click', () => {
+        overlay.querySelector('.sspo-close-btn').addEventListener('click', () => {
             this.closeModal(overlay);
         });
         
