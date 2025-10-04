@@ -40,6 +40,7 @@ yarn-error.log*
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+desktop.ini
 $RECYCLE.BIN/
 *.lnk
 
@@ -113,7 +114,16 @@ secrets/
 # Stare wersje
 old.md
 *.old
+*.backup
 archive/
+
+# Local data directories (backend używa prawdziwej DB)
+data/amendments/
+data/comments/
+data/versions/
+
+# Caddyfile (używamy nginx)
+Caddyfile
 
 # System files
 desktop.ini
