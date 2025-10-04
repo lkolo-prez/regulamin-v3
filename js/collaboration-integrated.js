@@ -548,15 +548,17 @@ class CollaborationUI {
         if (!user) return;
 
         const menu = document.createElement('div');
-        menu.className = 'user-menu-dropdown';
+        menu.className = 'sspo-user-menu';
         menu.innerHTML = `
-            <div class="user-menu-item"><strong>👤 ${user.name}</strong></div>
-            <div class="user-menu-item">📧 ${user.email}</div>
-            <div class="user-menu-item">🎭 Rola: ${user.role}</div>
+            <div class="sspo-user-menu-item"><strong>👤 ${user.name}</strong></div>
+            <div class="sspo-user-menu-item">📧 ${user.email}</div>
+            <div class="sspo-user-menu-item">🎭 Rola: ${user.role}</div>
             <hr>
-            ${user.role === 'admin' ? '<div class="user-menu-item" onclick="collaborationSystem.showAdminPanel()">⚙️ Panel administratora</div><hr>' : ''}
-            <div class="user-menu-item" onclick="collaborationSystem.showMyActivity()">📊 Moja aktywność</div>
-            <div class="user-menu-item" onclick="collaborationSystem.ui.api.logout()">🚪 Wyloguj się</div>
+            <div class="sspo-user-menu-item" onclick="collaborationSystem.showChangePassword()">🔑 Zmień hasło</div>
+            ${user.role === 'admin' ? '<div class="sspo-user-menu-item" onclick="collaborationSystem.showAdminPanel()">⚙️ Panel administratora</div>' : ''}
+            <div class="sspo-user-menu-item" onclick="collaborationSystem.showMyActivity()">📊 Moja aktywność</div>
+            <hr>
+            <div class="sspo-user-menu-item" onclick="collaborationSystem.ui.api.logout(); window.location.reload();">🚪 Wyloguj się</div>
         `;
         
         document.body.appendChild(menu);
@@ -570,6 +572,58 @@ class CollaborationUI {
             };
             document.addEventListener('click', closeMenu);
         }, 100);
+    }
+
+    showChangePassword() {
+        const modal = this.createModal(`
+            <form id="change-password-form">
+                <div class="sspo-form-group">
+                    <label>Obecne hasło:</label>
+                    <input type="password" id="current-password" required minlength="8">
+                </div>
+                <div class="sspo-form-group">
+                    <label>Nowe hasło (min. 8 znaków):</label>
+                    <input type="password" id="new-password" required minlength="8">
+                </div>
+                <div class="sspo-form-group">
+                    <label>Potwierdź nowe hasło:</label>
+                    <input type="password" id="confirm-password" required minlength="8">
+                </div>
+                <div id="password-error" class="sspo-auth-error" style="display:none"></div>
+                <div class="sspo-modal-footer">
+                    <button type="button" class="sspo-btn secondary" onclick="this.closest('.sspo-modal-overlay').remove()">Anuluj</button>
+                    <button type="submit" class="sspo-btn primary">💾 Zmień hasło</button>
+                </div>
+            </form>
+        `, '🔑 Zmiana hasła');
+
+        document.getElementById('change-password-form').onsubmit = async (e) => {
+            e.preventDefault();
+            
+            const currentPassword = document.getElementById('current-password').value;
+            const newPassword = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const errorDiv = document.getElementById('password-error');
+
+            if (newPassword !== confirmPassword) {
+                errorDiv.textContent = 'Nowe hasła nie są identyczne';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            try {
+                await this.api.request('/users/me/password', {
+                    method: 'PATCH',
+                    body: JSON.stringify({ currentPassword, newPassword })
+                });
+
+                modal.remove();
+                this.showNotification('✅ Hasło zostało zmienione', 'success');
+            } catch (error) {
+                errorDiv.textContent = error.message || 'Błąd zmiany hasła';
+                errorDiv.style.display = 'block';
+            }
+        };
     }
 
     // ==================== COMMENTS ====================
@@ -860,56 +914,170 @@ class CollaborationUI {
         const users = await this.api.getUsers();
         
         const modal = this.createModal(`
-            <h4>👥 Zarządzanie użytkownikami:</h4>
-            <table class="admin-users-table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Imię</th>
-                        <th>Email</th>
-                        <th>Rola</th>
-                        <th>Ostatnie logowanie</th>
-                        <th>Akcje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${users.map(u => `
-                        <tr>
-                            <td>${u.id}</td>
-                            <td>${u.name}</td>
-                            <td>${u.email}</td>
-                            <td>
-                                <select data-user-id="${u.id}" class="role-select">
-                                    <option value="viewer" ${u.role === 'viewer' ? 'selected' : ''}>Viewer</option>
-                                    <option value="contributor" ${u.role === 'contributor' ? 'selected' : ''}>Contributor</option>
-                                    <option value="reviewer" ${u.role === 'reviewer' ? 'selected' : ''}>Reviewer</option>
-                                    <option value="admin" ${u.role === 'admin' ? 'selected' : ''}>Admin</option>
-                                </select>
-                            </td>
-                            <td>${u.last_login ? new Date(u.last_login).toLocaleString('pl-PL') : 'Nigdy'}</td>
-                            <td>
-                                <button class="btn-save-role" data-user-id="${u.id}">💾 Zapisz</button>
-                            </td>
-                        </tr>
-                    `).join('')}
-                </tbody>
-            </table>
+            <div class="sspo-admin-tabs">
+                <button class="sspo-admin-tab active" data-tab="users">👥 Użytkownicy</button>
+                <button class="sspo-admin-tab" data-tab="stats">📊 Statystyki</button>
+            </div>
+            
+            <div class="sspo-admin-content">
+                <div id="admin-users" class="sspo-admin-tab-content active">
+                    <table class="sspo-admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Imię</th>
+                                <th>Email</th>
+                                <th>Rola</th>
+                                <th>Ostatnie logowanie</th>
+                                <th>Akcje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${users.map(u => `
+                                <tr>
+                                    <td>${u.id}</td>
+                                    <td>${u.name}</td>
+                                    <td>${u.email}</td>
+                                    <td>
+                                        <select data-user-id="${u.id}" class="sspo-role-select">
+                                            <option value="viewer" ${u.role === 'viewer' ? 'selected' : ''}>👁️ Viewer</option>
+                                            <option value="contributor" ${u.role === 'contributor' ? 'selected' : ''}>✍️ Contributor</option>
+                                            <option value="reviewer" ${u.role === 'reviewer' ? 'selected' : ''}>⭐ Reviewer</option>
+                                            <option value="admin" ${u.role === 'admin' ? 'selected' : ''}>👑 Admin</option>
+                                        </select>
+                                    </td>
+                                    <td>${u.last_login ? new Date(u.last_login).toLocaleString('pl-PL') : 'Nigdy'}</td>
+                                    <td>
+                                        <button class="sspo-btn sm secondary sspo-btn-save-role" data-user-id="${u.id}">💾</button>
+                                        <button class="sspo-btn sm warning sspo-btn-reset-password" data-user-id="${u.id}" data-user-email="${u.email}">🔑</button>
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="admin-stats" class="sspo-admin-tab-content" style="display:none">
+                    <div class="sspo-stats-grid">
+                        <div class="sspo-stat-card">
+                            <div class="sspo-stat-value">${users.length}</div>
+                            <div class="sspo-stat-label">👥 Użytkowników</div>
+                        </div>
+                        <div class="sspo-stat-card">
+                            <div class="sspo-stat-value">${users.filter(u => u.role === 'admin').length}</div>
+                            <div class="sspo-stat-label">👑 Administratorów</div>
+                        </div>
+                        <div class="sspo-stat-card">
+                            <div class="sspo-stat-value">${users.filter(u => u.role === 'reviewer').length}</div>
+                            <div class="sspo-stat-label">⭐ Recenzentów</div>
+                        </div>
+                        <div class="sspo-stat-card">
+                            <div class="sspo-stat-value">${users.filter(u => u.role === 'contributor').length}</div>
+                            <div class="sspo-stat-label">✍️ Współtwórców</div>
+                        </div>
+                    </div>
+                    
+                    <div class="sspo-alert info" style="margin-top: 2rem">
+                        <strong>ℹ️ Domyślne konto administratora:</strong><br>
+                        Email: <code>admin@sspo.com.pl</code><br>
+                        Hasło: <code>ChangeMe123!</code><br>
+                        <br>
+                        <strong>⚠️ WAŻNE:</strong> Zmień hasło administratora zaraz po pierwszym logowaniu!
+                    </div>
+                </div>
+            </div>
         `, '⚙️ Panel Administratora', 'large');
 
-        modal.querySelectorAll('.btn-save-role').forEach(btn => {
-            btn.addEventListener('click', async () => {
-                const userId = parseInt(btn.dataset.userId);
-                const roleSelect = modal.querySelector(`select[data-user-id="${userId}"]`);
-                const newRole = roleSelect.value;
+        // Tab switching
+        modal.querySelectorAll('.sspo-admin-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                modal.querySelectorAll('.sspo-admin-tab').forEach(t => t.classList.remove('active'));
+                modal.querySelectorAll('.sspo-admin-tab-content').forEach(c => c.style.display = 'none');
+                
+                tab.classList.add('active');
+                const tabId = tab.getAttribute('data-tab');
+                modal.querySelector(`#admin-${tabId}`).style.display = 'block';
+            });
+        });
 
+        // Save role buttons
+        modal.querySelectorAll('.sspo-btn-save-role').forEach(btn => {
+            btn.addEventListener('click', async () => {
+                const userId = btn.getAttribute('data-user-id');
+                const select = modal.querySelector(`.sspo-role-select[data-user-id="${userId}"]`);
+                const newRole = select.value;
+                
                 try {
                     await this.api.updateUserRole(userId, newRole);
-                    this.showNotification('Rola zaktualizowana!', 'success');
+                    this.showNotification('✅ Rola zaktualizowana', 'success');
                 } catch (error) {
-                    this.showNotification(`Błąd: ${error.message}`, 'error');
+                    this.showNotification(error.message, 'error');
                 }
             });
         });
+
+        // Reset password buttons
+        modal.querySelectorAll('.sspo-btn-reset-password').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const userId = btn.getAttribute('data-user-id');
+                const userEmail = btn.getAttribute('data-user-email');
+                this.showResetPasswordModal(userId, userEmail);
+            });
+        });
+    }
+
+    showResetPasswordModal(userId, userEmail) {
+        const modal = this.createModal(`
+            <form id="reset-password-form">
+                <div class="sspo-alert info">
+                    Resetowanie hasła dla użytkownika: <strong>${userEmail}</strong>
+                </div>
+                <div class="sspo-form-group">
+                    <label>Nowe hasło (min. 8 znaków):</label>
+                    <input type="text" id="new-admin-password" required minlength="8" value="NoweHaslo123!">
+                    <small>Wygenerowane automatycznie. Możesz zmienić.</small>
+                </div>
+                <div id="reset-error" class="sspo-auth-error" style="display:none"></div>
+                <div class="sspo-modal-footer">
+                    <button type="button" class="sspo-btn secondary" onclick="this.closest('.sspo-modal-overlay').remove()">Anuluj</button>
+                    <button type="submit" class="sspo-btn warning">🔑 Resetuj hasło</button>
+                </div>
+            </form>
+        `, '🔑 Reset hasła użytkownika');
+
+        document.getElementById('reset-password-form').onsubmit = async (e) => {
+            e.preventDefault();
+            
+            const newPassword = document.getElementById('new-admin-password').value;
+            const errorDiv = document.getElementById('reset-error');
+
+            try {
+                await this.api.request(`/users/${userId}/reset-password`, {
+                    method: 'PATCH',
+                    body: JSON.stringify({ newPassword })
+                });
+
+                modal.remove();
+                this.showNotification(`✅ Hasło zresetowane dla ${userEmail}`, 'success');
+                
+                // Show password to admin
+                const infoModal = this.createModal(`
+                    <div class="sspo-alert success">
+                        <h4>✅ Hasło zostało zresetowane</h4>
+                        <p><strong>Email:</strong> ${userEmail}</p>
+                        <p><strong>Nowe hasło:</strong> <code>${newPassword}</code></p>
+                        <br>
+                        <p>⚠️ Przekaż to hasło użytkownikowi bezpiecznym kanałem!</p>
+                    </div>
+                    <div class="sspo-modal-footer">
+                        <button class="sspo-btn primary" onclick="this.closest('.sspo-modal-overlay').remove()">OK</button>
+                    </div>
+                `, '✅ Hasło zresetowane');
+            } catch (error) {
+                errorDiv.textContent = error.message || 'Błąd resetowania hasła';
+                errorDiv.style.display = 'block';
+            }
+        };
     }
 
     // ==================== MY ACTIVITY ====================

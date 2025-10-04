@@ -651,6 +651,75 @@ body.sspo-has-toolbar {
     background: var(--sspo-bg-gray);
 }
 
+.sspo-admin-tabs {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--sspo-border);
+    margin-bottom: 1.5rem;
+}
+
+.sspo-admin-tab {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--sspo-text-light);
+    transition: all 0.2s;
+}
+
+.sspo-admin-tab:hover {
+    color: var(--sspo-primary);
+    background: var(--sspo-bg-gray);
+}
+
+.sspo-admin-tab.active {
+    color: var(--sspo-primary);
+    border-bottom-color: var(--sspo-primary);
+}
+
+.sspo-admin-content {
+    animation: sspoFadeIn 0.3s ease;
+}
+
+.sspo-admin-tab-content {
+    display: none;
+}
+
+.sspo-admin-tab-content.active {
+    display: block;
+}
+
+.sspo-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sspo-stat-card {
+    background: linear-gradient(135deg, var(--sspo-primary) 0%, var(--sspo-secondary) 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: var(--sspo-shadow-md);
+}
+
+.sspo-stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.sspo-stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
 /* ==================== USER MENU DROPDOWN ==================== */
 
 .sspo-user-menu {
@@ -897,4 +966,56 @@ body.sspo-has-toolbar {
 @keyframes sspoFadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
+}
+
+/* ==================== DOCSIFY SEARCH FIX ==================== */
+/* Upewnij się, że wyszukiwarka Docsify jest widoczna */
+
+.search {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 1rem !important;
+}
+
+.search input[type="search"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    border: 1px solid var(--sspo-border) !important;
+    border-radius: 8px !important;
+    font-size: 0.9rem !important;
+    box-sizing: border-box !important;
+    z-index: 1 !important;
+}
+
+.search input[type="search"]:focus {
+    outline: none !important;
+    border-color: var(--sspo-primary) !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+.search .results-panel {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.search .matching-post {
+    border-left: 3px solid var(--sspo-primary) !important;
+    padding-left: 1rem !important;
+}
+
+.search .matching-post h2 {
+    color: var(--sspo-primary) !important;
+}
+
+.search .search-keyword {
+    background-color: rgba(102, 126, 234, 0.2) !important;
+    color: var(--sspo-primary-dark) !important;
+    font-weight: 600 !important;
+    padding: 0.1rem 0.3rem !important;
+    border-radius: 3px !important;
 }
