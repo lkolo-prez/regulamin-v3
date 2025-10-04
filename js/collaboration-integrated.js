@@ -50,10 +50,24 @@ class CollaborationAPI {
                 headers
             });
 
-            const data = await response.json();
+            // Check if response is JSON
+            const contentType = response.headers.get('content-type');
+            let data;
+            
+            if (contentType && contentType.includes('application/json')) {
+                data = await response.json();
+            } else {
+                // If not JSON, get text and try to parse or return as error
+                const text = await response.text();
+                try {
+                    data = JSON.parse(text);
+                } catch {
+                    data = { error: text || `HTTP ${response.status}` };
+                }
+            }
 
             if (!response.ok) {
-                throw new Error(data.error || `HTTP ${response.status}`);
+                throw new Error(data.error || data.message || `HTTP ${response.status}`);
             }
 
             return data;
