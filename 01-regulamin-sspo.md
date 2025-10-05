@@ -20,15 +20,17 @@ Parlamentu Studentów Politechniki Opolskiej z dnia __ ________ 2025 r.
 **Dział III.** Organy Samorządu na szczeblu wydziału  
 - Rozdział I. Wydziałowa Rada Studentów  
 - Rozdział II. Przewodniczący Wydziałowej Rady Studentów  
-- Rozdział III. Starosta  
+- Rozdział III. Starosta Roku i Grupy  
 **Dział IV.** Prawa i obowiązki członków organów Samorządu
-- Rozdział I. Zasady usprawiedliwiania nieobecności
-- Rozdział II. Konflikt interesów
-- Rozdział III. Procedury antymobbingowe i antydyskryminacyjne
+- Rozdział I. Prawa i obowiązki
+- Rozdział II. Zasady usprawiedliwiania nieobecności
+- Rozdział III. Konflikt interesów
+- Rozdział IV. Procedury antymobbingowe i antydyskryminacyjne
 **Dział V.** Wygaśnięcie mandatu i odwoływanie  
-**Dział VI.** Działalność informacyjna i media
-**Dział VII.** Rozwój członków Samorządu
-**Dział VIII.** Postanowienia końcowe, przejściowe i dostosowujące  
+**Dział VI.** Posiedzenia organów kolegialnych  
+**Dział VII.** Głosowania i uchwały  
+**Dział VIII.** Rozwój członków Samorządu  
+**Dział IX.** Postanowienia końcowe, przejściowe i dostosowujące  
 
 **Załącznik nr 1.** [Ordynacja Wyborcza do organów Samorządu Studenckiego Politechniki Opolskiej](./02-ordynacja-wyborcza.md)  
 **Załącznik nr 2.** [Kodeks Etyczny Samorządu Studenckiego Politechniki Opolskiej](./03-kodeks-etyczny.md)  
@@ -50,6 +52,7 @@ Parlamentu Studentów Politechniki Opolskiej z dnia __ ________ 2025 r.
 **Załącznik nr 18.** [Macierz Powiązań Dokumentów](./19-macierz-powiazan.md)
 **Załącznik nr 19.** [Przewodnik Wdrożeniowy](./20-przewodnik-wdrozeniowy.md)  
 **Załącznik nr 20.** [Wizualizacje Procedur](./21-procedury-wizualizacje.md)  
+**Załącznik nr 21.** [Kodeks Publikacyjny – Checklista Rejestru](./23-kodeks-publikacyjny.md)  
 
 
 ## DZIAŁ I. POSTANOWIENIA OGÓLNE
@@ -85,7 +88,7 @@ W treści Regulaminu stosuje się następujące określenia i skróty:
 14) Zarząd – Zarząd Samorządu Studenckiego Politechniki Opolskiej;
 15) Wydziałowa Rada Studentów – Wydziałowa Rada Studentów Samorządu Studenckiego Politechniki Opolskiej, określana również skrótem WRS;
 16) Przewodniczący WRS – Przewodniczący Wydziałowej Rady Studentów Samorządu Studenckiego Politechniki Opolskiej;
-17) Komisja Rewizyjna-Wyborcza – Komisja Rewizyjno-Wyborcza Samorządu Studenckiego Politechniki Opolskiej, określana również skrótem KRW;
+17) Komisja Rewizyjno-Wyborcza – Komisja Rewizyjno-Wyborcza Samorządu Studenckiego Politechniki Opolskiej, określana również skrótem KRW;
 18) Przewodniczący KRW – Przewodniczący Komisji Rewizyjno-Wyborczej Samorządu Studenckiego Politechniki Opolskiej;
 19) Regulamin Studiów – Regulamin studiów w Politechnice Opolskiej w Opolu.
 
@@ -110,7 +113,8 @@ Załącznikami do Regulaminu i jego integralną częścią są:
 17) [Indeks Dokumentów](./18-indeks-dokumentow.md) (załącznik nr 17),
 18) [Macierz Powiązań Dokumentów](./19-macierz-powiazan.md) (załącznik nr 18),
 19) [Przewodnik Wdrożeniowy](./20-przewodnik-wdrozeniowy.md) (załącznik nr 19),
-20) [Wizualizacje Procedur](./21-procedury-wizualizacje.md) (załącznik nr 20).
+20) [Wizualizacje Procedur](./21-procedury-wizualizacje.md) (załącznik nr 20),
+21) [Kodeks Publikacyjny – Checklista Rejestru](./23-kodeks-publikacyjny.md) (załącznik nr 21).
 
 ### § 6.
 Uczelnia zapewnia warunki niezbędne do funkcjonowania Samorządu, w tym infrastrukturę i środki finansowe, którymi Samorząd dysponuje w ramach swojej działalności.
@@ -134,7 +138,7 @@ Do zadań Samorządu należy w szczególności:
 7) wybieranie przedstawicieli do kolegialnych oraz wyborczych organów Uczelni, komisji oraz ciał kolegialnych Uczelni, w których zasiadają przedstawiciele studentów w sposób przewidziany w Ustawie oraz Statucie;
 8) współpraca z samorządami studenckimi innych uczelni;
 9) decydowanie w sprawach rozdziału środków finansowych przeznaczonych przez Uczelnię na sprawy studenckie zgodnie z zasadami określonymi w Regulaminie Finansowym;
-10) sporządzanie sprawozdania z rozdziału środków finansowych i rozliczenie tych środków nie rzadziej niż raz w roku akademickim i udostępnienie go w Biuletynie Informacji Publicznej na stronie Uczelni zgodnie z procedurami określonymi w Regulaminie Finansowym;
+10) sporządzanie sprawozdania z rozdziału środków finansowych i rozliczenie tych środków nie rzadziej niż raz w roku akademickim oraz jego publikacja w Rejestrze Uchwał i Aktów Samorządu (§ 37b) zgodnie z procedurami określonymi w Regulaminie Finansowym;
 11) uczestniczenie w podejmowaniu decyzji o podziale dotacji ze środków finansowych przyznanych przez Ministra Nauki i Szkolnictwa Wyższego na świadczenia dla studentów;
 12) udział w pracach nad przygotowaniem regulaminu świadczeń dla studentów.
 
@@ -148,7 +152,7 @@ Do zadań Samorządu należy w szczególności:
 3. Kontrolno-wyborczymi organami Samorządu są:
    1) Komisja Rewizyjno-Wyborcza – jako organ kolegialny;
    2) Przewodniczący KRW – jako organ jednoosobowy.
-4. Zasady organizacji oraz tryb zwoływania i odbywania posiedzeń organów Samorządu określa Regulamin Posiedzeń.
+4. Zasady organizacji oraz tryb zwoływania i odbywania posiedzeń organów Samorządu określa niniejszy Regulamin w Dziale VII.
 5. Organy kolegialne Samorządu podejmują decyzje oraz dokonują uzgodnień i wyrażają opinie w formie uchwał.
 6. Członek kolegialnego organu Samorządu zobowiązany jest do czynnego udziału w pracach tego organu.
 7. Pracami organów kolegialnych Samorządu kierują ich przewodniczący.
@@ -181,6 +185,15 @@ Do wyłącznych kompetencji Parlamentu należy:
 9. podejmowanie decyzji o podjęciu akcji protestacyjnej o zasięgu ogólnouczelnianym;
 10. uzgadnianie z Senatem Uczelni Regulaminu Studiów.
 
+#### § 11a. Organy wewnętrzne Parlamentu
+1. Organami wewnętrznymi Parlamentu są Marszałek, Wicemarszałek oraz Sekretarz.
+2. Marszałek kieruje pracami Parlamentu, zwołuje posiedzenia, czuwa nad porządkiem obrad oraz podpisuje uchwały Parlamentu.
+3. Wicemarszałek zastępuje Marszałka w zakresie jego kompetencji w razie jego nieobecności lub wyłączenia.
+4. Sekretarz prowadzi protokoły posiedzeń Parlamentu, organizuje obsługę głosowań oraz prowadzi i publikuje Rejestr Uchwał i Aktów Samorządu, o którym mowa w § 37b.
+5. Do czasu wyboru Marszałka pierwsze posiedzenie nowo wybranego Parlamentu prowadzi Przewodniczący Komisji Rewizyjno-Wyborczej.
+6. Szczegółowe obowiązki organów wewnętrznych Parlamentu mogą zostać doprecyzowane w Regulaminie Parlamentu przyjętym w drodze uchwały.
+7. W razie trwałego wakatu na funkcji Marszałka Parlamentu jego obowiązki do czasu wyboru nowego Marszałka wykonuje Wicemarszałek (a w razie jego braku – Sekretarz), który niezwłocznie zwołuje posiedzenie Parlamentu w terminie 21 dni w celu przeprowadzenia wyboru; w razie niezwołania posiedzenia w tym terminie posiedzenie zwołuje Komisja Rewizyjno‑Wyborcza.
+
 ### Rozdział II. Przewodniczący Samorządu
 
 #### § 12.
@@ -188,6 +201,12 @@ Do wyłącznych kompetencji Parlamentu należy:
 2. Reprezentuje Samorząd wobec władz Uczelni oraz w stosunkach zewnętrznych.
 3. Kieruje pracami Zarządu i zwołuje jego posiedzenia.
 4. Kadencja Przewodniczącego Samorządu trwa dwa lata i jest tożsama z kadencją Parlamentu, który go wybrał. Ta sama osoba nie może pełnić tej funkcji dłużej niż przez dwie kolejne, pełne kadencje. Przez niepełną kadencję rozumie się okres pełnienia funkcji trwający poniżej 6 miesięcy.
+
+#### § 12a. Zastępstwo i wakat
+1. Przewodniczący Samorządu wyznacza spośród członków Zarządu Zastępcę Przewodniczącego, który wykonuje jego obowiązki w czasie nieobecności lub wyłączenia.
+2. W przypadku braku wyznaczenia Zastępcy, obowiązki Przewodniczącego wykonuje najpierw członek Zarządu wskazany przez Zarząd w drodze uchwały, a w razie braku takiej uchwały – najstarszy stażem członek Zarządu.
+3. W przypadku trwałego wakatu na stanowisku Przewodniczącego Samorządu (rezygnacja, odwołanie, utrata statusu studenta lub śmierć), Marszałek Parlamentu niezwłocznie zwołuje posiedzenie Parlamentu w terminie 21 dni w celu przeprowadzenia wyboru nowego Przewodniczącego. Do czasu wyboru obowiązki pełni Zastępca Przewodniczącego.
+4. Zaniechanie zwołania posiedzenia przez Marszałka w terminie, o którym mowa w ust. 3, uprawnia Komisję Rewizyjno-Wyborczą do zwołania posiedzenia Parlamentu w celu wyboru Przewodniczącego.
 
 #### § 13.
 Do zadań Przewodniczącego Samorządu należy w szczególności:
@@ -238,6 +257,15 @@ Do zadań kontrolnych KRW należy:
 5. stwierdzanie wygaśnięcia mandatu członków organów Samorządu;
 6. ścisła współpraca z Rzecznikiem Praw Studenta w zakresie monitorowania i ochrony praw studentów.
 
+#### § 18a. Organizacja wewnętrzna KRW
+1. Na pierwszym posiedzeniu po wyborze KRW wybiera ze swojego grona Przewodniczącego KRW oraz Zastępcę Przewodniczącego KRW bezwzględną większością głosów w obecności co najmniej połowy ustawowego składu.
+2. W razie nieobecności Przewodniczącego KRW jego obowiązki wykonuje Zastępca Przewodniczącego KRW.
+3. Posiedzenia KRW zwołuje Przewodniczący KRW, a w przypadku jego długotrwałej nieobecności – Zastępca Przewodniczącego KRW.
+4. KRW podejmuje uchwały zwykłą większością głosów w obecności co najmniej połowy ustawowego składu, chyba że niniejszy Regulamin wymaga większości bezwzględnej lub kwalifikowanej; w sprawach personalnych głosowanie jest tajne.
+5. Jeżeli liczba członków KRW spadnie poniżej 3 albo przez okres co najmniej 30 dni KRW nie jest w stanie zebrać kworum, Przewodniczący KRW niezwłocznie informuje Marszałka Parlamentu. Parlament w terminie 14 dni podejmuje czynności w celu uruchomienia procedury uzupełnienia składu KRW.
+6. Do czasu uzupełnienia składu KRW Parlament powołuje trzyosobową Tymczasową Komisję Wyborczą wyłącznie w celu przygotowania i przeprowadzenia wyborów uzupełniających do KRW. Mandat Tymczasowej Komisji wygasa z dniem ukonstytuowania się nowej KRW.
+7. Tymczasowa Komisja Wyborcza stosuje odpowiednio przepisy dotyczące KRW oraz działa pod nadzorem Rzecznika Praw Studenta w zakresie poszanowania praw wyborczych. Czynności Tymczasowej Komisji nie mogą wykraczać poza zakres, o którym mowa w ust. 6.
+
 #### § 19.
 Do zadań wyborczych KRW należy:
 1. organizacja i przeprowadzanie wyborów do wszystkich organów Samorządu zgodnie z Ordynacją Wyborczą;
@@ -285,6 +313,9 @@ Do zadań Rzecznika Praw Studenta należy w szczególności:
 4. prowadzenie działań edukacyjnych i informacyjnych w zakresie praw studenta;
 5. monitorowanie przestrzegania praw studentów na Uczelni;
 6. przedstawianie Parlamentowi rocznego sprawozdania ze swojej działalności oraz bieżących rekomendacji dotyczących poprawy ochrony praw studentów.
+7. Sprawozdanie roczne, o którym mowa w ust. 6, składa się do dnia 31 marca za rok poprzedni. Sprawozdanie zawiera co najmniej: zanonimizowaną statystykę spraw, opis działań, rekomendacje oraz informację o współpracy z organami Uczelni. Sprawozdanie publikuje się w Rejestrze Uchwał i Aktów (§ 37b).
+8. Rzecznik może przedstawiać Parlamentowi sprawozdania cząstkowe oraz pilne rekomendacje w ciągu roku. W sprawach wymagających niezwłocznej reakcji Rzecznik przekazuje informację Przewodniczącemu Samorządu i Marszałkowi Parlamentu.
+9. W razie niezłożenia sprawozdania w terminie, o którym mowa w ust. 7, Marszałek Parlamentu wprowadza punkt do porządku obrad najbliższego posiedzenia w celu wysłuchania informacji Rzecznika i wyznaczenia nowego terminu.
 
 ### Rozdział VII. Rada Doradcza SSPO
 
@@ -293,7 +324,7 @@ Do zadań Rzecznika Praw Studenta należy w szczególności:
 2. Rada Doradcza jest organem opiniodawczo-doradczym, wspierającym statutowe organy Samorządu w kluczowych i strategicznych decyzjach.
 3. Szczegółowe zasady działania Rady Doradczej, jej skład oraz tryb powoływania członków określa [Regulamin Rady Doradczej SSPO](./08-regulamin-rady-doradczej.md).
 
-## DZIAŁ IV. ORGANY SAMORZĄDU NA SZCZEBLU WYDZIAŁU
+## DZIAŁ III. ORGANY SAMORZĄDU NA SZCZEBLU WYDZIAŁU
 
 ### Rozdział I. Wydziałowa Rada Studentów
 
@@ -323,7 +354,7 @@ Do zadań Wydziałowej Rady Studentów należy w szczególności:
 #### § 26.
 1. Pracami Wydziałowej Rady Studentów kieruje Przewodniczący WRS.
 2. Przewodniczący WRS jest wybierany przez studentów wydziału zgodnie z Ordynacją Wyborczą.
-3. Przewodniczący WRS z urzędu wchodzi w skład Parlamentu, zapewniając przepływ informacji między szczeblem wydziałowym a uczelnianym.
+3. Przewodniczący WRS uczestniczy w posiedzeniach Parlamentu z głosem doradczym i posiada inicjatywę uchwałodawczą w sprawach dotyczących jego wydziału.
 4. Kadencja Przewodniczącego WRS jest tożsama z kadencją Parlamentu. Ta sama osoba nie może pełnić tej funkcji dłużej niż przez dwie kolejne, pełne kadencje. Przez niepełną kadencję rozumie się okres pełnienia funkcji trwający poniżej 6 miesięcy.
 
 #### § 27.
@@ -349,7 +380,7 @@ Do zadań Przewodniczącego WRS należy w szczególności:
 4. W celu zapewnienia sprawnego przepływu informacji, starosta jest obsługiwany w dziekanacie oraz innych jednostkach administracyjnych w pierwszej kolejności.
 5. Kadencja starosty trwa jeden rok akademicki.
 
-## DZIAŁ V. PRAWA I OBOWIĄZKI CZŁONKÓW ORGANÓW SAMORZĄDU
+## DZIAŁ IV. PRAWA I OBOWIĄZKI CZŁONKÓW ORGANÓW SAMORZĄDU
 
 ### Rozdział I. Prawa i obowiązki
 
@@ -383,7 +414,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 2. Każdy członek Samorządu ma prawo do działania w środowisku wolnym od wrogich i poniżających zachowań.
 3. W przypadku podejrzenia wystąpienia zjawisk, o których mowa w ust. 1, sprawę rozpatruje Komisja Etyki na zasadach określonych w [Regulaminie Komisji Etyki](./06-regulamin-komisji-etyki.md).
 
-## DZIAŁ VI. WYGAŚNIĘCIE MANDATU I ODWOŁYWANIE
+## DZIAŁ V. WYGAŚNIĘCIE MANDATU I ODWOŁYWANIE
 
 #### § 33.
 1. Mandat członka organu Samorządu wygasa w przypadku:
@@ -409,7 +440,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 1. W przypadku wygaśnięcia mandatu lub odwołania członka organu, przeprowadza się wybory uzupełniające zgodnie z zasadami określonymi w [Ordynacji Wyborczej](./02-ordynacja-wyborcza.md), o ile do końca kadencji pozostało więcej niż 6 miesięcy.
 2. Do czasu przeprowadzenia wyborów uzupełniających, organ działa w pomniejszonym składzie, o ile liczba jego członków jest wystarczająca do podejmowania prawomocnych decyzji.
 
-## DZIAŁ VII. POSIEDZENIA ORGANÓW KOLEGIALNYCH
+## DZIAŁ VI. POSIEDZENIA ORGANÓW KOLEGIALNYCH
 
 ### § 36. Zwoływanie i prowadzenie posiedzeń
 1. Organy kolegialne Samorządu obradują na posiedzeniach zwyczajnych i nadzwyczajnych.
@@ -419,11 +450,17 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 5. Posiedzenia nadzwyczajne mogą być zwołane z inicjatywy przewodniczącego organu, na wniosek Przewodniczącego Samorządu, Komisji Rewizyjno-Wyborczej lub co najmniej 1/3 ustawowego składu członków danego organu.
 6. Posiedzenie nadzwyczajne musi zostać zwołane w terminie 14 dni od dnia złożenia wniosku, a jego porządek obrad obejmuje wyłącznie sprawy wskazane we wniosku.
 
+### § 36a. Jawność obrad i dostęp do materiałów
+1. Posiedzenia Parlamentu są jawne, chyba że przemawia za tym potrzeba ochrony danych osobowych, prywatności, tajemnicy przedsiębiorstwa lub inna prawnie chroniona tajemnica – wówczas Parlament może podjąć uchwałę o wyłączeniu jawności w całości lub części.
+2. Posiedzenia WRS są co do zasady jawne dla studentów danego wydziału z zastrzeżeniem ust. 1.
+3. Zawiadomienie o posiedzeniu wraz z projektami uchwał i materiałami omawianymi na posiedzeniu publikuje się, o ile to możliwe, łącznie z zawiadomieniem, nie później jednak niż 3 dni przed terminem posiedzenia. W sprawach nagłych dopuszcza się krótszy termin z należytym uzasadnieniem.
+4. Rejestr transmisji i nagrań z posiedzeń jawnych prowadzi Sekretarz i publikuje go wraz z protokołami, z poszanowaniem przepisów o ochronie danych.
+
 ### § 37. Porządek obrad i interpelacje
 1. Porządek obrad jest zatwierdzany przez organ na początku każdego posiedzenia. Zmiana porządku obrad wymaga zgody organu wyrażonej w głosowaniu.
 2. Członkowie organów mają prawo do składania interpelacji i zapytań do przewodniczącego organu we wszystkich sprawach dotyczących działalności Samorządu.
 3. Odpowiedź na interpelację musi być udzielona na tym samym lub najpóźniej na kolejnym posiedzeniu.
-4. Posiedzenia są protokołowane. Protokół zawiera listę obecności, zatwierdzony porządek obrad, treść podjętych uchwał, wyniki głosowań oraz streszczenie dyskusji. Protokoły są publikowane na stronie internetowej Samorządu.
+4. Posiedzenia są protokołowane. Protokół zawiera listę obecności, zatwierdzony porządek obrad, treść podjętych uchwał, wyniki głosowań oraz streszczenie dyskusji. Protokoły są publikowane w Rejestrze Uchwał i Aktów Samorządu (§ 37b).
 
 ### § 37a. Posiedzenia zdalne i hybrydowe
 1. W uzasadnionych przypadkach, w szczególności uniemożliwiających bezpieczne przeprowadzenie posiedzenia stacjonarnego, posiedzenia organów kolegialnych mogą odbywać się w trybie zdalnym lub hybrydowym.
@@ -436,15 +473,31 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 4. Kworum na posiedzeniu zdalnym lub hybrydowym ustala się na podstawie liczby zalogowanych i zidentyfikowanych członków organu.
 5. Głosowania jawne odbywają się za pomocą dedykowanej funkcji platformy lub przez publiczne oświadczenie woli.
 6. Głosowania tajne odbywają się przy użyciu bezpiecznego systemu do głosowania online, który zapewnia anonimowość i jest administrowany przez co najmniej dwóch członków Komisji Rewizyjno-Wyborczej.
-7. Posiedzenia zdalne, które zgodnie z Regulaminem są jawne, muszą być transmitowane publicznie lub udostępniane w formie nagrania na stronie internetowej Samorządu.
+7. Posiedzenia zdalne, które zgodnie z Regulaminem są jawne, muszą być transmitowane publicznie lub udostępniane w formie nagrania, z linkiem i metadanymi opublikowanymi w Rejestrze Uchwał i Aktów Samorządu (§ 37b).
+8. Przed każdym głosowaniem tajnym prowadzonym zdalnie przeprowadza się test techniczny systemu (weryfikacja tożsamości, tajności, integralności i dostępności). Z testu sporządza się protokół, który publikuje się wraz z protokołem posiedzenia.
+9. System e‑głosowania powinien zapewniać możliwość niezależnej weryfikacji przez KRW poprawności przebiegu głosowania (rejestry zdarzeń). Logi systemowe przechowuje się co do zasady przez 12 miesięcy, zgodnie z [Ordynacją Wyborczą](./02-ordynacja-wyborcza.md) i przepisami o ochronie danych.
+10. W przypadku istotnej awarii systemu przewodniczący obrad, w porozumieniu z KRW, przerywa głosowanie i zarządza tryb awaryjny zgodnie z procedurami określonymi w załącznikach wykonawczych (w szczególności [Uzupełnione Procedury Wyborcze](./14-uzupelnione-procedury.md)).
 
-## DZIAŁ VIII. GŁOSOWANIA I UCHWAŁY
+### § 37b. Rejestr uchwał i publikacja aktów
+1. Dla zapewnienia przejrzystości działania w Samorządzie prowadzi się publiczny Rejestr Uchwał i Aktów Samorządu, obejmujący w szczególności: uchwały Parlamentu, zarządzenia Przewodniczącego Samorządu, uchwały Zarządu oraz akty o charakterze normatywnym WRS.
+2. Rejestr, o którym mowa w ust. 1, prowadzi Sekretarz Parlamentu i publikuje go niezwłocznie na stronie internetowej Samorządu. Aktualizacja następuje najpóźniej w ciągu 48 godzin od podjęcia aktu.
+3. Uchwały Parlamentu oraz inne akty o charakterze normatywnym oznacza się numerem składającym się z symbolu organu, numeru porządkowego i roku (np. „U/12/2025”).
+4. Protokoły z posiedzeń organów kolegialnych publikuje się w terminie 7 dni od dnia posiedzenia. Protokół podpisuje przewodniczący obrad i Sekretarz.
+5. Akty o charakterze normatywnym wchodzą w życie po upływie 7 dni od ich publikacji w Rejestrze, chyba że akt stanowi termin późniejszy. W przypadkach niecierpiących zwłoki organ może nadać aktowi rygor natychmiastowej wykonalności, z uzasadnieniem.
+6. Dopuszcza się sprostowanie oczywistych omyłek pisarskich i rachunkowych w opublikowanych aktach w drodze erraty ogłaszanej w Rejestrze, z zachowaniem identyfikowalności zmian.
+7. Rejestr uchwał, protokoły oraz nagrania z posiedzeń jawnych przechowuje się co do zasady przez okres 5 lat, z poszanowaniem przepisów o ochronie danych i możliwości anonimizacji.
+8. Akty o charakterze normatywnym co do zasady nie mają mocy wstecznej. Dopuszcza się nadanie mocy wstecznej wyłącznie, gdy jest to korzystne dla studentów i nie narusza praw nabytych.
+9. Erraty, o których mowa w ust. 6, publikuje się niezwłocznie, nie później niż w terminie 48 godzin od stwierdzenia oczywistej omyłki, z podaniem daty i zakresu korekty.
+
+## DZIAŁ VII. GŁOSOWANIA I UCHWAŁY
 
 ### § 38. Kworum i rodzaje większości
 1. Do podjęcia prawomocnej uchwały przez organ kolegialny wymagana jest obecność co najmniej połowy jego ustawowego składu (kworum).
 2. Jeżeli Regulamin nie stanowi inaczej, uchwały podejmowane są **zwykłą większością głosów**. Oznacza to, że liczba głosów "za" jest większa od liczby głosów "przeciw", bez uwzględniania głosów "wstrzymujących się".
 3. Do podjęcia uchwały **bezwzględną większością głosów** wymagane jest, aby liczba głosów "za" była większa od sumy głosów "przeciw" i "wstrzymujących się".
 4. Do podjęcia uchwały **większością kwalifikowaną** (np. 2/3, 3/5) wymagane jest, aby liczba głosów "za" stanowiła co najmniej określony w regulaminie ułamek liczby głosów oddanych (za, przeciw, wstrzymujące się).
+5. W razie równej liczby głosów w głosowaniu jawnym rozstrzyga głos przewodniczącego obrad, chyba że przepis szczególny stanowi inaczej. Przepisu nie stosuje się do głosowań tajnych oraz spraw personalnych – w tych przypadkach w razie remisu wniosek uznaje się za nieprzyjęty.
+6. W przypadku stwierdzenia braku kworum w trakcie posiedzenia nie podejmuje się uchwał merytorycznych. Dopuszczalne są wyłącznie czynności porządkowe, w szczególności zamknięcie posiedzenia lub odroczenie obrad.
 
 ### § 39. Wymagane większości
 1. Bezwzględna większość głosów wymagana jest do:
@@ -462,7 +515,18 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 3. Głosowanie tajne można zarządzić również w każdej innej sprawie na wniosek przewodniczącego obrad lub co najmniej 1/5 członków organu obecnych na posiedzeniu.
 4. W uzasadnionych przypadkach dopuszcza się podejmowanie uchwał w trybie obiegowym (online), przy użyciu środków komunikacji elektronicznej zapewniających identyfikację członków organu oraz tajność głosowań w sprawach, które tego wymagają.
 
-## DZIAŁ IX. ROZWÓJ CZŁONKÓW SAMORZĄDU
+### § 40a. Wadliwość uchwał i tryb zaskarżenia
+1. Uchwała podjęta bez wymaganego kworum lub z rażącym naruszeniem przepisów o trybie jej podejmowania jest nieważna.
+2. Każdy członek organu, którego uchwała dotyczy, oraz Komisja Rewizyjno-Wyborcza mogą w terminie 14 dni od publikacji złożyć wniosek o stwierdzenie nieważności uchwały do Komisji Rewizyjno-Wyborczej.
+3. Komisja Rewizyjno-Wyborcza rozpoznaje wniosek w terminie 14 dni. Od rozstrzygnięcia przysługuje odwołanie do Parlamentu w terminie 7 dni. Decyzja Parlamentu jest ostateczna.
+4. Niezależnie od ust. 2-3 organ, który podjął uchwałę, może niezwłocznie usunąć stwierdzone naruszenia procedury, ponawiając głosowanie zgodnie z przepisami.
+
+### § 40b. Wybory personalne – szczególny tryb
+1. W wyborach personalnych wymagających bezwzględnej większości głosów, jeżeli żaden z kandydatów jej nie uzyska w pierwszym głosowaniu, przeprowadza się drugą turę z udziałem dwóch kandydatów, którzy otrzymali największą liczbę głosów.
+2. W drugiej turze wybrany zostaje kandydat, który uzyskał większą liczbę głosów „za”.
+3. W razie równej liczby głosów w drugiej turze przeprowadza się niezwłocznie dodatkowe głosowanie. Jeżeli i ono nie przyniesie rozstrzygnięcia, o wyborze decyduje losowanie przeprowadzone przez przewodniczącego obrad w obecności Komisji Rewizyjno‑Wyborczej.
+
+## DZIAŁ VIII. ROZWÓJ CZŁONKÓW SAMORZĄDU
 
 ### § 41.
 1. Samorząd dba o stały rozwój kompetencji społecznych, organizacyjnych i liderskich swoich członków.
@@ -477,13 +541,18 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 1. W Samorządzie działa program mentorski, w ramach którego doświadczeni członkowie wspierają w rozwoju nowo przyjęte osoby.
 2. Zasady programu mentorskiego, w tym sposób doboru mentorów i podopiecznych, określa Zarząd w drodze uchwały.
 
-## DZIAŁ X. POSTANOWIENIA KOŃCOWE, PRZEJŚCIOWE I DOSTOSOWUJĄCE
+## DZIAŁ IX. POSTANOWIENIA KOŃCOWE, PRZEJŚCIOWE I DOSTOSOWUJĄCE
 
 ### § 44.
 Zmiany w niniejszym Regulaminie wymagają uchwały Parlamentu podjętej większością 2/3 głosów w obecności co najmniej połowy jego ustawowego składu.
 
 ### § 45.
 W sprawach nieuregulowanych w Regulaminie decyzje podejmuje Parlament, kierując się przepisami Ustawy, Statutu Uczelni oraz ogólnymi zasadami prawa.
+
+### § 45a. Kolizje, wykładnia i klauzula salwatoryjna
+1. W razie sprzeczności postanowień aktów wewnętrznych Samorządu stosuje się hierarchię: Regulamin Samorządu → załączniki do Regulaminu → uchwały Parlamentu → akty Zarządu i WRS. Przepisy powszechnie obowiązujące i Statut Uczelni mają pierwszeństwo przed aktami Samorządu.
+2. W przypadku wątpliwości interpretacyjnych Parlament dokonuje wiążącej wykładni postanowień Regulaminu i jego załączników w formie uchwały, o której mowa w § 11 pkt 8.
+3. Nieważność lub bezskuteczność pojedynczego przepisu Regulaminu lub jego załącznika nie wpływa na ważność pozostałych postanowień (klauzula salwatoryjna). W takim przypadku Parlament niezwłocznie dostosowuje odpowiednie przepisy.
 
 ### § 46.
 Regulamin wchodzi w życie z dniem uchwalenia. Z tym samym dniem traci moc dotychczasowy Regulamin Samorządu Studenckiego Politechniki Opolskiej.
@@ -492,6 +561,8 @@ Regulamin wchodzi w życie z dniem uchwalenia. Z tym samym dniem traci moc dotyc
 1. Kadencja organów Samorządu wybranych przed wejściem w życie niniejszego Regulaminu trwa do końca roku akademickiego, w którym regulamin został uchwalony.
 2. Pierwsze wybory na dwuletnią kadencję zostaną przeprowadzone zgodnie z nową Ordynacją Wyborczą na początku ostatniego semestru kadencji, o której mowa w ust. 1.
 3. Nowo wybrane organy rozpoczynają działalność z początkiem nowego roku akademickiego, co zapewnia płynne przekazanie obowiązków.
+4. Do czasu ukonstytuowania się nowo wybranych organów dotychczasowe organy działają w zakresie czynności zwykłego zarządu oraz niezbędnych działań zapewniających ciągłość funkcjonowania Samorządu.
+5. Do czasu uchwalenia nowych aktów wykonawczych dotychczasowe uchwały i akty wewnętrzne Samorządu zachowują moc, o ile nie są sprzeczne z niniejszym Regulaminem.
 
 *Regulamin uchwalony przez Parlament Studentów Politechniki Opolskiej*
 *Wersja v3 - Data aktualizacji: 23 września 2025*

@@ -148,8 +148,8 @@ Aktywni studenci mogą ubiegać się o wsparcie w formie:
    - nierównego traktowania w procesie selekcji
    - jakości świadczonych usług rozwojowych
    - funkcjonowania systemu wsparcia
-2. Skargi rozpatruje Komisja Rewizyjna w terminie 14 dni.
-3. Od decyzji Komisji Rewizyjnej przysługuje odwołanie do Parlamentu SSPO.
+2. Skargi rozpatruje Komisja Rewizyjno-Wyborcza w terminie 14 dni, we współpracy z Komisją Etyki w zakresie zasad równego traktowania i antydyskryminacji.
+3. Od decyzji Komisji Rewizyjno-Wyborczej przysługuje odwołanie do Parlamentu SSPO.
 
 
 ## ROZDZIAŁ VII - FINANSOWANIE I ZASOBY

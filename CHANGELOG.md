@@ -24,9 +24,23 @@ Wszystkie istotne zmiany w projekcie są dokumentowane w tym pliku.
 - Przepisano historię commitów na autora `lkolo-prez <kolodziej.lukasz.pl@gmail.com>`
 - Usunięto wrażliwe pliki z historii git
 
----
 
-## [2.0.0] - 2025-10-04
+## [2.2.0] - 2025-10-05
+
+### 📜 Prawo i procedury
+- 01-regulamin-sspo: dodano §11a ust. 7 (wakat Marszałka), §18a ust. 4 (kworum/większość KRW), §37b ust. 7–8 (retencja i zakaz retroakcji), §40b (wybory personalne: druga tura/dogrywka/losowanie). Uporządkowano kolejność §40a–§40b.
+- 02-ordynacja-wyborcza: doprecyzowano tie-break i dodano odesłanie do §40b dla wyborów personalnych.
+- 20-przewodnik-wdrozeniowy: ujednolicono nazewnictwo (Marszałek/Wicemarszałek/Sekretarz) i odesłania do Rejestru (§37b).
+ - 01-regulamin-sspo: doprecyzowano brak zdolności do działania KRW (tymczasowa komisja), standardy testów e‑głosowań i logów (§37a ust. 8–10), SLA dla errat (§37b ust. 9) oraz raportowanie Rzecznika (termin, zakres, publikacja).
+ - 05-regulamin-wrs: publikacja w Rejestrze (§37b) i wyraźna nadrzędność aktów centralnych + odesłanie do §45a.
+ - 04-regulamin-finansowy: ujednolicono publikację (Rejestr §37b), doprecyzowano protokół inwentaryzacyjny (zakres minimalny) i obowiązek publikacji w 14 dni.
+ - 01-regulamin-sspo: usunięto pozostałość o BIP – teraz publikacja sprawozdań finansowych wyłącznie w Rejestrze (§37b).
+ - Dodano załącznik: 23-kodeks-publikacyjny.md – operacyjna checklista publikacyjna dla wszystkich organów.
+
+### ✅ Spójność i transparentność
+- Wzmocniono przejrzystość: obowiązkowa publikacja w Rejestrze, retencja materiałów i jasne reguły rozstrzygania remisów w wyborach personalnych.
+
+
 
 ### 🚀 Nowe funkcje
 - **Backend API**: Pełny Node.js/Express backend z SQLite

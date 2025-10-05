@@ -11,12 +11,20 @@
 2. Komisja działa na podstawie [Regulaminu Samorządu](01-regulamin-sspo.md), [Kodeksu Etycznego](03-kodeks-etyczny.md) i niniejszego regulaminu.
 3. Celem Komisji jest budowanie kultury etycznej w Samorządzie poprzez rozpatrywanie spraw dotyczących naruszeń, prowadzenie działalności prewencyjnej i edukacyjnej oraz interpretowanie zasad etycznych.
 
+### § 1a. Zgodność z prawem wyższych instancji
+1. Komisja działa w zgodzie z ustawą Prawo o szkolnictwie wyższym i nauce oraz Statutem Politechniki Opolskiej. W sprawach nieuregulowanych niniejszym regulaminem stosuje się odpowiednie przepisy prawa oraz akty nadrzędne.
+2. Komisja przestrzega zasad ochrony danych osobowych zgodnie z RODO.
+
 ### § 2. Zasady działania
 Komisja w swoich działaniach kieruje się zasadami:
 1. **Niezależności i bezstronności** – członkowie Komisji są niezależni w swoich ocenach i rozpatrują sprawy obiektywnie, bez uprzedzeń i nacisków zewnętrznych.
 2. **Poufności** – postępowania prowadzone są z poszanowaniem prywatności i ochroną danych wrażliwych. Posiedzenia Komisji są niejawne, chyba że wszystkie strony postępowania wyrażą zgodę na ich jawność.
 3. **Prawa do obrony** – każda strona postępowania ma prawo do przedstawienia swojego stanowiska, dowodów i odniesienia się do zarzutów.
 4. **Szybkości postępowania** – Komisja dąży do zakończenia postępowania bez zbędnej zwłoki.
+
+### § 2a. Relacje z innymi organami
+1. Komisja współpracuje z Komisją Rewizyjno-Wyborczą, Zarządem oraz Rzecznikiem Praw Studenta w zakresie monitorowania i rozpatrywania spraw etycznych oraz antydyskryminacyjnych.
+2. W przypadku spraw wymagających interwencji organów uczelni, Komisja przekazuje sprawę do właściwego organu zgodnie z procedurą określoną w Statucie Uczelni.
 
 ## DZIAŁ II. SKŁAD, WYBÓR I ORGANIZACJA
 
@@ -78,13 +86,13 @@ Do zadań Komisji należy:
 
 ### § 10. Orzeczenie
 1. Po zakończeniu postępowania Komisja wydaje orzeczenie, które zawiera:
-   a) oznaczenie stron;
-   b) opis zarzutów;
-   c) ustalenia faktyczne i prawne;
-   d) rozstrzygnięcie (stwierdzenie naruszenia lub jego braku);
-   e) uzasadnienie.
+   a) rozstrzygnięcie sprawy;
+   b) uzasadnienie faktyczne i prawne;
+   c) zalecenia dotyczące dalszych działań lub środków naprawczych;
+   d) pouczenie o możliwości odwołania.
 2. W przypadku stwierdzenia naruszenia, Komisja może nałożyć kary przewidziane w [Kodeksie Etycznym](03-kodeks-etyczny.md), od upomnienia po wniosek o odwołanie z funkcji.
 3. Orzeczenie doręcza się stronom na piśmie.
+4. W przypadku spraw o szczególnym znaczeniu dla społeczności studenckiej, Komisja publikuje zanonimizowane orzeczenie na stronie internetowej Samorządu.
 
 ### § 11. Odwołanie
 1. Od orzeczenia Komisji stronom przysługuje odwołanie do Parlamentu w terminie 14 dni od dnia jego doręczenia.
@@ -100,5 +108,12 @@ Zmiana niniejszego Regulaminu wymaga uchwały Parlamentu podjętej większości�
 
 ### § 13. Wejście w życie
 Regulamin wchodzi w życie z dniem uchwalenia.
+
+### § 14. Sprawozdawczość i jawność
+1. Komisja publikuje roczne, zanonimizowane sprawozdanie ze swojej działalności, zawierające statystyki, wnioski i rekomendacje.
+2. Sprawozdania i orzeczenia Komisji są dostępne dla wszystkich członków Samorządu, z zachowaniem zasad poufności i ochrony danych osobowych.
+
+*Regulamin Komisji Etyki uchwalony przez Parlament Studentów Politechniki Opolskiej*
+*Wersja v3 - Data aktualizacji: 23 września 2025*
 
 

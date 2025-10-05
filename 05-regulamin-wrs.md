@@ -23,9 +23,11 @@
    a) Przewodniczący WRS;
    b) Prezydium WRS.
 2. Pracami WRS kieruje Przewodniczący WRS, wybierany przez członków WRS spośród siebie na pierwszym posiedzeniu. Wybór wymaga bezwzględnej większości głosów.
-3. Przewodniczący WRS jest z urzędu członkiem Parlamentu Samorządu Studenckiego.
+3. Przewodniczący WRS uczestniczy w posiedzeniach Parlamentu z głosem doradczym i posiada inicjatywę uchwałodawczą w sprawach dotyczących jego wydziału.
 4. Prezydium WRS składa się z Przewodniczącego, Wiceprzewodniczącego (lub Wiceprzewodniczących) oraz Sekretarza. Członków Prezydium wybiera WRS spośród swoich członków.
 5. Prezydium WRS jest organem wykonawczym, odpowiedzialnym za bieżące zarządzanie działalnością WRS i realizację jej uchwał.
+6. Sekretarz prowadzi protokoły posiedzeń WRS i rejestr uchwał, publikuje je w Rejestrze Uchwał i Aktów Samorządu (§ 37b Regulaminu Samorządu) w terminie 7 dni od posiedzenia.
+7. W razie nieobecności Przewodniczącego jego obowiązki wykonuje Wiceprzewodniczący, a w razie jego braku – członek Prezydium wskazany uchwałą WRS.
 
 ## DZIAŁ III. ZADANIA I KOMPETENCJE
 
@@ -60,6 +62,7 @@ Do zadań WRS należy w szczególności:
 2. Posiedzenia są jawne dla studentów wydziału.
 3. Uchwały WRS zapadają zwykłą większością głosów w obecności co najmniej połowy składu WRS.
 4. Szczegółowe zasady prowadzenia posiedzeń, w tym w trybie zdalnym, określa sama WRS w drodze uchwały, wzorując się na postanowieniach [Regulaminu Samorządu](01-regulamin-sspo.md).
+5. Protokoły z posiedzeń WRS oraz uchwały WRS publikowane są w Rejestrze Uchwał i Aktów Samorządu (§ 37b Regulaminu Samorządu). Uchwały WRS wchodzą w życie po upływie 7 dni od publikacji, chyba że uchwała stanowi inaczej.
 
 ## DZIAŁ VI. POSTANOWIENIA KOŃCOWE
 
@@ -67,7 +70,10 @@ Do zadań WRS należy w szczególności:
 Zmiana niniejszego Regulaminu wymaga uchwały Parlamentu, podjętej na wniosek Zarządu lub co najmniej trzech WRS.
 
 ### § 9. Wejście w życie
-Regulamin wchodzi w życie z dniem uchwalenia.
+1. Regulamin wchodzi w życie z dniem uchwalenia.
+2. W sprawach nieuregulowanych niniejszym regulaminem stosuje się odpowiednio postanowienia [Regulaminu Samorządu](01-regulamin-sspo.md).
+3. Nieważność pojedynczego przepisu niniejszego regulaminu nie wpływa na ważność pozostałych (klauzula salwatoryjna). W razie sprzeczności pierwszeństwo mają postanowienia [Regulaminu Samorządu](01-regulamin-sspo.md).
+4. Akty WRS nie mogą modyfikować ani derogować przepisów aktów centralnych Samorządu. W razie wątpliwości stosuje się zasadę nadrzędności aktów centralnych oraz wykładnię wiążącą Parlamentu (§ 45a Regulaminu Samorządu).
 
 
 

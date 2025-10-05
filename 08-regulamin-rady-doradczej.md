@@ -21,6 +21,11 @@
 1. Pracami Rady kieruje Przewodniczący Rady, którym jest Przewodniczący Samorządu lub osoba przez niego wyznaczona.
 2. Przewodniczący Rady zwołuje posiedzenia i ustala ich porządek.
 
+### § 3a. Zasady etyczne i poufność
+1. Członkowie Rady są zobowiązani do przestrzegania [Kodeksu Etycznego](03-kodeks-etyczny.md), w szczególności zasad dotyczących konfliktu interesów oraz przyjmowania korzyści.
+2. Posiedzenia Rady mają charakter niejawny, a członkowie są zobowiązani do zachowania poufności informacji uzyskanych w związku z pełnieniem funkcji.
+3. Członek Rady, u którego występuje konflikt interesów w danej sprawie, jest zobowiązany do ujawnienia tego faktu i wyłączenia się z udziału w opiniowaniu.
+
 ## DZIAŁ III. ZADANIA I KOMPETENCJE
 
 ### § 4. Główne zadania

@@ -24,8 +24,8 @@ System zabezpieczeń SSPO opiera się na następujących filarach:
 
 ### § 4 [Ochrona przed nadużyciami]
 1. Wprowadza się limit dwóch kolejnych kadencji na tym samym stanowisku w Zarządzie SSPO.
-2. Komisja Rewizyjna posiada uprawnienia do kontroli wszystkich organów Samorządu i może wnioskować do Parlamentu o odwołanie członków Zarządu.
-3. Istotne decyzje o charakterze strategicznym lub finansowym wymagają kontrasygnaty Skarbnika lub opinii Komisji Rewizyjnej.
+2. Komisja Rewizyjno-Wyborcza posiada uprawnienia do kontroli wszystkich organów Samorządu i może wnioskować do Parlamentu o odwołanie członków Zarządu.
+3. Istotne decyzje o charakterze strategicznym lub finansowym wymagają kontrasygnaty Skarbnika lub opinii Komisji Rewizyjno-Wyborczej.
 
 ## Rozdział III - Zabezpieczenia Finansowe
 
@@ -50,7 +50,7 @@ Zarząd SSPO jest zobowiązany do dążenia do dywersyfikacji źródeł finansow
 ## Rozdział V - Postanowienia końcowe
 
 ### § 9 [Nadzór i aktualizacja]
-1. Nadzór nad przestrzeganiem zabezpieczeń systemowych sprawuje Komisja Rewizyjna.
-2. Parlament Studentów, na wniosek Zarządu lub Komisji Rewizyjnej, dokonuje przeglądu i aktualizacji niniejszego załącznika co najmniej raz na dwa lata.
+1. Nadzór nad przestrzeganiem zabezpieczeń systemowych sprawuje Komisja Rewizyjno-Wyborcza.
+2. Parlament Studentów, na wniosek Zarządu lub Komisji Rewizyjno-Wyborczej, dokonuje przeglądu i aktualizacji niniejszego załącznika co najmniej raz na dwa lata.
 
 

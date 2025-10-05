@@ -38,6 +38,7 @@
 19. **[Macierz Powiązań Dokumentów](19-macierz-powiazan.md)** (Załącznik nr 18) – graficznie i opisowo przedstawia relacje między aktami prawnymi.
 20. **[Przewodnik Wdrożeniowy](20-przewodnik-wdrozeniowy.md)** (Załącznik nr 19) – zawiera praktyczne wskazówki i interpretacje ułatwiające stosowanie nowych przepisów.
 21. **[Procedury i Wizualizacje](21-procedury-wizualizacje.md)** (Załącznik nr 20) - określa zasady tworzenia i stosowania wizualizacji procedur.
+22. **[Kodeks Publikacyjny – Checklista Rejestru](23-kodeks-publikacyjny.md)** (Załącznik nr 21) – pomocnicza lista kontrolna dla publikacji w Rejestrze Uchwał i Aktów.
 
 ### § 3. Postanowienia Końcowe
 1.  Wszelkie dokumenty nieujęte w niniejszym indeksie, a funkcjonujące w poprzednim systemie prawnym, tracą moc z dniem wejścia w życie niniejszego Systemu.
