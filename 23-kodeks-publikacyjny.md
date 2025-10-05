@@ -20,7 +20,7 @@ Ten krótki dokument pomaga wszystkim organom SSPO publikować kompletne i popra
 - Niezwłocznie, nie później niż 48 godzin od podjęcia aktu (§ 40 ust. 2).
 - Vacatio legis aktów normatywnych: co do zasady 7 dni (§ 40 ust. 5).
 - Errata i sprostowania: w ciągu 48 godzin od wykrycia błędu (§ 40 ust. 9).
-- Protokoły inwentaryzacyjne: w 14 dni od zakończenia spisu (§ 7b ust. 4 RF).
+- Protokoły inwentaryzacyjne: w 14 dni od zakończenia spisu (§ 14 ust. 4 RF).
 
 ## 3. Jak publikujemy (format + metadane)
 Do każdego wpisu dołącz:

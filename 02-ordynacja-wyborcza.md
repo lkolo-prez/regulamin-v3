@@ -81,7 +81,7 @@ Ilekroć w Ordynacji jest mowa o:
 4. Z przebiegu wyborów sporządza się protokół, który podpisują wszyscy członkowie Komisji.
 5. Oficjalne wyniki wyborów ogłasza Komisja Rewizyjno-Wyborcza w ciągu 48 godzin od zakończenia głosowania.
 
-### § 10a. Komisja skrutacyjna i transparentność
+### <a id="§-10a"></a><a id="§-11"></a>§ 11. Komisja skrutacyjna i transparentność
 1. Na czas ustalania wyników Komisja Rewizyjno-Wyborcza powołuje komisję skrutacyjną spośród swoich członków.
 2. Komisja skrutacyjna sporządza protokół z ustalenia wyników, zawierający: liczbę uprawnionych do głosowania, liczbę głosów oddanych, frekwencję, liczbę głosów ważnych i nieważnych oraz wyniki kandydatów.
 3. Protokół podpisują wszyscy członkowie komisji skrutacyjnej. Protokół jest niezwłocznie publikowany w Rejestrze Uchwał i Aktów Samorządu (§ 40 Regulaminu Samorządu).
@@ -89,22 +89,22 @@ Ilekroć w Ordynacji jest mowa o:
 5. Mężowie zaufania mogą zgłaszać uwagi do protokołu. Zgłoszone uwagi stanowią załącznik do protokołu i są publikowane wraz z nim.
 6. Czynności skrutacyjne są jawne dla obserwatorów w rozumieniu ust. 4, z poszanowaniem ochrony danych osobowych i tajności głosowania.
 
-### § 10b. Protesty wyborcze
+### <a id="§-10b"></a><a id="§-12"></a>§ 12. Protesty wyborcze
 1. Na wyniki wyborów przysługuje protest wyborczy składany do Komisji Rewizyjno-Wyborczej w terminie 3 dni od ogłoszenia wyników.
 2. Protest powinien zawierać wskazanie naruszeń, które mogły mieć wpływ na wynik wyborów, oraz dowody na ich poparcie.
 3. Komisja rozpatruje protest w terminie 7 dni. Może oddalić protest, uwzględnić go w całości lub w części i zarządzić ponowne przeliczenie głosów albo powtórzenie głosowania w danym okręgu.
 4. Od rozstrzygnięcia protestu przysługuje odwołanie do Parlamentu w terminie 3 dni. Decyzja Parlamentu jest ostateczna.
 
-### § 10c. Publikacja frekwencji
+### <a id="§-10c"></a><a id="§-13"></a>§ 13. Publikacja frekwencji
 Komisja Rewizyjno-Wyborcza publikuje zbiorczą informację o frekwencji w poszczególnych okręgach wraz z porównaniem do poprzedniej edycji wyborów.
 
-### § 11. Kadencja i przepisy przejściowe
+### § 14. Kadencja i przepisy przejściowe
 1. Kadencja wszystkich organów wybieranych na podstawie niniejszej Ordynacji trwa dwa lata i jest zgodna z kadencją Parlamentu, zgodnie z [Regulaminem Samorządu](./01-regulamin-sspo.md).
 2. Wybory uzupełniające przeprowadza się, gdy liczba członków organu spadnie poniżej ustawowego minimum lub w przypadku wygaśnięcia mandatu, o ile do końca kadencji pozostało więcej niż 6 miesięcy.
 3. Wybory odwoławcze przeprowadza się w trybie określonym w Regulaminie, w przypadku odwołania członka organu przez uprawniony organ.
 4. Przepisy przejściowe: Pierwsze wybory na dwuletnią kadencję przeprowadza się zgodnie z terminarzem ustalonym przez Komisję Rewizyjno-Wyborczą po wejściu w życie nowego Regulaminu. Mandaty organów wybranych przed zmianą Regulaminu wygasają z końcem roku akademickiego, w którym Regulamin został uchwalony.
 
-### § 12. Zasady głosowania i tryb wyborów
+### § 15. Zasady głosowania i tryb wyborów
 1. Wybory do organów Samorządu odbywają się w głosowaniu tajnym, chyba że Regulamin lub Ordynacja stanowi inaczej.
 2. Wybory elektroniczne muszą zapewniać poufność, identyfikację wyborców oraz możliwość kontroli przez Komisję Rewizyjno-Wyborczą.
 3. Wybory tradycyjne przeprowadza się w sposób zapewniający tajność głosowania i równość szans wszystkich kandydatów.
@@ -112,7 +112,7 @@ Komisja Rewizyjno-Wyborcza publikuje zbiorczą informację o frekwencji w poszcz
 5. Przetwarzanie danych osobowych w procesie wyborczym, w szczególności przy wyborach elektronicznych, odbywa się zgodnie z przepisami RODO oraz politykami ochrony danych Uczelni. Komisja Rewizyjno-Wyborcza publikuje klauzulę informacyjną dla wyborców i kandydatów.
 6. Dla zapewnienia rozliczalności procesu wyborczego KRW przechowuje: 1) protokoły komisji skrutacyjnej i KRW, 2) logi systemowe potwierdzające integralność i dostępność systemu oraz 3) raport z testów technicznych systemu e‑głosowania. Okres retencji wynosi co do zasady 12 miesięcy od ogłoszenia wyników, chyba że przepisy RODO lub polityki Uczelni stanowią inaczej. Dane podlegają pseudonimizacji lub anonimizacji w najszerszym możliwym zakresie.
 
-### § 13. Zasady etyczne i równościowe
+### § 16. Zasady etyczne i równościowe
 1. Proces wyborczy podlega zasadom [Kodeksu Etycznego](./03-kodeks-etyczny.md) oraz procedurom antydyskryminacyjnym określonym w Regulaminie.
 2. Wszelkie zgłoszenia naruszeń zasad etycznych lub równościowych rozpatruje Komisja Etyki we współpracy z Komisją Rewizyjno-Wyborczą.
 

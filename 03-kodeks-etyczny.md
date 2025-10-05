@@ -50,17 +50,17 @@ Działalność członków organów Samorządu opiera się na następujących war
 1. Członek organu Samorządu jest zobowiązany do zachowania w tajemnicy informacji poufnych, uzyskanych w związku z pełnioną funkcją, których ujawnienie mogłoby narazić na szkodę interes Samorządu lub prywatność osób trzecich.
 2. Obowiązek zachowania poufności trwa również po zakończeniu kadencji.
 
-### § 8a. Okres karencji (Cooling-off)
+### <a id="§-8a"></a><a id="§-9"></a>§ 9. Okres karencji (Cooling-off)
 1. Osoby pełniące funkcję Przewodniczącego Samorządu lub Skarbnika nie mogą, w okresie 6 miesięcy od zakończenia pełnienia funkcji, podejmować odpłatnej współpracy ani być zatrudnione przez podmioty zewnętrzne, które w trakcie ich kadencji uzyskały od Samorządu znaczące korzyści finansowe lub niefinansowe w wyniku decyzji, w których podejmowaniu brali udział.
 2. Przez znaczące korzyści rozumie się umowy lub zlecenia, których łączna wartość w trakcie kadencji przekroczyła kwotę dwukrotności minimalnego wynagrodzenia za pracę obowiązującego w danym roku.
 
 ## DZIAŁ III. ODPOWIEDZIALNOŚĆ I PROCEDURY
 
-### § 9. Nadzór nad przestrzeganiem Kodeksu
+### § 10. Nadzór nad przestrzeganiem Kodeksu
 1. Nadzór nad przestrzeganiem postanowień Kodeksu sprawuje [Komisja Etyki](06-regulamin-komisji-etyki.md).
 2. Każdy student ma prawo zgłosić do Komisji Etyki uzasadnione podejrzenie naruszenia Kodeksu przez członka organu Samorządu.
 
-### § 10. Postępowanie wyjaśniające
+### § 11. Postępowanie wyjaśniające
 1. Komisja Etyki rozpatruje zgłoszenia w sposób bezstronny, zapewniając osobie, której dotyczy zgłoszenie, prawo do złożenia wyjaśnień.
 2. W przypadku stwierdzenia naruszenia Kodeksu, Komisja Etyki, w zależności od wagi naruszenia, może:
    1) udzielić upomnienia;
@@ -70,7 +70,7 @@ Działalność członków organów Samorządu opiera się na następujących war
 
 ## DZIAŁ IV. POSTANOWIENIA KOŃCOWE
 
-### § 11. Wejście w życie i stosowanie
+### § 12. Wejście w życie i stosowanie
 1. Kodeks Etyczny wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 2. Każdy członek organu Samorządu jest zobowiązany do zapoznania się z treścią Kodeksu i złożenia pisemnego oświadczenia o zobowiązaniu się do jego przestrzegania.
 3. Zmiany w Kodeksie wymagają uchwały Parlamentu podjętej większością 2/3 głosów.

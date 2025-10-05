@@ -35,7 +35,7 @@ Nowy system prawny opiera się na trzech filarach:
 1.  **Konflikt interesów:** Jeśli sprawa, nad którą głosujesz, dotyczy Ciebie, Twojej rodziny, bliskiej osoby lub firmy, z którą jesteś powiązany – masz obowiązek wyłączyć się z głosowania i poinformować o tym Przewodniczącego posiedzenia. To nie jest zła wola, a dowód Twojej uczciwości.
 2.  **Oświadczenia o konflikcie interesów (Załącznik do Kodeksu):** Jako członek Zarządu, KRW lub Marszałek Parlamentu (ew. Wicemarszałek/Sekretarz), musisz złożyć takie oświadczenie na początku kadencji. To standardowa procedura zapewniająca przejrzystość.
 3.  **Prezenty i korzyści:** Możesz przyjąć drobny upominek (np. uczelniany długopis, smycz), ale nigdy gotówkę lub prezent o wartości przekraczającej 50 zł. W razie wątpliwości – odmów lub skonsultuj się z Komisją Etyki.
-4.  **Okres "karencji" (§ 8a Kodeksu):** Jeśli pełniłeś funkcję Przewodniczącego SSPO, Marszałka Parlamentu lub Przewodniczącego KRW, przez rok po zakończeniu kadencji nie możesz być zatrudniony przez podmioty, wobec których podejmowałeś kluczowe decyzje (np. jako główny organizator juwenaliów).
+4.  **Okres "karencji" (§ 9 Kodeksu):** Jeśli pełniłeś funkcję Przewodniczącego SSPO, Marszałka Parlamentu lub Przewodniczącego KRW, przez rok po zakończeniu kadencji nie możesz być zatrudniony przez podmioty, wobec których podejmowałeś kluczowe decyzje (np. jako główny organizator juwenaliów).
 
 ## CZĘŚĆ III: NAJCZĘŚCIEJ ZADAWANE PYTANIA (FAQ)
 
