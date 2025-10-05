@@ -40,6 +40,22 @@
 21. **[Procedury i Wizualizacje](21-procedury-wizualizacje.md)** (Załącznik nr 20) - określa zasady tworzenia i stosowania wizualizacji procedur.
 22. **[Kodeks Publikacyjny – Checklista Rejestru](23-kodeks-publikacyjny.md)** (Załącznik nr 21) – pomocnicza lista kontrolna dla publikacji w Rejestrze Uchwał i Aktów.
 
+### Mapa renumeracji paragrafów (§) – skrót
+
+- Regulamin SSPO (01):
+	- § 11a → § 12 (kotwica legacy: `#§-11a`), § 12a → § 14 (`#§-12a`), § 18a → § 21 (`#§-18a`)
+	- § 22a → § 26; § 22b → § 27; § 22c → § 28; § 22d → § 29 (kotwice legacy: `#§-22a`..`#§-22d`)
+	- § 39 (posiedzenia zdalne) → § 46 (kotwica legacy: `#§-39`)
+	- § 40 (Rejestr) → § 47 (kotwica legacy: `#§-40`)
+	- § 45 (wybory personalne) → § 52 (kotwica legacy: `#§-45`)
+	- § 51 (kolizje/wykładnia) → § 58 (kotwica legacy: `#§-51`)
+- Regulamin Finansowy (04): § 7b → § 14 (majątek i inwentaryzacja); stabilne odnośniki w wizualizacjach: `#§-3` → § 4, `#§-6` → § 8, `#§-8` → § 15
+- Ordynacja Wyborcza (02): § 10a–§ 10c → § 11–§ 13 (kotwice legacy: `#§-10a`..`#§-10c`)
+- Kodeks Etyczny (03): § 8a → § 9 (kotwica legacy: `#§-8a`)
+- Regulamin Komisji Etyki (06): § 1a → § 2; § 2a → § 4 (kotwice legacy: `#§-1a`, `#§-2a`)
+
+Wskazówka: przy linkowaniu między dokumentami preferuj stabilne kotwice legacy (np. `#§-40`), aby utrzymać zgodność linków po renumeracjach.
+
 ### § 3. Postanowienia Końcowe
 1.  Wszelkie dokumenty nieujęte w niniejszym indeksie, a funkcjonujące w poprzednim systemie prawnym, tracą moc z dniem wejścia w życie niniejszego Systemu.
-2.  Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu SSPO](01-regulamin-sspo.md).
+2.  Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu SSPO](01-regulamin-sspo.md#§-40).

@@ -315,23 +315,26 @@ graph TD
 ```
 
 ### 8. Posiedzenia Zdalne i Hybrydowe – Standard e‑Głosowań (na podstawie § 39 Regulaminu)
-### 8. Posiedzenia Zdalne i Hybrydowe – Standard e‑Głosowań (na podstawie § 39 Regulaminu)
 ```mermaid
+graph TD
+    A[Decyzja o trybie zdalnym/hybrydowym] --> B[Zaproszenie z informacją o trybie i narzędziu];
+    B --> C{Czy przewidziane są głosowania tajne?};
+    C -- Tak --> D[Test techniczny systemu e‑głosowań];
+    D --> E[Protokół z testu (publikacja z protokołem posiedzenia)];
+    C -- Nie --> F[Obrady i głosowania jawne];
+    E --> G[Tajne głosowania online (administrowane przez KRW)];
+    G --> H{Istotna awaria?};
+    H -- Tak --> I[Przerwanie głosowania i tryb awaryjny wg załączników];
+    H -- Nie --> J[Kontynuacja posiedzenia];
+    F --> K[Transmisja/udostępnienie nagrania posiedzenia jawnego];
+    J --> L[Zamknięcie posiedzenia];
+    K --> L;
+    L --> R[[Publikacja w Rejestrze Uchwał i Aktów (§ 40)]];
+
     click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
-        G --> R[[Publikacja w Rejestrze Uchwał i Aktów (§ 40)]]
-    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
-    C --> D{Czy przewidziane są głosowania tajne?};
-    D -- Tak --> E[Test techniczny systemu e‑głosowań];
-    E --> F[Protokół z testu (publikacja z protokołem posiedzenia)];
-    D -- Nie --> G[Obrady i głosowania jawne];
-    F --> H[Tajne głosowania online (administrowane przez KRW)];
-    H --> I{Istotna awaria?};
-    I -- Tak --> J[Przerwanie głosowania i tryb awaryjny wg załączników];
-    I -- Nie --> K[Kontynuacja posiedzenia];
-    K --> L[Transmisja/udostępnienie nagrania posiedzenia jawnego];
 
     classDef note fill:#fff3cd,stroke:#856404,color:#333;
-    J:::note
+    I:::note
 ```
 
 ### 9. Rejestr Uchwał i Publikacja Aktów (na podstawie § 40 Regulaminu)

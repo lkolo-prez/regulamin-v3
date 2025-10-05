@@ -65,7 +65,7 @@ Ilekroć w Ordynacji jest mowa o:
 ### § 8. Kampania wyborcza
 1. Kampania wyborcza rozpoczyna się w dniu ogłoszenia listy kandydatów i kończy się na 24 godziny przed rozpoczęciem głosowania (cisza wyborcza).
 2. Prowadzenie kampanii musi być zgodne z zasadami [Kodeksu Etycznego](./03-kodeks-etyczny.md) i poszanowania innych kandydatów. Zabrania się niszczenia materiałów wyborczych konkurentów oraz prowadzenia agitacji na terenie lokali wyborczych w dniu głosowania.
-3. Finansowanie kampanii jest jawne. Kandydaci mogą korzystać wyłącznie z własnych środków lub darowizn od studentów, których wysokość i zasady ewidencji określa uchwała Komisji Rewizyjno-Wyborczej.
+3. Finansowanie kampanii jest jawne. Kandydaci mogą korzystać wyłącznie z własnych środków lub darowizn od studentów, których wysokość i zasady ewidencji określa uchwała Komisji Rewizyjno-Wyborczej. Zabrania się finansowania materiałów kampanijnych ze środków Samorządu lub Uczelni, z wyjątkiem neutralnej infrastruktury informacyjnej KRW.
 
 ### § 9. Głosowanie
 1. Głosowanie odbywa się w formie elektronicznej za pośrednictwem systemu informatycznego Uczelni (np. USOS).
@@ -79,7 +79,7 @@ Ilekroć w Ordynacji jest mowa o:
 3. W przypadku równej liczby głosów decydującej o przyznaniu ostatniego mandatu, przeprowadza się losowanie z udziałem zainteresowanych kandydatów.
    W wyborach personalnych wymagających bezwzględnej większości stosuje się tryb z § 45 Regulaminu SSPO (druga tura, ewentualna dogrywka, a następnie losowanie).
 4. Z przebiegu wyborów sporządza się protokół, który podpisują wszyscy członkowie Komisji.
-5. Oficjalne wyniki wyborów ogłasza Komisja Rewizyjno-Wyborcza w ciągu 48 godzin od zakończenia głosowania.
+5. Oficjalne wyniki wyborów ogłasza Komisja Rewizyjno-Wyborcza w ciągu 48 godzin od zakończenia głosowania, publikując je wraz z protokołem i zbiorczą frekwencją w Rejestrze Uchwał i Aktów (§ 40 [Regulaminu Samorządu](01-regulamin-sspo.md#§-40)).
 
 ### <a id="§-10a"></a><a id="§-11"></a>§ 11. Komisja skrutacyjna i transparentność
 1. Na czas ustalania wyników Komisja Rewizyjno-Wyborcza powołuje komisję skrutacyjną spośród swoich członków.

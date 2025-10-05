@@ -72,5 +72,6 @@ W przypadku wątpliwości stosuj § 40 Regulaminu SSPO oraz ogólne zasady jawno
 
 - Używaj nagłówków H3 z numerem paragrafu: „### § X. Tytuł” (kropka po numerze). Dopuszczalne „### § X.”, gdy brak tytułu.
 - Unikaj paragrafów z literami (np. „§ 10a.”). W razie potrzeby wstawienia paragrafu pośredniego, przeprowadź renumerację kolejnych paragrafów do kolejnych liczb całkowitych (np. § 10, § 11, § 12, …), a w miejscu dawnych numerów dodaj niewidoczne kotwice HTML (legacy), aby nie psuć istniejących odnośników.
+- Przy linkowaniu między dokumentami używaj stabilnych kotwic legacy (np. `#§-40` dla Rejestru), dzięki czemu linki pozostają poprawne mimo renumeracji widocznych numerów paragrafów.
 - Nie stosuj nawiasów kwadratowych w nagłówkach (np. „§ 3 [Definicje]” → „§ 3. Definicje”).
 - Pisz „Wejście w życie” (mała litera „w życie”) w tytułach i treści.

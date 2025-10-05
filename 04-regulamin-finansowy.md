@@ -57,11 +57,16 @@
 1. Każdy wydatek musi być zgodny z Budżetem, celowy i udokumentowany.
 2. Dysponentem środków finansowych jest Zarząd. Decyzje o wydatkach powyżej kwoty określonej w odrębnych przepisach Uczelni wymagają akceptacji co najmniej dwóch członków Zarządu, w tym Skarbnika.
 3. Wszystkie zobowiązania finansowe w imieniu Samorządu mogą być zaciągane wyłącznie do wysokości środków posiadanych w Budżecie.
+4. Zabrania się dzielenia zamówień lub sztucznego zaniżania ich wartości w celu obejścia progów, procedur lub wymogów zatwierdzeń.
+5. Wydatki reprezentacyjne (np. upominki, poczęstunek) muszą mieć uzasadnienie merytoryczne oraz proporcjonalny charakter; nie mogą służyć prywatnym celom ani kampaniom wyborczym.
 
 ### <a id="§-6a"></a><a id="§-9"></a>§ 9. Procedury zakupowe i konkurencyjność
 1. Dla wydatków powyżej progu określonego przez Uczelnię lub, jeżeli brak takiego progu, powyżej 5000 zł brutto, wymagane jest przeprowadzenie zapytania ofertowego i udokumentowanie co najmniej trzech ofert, o ile jest to możliwe.
 2. Wybór oferty powinien uwzględniać kryteria jakościowe i cenowe. Uzasadnienie wyboru stanowi część dokumentacji wydatku.
 3. W przypadkach pilnych lub gdy rynek nie pozwala na uzyskanie trzech ofert, dopuszcza się odstępstwo, które wymaga pisemnego uzasadnienia i akceptacji Skarbnika.
+4. Osoba rekomendująca wybór oferty składa oświadczenie o braku konfliktu interesów w danej sprawie; w razie konfliktu wyłącza się z rekomendacji, a wybór dokonuje inna osoba wskazana przez Zarząd.
+5. Z wyboru oferty sporządza się protokół zawierający: opis przedmiotu zamówienia, zastosowane kryteria i ich wagi, zestawienie ofert (cena/jakość/termin), uzasadnienie wyboru oraz podpisy osób biorących udział.
+6. Dokumentację postępowań (zapytania, oferty, protokół) przechowuje się co najmniej przez 5 lat i na żądanie udostępnia Komisji Rewizyjno‑Wyborczej.
 
 ### <a id="§-6b"></a><a id="§-10"></a>§ 10. Zasada dwupodpisowości i upoważnienia
 1. Każdy dokument powodujący powstanie zobowiązania finansowego (umowa, zamówienie, polecenie zapłaty) wymaga łącznego podpisu dwóch osób uprawnionych: Skarbnika oraz Przewodniczącego Samorządu albo innego członka Zarządu upoważnionego uchwałą Zarządu.
@@ -97,6 +102,9 @@
 1. Skarbnik przedstawia Zarządowi miesięczne raporty z wykonania Budżetu.
 2. Zarząd przedstawia Parlamentowi oraz Komisji Rewizyjno-Wyborczej sprawozdanie z wykonania Budżetu za każde półrocze w terminie do końca miesiąca następującego po okresie sprawozdawczym.
 3. Roczne sprawozdanie finansowe stanowi podstawę do udzielenia absolutorium Zarządowi przez Parlament.
+4. Co najmniej: sprawozdanie półroczne składa się do dnia 31 marca za okres obejmujący poprzednie półrocze, a sprawozdanie roczne składa się do dnia 30 listopada za poprzedni rok akademicki lub rok budżetowy, zgodnie z uchwałą Parlamentu.
+5. Sprawozdania obejmują co najmniej: plan vs. wykonanie przychodów i wydatków (w podziale na obszary), opis istotnych odchyleń wraz z wyjaśnieniami, informację o wykorzystaniu rezerwy, wykaz największych wydatków jednostkowych oraz informację o toczących się kontrolach i działaniach naprawczych.
+6. Sprawozdania i załączniki publikuje się w Rejestrze Uchwał i Aktów w terminie 7 dni od ich przyjęcia, zgodnie z § 6 ust. 1.
 
 ### § 16. Kontrola
 1. Komisja Rewizyjno-Wyborcza ma prawo do stałej kontroli gospodarki finansowej Samorządu.

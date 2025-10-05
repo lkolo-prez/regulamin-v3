@@ -28,7 +28,7 @@ Wszystkie istotne zmiany w projekcie są dokumentowane w tym pliku.
 ## [2.2.0] - 2025-10-05
 
 ### 📜 Prawo i procedury
-- 01-regulamin-sspo: dodano §11a ust. 7 (wakat Marszałka), §18a ust. 4 (kworum/większość KRW), §40 ust. 7–8 (retencja i zakaz retroakcji), §45 (wybory personalne: druga tura/dogrywka/losowanie). Uporządkowano kolejność (dawne §40a–§40b scalone do kolejnych liczb całkowitych).
+- 01-regulamin-sspo: dodano § 12 ust. 7 (wakat Marszałka), § 21 ust. 4 (kworum/większość KRW), § 40 (stabilna kotwica legacy; treść w § 47) ust. 7–8 (retencja i zakaz retroakcji), § 45 (stabilna kotwica legacy; treść w § 52) – wybory personalne: druga tura/dogrywka/losowanie. Uporządkowano kolejność (dawne § 40a–§ 40b scalone do kolejnych liczb całkowitych).
 - 02-ordynacja-wyborcza: doprecyzowano tie-break i dodano odesłanie do §45 dla wyborów personalnych.
 - 20-przewodnik-wdrozeniowy: ujednolicono nazewnictwo (Marszałek/Wicemarszałek/Sekretarz) i odesłania do Rejestru (§40).
  - 01-regulamin-sspo: doprecyzowano brak zdolności do działania KRW (tymczasowa komisja), standardy testów e‑głosowań i logów (§39 ust. 8–10), SLA dla errat (§40 ust. 9) oraz raportowanie Rzecznika (termin, zakres, publikacja).
@@ -44,6 +44,25 @@ Wszystkie istotne zmiany w projekcie są dokumentowane w tym pliku.
 - 23-kodeks-publikacyjny: dodano tabelaryczny szablon metadanych do wpisów w Rejestrze (organ, identyfikator, daty, status, słowa kluczowe, anonimizacja, linki).
  - 21-procedury-wizualizacje: zaktualizowano „Proces Legislacyjny” i „Rejestr Uchwał” – teraz pokazują jawnie przepływ „Publikacja w Rejestrze → vacatio legis (7 dni) → wejście w życie”. Naprawiono link do finansów (M → § 8) i dodano stabilne kotwice HTML: `§-37b` (Regulamin SSPO), `§-3`, `§-6`, `§-8` (Regulamin Finansowy).
  - Globalnie: usunięto paragrafy z literami (np. 36a/37a/37b…) poprzez renumerację do kolejnych liczb całkowitych. Dodano kotwice zgodności wstecznej (legacy) w kluczowych miejscach, aby nie przerywać istniejących łączy.
+
+#### 📎 Dodatek: mapa renumeracji (legacy → aktualne)
+- Regulamin SSPO (01):
+  - § 11a → § 12 (kotwica legacy: `#§-11a`)
+  - § 12a → § 14 (kotwica legacy: `#§-12a`)
+  - § 18a → § 21 (kotwica legacy: `#§-18a`)
+  - § 22a → § 26; § 22b → § 27; § 22c → § 28; § 22d → § 29 (kotwice legacy: `#§-22a`..`#§-22d`)
+  - § 36 → § 43; § 37 (jawność) → § 44 (kotwica legacy: `#§-37`)
+  - § 39 (posiedzenia zdalne) → § 46 (kotwica legacy: `#§-39`)
+  - § 40 (Rejestr) → § 47 (kotwica legacy: `#§-40`)
+  - § 44 (wadliwość uchwał) → § 51 (kotwica legacy: `#§-44`)
+  - § 45 (wybory personalne) → § 52 (kotwica legacy: `#§-45`)
+  - § 51 (kolizje/wykładnia) → § 58 (kotwica legacy: `#§-51`)
+  - Koniec dokumentu: obecnie do § 60
+- Regulamin Finansowy (04):
+  - § 7b → § 14 (majątek i inwentaryzacja); stabilne odnośniki w wizualizacjach: `#§-3` → § 4, `#§-6` → § 8, `#§-8` → § 15
+- Ordynacja Wyborcza (02): § 10a–§ 10c → § 11–§ 13 (z kotwicami legacy `#§-10a`..`#§-10c`)
+- Kodeks Etyczny (03): § 8a → § 9 (kotwica legacy `#§-8a`)
+- Regulamin Komisji Etyki (06): § 1a → § 2; § 2a → § 4 (kotwice legacy `#§-1a`, `#§-2a`)
 
 ### ✅ Spójność i transparentność
 - Wzmocniono przejrzystość: obowiązkowa publikacja w Rejestrze, retencja materiałów i jasne reguły rozstrzygania remisów w wyborach personalnych.

@@ -48,6 +48,7 @@ Komisja w swoich działaniach kieruje się zasadami:
 1. Pracami Komisji kieruje Przewodniczący, wybierany przez członków Komisji spośród siebie na pierwszym posiedzeniu.
 2. Do zadań Przewodniczącego należy zwoływanie posiedzeń, prowadzenie obrad, reprezentowanie Komisji na zewnątrz oraz zapewnienie sprawnego obiegu dokumentacji.
 3. Uchwały Komisji zapadają zwykłą większością głosów w obecności co najmniej 3 członków, w tym Przewodniczącego. W przypadku równej liczby głosów, decyduje głos Przewodniczącego.
+4. Członek Komisji wyłącza się od udziału w sprawie, jeżeli zachodzi okoliczność mogąca wywołać wątpliwość co do jego bezstronności (w szczególności konflikt interesów lub bliska relacja ze stroną). O wyłączeniu informuje niezwłocznie Przewodniczącego; w razie wątpliwości rozstrzyga Komisja.
 
 ## DZIAŁ III. ZADANIA I KOMPETENCJE
 
@@ -94,6 +95,7 @@ Do zadań Komisji należy:
 3. Orzeczenie doręcza się stronom na piśmie.
 4. W przypadku spraw o szczególnym znaczeniu dla społeczności studenckiej, zanonimizowane orzeczenie publikuje się w Rejestrze Uchwał i Aktów Samorządu (§ 40 [Regulaminu Samorządu](01-regulamin-sspo.md)) w terminie 14 dni od doręczenia go stronom.
 5. Publikacja, o której mowa w ust. 4, obejmuje wyłącznie treści niezbędne do zrozumienia tezy i motywów rozstrzygnięcia; dane osobowe i informacje wrażliwe podlegają anonimizacji zgodnie z RODO oraz [Kodeksem Publikacyjnym – Checklistą Rejestru](23-kodeks-publikacyjny.md).
+6. Naruszenie obowiązku poufności przez członka Komisji stanowi ciężkie naruszenie obowiązków i może skutkować wnioskiem do Parlamentu o odwołanie członka Komisji.
 
 ### § 13. Odwołanie
 1. Od orzeczenia Komisji stronom przysługuje odwołanie do Parlamentu w terminie 14 dni od dnia jego doręczenia.

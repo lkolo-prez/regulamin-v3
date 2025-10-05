@@ -50,6 +50,13 @@ Działalność członków organów Samorządu opiera się na następujących war
 1. Członek organu Samorządu jest zobowiązany do zachowania w tajemnicy informacji poufnych, uzyskanych w związku z pełnioną funkcją, których ujawnienie mogłoby narazić na szkodę interes Samorządu lub prywatność osób trzecich.
 2. Obowiązek zachowania poufności trwa również po zakończeniu kadencji.
 
+### § 8a. Ochrona zgłaszających naruszenia (whistleblowing) i zakaz działań odwetowych
+1. Nikt nie może ponosić negatywnych konsekwencji z tytułu w dobrej wierze złożonego zgłoszenia naruszenia Kodeksu, Regulaminu lub przepisów powszechnie obowiązujących. Działania odwetowe są zakazane.
+2. Za działania odwetowe uznaje się w szczególności: groźby, nękanie, szykany, nieuzasadnione wykluczenia z prac organu, blokowanie udziału w projektach, nieuzasadnione obniżenie oceny pracy społecznej.
+3. Zgłoszenia mogą być składane do Komisji Etyki także w formie poufnej; Komisja zapewnia ochronę danych zgłaszającego w granicach prawa i zasad rzetelnego postępowania.
+4. Zgłoszenia anonimowe mogą być rozpoznane, jeżeli zawierają wystarczające informacje umożliwiające wstępną weryfikację i nie naruszają praw osób trzecich; Komisja w pierwszej kolejności dąży do uzupełnienia informacji, jeżeli to możliwe.
+5. Stwierdzone działania odwetowe stanowią poważne naruszenie Kodeksu i mogą skutkować wnioskiem do właściwego organu o odwołanie z funkcji.
+
 ### <a id="§-8a"></a><a id="§-9"></a>§ 9. Okres karencji (Cooling-off)
 1. Osoby pełniące funkcję Przewodniczącego Samorządu lub Skarbnika nie mogą, w okresie 6 miesięcy od zakończenia pełnienia funkcji, podejmować odpłatnej współpracy ani być zatrudnione przez podmioty zewnętrzne, które w trakcie ich kadencji uzyskały od Samorządu znaczące korzyści finansowe lub niefinansowe w wyniku decyzji, w których podejmowaniu brali udział.
 2. Przez znaczące korzyści rozumie się umowy lub zlecenia, których łączna wartość w trakcie kadencji przekroczyła kwotę dwukrotności minimalnego wynagrodzenia za pracę obowiązującego w danym roku.
