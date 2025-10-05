@@ -108,7 +108,7 @@ fi
 
 # Test 2.3: Get current user
 USER_EMAIL=$(curl -s $API_URL/api/auth/me \
-    -H "Authorization: Bearer $ADMIN_TOKEN" | jq -r '.email')
+    -H "Authorization: Bearer $ADMIN_TOKEN" | jq -r '.user.email')
 
 if [ "$USER_EMAIL" = "admin@sspo.com.pl" ]; then
     test_pass "Get current user works"
@@ -194,13 +194,12 @@ RESPONSE=$(curl -s -X POST $API_URL/api/comments \
     -H "Authorization: Bearer $ADMIN_TOKEN" \
     -H "Content-Type: application/json" \
     -d '{
-        "documentId": "01-regulamin-sspo",
-        "paragraphId": "test-section",
-        "content": "🧪 Test comment from automated tests"
+        "articleId": "01-regulamin-sspo",
+        "text": "🧪 Test comment from automated tests"
     }')
 
-if echo $RESPONSE | jq -e '.commentId' > /dev/null 2>&1; then
-    COMMENT_ID=$(echo $RESPONSE | jq -r '.commentId')
+if echo $RESPONSE | jq -e '.comment' > /dev/null 2>&1; then
+    COMMENT_ID=$(echo $RESPONSE | jq -r '.comment.id')
     test_pass "Create comment successful (ID: $COMMENT_ID)"
     
     # Test 4.3: Delete the test comment
@@ -236,20 +235,19 @@ RESPONSE=$(curl -s -X POST $API_URL/api/amendments \
     -H "Authorization: Bearer $ADMIN_TOKEN" \
     -H "Content-Type: application/json" \
     -d '{
-        "documentId": "01-regulamin-sspo",
-        "title": "🧪 Test Amendment",
-        "description": "Test amendment from automated tests",
-        "proposedChanges": "Test changes...",
-        "justification": "Testing purposes"
+        "articleId": "01-regulamin-sspo",
+        "originalText": "Original text from document...",
+        "proposedText": "🧪 Test amendment - proposed changes...",
+        "reason": "Testing purposes - automated test suite validation"
     }')
 
-if echo $RESPONSE | jq -e '.amendmentId' > /dev/null 2>&1; then
-    AMENDMENT_ID=$(echo $RESPONSE | jq -r '.amendmentId')
+if echo $RESPONSE | jq -e '.amendment' > /dev/null 2>&1; then
+    AMENDMENT_ID=$(echo $RESPONSE | jq -r '.amendment.id')
     test_pass "Create amendment successful (ID: $AMENDMENT_ID)"
     
     # Test 5.3: Get amendment details
     AMENDMENT=$(curl -s $API_URL/api/amendments/$AMENDMENT_ID)
-    if echo $AMENDMENT | jq -e '.title' > /dev/null 2>&1; then
+    if echo $AMENDMENT | jq -e '.id' > /dev/null 2>&1; then
         test_pass "Get amendment details successful"
     else
         test_fail "Get amendment details failed"
