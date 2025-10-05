@@ -24,9 +24,51 @@ Wszystkie istotne zmiany w projekcie są dokumentowane w tym pliku.
 - Przepisano historię commitów na autora `lkolo-prez <kolodziej.lukasz.pl@gmail.com>`
 - Usunięto wrażliwe pliki z historii git
 
----
 
-## [2.0.0] - 2025-10-04
+## [2.2.0] - 2025-10-05
+
+### 📜 Prawo i procedury
+- 01-regulamin-sspo: dodano § 12 ust. 7 (wakat Marszałka), § 21 ust. 4 (kworum/większość KRW), § 40 (stabilna kotwica legacy; treść w § 47) ust. 7–8 (retencja i zakaz retroakcji), § 45 (stabilna kotwica legacy; treść w § 52) – wybory personalne: druga tura/dogrywka/losowanie. Uporządkowano kolejność (dawne § 40a–§ 40b scalone do kolejnych liczb całkowitych).
+- 02-ordynacja-wyborcza: doprecyzowano tie-break i dodano odesłanie do §45 dla wyborów personalnych.
+- 20-przewodnik-wdrozeniowy: ujednolicono nazewnictwo (Marszałek/Wicemarszałek/Sekretarz) i odesłania do Rejestru (§40).
+ - 01-regulamin-sspo: doprecyzowano brak zdolności do działania KRW (tymczasowa komisja), standardy testów e‑głosowań i logów (§39 ust. 8–10), SLA dla errat (§40 ust. 9) oraz raportowanie Rzecznika (termin, zakres, publikacja).
+ - 05-regulamin-wrs: publikacja w Rejestrze (§40) i wyraźna nadrzędność aktów centralnych + odesłanie do §51.
+ - 04-regulamin-finansowy: ujednolicono publikację (Rejestr §40), doprecyzowano protokół inwentaryzacyjny (zakres minimalny) i obowiązek publikacji w 14 dni.
+ - 01-regulamin-sspo: usunięto pozostałość o BIP – teraz publikacja sprawozdań finansowych wyłącznie w Rejestrze (§40).
+ - Dodano załącznik: 23-kodeks-publikacyjny.md – operacyjna checklista publikacyjna dla wszystkich organów.
+ - 06-regulamin-komisji-etyki: publikacja zanonimizowanych orzeczeń i raportu rocznego w Rejestrze (terminy, RODO), wejście w życie po publikacji.
+ - 09-procedury-konsultacyjne: raport z konsultacji publikowany w Rejestrze (7 dni), wejście w życie po publikacji.
+ - 03-kodeks-etyczny, 04-regulamin-finansowy, 05-regulamin-wrs, 01-regulamin-sspo: ujednolicone „Wejście w życie” – po publikacji w Rejestrze (§40) z zachowaniem vacatio legis.
+
+### 📚 Dokumentacja
+- 23-kodeks-publikacyjny: dodano tabelaryczny szablon metadanych do wpisów w Rejestrze (organ, identyfikator, daty, status, słowa kluczowe, anonimizacja, linki).
+ - 21-procedury-wizualizacje: zaktualizowano „Proces Legislacyjny” i „Rejestr Uchwał” – teraz pokazują jawnie przepływ „Publikacja w Rejestrze → vacatio legis (7 dni) → wejście w życie”. Naprawiono link do finansów (M → § 8) i dodano stabilne kotwice HTML: `§-37b` (Regulamin SSPO), `§-3`, `§-6`, `§-8` (Regulamin Finansowy).
+ - Globalnie: usunięto paragrafy z literami (np. 36a/37a/37b…) poprzez renumerację do kolejnych liczb całkowitych. Dodano kotwice zgodności wstecznej (legacy) w kluczowych miejscach, aby nie przerywać istniejących łączy.
+
+#### 📎 Dodatek: mapa renumeracji (legacy → aktualne)
+- Regulamin SSPO (01):
+  - § 11a → § 12 (kotwica legacy: `#§-11a`)
+  - § 12a → § 14 (kotwica legacy: `#§-12a`)
+  - § 18a → § 21 (kotwica legacy: `#§-18a`)
+  - § 22a → § 26; § 22b → § 27; § 22c → § 28; § 22d → § 29 (kotwice legacy: `#§-22a`..`#§-22d`)
+  - § 36 → § 43; § 37 (jawność) → § 44 (kotwica legacy: `#§-37`)
+  - § 39 (posiedzenia zdalne) → § 46 (kotwica legacy: `#§-39`)
+  - § 40 (Rejestr) → § 47 (kotwica legacy: `#§-40`)
+  - § 44 (wadliwość uchwał) → § 51 (kotwica legacy: `#§-44`)
+  - § 45 (wybory personalne) → § 52 (kotwica legacy: `#§-45`)
+  - § 51 (kolizje/wykładnia) → § 58 (kotwica legacy: `#§-51`)
+  - Koniec dokumentu: obecnie do § 60
+- Regulamin Finansowy (04):
+  - § 7b → § 14 (majątek i inwentaryzacja); stabilne odnośniki w wizualizacjach: `#§-3` → § 4, `#§-6` → § 8, `#§-8` → § 15
+- Ordynacja Wyborcza (02): § 10a–§ 10c → § 11–§ 13 (z kotwicami legacy `#§-10a`..`#§-10c`)
+- Kodeks Etyczny (03): § 8a → § 9 (kotwica legacy `#§-8a`)
+- Regulamin Komisji Etyki (06): § 1a → § 2; § 2a → § 4 (kotwice legacy `#§-1a`, `#§-2a`)
+
+### ✅ Spójność i transparentność
+- Wzmocniono przejrzystość: obowiązkowa publikacja w Rejestrze, retencja materiałów i jasne reguły rozstrzygania remisów w wyborach personalnych.
+ - Ujednolicone numerowanie: wszystkie listy literowe (a, b, c, …) w aktywnych dokumentach v3 zastąpiono listami liczbowymi (1, 2, 3, …), w tym wyliczenia inline. Plik archiwalny `100-stary-regulamin-sspo-2020.md` pozostawiono bez zmian.
+
+
 
 ### 🚀 Nowe funkcje
 - **Backend API**: Pełny Node.js/Express backend z SQLite

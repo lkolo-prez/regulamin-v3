@@ -15,9 +15,9 @@ Przedmiotem uchwalenia jest kompletny, zintegrowany system prawny składający s
 ### § 3. Harmonogram Prac Parlamentarnych
 1.  **Etap przygotowawczy:** Obejmuje zapoznanie się członków Parlamentu z projektami aktów prawnych, sesje informacyjne oraz zgłaszanie ewentualnych uwag.
 2.  **Etap parlamentarny:** Sesja nadzwyczajna Parlamentu poświęcona uchwaleniu systemu, składająca się z trzech czytań:
-    a)  **Pierwsze czytanie:** Debata ogólna nad celami i założeniami reformy.
-    b)  **Drugie czytanie:** Debata szczegółowa i głosowanie nad poszczególnymi blokami tematycznymi dokumentów.
-    c)  **Trzecie czytanie:** Głosowanie nad całością systemu jako pakietem legislacyjnym.
+    1)  **Pierwsze czytanie:** Debata ogólna nad celami i założeniami reformy.
+    2)  **Drugie czytanie:** Debata szczegółowa i głosowanie nad poszczególnymi blokami tematycznymi dokumentów.
+    3)  **Trzecie czytanie:** Głosowanie nad całością systemu jako pakietem legislacyjnym.
 3.  **Etap wdrożeniowy:** Okres *vacatio legis*, publikacja aktów oraz szkolenia dla członków Samorządu.
 
 ### § 4. Wymagane Większości
@@ -38,5 +38,5 @@ Ceremoniał uchwalenia obejmuje w szczególności:
 
 ## Rozdział IV. Postanowienia Końcowe
 
-### § 7. Wejście w Życie
-Niniejszy załącznik wchodzi w życie z dniem uchwalenia [Regulaminu SSPO](01-regulamin-sspo.md).
+### § 7. Wejście w życie
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu SSPO](01-regulamin-sspo.md).

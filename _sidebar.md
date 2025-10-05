@@ -33,3 +33,4 @@
 
 *   **System Współpracy** 🤝
     *   [22 System Współpracy i Poprawek](22-system-wspolpracy.md)
+    *   [23 Kodeks Publikacyjny (checklista)](23-kodeks-publikacyjny.md)

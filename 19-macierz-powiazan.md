@@ -19,9 +19,9 @@ Wszystkie akty prawne Samorządu muszą być interpretowane i stosowane w sposó
 1.  **[Regulamin SSPO](01-regulamin-sspo.md)** jest aktem najwyższej rangi (lex superior).
 2.  Wszystkie inne akty prawne Samorządu, w tym załączniki i akty wykonawcze, muszą być z nim zgodne i służą jego uszczegółowieniu (lex specialis).
 3.  Regulamin SSPO deleguje szczegółowe materie do uregulowania w następujących aktach podstawowych:
-    a)  **[Ordynacji Wyborczej](02-ordynacja-wyborcza.md)** (całość materii wyborczej).
-    b)  **[Kodeksie Etycznym](03-kodeks-etyczny.md)** (standardy etyczne i odpowiedzialność).
-    c)  **[Regulaminie Finansowym](04-regulamin-finansowy.md)** (całość gospodarki finansowej).
+    1)  **[Ordynacji Wyborczej](02-ordynacja-wyborcza.md)** (całość materii wyborczej).
+    2)  **[Kodeksie Etycznym](03-kodeks-etyczny.md)** (standardy etyczne i odpowiedzialność).
+    3)  **[Regulaminie Finansowym](04-regulamin-finansowy.md)** (całość gospodarki finansowej).
 
 ### § 4. Relacje Aktów Wykonawczych i Organizacyjnych
 1.  **[Kodeks Etyczny](03-kodeks-etyczny.md)** stanowi podstawę dla działania **[Komisji Etyki](06-regulamin-komisji-etyki.md)**. Regulamin Komisji Etyki jest aktem wykonawczym do Kodeksu.
@@ -36,7 +36,7 @@ Wszystkie akty prawne Samorządu muszą być interpretowane i stosowane w sposó
 
 ## Rozdział III. Postanowienia Końcowe
 
-### § 6. Wejście w Życie
-Niniejszy załącznik wchodzi w życie z dniem uchwalenia [Regulaminu SSPO](01-regulamin-sspo.md).
+### § 6. Wejście w życie
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu SSPO](01-regulamin-sspo.md).
 
 

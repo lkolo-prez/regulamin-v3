@@ -6,22 +6,37 @@ Ten dokument zawiera wizualne przedstawienie kluczowych procedur opisanych w sys
 
 ## 1. Procedura Wyborcza (na podstawie [Ordynacji Wyborczej](02-ordynacja-wyborcza.md))
 
-Diagram przedstawia kolejne etapy wyborów do organów Samorządu, od ich zarządzenia aż do ukonstytuowania się nowych władz.
+Diagram przedstawia etapy wyborów do organów Samorządu, łącznie z testem technicznym e‑głosowań, II turą dla wyborów personalnych oraz publikacją w Rejestrze.
 
 ```mermaid
 flowchart TD
-    A[Start: Zarządzenie wyborów przez Komisję Rewizyjno-Wyborczą] --> B{Uchwalenie terminarza wyborczego};
+    A[Start: Zarządzenie wyborów przez Komisję Rewizyjno-Wyborczą] --> B{Uchwalenie terminarza wyborczego i ogłoszenie zasad};
     B --> C[Zgłaszanie kandydatów];
     C --> D{Weryfikacja i publikacja listy kandydatów};
     D --> E[Kampania wyborcza];
     E --> F((Cisza wyborcza - 24h));
-    F --> G[Głosowanie];
-    G --> H{Ustalenie i ogłoszenie wyników};
-    H --> I{Czy są protesty?};
-    I -- Tak --> J[Rozpatrzenie protestów przez Komisję];
+    F --> T[Test techniczny systemu e‑głosowania];
+    T --> G[Głosowanie];
+    G --> P{Czy głosowanie personalne<br/>z wymaganą bezwzględną większością?};
+    P -- Tak --> P1{Czy ktoś uzyskał<br/>bezwzględną większość?};
+    P1 -- Nie --> P2[Druga tura: dwaj kandydaci z największą liczbą głosów];
+    P2 --> P3{Remis?};
+    P3 -- Tak --> P4[Dogrywka];
+    P4 --> P5{Dalszy remis?};
+    P5 -- Tak --> P6[Losowanie w obecności KRW];
+    P3 -- Nie --> H
+    P5 -- Nie --> H
+    P1 -- Tak --> H[Ustalenie i ogłoszenie wyników];
+    P -- Nie --> H;
+    H --> R[Publikacja wyników, protokołów i frekwencji w Rejestrze Uchwał i Aktów];
+    R --> I{Czy są protesty?};
+    I -- Tak --> J[Rozpatrzenie protestów przez KRW];
     I -- Nie --> K[Zwołanie pierwszego posiedzenia nowego Parlamentu];
     J --> K;
     K --> L[Koniec];
+
+    classDef note fill:#fff3cd,stroke:#856404,color:#333;
+    R:::note
 ```
 
 ## 2. Postępowanie przed Komisją Etyki (na podstawie [Regulaminu Komisji Etyki](06-regulamin-komisji-etyki.md))
@@ -89,8 +104,15 @@ graph TD;
 
     subgraph "Organy Specjalistyczne"
         F(Komisja Etyki)
+        I(Rzecznik Praw Studenta)
         H(Zespoły Zadaniowe)
     end
+
+    subgraph "Ciała Doradcze i System Publikacji"
+        J(Rada Doradcza)
+        R[[Rejestr Uchwał i Aktów]]
+    end
+    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
 
     A --"Wybierają w wyborach bezpośrednich"--> B;
     A --"Wybierają w wyborach bezpośrednich"--> G;
@@ -98,6 +120,7 @@ graph TD;
     B --"Wybiera"--> C;
     B --"Wybiera"--> E;
     B --"Wybiera"--> F;
+    B --"Wybiera"--> I;
     
     C --"Powołuje i kieruje"--> D;
     D --"Powołuje i nadzoruje"--> H;
@@ -105,10 +128,20 @@ graph TD;
     E --"Kontroluje działalność"--> D;
     E --"Organizuje wybory"--> B;
     E --"Organizuje wybory"--> G;
+    I -."Współdziała / działa przy"-. E;
+    I --"Przedstawia sprawozdania"--> B;
+    
+    J -."Opinie (niewiążące)"-.-> B;
+    J -."Opinie (niewiążące)"-.-> C;
+
+    B --"Publikuje akty"--> R;
+    C --"Publikuje akty"--> R;
+    D --"Publikuje akty"--> R;
+    G --"Publikuje akty"--> R;
 
     D --"Składa sprawozdania"--> B;
     C --"Odpowiada przed"--> B;
-    G --"Delegują przedstawicieli do"--> B;
+    G --"Opiniują sprawy i wnioskują do"--> B;
 
     style A fill:#FFF,stroke:#333,stroke-width:2px
     style B fill:#C1E1FF,stroke:#0056b3,stroke-width:3px
@@ -118,6 +151,9 @@ graph TD;
     style F fill:#F8D7DA,stroke:#721c24,stroke-width:2px
     style G fill:#E2E3E5,stroke:#6c757d,stroke-width:2px
     style H fill:#FFF3CD,stroke:#856404,stroke-width:2px
+    style I fill:#E2EAFD,stroke:#2a52be,stroke-width:2px
+    style J fill:#EFEFEF,stroke:#888,stroke-width:2px,stroke-dasharray: 4 2
+    style R fill:#FFFFFF,stroke:#000,stroke-width:2px
 ```
 
 ### 4. Hierarchia Aktów Prawnych SSPO
@@ -147,6 +183,7 @@ graph TD
         C --> F3([19 Macierz Powiązań]);
         C --> F4([20 Przewodnik Wdrożeniowy]);
         C --> F5([21 Wizualizacje Procedur]);
+        C --> F6([22 System Współpracy i Poprawek]);
     end
 
     D1 --> E4;
@@ -160,6 +197,7 @@ graph TD
     click E1 "./06-regulamin-komisji-etyki.md" "Zobacz Regulamin Komisji Etyki"
     click F4 "./20-przewodnik-wdrozeniowy.md" "Zobacz Przewodnik"
     click F5 "./21-procedury-wizualizacje.md" "Zobacz Wizualizacje"
+    click F6 "./22-system-wspolpracy.md" "Zobacz System Współpracy"
 
     style A fill:#FFDDC1,stroke:#333,stroke-width:2px
     style B fill:#FFE9CC,stroke:#333,stroke-width:2px
@@ -196,16 +234,22 @@ graph TD
         D --> E{Drugie czytanie i zgłaszanie poprawek}
     end
 
-    subgraph "Głosowanie i Wejście w Życie"
+    subgraph "Głosowanie, Publikacja i Wejście w życie"
         E --> F(Głosowanie nad całością projektu)
-        F --"Większość 2/3 głosów<br>w obecności co najmniej połowy składu"--> G{Uchwalenie zmiany}
+        F --"Większość 2/3 głosów<br/>w obecności co najmniej połowy składu"--> G{Uchwalenie zmiany}
         F --"Brak wymaganej większości"--> H(Odrzucenie projektu)
-        G --> I(Ogłoszenie uchwalonego tekstu)
-        I --> J(Wejście w życie)
+    G --> R[[Publikacja w Rejestrze Uchwał i Aktów (§ 40)]]
+        R --> V(Vacatio legis: 7 dni, chyba że postanowiono inaczej)
+        V --> J(Wejście w życie)
     end
 
-    click A "./01-regulamin-sspo.md#§-38" "Zobacz § 38 Regulaminu"
-    click G "./01-regulamin-sspo.md#§-38" "Zobacz § 38 Regulaminu"
+    click A "./01-regulamin-sspo.md" "Zobacz Regulamin SSPO"
+    click G "./01-regulamin-sspo.md" "Zobacz Regulamin SSPO"
+    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
+    click J "./01-regulamin-sspo.md" "Regulamin SSPO"
+
+    classDef note fill:#fff3cd,stroke:#856404,color:#333;
+    V:::note
 ```
 
 ### 6. Cykl Budżetowy i Zarządzanie Finansami
@@ -238,7 +282,7 @@ graph TD
     click A "./04-regulamin-finansowy.md#§-8" "Zobacz § 8 Regulaminu Finansowego"
     click E "./04-regulamin-finansowy.md#§-3" "Zobacz § 3 Regulaminu Finansowego"
     click I "./04-regulamin-finansowy.md#§-6" "Zobacz § 6 Regulaminu Finansowego"
-    click M "./04-regulamin-finansowy.md#§-13" "Zobacz § 13 Regulaminu Finansowego"
+    click M "./04-regulamin-finansowy.md#§-8" "Zobacz § 8 Regulaminu Finansowego"
 ```
 
 ### 7. System Wsparcia i Rozwoju Studentów
@@ -268,4 +312,47 @@ graph TD
     end
 
     click E "./12-system-rozwoju.md" "Zobacz dokument"
+```
+
+### 8. Posiedzenia Zdalne i Hybrydowe – Standard e‑Głosowań (na podstawie § 39 Regulaminu)
+```mermaid
+graph TD
+    A[Decyzja o trybie zdalnym/hybrydowym] --> B[Zaproszenie z informacją o trybie i narzędziu];
+    B --> C{Czy przewidziane są głosowania tajne?};
+    C -- Tak --> D[Test techniczny systemu e‑głosowań];
+    D --> E[Protokół z testu (publikacja z protokołem posiedzenia)];
+    C -- Nie --> F[Obrady i głosowania jawne];
+    E --> G[Tajne głosowania online (administrowane przez KRW)];
+    G --> H{Istotna awaria?};
+    H -- Tak --> I[Przerwanie głosowania i tryb awaryjny wg załączników];
+    H -- Nie --> J[Kontynuacja posiedzenia];
+    F --> K[Transmisja/udostępnienie nagrania posiedzenia jawnego];
+    J --> L[Zamknięcie posiedzenia];
+    K --> L;
+    L --> R[[Publikacja w Rejestrze Uchwał i Aktów (§ 40)]];
+
+    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
+
+    classDef note fill:#fff3cd,stroke:#856404,color:#333;
+    I:::note
+```
+
+### 9. Rejestr Uchwał i Publikacja Aktów (na podstawie § 40 Regulaminu)
+
+```mermaid
+graph TD
+    subgraph "Organy wytwarzające akty"
+        A(Parlament) --> R[[Rejestr Uchwał i Aktów]]
+        B(Przewodniczący Samorządu) --> R
+        C(Zarząd) --> R
+        D(WRS) --> R
+    end
+    subgraph "Po publikacji"
+        R --> V(Vacatio legis: 7 dni, chyba że postanowiono inaczej)
+        V --> P(Wejście w życie)
+    end
+    R --> E(Errata do 48h od stwierdzenia omyłki);
+    R --> T(Retencja: protokoły/nagrania 5 lat);
+
+    style R fill:#FFFFFF,stroke:#000,stroke-width:2px
 ```

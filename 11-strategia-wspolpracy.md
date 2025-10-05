@@ -49,7 +49,7 @@ Strategia opiera się na czterech filarach:
 2. Zarząd Samorządu co roku dokonuje przeglądu i aktualizacji celów strategicznych.
 
 ### § 8. Wejście w życie
-Strategia wchodzi w życie z dniem uchwalenia.
+Strategia wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

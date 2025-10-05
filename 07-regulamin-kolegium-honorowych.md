@@ -39,7 +39,7 @@ Do zadań Kolegium należy:
 Zmiana niniejszego Regulaminu może nastąpić w trybie przewidzianym dla zmiany [Regulaminu Samorządu Studenckiego](01-regulamin-sspo.md).
 
 ### § 7. Wejście w życie
-Regulamin wchodzi w życie z dniem uchwalenia.
+Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

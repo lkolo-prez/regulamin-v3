@@ -33,8 +33,8 @@ Dopuszcza się stosowanie uproszczonych procedur wyborczych dla małych jednoste
 ### § 7. Równowaga Między Prostotą a Standardami
 Wszelkie uproszczenia muszą być wprowadzane z zachowaniem fundamentalnych standardów demokratycznych, w szczególności tajności głosowania, równości szans kandydatów i prawa do protestu.
 
-### § 8. Wejście w Życie
-Niniejszy załącznik wchodzi w życie z dniem uchwalenia.
+### § 8. Wejście w życie
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

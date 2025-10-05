@@ -29,6 +29,6 @@ System prawny Samorządu po reformie tworzą następujące kategorie aktów:
 
 ## Rozdział III. Postanowienia Końcowe
 
-### § 5. Wejście w Życie
-Niniejszy załącznik, stanowiący podsumowanie i potwierdzenie zasad reformy, wchodzi w życie z dniem uchwalenia [Regulaminu SSPO](01-regulamin-sspo.md).
+### § 5. Wejście w życie
+Niniejszy załącznik, stanowiący podsumowanie i potwierdzenie zasad reformy, wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu SSPO](01-regulamin-sspo.md).
 
