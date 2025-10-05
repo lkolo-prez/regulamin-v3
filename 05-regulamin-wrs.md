@@ -20,8 +20,8 @@
 
 ### § 3. Organy WRS
 1. Organami WRS są:
-   a) Przewodniczący WRS;
-   b) Prezydium WRS.
+   1) Przewodniczący WRS;
+   2) Prezydium WRS.
 2. Pracami WRS kieruje Przewodniczący WRS, wybierany przez członków WRS spośród siebie na pierwszym posiedzeniu. Wybór wymaga bezwzględnej większości głosów.
 3. Przewodniczący WRS uczestniczy w posiedzeniach Parlamentu z głosem doradczym i posiada inicjatywę uchwałodawczą w sprawach dotyczących jego wydziału.
 4. Prezydium WRS składa się z Przewodniczącego, Wiceprzewodniczącego (lub Wiceprzewodniczących) oraz Sekretarza. Członków Prezydium wybiera WRS spośród swoich członków.
@@ -70,7 +70,7 @@ Do zadań WRS należy w szczególności:
 Zmiana niniejszego Regulaminu wymaga uchwały Parlamentu, podjętej na wniosek Zarządu lub co najmniej trzech WRS.
 
 ### § 9. Wejście w życie
-1. Regulamin wchodzi w życie z dniem uchwalenia.
+1. Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
 2. W sprawach nieuregulowanych niniejszym regulaminem stosuje się odpowiednio postanowienia [Regulaminu Samorządu](01-regulamin-sspo.md).
 3. Nieważność pojedynczego przepisu niniejszego regulaminu nie wpływa na ważność pozostałych (klauzula salwatoryjna). W razie sprzeczności pierwszeństwo mają postanowienia [Regulaminu Samorządu](01-regulamin-sspo.md).
 4. Akty WRS nie mogą modyfikować ani derogować przepisów aktów centralnych Samorządu. W razie wątpliwości stosuje się zasadę nadrzędności aktów centralnych oraz wykładnię wiążącą Parlamentu (§ 45a Regulaminu Samorządu).

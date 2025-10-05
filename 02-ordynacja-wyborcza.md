@@ -5,11 +5,11 @@
 ### § 1. Zakres regulacji
 1. Niniejsza Ordynacja Wyborcza, zwana dalej "Ordynacją", określa zasady i tryb przeprowadzania wyborów do organów Samorządu Studenckiego Politechniki Opolskiej, zwanej dalej "Samorządem".
 2. Ordynacja reguluje w szczególności wybory:
-   a) do Parlamentu Samorządu Studenckiego, zwanego dalej "Parlamentem";
-   b) Przewodniczącego Samorządu;
-   c) do Komisji Rewizyjno-Wyborczej;
-   d) do Wydziałowych Rad Studentów;
-   e) przedstawicieli studentów do Senatu Uczelni i innych organów kolegialnych Politechniki Opolskiej.
+   1) do Parlamentu Samorządu Studenckiego, zwanego dalej "Parlamentem";
+   2) Przewodniczącego Samorządu;
+   3) do Komisji Rewizyjno-Wyborczej;
+   4) do Wydziałowych Rad Studentów;
+   5) przedstawicieli studentów do Senatu Uczelni i innych organów kolegialnych Politechniki Opolskiej.
 
 ### § 2. Definicje
 Ilekroć w Ordynacji jest mowa o:
@@ -23,18 +23,18 @@ Ilekroć w Ordynacji jest mowa o:
 1. Wybory do organów Samorządu są powszechne, równe, bezpośrednie i odbywają się w głosowaniu tajnym.
 2. Wybory Przewodniczącego Samorządu oraz do Komisji Rewizyjno-Wyborczej są pośrednie – dokonywane przez Parlament.
 3. Główne zasady procesu wyborczego to:
-   a) **zasada powszechności** – prawo do udziału w wyborach ma każdy student Uczelni;
-   b) **zasada równości** – każdy wyborca dysponuje jednym głosem o równej wadze;
-   c) **zasada bezpośredniości** – wyborcy głosują osobiście na kandydatów (dotyczy wyborów do Parlamentu i WRS);
-   d) **zasada tajności** – warunki głosowania zapewniają poufność oddanego głosu;
-   e) **zasada proporcjonalności** – mandaty w organach przedstawicielskich są rozdzielane proporcjonalnie do uzyskanego poparcia, o ile Ordynacja tak stanowi.
+   1) **zasada powszechności** – prawo do udziału w wyborach ma każdy student Uczelni;
+   2) **zasada równości** – każdy wyborca dysponuje jednym głosem o równej wadze;
+   3) **zasada bezpośredniości** – wyborcy głosują osobiście na kandydatów (dotyczy wyborów do Parlamentu i WRS);
+   4) **zasada tajności** – warunki głosowania zapewniają poufność oddanego głosu;
+   5) **zasada proporcjonalności** – mandaty w organach przedstawicielskich są rozdzielane proporcjonalnie do uzyskanego poparcia, o ile Ordynacja tak stanowi.
 
 ### § 4. Prawa wyborcze
 1. **Czynne prawo wyborcze** (prawo do głosowania) przysługuje każdemu studentowi Politechniki Opolskiej posiadającemu aktualny status studenta w dniu wyborów.
 2. **Bierne prawo wyborcze** (prawo do kandydowania) przysługuje każdemu studentowi posiadającemu czynne prawo wyborcze, który nie jest karany prawomocną karą dyscyplinarną i wobec którego nie toczy się postępowanie dyscyplinarne.
 3. Student studiujący na więcej niż jednym wydziale:
-   a) posiada czynne prawo wyborcze na każdym z tych wydziałów;
-   b) posiada bierne prawo wyborcze tylko w jednym, wybranym przez siebie okręgu wyborczym. Stosowne oświadczenie składa do Komisji Rewizyjno-Wyborczej w momencie rejestracji kandydatury.
+   1) posiada czynne prawo wyborcze na każdym z tych wydziałów;
+   2) posiada bierne prawo wyborcze tylko w jednym, wybranym przez siebie okręgu wyborczym. Stosowne oświadczenie składa do Komisji Rewizyjno-Wyborczej w momencie rejestracji kandydatury.
 
 ## DZIAŁ II. WYBORY DO PARLAMENTU SAMORZĄDU
 
@@ -47,19 +47,19 @@ Ilekroć w Ordynacji jest mowa o:
 1. Wybory do Parlamentu zarządza Komisja Rewizyjno-Wyborcza, uchwalając **terminarz wyborczy** nie później niż 30 dni przed planowaną datą głosowania.
 2. Wybory odbywają się raz na dwa lata, w terminie umożliwiającym ukonstytuowanie się nowego Parlamentu przed rozpoczęciem kolejnego roku akademickiego.
 3. Terminarz wyborczy określa w szczególności:
-   a) datę i godziny głosowania;
-   b) termin zgłaszania kandydatów;
-   c) okres trwania kampanii wyborczej;
-   d) termin ogłoszenia ostatecznej listy kandydatów;
-   e) datę ogłoszenia wyników wyborów.
+   1) datę i godziny głosowania;
+   2) termin zgłaszania kandydatów;
+   3) okres trwania kampanii wyborczej;
+   4) termin ogłoszenia ostatecznej listy kandydatów;
+   5) datę ogłoszenia wyników wyborów.
 
 ### § 7. Zgłaszanie kandydatów
 1. Kandydat na posła do Parlamentu zgłasza swoją kandydaturę indywidualnie do Komisji Rewizyjno-Wyborczej w terminie określonym w terminarzu wyborczym.
 2. Zgłoszenie musi zawierać:
-   a) imię i nazwisko kandydata;
-   b) numer albumu, wydział i kierunek studiów;
-   c) oświadczenie o zgodzie na kandydowanie i przetwarzanie danych osobowych na potrzeby procesu wyborczego;
-   d) oświadczenie o spełnianiu wymogów biernego prawa wyborczego.
+   1) imię i nazwisko kandydata;
+   2) numer albumu, wydział i kierunek studiów;
+   3) oświadczenie o zgodzie na kandydowanie i przetwarzanie danych osobowych na potrzeby procesu wyborczego;
+   4) oświadczenie o spełnianiu wymogów biernego prawa wyborczego.
 3. Komisja Rewizyjno-Wyborcza weryfikuje zgłoszenia i publikuje listę kandydatów nie później niż 7 dni przed dniem głosowania.
 
 ### § 8. Kampania wyborcza
@@ -110,7 +110,7 @@ Komisja Rewizyjno-Wyborcza publikuje zbiorczą informację o frekwencji w poszcz
 3. Wybory tradycyjne przeprowadza się w sposób zapewniający tajność głosowania i równość szans wszystkich kandydatów.
 4. W sprawach nieuregulowanych w Ordynacji decyzje podejmuje Komisja Rewizyjno-Wyborcza, kierując się zasadami Regulaminu i ogólnymi zasadami prawa.
 5. Przetwarzanie danych osobowych w procesie wyborczym, w szczególności przy wyborach elektronicznych, odbywa się zgodnie z przepisami RODO oraz politykami ochrony danych Uczelni. Komisja Rewizyjno-Wyborcza publikuje klauzulę informacyjną dla wyborców i kandydatów.
-6. Dla zapewnienia rozliczalności procesu wyborczego KRW przechowuje: (a) protokoły komisji skrutacyjnej i KRW, (b) logi systemowe potwierdzające integralność i dostępność systemu oraz (c) raport z testów technicznych systemu e‑głosowania. Okres retencji wynosi co do zasady 12 miesięcy od ogłoszenia wyników, chyba że przepisy RODO lub polityki Uczelni stanowią inaczej. Dane podlegają pseudonimizacji lub anonimizacji w najszerszym możliwym zakresie.
+6. Dla zapewnienia rozliczalności procesu wyborczego KRW przechowuje: 1) protokoły komisji skrutacyjnej i KRW, 2) logi systemowe potwierdzające integralność i dostępność systemu oraz 3) raport z testów technicznych systemu e‑głosowania. Okres retencji wynosi co do zasady 12 miesięcy od ogłoszenia wyników, chyba że przepisy RODO lub polityki Uczelni stanowią inaczej. Dane podlegają pseudonimizacji lub anonimizacji w najszerszym możliwym zakresie.
 
 ### § 13. Zasady etyczne i równościowe
 1. Proces wyborczy podlega zasadom [Kodeksu Etycznego](./03-kodeks-etyczny.md) oraz procedurom antydyskryminacyjnym określonym w Regulaminie.

@@ -12,9 +12,9 @@
 
 ### § 2. Skład Rady
 1. W skład Rady wchodzą osoby powoływane przez Przewodniczącego Samorządu, posiadające znaczące doświadczenie w obszarach istotnych dla działalności studenckiej, w szczególności:
-    a) byli przewodniczący Samorządu,
-    b) eksperci z dziedziny prawa, finansów, zarządzania lub marketingu,
-    c) przedstawiciele partnerów biznesowych i instytucjonalnych Samorządu.
+    1) byli przewodniczący Samorządu,
+    2) eksperci z dziedziny prawa, finansów, zarządzania lub marketingu,
+    3) przedstawiciele partnerów biznesowych i instytucjonalnych Samorządu.
 2. Kadencja członków Rady jest zbieżna z kadencją Przewodniczącego Samorządu, który ich powołał.
 
 ### § 3. Przewodniczący Rady
@@ -46,7 +46,7 @@ Do zadań Rady należy wydawanie opinii i rekomendacji na wniosek Zarządu, w sz
 Zmiana niniejszego Regulaminu może nastąpić w trybie przewidzianym dla zmiany [Regulaminu Samorządu Studenckiego](01-regulamin-sspo.md).
 
 ### § 7. Wejście w życie
-Regulamin wchodzi w życie z dniem uchwalenia.
+Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

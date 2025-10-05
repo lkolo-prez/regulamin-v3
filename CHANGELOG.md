@@ -36,9 +36,16 @@ Wszystkie istotne zmiany w projekcie są dokumentowane w tym pliku.
  - 04-regulamin-finansowy: ujednolicono publikację (Rejestr §37b), doprecyzowano protokół inwentaryzacyjny (zakres minimalny) i obowiązek publikacji w 14 dni.
  - 01-regulamin-sspo: usunięto pozostałość o BIP – teraz publikacja sprawozdań finansowych wyłącznie w Rejestrze (§37b).
  - Dodano załącznik: 23-kodeks-publikacyjny.md – operacyjna checklista publikacyjna dla wszystkich organów.
+ - 06-regulamin-komisji-etyki: publikacja zanonimizowanych orzeczeń i raportu rocznego w Rejestrze (terminy, RODO), wejście w życie po publikacji.
+ - 09-procedury-konsultacyjne: raport z konsultacji publikowany w Rejestrze (7 dni), wejście w życie po publikacji.
+ - 03-kodeks-etyczny, 04-regulamin-finansowy, 05-regulamin-wrs, 01-regulamin-sspo: ujednolicone „Wejście w życie” – po publikacji w Rejestrze (§37b) z zachowaniem vacatio legis.
+
+### 📚 Dokumentacja
+- 23-kodeks-publikacyjny: dodano tabelaryczny szablon metadanych do wpisów w Rejestrze (organ, identyfikator, daty, status, słowa kluczowe, anonimizacja, linki).
 
 ### ✅ Spójność i transparentność
 - Wzmocniono przejrzystość: obowiązkowa publikacja w Rejestrze, retencja materiałów i jasne reguły rozstrzygania remisów w wyborach personalnych.
+ - Ujednolicone numerowanie: wszystkie listy literowe (a, b, c, …) w aktywnych dokumentach v3 zastąpiono listami liczbowymi (1, 2, 3, …), w tym wyliczenia inline. Plik archiwalny `100-stary-regulamin-sspo-2020.md` pozostawiono bez zmian.
 
 
 

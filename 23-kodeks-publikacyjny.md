@@ -32,6 +32,22 @@ Do każdego wpisu dołącz:
 - Link do wersji ujednoliconej, jeśli istnieje.
 - Informację o anonimizacji (tak/nie, zakres).
 
+Przykładowy szablon metadanych (skopiuj do wpisu w Rejestrze):
+
+| Pole | Wartość |
+| --- | --- |
+| Organ | [Parlament/Zarząd/WRS/Komisja] |
+| Tytuł | [Tytuł aktu/dokumentu] |
+| Identyfikator | [np. U/12/2025, Z/3/2025, WRS‑WIP/4/2025] |
+| Data podjęcia | [RRRR‑MM‑DD] |
+| Podstawa prawna | [§ … Regulaminu; załącznik nr …] |
+| Status | [obowiązuje/uchylony/zastąpiony] |
+| Data wejścia w życie | [RRRR‑MM‑DD lub „7 dni od publikacji”] |
+| Streszczenie | [2–3 zdania] |
+| Słowa kluczowe | [np. budżet, wybory, etyka] |
+| Anonimizacja | [tak/nie; zakres] |
+| Linki powiązane | [np. wersja ujednolicona, protokół, nagranie] |
+
 ## 4. Ochrona danych i dostępność
 - Anonimizuj dane osobowe i tajemnicę przedsiębiorstwa; publikuj zakres jawny.
 - Pliki dostępne: PDF/HTML, tekst możliwy do zaznaczania; kontrast i nagłówki.
@@ -51,3 +67,10 @@ Do każdego wpisu dołącz:
 
 ---
 W przypadku wątpliwości stosuj § 37b Regulaminu SSPO oraz ogólne zasady jawności z § 36a. Ten kodeks ma charakter pomocniczy i operacyjny.
+
+## 7. Standard numeracji paragrafów (§) i nagłówków
+
+- Używaj nagłówków H3 z numerem paragrafu: „### § X. Tytuł” (kropka po numerze). Dopuszczalne „### § X.”, gdy brak tytułu.
+- Nowe paragrafy wstawiane pośrednio oznaczaj literami z kropką: „§ 10a.”, „§ 10b.”, … Zawsze zachowuj porządek: § 10, § 10a, § 10b, § 11.
+- Nie stosuj nawiasów kwadratowych w nagłówkach (np. „§ 3 [Definicje]” → „§ 3. Definicje”).
+- Pisz „Wejście w życie” (mała litera „w życie”) w tytułach i treści.

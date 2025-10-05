@@ -30,17 +30,17 @@ Szczegółowy harmonogram wprowadzania zmian kadencyjnych, w tym przepisy przej�
 ### § 6. Program Rozwoju Liderów
 1. Zarząd SSPO jest zobowiązany do stworzenia i prowadzenia systemowego programu rozwoju dla członków Samorządu, zgodnie z założeniami [Systemu Rozwoju i Wsparcia](12-system-rozwoju.md).
 2. Program powinien obejmować co najmniej:
-    a. Ścieżki rozwoju na różnych poziomach zaawansowania.
-    b. System szkoleń (Akademia SSPO) rozwijający kluczowe kompetencje.
-    c. Program mentoringowy łączący doświadczonych liderów z nowymi członkami.
+    1) Ścieżki rozwoju na różnych poziomach zaawansowania.
+    2) System szkoleń (Akademia SSPO) rozwijający kluczowe kompetencje.
+    3) Program mentoringowy łączący doświadczonych liderów z nowymi członkami.
 
 ### § 7. System Motywacyjny
 W celu docenienia i motywowania najbardziej zaangażowanych członków, wprowadza się system nagród i wyróżnień, którego szczegółowe zasady określa Zarząd w drodze uchwały.
 
 ## Rozdział IV. Postanowienia Końcowe
 
-### § 8. Wejście w Życie
-Niniejszy załącznik wchodzi w życie z dniem uchwalenia.
+### § 8. Wejście w życie
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

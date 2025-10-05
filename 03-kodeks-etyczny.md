@@ -29,8 +29,8 @@ Działalność członków organów Samorządu opiera się na następujących war
 1. Przez konflikt interesów rozumie się sytuację, w której prywatny interes członka organu Samorządu jest sprzeczny lub może być postrzegany jako sprzeczny z interesem publicznym i może wpłynąć na jego obiektywizm.
 2. Interes prywatny obejmuje korzyść majątkową lub osobistą, zarówno własną, jak i małżonka, krewnych i powinowatych do drugiego stopnia, a także osób, z którymi członek organu pozostaje w bliskich stosunkach osobistych lub zawodowych.
 3. Członek organu Samorządu unika sytuacji mogących prowadzić do konfliktu interesów. W przypadku jego zaistnienia lub prawdopodobieństwa zaistnienia, jest zobowiązany do:
-   a) niezwłocznego poinformowania o tym fakcie przewodniczącego danego organu oraz Komisji Etyki;
-   b) wyłączenia się z udziału w dyskusji i głosowaniu nad sprawą, której konflikt dotyczy.
+   1) niezwłocznego poinformowania o tym fakcie przewodniczącego danego organu oraz Komisji Etyki;
+   2) wyłączenia się z udziału w dyskusji i głosowaniu nad sprawą, której konflikt dotyczy.
 4. Członkowie Zarządu oraz Komisji Rewizyjno-Wyborczej są zobowiązani do złożenia Komisji Etyki, w terminie 30 dni od dnia wyboru, oświadczenia o potencjalnych konfliktach interesów. Oświadczenie aktualizuje się corocznie lub niezwłocznie po zaistnieniu nowej okoliczności. Wzór oświadczenia stanowi załącznik do niniejszego Kodeksu.
 
 ### § 5. Korzyści majątkowe i osobiste
@@ -63,15 +63,15 @@ Działalność członków organów Samorządu opiera się na następujących war
 ### § 10. Postępowanie wyjaśniające
 1. Komisja Etyki rozpatruje zgłoszenia w sposób bezstronny, zapewniając osobie, której dotyczy zgłoszenie, prawo do złożenia wyjaśnień.
 2. W przypadku stwierdzenia naruszenia Kodeksu, Komisja Etyki, w zależności od wagi naruszenia, może:
-   a) udzielić upomnienia;
-   b) udzielić nagany (formalnej reprymendy);
-   c) zobowiązać do złożenia publicznych przeprosin;
-   d) w przypadku rażącego lub powtarzającego się naruszenia, wystąpić do odpowiedniego organu z wnioskiem o odwołanie z pełnionej funkcji, zgodnie z procedurami określonymi w [Regulaminie Samorządu](01-regulamin-sspo.md).
+   1) udzielić upomnienia;
+   2) udzielić nagany (formalnej reprymendy);
+   3) zobowiązać do złożenia publicznych przeprosin;
+   4) w przypadku rażącego lub powtarzającego się naruszenia, wystąpić do odpowiedniego organu z wnioskiem o odwołanie z pełnionej funkcji, zgodnie z procedurami określonymi w [Regulaminie Samorządu](01-regulamin-sspo.md).
 
 ## DZIAŁ IV. POSTANOWIENIA KOŃCOWE
 
 ### § 11. Wejście w życie i stosowanie
-1. Kodeks Etyczny wchodzi w życie z dniem uchwalenia przez Parlament.
+1. Kodeks Etyczny wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
 2. Każdy członek organu Samorządu jest zobowiązany do zapoznania się z treścią Kodeksu i złożenia pisemnego oświadczenia o zobowiązaniu się do jego przestrzegania.
 3. Zmiany w Kodeksie wymagają uchwały Parlamentu podjętej większością 2/3 głosów.
 
@@ -89,10 +89,10 @@ Ja, niżej podpisany/a .........................................................
 Ja, niżej podpisany/a ............................................................................, członek organu ............................................................................, oświadczam, że:
 1. Nie pozostaję w stosunkach prawnych lub faktycznych, które mogłyby wzbudzić uzasadnione wątpliwości co do mojej bezstronności.
 2. Poniżej przedstawiam listę znanych mi potencjalnych konfliktów interesów (jeśli dotyczy):
-   a) Zatrudnienie lub stała współpraca: ............................................................................
-   b) Członkostwo w organach stowarzyszeń, fundacji, partii politycznych: ............................................................................
-   c) Posiadanie udziałów lub akcji w spółkach prawa handlowego: ............................................................................
-   d) Inne okoliczności (np. bliskie relacje z osobami prowadzącymi działalność gospodarczą, która może ubiegać się o współpracę z Samorządem): ............................................................................
+   1) Zatrudnienie lub stała współpraca: ............................................................................
+   2) Członkostwo w organach stowarzyszeń, fundacji, partii politycznych: ............................................................................
+   3) Posiadanie udziałów lub akcji w spółkach prawa handlowego: ............................................................................
+   4) Inne okoliczności (np. bliskie relacje z osobami prowadzącymi działalność gospodarczą, która może ubiegać się o współpracę z Samorządem): ............................................................................
 
 Zobowiązuję się do niezwłocznej aktualizacji niniejszego oświadczenia w przypadku zaistnienia nowych okoliczności mogących prowadzić do konfliktu interesów.
 

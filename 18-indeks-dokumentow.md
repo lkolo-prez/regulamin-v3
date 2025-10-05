@@ -42,4 +42,4 @@
 
 ### § 3. Postanowienia Końcowe
 1.  Wszelkie dokumenty nieujęte w niniejszym indeksie, a funkcjonujące w poprzednim systemie prawnym, tracą moc z dniem wejścia w życie niniejszego Systemu.
-2.  Niniejszy załącznik wchodzi w życie z dniem uchwalenia [Regulaminu SSPO](01-regulamin-sspo.md).
+2.  Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu SSPO](01-regulamin-sspo.md).

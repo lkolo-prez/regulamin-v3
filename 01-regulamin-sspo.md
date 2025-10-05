@@ -224,8 +224,8 @@ Do zadań Przewodniczącego Samorządu należy w szczególności:
 
 #### § 15.
 1. W skład Zarządu wchodzą:
-   a) Przewodniczący Samorządu jako Przewodniczący Zarządu;
-   b) od 2 do 7 członków Zarządu powoływanych przez Przewodniczącego Samorządu.
+   1) Przewodniczący Samorządu jako Przewodniczący Zarządu;
+   2) od 2 do 7 członków Zarządu powoływanych przez Przewodniczącego Samorządu.
 2. Przewodniczący Samorządu, powołując członków Zarządu, może przydzielić im stałe obszary odpowiedzialności (np. ds. dydaktyki, ds. finansów, ds. komunikacji), tworząc elastyczną strukturę dostosowaną do potrzeb kadencji.
 3. W przypadku małej liczby chętnych do działania, Przewodniczący może powołać mniejszy skład Zarządu, który skupi się na kluczowych zadaniach, delegując resztę działań do Zespołów Zadaniowych.
 
@@ -281,10 +281,10 @@ Do zadań wyborczych KRW należy:
 
 #### § 21.
 1. Zarząd, powołując Zespół Zadaniowy, określa:
-   a) cel i zakres działania zespołu;
-   b) budżet projektu;
-   c) termin realizacji zadania;
-   d) Koordynatora Zespołu, który jest odpowiedzialny za jego pracę przed Zarządem.
+   1) cel i zakres działania zespołu;
+   2) budżet projektu;
+   3) termin realizacji zadania;
+   4) Koordynatora Zespołu, który jest odpowiedzialny za jego pracę przed Zarządem.
 2. Koordynatorem Zespołu może być członek Zarządu lub inny student posiadający odpowiednie doświadczenie.
 3. Członkiem Zespołu Zadaniowego może zostać każdy student Politechniki Opolskiej, który wyrazi chęć dołączenia i zostanie zaakceptowany przez Koordynatora.
 4. Działalność w Zespołach Zadaniowych jest podstawową formą aktywności dla studentów chcących zaangażować się w życie Samorządu bez konieczności kandydowania do organów statutowych.
@@ -334,8 +334,8 @@ Do zadań Rzecznika Praw Studenta należy w szczególności:
 
 #### § 24.
 1. W skład WRS wchodzą z głosem stanowiącym:
-   a) Przewodniczący WRS;
-   b) od 2 do 5 członków wybieranych spośród studentów wydziału.
+   1) Przewodniczący WRS;
+   2) od 2 do 5 członków wybieranych spośród studentów wydziału.
 2. Zasady wyboru członków WRS określa Ordynacja Wyborcza, zapewniając reprezentatywność dla kierunków studiów prowadzonych na wydziale.
 3. Z głosem doradczym w posiedzeniach WRS mogą uczestniczyć starostowie grup studenckich z danego wydziału.
 
@@ -370,13 +370,13 @@ Do zadań Przewodniczącego WRS należy w szczególności:
 1. Starosta jest przedstawicielem studentów danego roku lub grupy studenckiej.
 2. Starostę wybierają studenci danej grupy lub roku na pierwszych zajęciach organizacyjnych. Wybór jest potwierdzany przez właściwą WRS.
 3. Do zadań starosty należy w szczególności:
-   a) reprezentowanie studentów grupy w bieżących sprawach;
-   b) rozwiązywanie indywidualnych i grupowych problemów zgłaszanych przez studentów;
-   c) uzgadnianie w porozumieniu z wykładowcami terminów zaliczeń i egzaminów;
-   d) przekazywanie studentom ogłoszeń dotyczących toku studiów i spraw studenckich;
-   e) informowanie studentów o inicjatywach Samorządu;
-   f) stała komunikacja i współpraca z Wydziałową Radą Studentów;
-   g) uczestniczenie w posiedzeniach Wydziałowej Rady Studentów z głosem doradczym.
+   1) reprezentowanie studentów grupy w bieżących sprawach;
+   2) rozwiązywanie indywidualnych i grupowych problemów zgłaszanych przez studentów;
+   3) uzgadnianie w porozumieniu z wykładowcami terminów zaliczeń i egzaminów;
+   4) przekazywanie studentom ogłoszeń dotyczących toku studiów i spraw studenckich;
+   5) informowanie studentów o inicjatywach Samorządu;
+   6) stała komunikacja i współpraca z Wydziałową Radą Studentów;
+   7) uczestniczenie w posiedzeniach Wydziałowej Rady Studentów z głosem doradczym.
 4. W celu zapewnienia sprawnego przepływu informacji, starosta jest obsługiwany w dziekanacie oraz innych jednostkach administracyjnych w pierwszej kolejności.
 5. Kadencja starosty trwa jeden rok akademicki.
 
@@ -418,18 +418,18 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 
 #### § 33.
 1. Mandat członka organu Samorządu wygasa w przypadku:
-   a) utraty statusu studenta;
-   b) pisemnej rezygnacji z pełnienia funkcji;
-   c) śmierci;
-   d) odwołania przez uprawniony organ;
-   e) upływu kadencji.
+   1) utraty statusu studenta;
+   2) pisemnej rezygnacji z pełnienia funkcji;
+   3) śmierci;
+   4) odwołania przez uprawniony organ;
+   5) upływu kadencji.
 2. Wygaśnięcie mandatu z przyczyn określonych w ust. 1 lit. a-c stwierdza Komisja Rewizyjno-Wyborcza.
 
 #### § 34.
 1. Odwołanie członka organu Samorządu może nastąpić w przypadku:
-   a) rażącego lub uporczywego naruszania postanowień Regulaminu lub innych aktów prawnych Samorządu;
-   b) działania na szkodę Samorządu lub Uczelni;
-   c) niewykonywania obowiązków wynikających z pełnionej funkcji, w tym w przypadku nieusprawiedliwionych nieobecności, o których mowa w § 30 ust. 5.
+   1) rażącego lub uporczywego naruszania postanowień Regulaminu lub innych aktów prawnych Samorządu;
+   2) działania na szkodę Samorządu lub Uczelni;
+   3) niewykonywania obowiązków wynikających z pełnionej funkcji, w tym w przypadku nieusprawiedliwionych nieobecności, o których mowa w § 30 ust. 5.
 2. Uchwałę o odwołaniu podejmuje organ, który dokonał wyboru.
 3. Wniosek o odwołanie może złożyć grupa co najmniej 1/5 ustawowego składu członków Parlamentu do Marszałka Parlamentu, który zobowiązany jest zwołać posiedzenie Parlamentu w ciągu 21 dni od momentu otrzymania wniosku.
 4. Wniosek musi być uzasadniony, a osoba, której dotyczą zarzuty, ma co najmniej 14 dni na ustosunkowanie się do nich.
@@ -445,7 +445,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 ### § 36. Zwoływanie i prowadzenie posiedzeń
 1. Organy kolegialne Samorządu obradują na posiedzeniach zwyczajnych i nadzwyczajnych.
 2. Obradom organu przewodniczy jego przewodniczący lub, w przypadku jego nieobecności, upoważniony przez niego członek organu.
-3. Posiedzenia zwyczajne zwołuje przewodniczący organu, przesyłając członkom zawiadomienie wraz z projektem porządku obrad co najmniej 7 dni przed terminem posiedzenia. Zawiadomienie publikuje się również na stronie internetowej Samorządu.
+3. Posiedzenia zwyczajne zwołuje przewodniczący organu, przesyłając członkom zawiadomienie wraz z projektem porządku obrad co najmniej 7 dni przed terminem posiedzenia. Informację o terminie i porządku obrad podaje się do publicznej wiadomości na stronie internetowej Samorządu.
 4. Posiedzenia zwyczajne Parlamentu odbywają się co najmniej dwa razy w semestrze, z wyłączeniem miesięcy wolnych od zajęć dydaktycznych.
 5. Posiedzenia nadzwyczajne mogą być zwołane z inicjatywy przewodniczącego organu, na wniosek Przewodniczącego Samorządu, Komisji Rewizyjno-Wyborczej lub co najmniej 1/3 ustawowego składu członków danego organu.
 6. Posiedzenie nadzwyczajne musi zostać zwołane w terminie 14 dni od dnia złożenia wniosku, a jego porządek obrad obejmuje wyłącznie sprawy wskazane we wniosku.
@@ -466,10 +466,10 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 1. W uzasadnionych przypadkach, w szczególności uniemożliwiających bezpieczne przeprowadzenie posiedzenia stacjonarnego, posiedzenia organów kolegialnych mogą odbywać się w trybie zdalnym lub hybrydowym.
 2. Decyzję o trybie zdalnym lub hybrydowym podejmuje przewodniczący organu, informując o tym w zawiadomieniu o posiedzeniu.
 3. Posiedzenia zdalne i hybrydowe odbywają się przy użyciu platformy komunikacji elektronicznej zapewniającej:
-   a) transmisję obrad w czasie rzeczywistym;
-   b) dwustronną komunikację w czasie rzeczywistym, w ramach której członkowie organu mogą wypowiadać się w toku obrad;
-   c) możliwość weryfikacji tożsamości członków organu;
-   d) możliwość bezpiecznego i, w razie potrzeby, tajnego oddawania głosów.
+   1) transmisję obrad w czasie rzeczywistym;
+   2) dwustronną komunikację w czasie rzeczywistym, w ramach której członkowie organu mogą wypowiadać się w toku obrad;
+   3) możliwość weryfikacji tożsamości członków organu;
+   4) możliwość bezpiecznego i, w razie potrzeby, tajnego oddawania głosów.
 4. Kworum na posiedzeniu zdalnym lub hybrydowym ustala się na podstawie liczby zalogowanych i zidentyfikowanych członków organu.
 5. Głosowania jawne odbywają się za pomocą dedykowanej funkcji platformy lub przez publiczne oświadczenie woli.
 6. Głosowania tajne odbywają się przy użyciu bezpiecznego systemu do głosowania online, który zapewnia anonimowość i jest administrowany przez co najmniej dwóch członków Komisji Rewizyjno-Wyborczej.
@@ -480,7 +480,7 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 
 ### § 37b. Rejestr uchwał i publikacja aktów
 1. Dla zapewnienia przejrzystości działania w Samorządzie prowadzi się publiczny Rejestr Uchwał i Aktów Samorządu, obejmujący w szczególności: uchwały Parlamentu, zarządzenia Przewodniczącego Samorządu, uchwały Zarządu oraz akty o charakterze normatywnym WRS.
-2. Rejestr, o którym mowa w ust. 1, prowadzi Sekretarz Parlamentu i publikuje go niezwłocznie na stronie internetowej Samorządu. Aktualizacja następuje najpóźniej w ciągu 48 godzin od podjęcia aktu.
+2. Rejestr, o którym mowa w ust. 1, prowadzi Sekretarz Parlamentu i publikuje w nim akty niezwłocznie; aktualizacja następuje najpóźniej w ciągu 48 godzin od podjęcia aktu.
 3. Uchwały Parlamentu oraz inne akty o charakterze normatywnym oznacza się numerem składającym się z symbolu organu, numeru porządkowego i roku (np. „U/12/2025”).
 4. Protokoły z posiedzeń organów kolegialnych publikuje się w terminie 7 dni od dnia posiedzenia. Protokół podpisuje przewodniczący obrad i Sekretarz.
 5. Akty o charakterze normatywnym wchodzą w życie po upływie 7 dni od ich publikacji w Rejestrze, chyba że akt stanowi termin późniejszy. W przypadkach niecierpiących zwłoki organ może nadać aktowi rygor natychmiastowej wykonalności, z uzasadnieniem.
@@ -501,13 +501,13 @@ Członkowie organów Samorządu mają prawo i obowiązek aktywnego uczestnictwa 
 
 ### § 39. Wymagane większości
 1. Bezwzględna większość głosów wymagana jest do:
-   a) wyboru i odwołania Przewodniczącego Samorządu;
-   b) wyboru i odwołania członków Komisji Rewizyjno-Wyborczej oraz Rzecznika Praw Studenta;
-   c) udzielenia absolutorium Zarządowi;
-   d) uchwalenia budżetu Samorządu.
+   1) wyboru i odwołania Przewodniczącego Samorządu;
+   2) wyboru i odwołania członków Komisji Rewizyjno-Wyborczej oraz Rzecznika Praw Studenta;
+   3) udzielenia absolutorium Zarządowi;
+   4) uchwalenia budżetu Samorządu.
 2. Większość 2/3 głosów w obecności co najmniej połowy ustawowego składu Parlamentu wymagana jest do:
-   a) uchwalenia lub zmiany Regulaminu Samorządu i jego załączników;
-   b) podjęcia decyzji o akcji protestacyjnej.
+   1) uchwalenia lub zmiany Regulaminu Samorządu i jego załączników;
+   2) podjęcia decyzji o akcji protestacyjnej.
 
 ### § 40. Tryb głosowania
 1. Głosowania odbywają się w sposób jawny, chyba że Regulamin stanowi inaczej.
@@ -555,7 +555,7 @@ W sprawach nieuregulowanych w Regulaminie decyzje podejmuje Parlament, kierując
 3. Nieważność lub bezskuteczność pojedynczego przepisu Regulaminu lub jego załącznika nie wpływa na ważność pozostałych postanowień (klauzula salwatoryjna). W takim przypadku Parlament niezwłocznie dostosowuje odpowiednie przepisy.
 
 ### § 46.
-Regulamin wchodzi w życie z dniem uchwalenia. Z tym samym dniem traci moc dotychczasowy Regulamin Samorządu Studenckiego Politechniki Opolskiej.
+Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b. Z dniem wejścia w życie traci moc dotychczasowy Regulamin Samorządu Studenckiego Politechniki Opolskiej.
 
 ### § 47.
 1. Kadencja organów Samorządu wybranych przed wejściem w życie niniejszego Regulaminu trwa do końca roku akademickiego, w którym regulamin został uchwalony.

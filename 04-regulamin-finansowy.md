@@ -14,10 +14,10 @@
 
 ### § 2.
 1. Majątek Samorządu pochodzi z:
-   a) środków przyznawanych przez Uczelnię na działalność studencką;
-   b) dotacji, darowizn i zapisów;
-   c) przychodów z działalności gospodarczej, jeżeli taka będzie prowadzona;
-   d) innych źródeł.
+   1) środków przyznawanych przez Uczelnię na działalność studencką;
+   2) dotacji, darowizn i zapisów;
+   3) przychodów z działalności gospodarczej, jeżeli taka będzie prowadzona;
+   4) innych źródeł.
 2. Wszystkie środki finansowe Samorządu muszą być gromadzone na wyodrębnionym rachunku bankowym Uczelni przeznaczonym dla Samorządu lub na subkoncie Samorządu.
 
 ### § 2a. Zasady etyczne i konflikt interesów
@@ -31,9 +31,9 @@
 1. Podstawą gospodarki finansowej Samorządu jest roczny budżet, zwany dalej "Budżetem".
 2. Projekt Budżetu na kolejny rok kalendarzowy przygotowuje Zarząd pod kierownictwem Skarbnika.
 3. Projekt Budżetu musi zawierać:
-   a) planowane przychody z poszczególnych źródeł;
-   b) planowane wydatki z podziałem na poszczególne obszary działalności (np. projekty, działalność organów, promocja, administracja);
-   c) rezerwę budżetową w wysokości co najmniej 5% planowanych wydatków.
+   1) planowane przychody z poszczególnych źródeł;
+   2) planowane wydatki z podziałem na poszczególne obszary działalności (np. projekty, działalność organów, promocja, administracja);
+   3) rezerwę budżetową w wysokości co najmniej 5% planowanych wydatków.
 4. Projekt Budżetu jest przedstawiany do zaopiniowania Komisji Rewizyjno-Wyborczej najpóźniej do 30 listopada roku poprzedzającego rok budżetowy.
 5. Komisja Rewizyjno-Wyborcza wydaje opinię na temat projektu w terminie 14 dni od jego otrzymania. Opinia jest niewiążąca, ale musi zostać przedstawiona Parlamentowi wraz z projektem.
 
@@ -58,6 +58,11 @@
 2. Dysponentem środków finansowych jest Zarząd. Decyzje o wydatkach powyżej kwoty określonej w odrębnych przepisach Uczelni wymagają akceptacji co najmniej dwóch członków Zarządu, w tym Skarbnika.
 3. Wszystkie zobowiązania finansowe w imieniu Samorządu mogą być zaciągane wyłącznie do wysokości środków posiadanych w Budżecie.
 
+### § 6a. Procedury zakupowe i konkurencyjność
+1. Dla wydatków powyżej progu określonego przez Uczelnię lub, jeżeli brak takiego progu, powyżej 5000 zł brutto, wymagane jest przeprowadzenie zapytania ofertowego i udokumentowanie co najmniej trzech ofert, o ile jest to możliwe.
+2. Wybór oferty powinien uwzględniać kryteria jakościowe i cenowe. Uzasadnienie wyboru stanowi część dokumentacji wydatku.
+3. W przypadkach pilnych lub gdy rynek nie pozwala na uzyskanie trzech ofert, dopuszcza się odstępstwo, które wymaga pisemnego uzasadnienia i akceptacji Skarbnika.
+
 ### § 6b. Zasada dwupodpisowości i upoważnienia
 1. Każdy dokument powodujący powstanie zobowiązania finansowego (umowa, zamówienie, polecenie zapłaty) wymaga łącznego podpisu dwóch osób uprawnionych: Skarbnika oraz Przewodniczącego Samorządu albo innego członka Zarządu upoważnionego uchwałą Zarządu.
 2. Dostęp do rachunku bankowego Samorządu i autoryzacja przelewów podlegają zasadzie dwustopniowego zatwierdzania przez dwie osoby uprawnione, o których mowa w ust. 1.
@@ -69,11 +74,6 @@
 2. Jednostkowy wydatek powyżej 10 000 zł brutto wymaga uprzedniej opinii Komisji Rewizyjno‑Wyborczej. Brak opinii nie wstrzymuje wydatku w przypadkach pilnych, jednak KRW musi otrzymać uzasadnienie niezwłocznie.
 3. Dopuszcza się udzielanie zaliczek wyłącznie na podstawie decyzji Skarbnika. Zaliczka podlega rozliczeniu nie później niż w terminie 14 dni od zakończenia wydarzenia lub powstania obowiązku rozliczeniowego, nie później jednak niż w ostatnim dniu miesiąca następującego po miesiącu wypłaty zaliczki.
 4. Płatności realizuje się w pierwszej kolejności w formie bezgotówkowej. Wydatki gotówkowe dopuszczalne są wyłącznie w uzasadnionych przypadkach i podlegają ewidencji w raporcie kasowym.
-
-### § 6a. Procedury zakupowe i konkurencyjność
-1. Dla wydatków powyżej progu określonego przez Uczelnię lub, jeżeli brak takiego progu, powyżej 5000 zł brutto, wymagane jest przeprowadzenie zapytania ofertowego i udokumentowanie co najmniej trzech ofert, o ile jest to możliwe.
-2. Wybór oferty powinien uwzględniać kryteria jakościowe i cenowe. Uzasadnienie wyboru stanowi część dokumentacji wydatku.
-3. W przypadkach pilnych lub gdy rynek nie pozwala na uzyskanie trzech ofert, dopuszcza się odstępstwo, które wymaga pisemnego uzasadnienia i akceptacji Skarbnika.
 
 ### § 7. Dokumentacja finansowa
 1. Podstawą dokonania wydatku jest prawidłowo wystawiony dokument księgowy (faktura, rachunek, umowa).
@@ -87,7 +87,7 @@
 
 ### § 7b. Majątek i inwentaryzacja
 1. Samorząd prowadzi ewidencję środków trwałych i wyposażenia, określając dla każdego składnika co najmniej: numer inwentarzowy, datę przyjęcia, źródło finansowania, lokalizację, osobę odpowiedzialną i aktualny stan techniczny.
-2. Inwentaryzację majątku przeprowadza się co najmniej raz w roku kalendarzowym, sporządzając protokół inwentaryzacyjny zawierający co najmniej: (a) skład zespołu spisowego, (b) metodę inwentaryzacji, (c) wykaz stwierdzonych różnic i nieprawidłowości, (d) wnioski i rekomendacje z terminami oraz odpowiedzialnymi.
+2. Inwentaryzację majątku przeprowadza się co najmniej raz w roku kalendarzowym, sporządzając protokół inwentaryzacyjny zawierający co najmniej: 1) skład zespołu spisowego, 2) metodę inwentaryzacji, 3) wykaz stwierdzonych różnic i nieprawidłowości, 4) wnioski i rekomendacje z terminami oraz odpowiedzialnymi.
 3. Likwidacja lub zbycie składnika majątku wymaga zgody Zarządu oraz – jeżeli wartość przekracza 10 000 zł brutto – opinii Komisji Rewizyjno‑Wyborczej.
 4. Zanonimizowany protokół inwentaryzacyjny (bez danych wrażliwych) publikuje się w Rejestrze Uchwał i Aktów Samorządu w terminie 14 dni od zakończenia inwentaryzacji.
 
@@ -114,7 +114,7 @@
 W sprawach nieuregulowanych niniejszym Regulaminem zastosowanie mają odpowiednie przepisy Ustawy, Statutu Uczelni oraz wewnętrzne regulacje Uczelni dotyczące gospodarki finansowej organizacji studenckich.
 
 ### § 11.
-Regulamin wchodzi w życie z dniem uchwalenia.
+Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 *Wersja v3 - Data aktualizacji: 23 września 2025*
 
