@@ -14,7 +14,7 @@ class CollaborationAPI {
         this.eventListeners = new Map();
         this.cache = new Map();
         
-        console.log(`🔌 API Connected: ${this.baseURL}`);
+    console.log(`API Connected: ${this.baseURL}`);
         
         if (this.token) {
             this.validateToken();
@@ -318,13 +318,13 @@ class CollaborationUI {
             }
         }, 30000);
         
-        console.log('✅ UI System initialized');
+    console.log('UI System initialized');
     }
 
     setupEventListeners() {
         this.api.on('auth:login', () => {
             this.updateAuthUI();
-            this.showNotification('Zalogowano pomyślnie!', 'success');
+            this.showNotification('Zalogowano pomyślnie', 'success');
         });
 
         this.api.on('auth:logout', () => {
@@ -339,11 +339,11 @@ class CollaborationUI {
         });
 
         this.api.on('amendment:added', () => {
-            this.showNotification('Poprawka dodana pomyślnie!', 'success');
+            this.showNotification('Poprawka dodana pomyślnie', 'success');
         });
 
         this.api.on('amendment:voted', () => {
-            this.showNotification('Głos oddany!', 'success');
+            this.showNotification('Głos oddany', 'success');
         });
     }
 
@@ -359,22 +359,25 @@ class CollaborationUI {
             <div class="sspo-toolbar-content">
                 <div class="sspo-toolbar-left">
                     <h3>
-                        📚 System Prawny SSPO
+                        System Prawny SSPO
                         <span class="sspo-toolbar-badge">v2.1</span>
                     </h3>
                     <div class="sspo-user-info" id="sspo-user-info">
-                        <span>👋 Niezalogowany</span>
+                        <span>Niezalogowany</span>
                     </div>
                 </div>
                 <div class="sspo-toolbar-right">
+                    <button class="sspo-btn secondary" id="sspo-contrast-toggle" aria-pressed="false" title="Wysoki kontrast">
+                        Kontrast
+                    </button>
                     <button class="sspo-btn secondary" onclick="collaborationSystem.showAmendments()">
-                        📝 Poprawki
+                        Poprawki
                     </button>
                     <button class="sspo-btn secondary" onclick="collaborationSystem.showAbout()">
-                        ℹ️ O systemie
+                        O systemie
                     </button>
                     <button class="sspo-btn primary" id="sspo-auth-button">
-                        🔐 Zaloguj się
+                        Zaloguj się
                     </button>
                 </div>
             </div>
@@ -389,6 +392,24 @@ class CollaborationUI {
             } else {
                 this.showLoginModal();
             }
+        });
+
+        // High contrast toggle
+        const savedContrast = localStorage.getItem('sspo_high_contrast') === '1';
+        if (savedContrast) {
+            document.body.classList.add('pro-high-contrast');
+        }
+        const contrastBtn = document.getElementById('sspo-contrast-toggle');
+        const updateContrastBtn = () => {
+            const active = document.body.classList.contains('pro-high-contrast');
+            contrastBtn.setAttribute('aria-pressed', active ? 'true' : 'false');
+            contrastBtn.textContent = active ? 'Kontrast: Wysoki' : 'Kontrast';
+        };
+        updateContrastBtn();
+        contrastBtn.addEventListener('click', () => {
+            const active = document.body.classList.toggle('pro-high-contrast');
+            localStorage.setItem('sspo_high_contrast', active ? '1' : '0');
+            updateContrastBtn();
         });
     }
 
@@ -660,7 +681,7 @@ class CollaborationUI {
                         <textarea id="comment-text" placeholder="Dodaj komentarz..." required></textarea>
                         <button type="submit" class="sspo-btn primary">Dodaj komentarz</button>
                     </form>
-                ` : '<div class="alert alert-info">🔐 Zaloguj się aby dodawać komentarze</div>'}
+                ` : '<div class="alert alert-info">Zaloguj się aby dodawać komentarze</div>'}
                 
                 <div id="comments-list">
                     ${comments.length === 0 ? `

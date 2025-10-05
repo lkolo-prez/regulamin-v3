@@ -1,10 +1,10 @@
-# 🤝 System Współpracy i Poprawek Prawnych
+# System Współpracy i Poprawek Prawnych
 
 > Interaktywny system do współtworzenia, komentowania i zarządzania wersjami regulaminu SSPO
 
-## 📋 Funkcje Systemu
+## Funkcje Systemu
 
-### 1. **Komentowanie Artykułów** 💬
+### 1. **Komentowanie Artykułów**
 
 Każdy artykuł regulaminu można teraz komentować:
 
@@ -14,7 +14,7 @@ Każdy artykuł regulaminu można teraz komentować:
 - **Wątki dyskusyjne** - zagnieżdżone odpowiedzi dla lepszej organizacji
 
 **Jak używać:**
-1. Kliknij przycisk 💬 obok artykułu
+1. Kliknij przycisk Komentarze obok artykułu
 2. Napisz swój komentarz
 3. Kliknij "Dodaj Komentarz"
 
@@ -40,7 +40,7 @@ System umożliwia zgłaszanie propozycji zmian prawnych:
 
 ---
 
-### 3. **Wersjonowanie Dokumentów** 📚
+### 3. **Wersjonowanie Dokumentów**
 
 Automatyczne zarządzanie wersjami:
 
@@ -50,11 +50,11 @@ Automatyczne zarządzanie wersjami:
 - **Przywracanie** - możliwość powrotu do poprzedniej wersji
 
 **Dostęp do historii:**
-- Kliknij "📚 Historia Wersji" w górnym pasku
+- Kliknij "Historia Wersji" w górnym pasku
 
 ---
 
-### 4. **System Ról Użytkowników** 👤
+### 4. **System Ról Użytkowników**
 
 Różne poziomy uprawnień:
 
@@ -84,29 +84,29 @@ Różne poziomy uprawnień:
 
 ---
 
-## 🎯 Jak to działa?
+## Jak to działa?
 
 ### Panel Współpracy
 
 W górnej części strony znajduje się pasek narzędzi:
 
 ```
-🤝 System Współpracy | Zalogowany jako: [Twoje Imię]
+System Współpracy | Zalogowany jako: [Twoje Imię]
 
-[📝 Moje Poprawki] [📋 Wszystkie Poprawki] [📚 Historia Wersji] [👤 Ustawienia]
+[Moje Poprawki] [Wszystkie Poprawki] [Historia Wersji] [Ustawienia]
 ```
 
 ### Przyciski przy artykułach
 
 Każdy artykuł ma trzy przyciski:
 
-- **💬 [liczba]** - Komentarze
+- **[liczba]** - Komentarze
 - **✏️ Poprawka** - Zaproponuj zmianę
-- **🔍 Zmiany** - Zobacz historię zmian
+- **Zmiany** - Zobacz historię zmian
 
 ---
 
-## 📊 Przykładowy Workflow
+## Przykładowy Workflow
 
 ### Zgłoszenie i zatwierdzenie poprawki:
 
@@ -126,7 +126,7 @@ Każdy artykuł ma trzy przyciski:
 
 ---
 
-## 💾 Przechowywanie Danych
+## Przechowywanie Danych
 
 Obecnie system używa **localStorage** przeglądarki:
 
@@ -140,9 +140,9 @@ Obecnie system używa **localStorage** przeglądarki:
 
 W przyszłości system zostanie rozbudowany o:
 
-- 🔄 Synchronizację z serwerem
-- 👥 Współdzielenie danych między użytkownikami
-- 📧 Powiadomienia email
+- Synchronizację z serwerem
+- Współdzielenie danych między użytkownikami
+- Powiadomienia email
 - 🔒 Autentykację użytkowników
 - 📊 Zaawansowane statystyki
 

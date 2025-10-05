@@ -9,12 +9,18 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <!-- System Współpracy v2.1 - Fixed CSS (non-conflicting) -->
   <link rel="stylesheet" href="css/collaboration-fixed.css">
+    <!-- Professional UI overrides -->
+    <link rel="stylesheet" href="css/pro.css?v=20251005">
 </head>
 <body>
+  <script>
+    // Apply stored high-contrast preference ASAP to reduce flash
+    try { if (localStorage.getItem('sspo_high_contrast') === '1') { document.documentElement.classList.add('js'); document.body && document.body.classList.add('pro-high-contrast'); } } catch(e){}
+  </script>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '📚 System Prawny SSPO',
+        name: 'System Prawny SSPO',
       repo: 'https://github.com/lkolo-prez/regulamin-v3',
       loadSidebar: true,
       subMaxLevel: 3,
@@ -26,7 +32,7 @@
       search: {
         maxAge: 86400000, // 24h cache
         paths: 'auto',
-        placeholder: '🔍 Szukaj w dokumentach...',
+          placeholder: 'Szukaj w dokumentach',
         noData: 'Brak wyników',
         depth: 3,
         hideOtherSidebarContent: false
@@ -60,7 +66,7 @@
   <script>mermaid.initialize({ startOnLoad: true });</script>
   
   <!-- System Współpracy v2.1 - Pełna integracja z Backend API -->
-  <script src="js/collaboration-integrated.js"></script>
+  <script src="js/collaboration-integrated.js?v=20251005"></script>
   <!-- Paragraph Comments Extension - Komentarze przy konkretnych punktach -->
   <script src="js/paragraph-comments.js"></script>
 </body>

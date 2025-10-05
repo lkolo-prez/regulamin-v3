@@ -46,7 +46,7 @@
     padding: 0.75rem 1.5rem;
     box-shadow: var(--sspo-shadow-lg);
     z-index: var(--sspo-z-toolbar);
-    animation: sspoSlideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: none;
 }
 
 @keyframes sspoSlideDown {
@@ -147,11 +147,7 @@ body.sspo-has-toolbar {
     font-family: inherit;
 }
 
-.sspo-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--sspo-shadow-lg);
-    filter: brightness(1.1);
-}
+.sspo-btn:hover { transform: none; box-shadow: none; filter: none; }
 
 .sspo-btn:active {
     transform: translateY(0);
@@ -217,14 +213,14 @@ body.sspo-has-toolbar {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: none;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: var(--sspo-z-modal);
     padding: 1rem;
-    animation: sspoFadeIn 0.3s ease;
+    animation: none;
 }
 
 @keyframes sspoFadeIn {
@@ -242,7 +238,7 @@ body.sspo-has-toolbar {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    animation: sspoSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: none;
 }
 
 @keyframes sspoSlideUp {
@@ -288,13 +284,10 @@ body.sspo-has-toolbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.15s;
+    transition: none;
 }
 
-.sspo-close-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: rotate(90deg);
-}
+.sspo-close-btn:hover { background: rgba(255, 255, 255, 0.3); transform: none; }
 
 .sspo-modal-body {
     padding: 1.25rem;

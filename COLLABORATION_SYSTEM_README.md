@@ -1,6 +1,6 @@
-# 📖 System Regulaminu SSPO - Instrukcja Rozbudowy
+# System Regulaminu SSPO - Instrukcja Rozbudowy
 
-## 🎉 Co zostało dodane?
+## Co zostało dodane?
 
 Twój system regulaminu został rozbudowany o **kompletny System Współpracy i Poprawek Prawnych**!
 
@@ -8,7 +8,7 @@ Twój system regulaminu został rozbudowany o **kompletny System Współpracy i 
 
 ## ✨ Nowe Funkcje
 
-### 1. **Interaktywne Komentowanie** 💬
+### 1. **Interaktywne Komentowanie**
 
 ```
 ✅ Komentarze do każdego artykułu
@@ -27,7 +27,7 @@ Twój system regulaminu został rozbudowany o **kompletny System Współpracy i 
 ✅ Statusy poprawek (oczekuje/zatwierdzona/odrzucona)
 ```
 
-### 3. **Wersjonowanie Dokumentów** 📚
+### 3. **Wersjonowanie Dokumentów**
 
 ```
 ✅ Automatyczna historia zmian
@@ -36,7 +36,7 @@ Twój system regulaminu został rozbudowany o **kompletny System Współpracy i 
 ✅ Możliwość podglądu poprzednich wersji
 ```
 
-### 4. **System Ról** 👥
+### 4. **System Ról**
 
 ```
 ✅ Przeglądający (Viewer) - może czytać i komentować
@@ -47,7 +47,7 @@ Twój system regulaminu został rozbudowany o **kompletny System Współpracy i 
 
 ---
 
-## 🚀 Automatyczne Wdrażanie (CI/CD)
+## Automatyczne Wdrażanie (CI/CD)
 
 **System działa automatycznie!**
 
@@ -69,7 +69,7 @@ git push origin main
 
 ---
 
-## 📁 Struktura Plików
+## Struktura Plików
 
 ```
 regulamin-v3/
@@ -93,27 +93,27 @@ regulamin-v3/
 
 ---
 
-## 🎨 Interfejs Użytkownika
+## Interfejs Użytkownika
 
 ### Pasek Narzędzi (na górze strony)
 
 ```
 ╔════════════════════════════════════════════════════════╗
-║  🤝 System Współpracy | Zalogowany jako: [Imię]       ║
-║  [📝 Moje Poprawki] [📋 Wszystkie] [📚 Historia] [👤] ║
+║  System Współpracy | Zalogowany jako: [Imię]          ║
+║  [Moje Poprawki] [Wszystkie] [Historia] [Ustawienia]  ║
 ╚════════════════════════════════════════════════════════╝
 ```
 
 ### Przyciski przy każdym artykule
 
 ```
-Artykuł 1. Postanowienia ogólne  [💬 5] [✏️ Poprawka] [🔍 Zmiany]
+Artykuł 1. Postanowienia ogólne  [5] [Poprawka] [Zmiany]
                                   ^komenty ^zaproponuj  ^historia
 ```
 
 ---
 
-## 💻 Technologia
+## Technologia
 
 ### Frontend:
 - **Vanilla JavaScript** - bez dependencies, szybko i lekko
@@ -133,7 +133,7 @@ Artykuł 1. Postanowienia ogólne  [💬 5] [✏️ Poprawka] [🔍 Zmiany]
 
 ---
 
-## 📊 Jak używać? (Dla użytkowników)
+## Jak używać? (Dla użytkowników)
 
 ### Krok 1: Otwórz stronę
 ```
@@ -141,14 +141,14 @@ http://regulamin.sspo.com.pl
 ```
 
 ### Krok 2: Ustaw swój profil
-1. Kliknij **👤 Ustawienia** w prawym górnym rogu
+1. Kliknij **Ustawienia** w prawym górnym rogu
 2. Wprowadź swoje dane (imię, email)
 3. Wybierz rolę (Współtwórca = możliwość zgłaszania poprawek)
 4. Zapisz
 
 ### Krok 3: Dodaj komentarz
 1. Znajdź interesujący Cię artykuł
-2. Kliknij **💬 [liczba]**
+2. Kliknij **[liczba]**
 3. Napisz komentarz
 4. Kliknij "Dodaj Komentarz"
 

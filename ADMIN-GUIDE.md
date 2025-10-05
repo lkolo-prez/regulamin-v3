@@ -1,6 +1,6 @@
-# 👑 Przewodnik Administratora - System Współpracy SSPO
+# Przewodnik Administratora - System Współpracy SSPO
 
-## 🚀 Pierwsze kroki
+## Pierwsze kroki
 
 ### 1️⃣ Pierwsze logowanie
 ```
@@ -13,7 +13,7 @@ Hasło: ChangeMe123!
 
 ### 2️⃣ Zmiana domyślnego hasła administratora
 1. Po zalogowaniu kliknij swoją nazwę w prawym górnym rogu
-2. Wybierz **🔑 Zmień hasło**
+2. Wybierz **Zmień hasło**
 3. Wprowadź:
    - Aktualne hasło: `ChangeMe123!`
    - Nowe hasło: (min. 8 znaków, zalecane: wielkie litery, cyfry, znaki specjalne)
@@ -45,29 +45,29 @@ sudo systemctl restart regulamin-backend
 
 ---
 
-## 👥 Zarządzanie użytkownikami
+## Zarządzanie użytkownikami
 
 ### Dostęp do panelu administratora
-1. Kliknij **⚙️ Panel administratora** w toolbar
+1. Kliknij **Panel administratora** w toolbar
 2. Zobaczysz 2 zakładki:
-   - **👥 Użytkownicy** - zarządzanie kontami
-   - **📊 Statystyki** - dashboard
+   - **Użytkownicy** - zarządzanie kontami
+   - **Statystyki** - dashboard
 
 ### Zmiana roli użytkownika
-1. W zakładce **👥 Użytkownicy** znajdź użytkownika w tabeli
+1. W zakładce **Użytkownicy** znajdź użytkownika w tabeli
 2. Wybierz nową rolę z dropdown:
-   - 👁️ **Viewer** - może tylko czytać
-   - ✍️ **Contributor** - może dodawać komentarze i poprawki
-   - ⭐ **Reviewer** - może recenzować i głosować
-   - 👑 **Admin** - pełen dostęp
-3. Kliknij przycisk **💾** aby zapisać
+   - Viewer - może tylko czytać
+   - Contributor - może dodawać komentarze i poprawki
+   - Reviewer - może recenzować i głosować
+   - Admin - pełen dostęp
+3. Kliknij przycisk Zapisz aby zapisać
 
 ### Reset hasła użytkownika
-1. W tabeli użytkowników kliknij przycisk **🔑** przy wybranym użytkowniku
+1. W tabeli użytkowników kliknij przycisk Reset hasła przy wybranym użytkowniku
 2. W oknie modalnym:
    - Domyślnie: automatycznie wygenerowane hasło `NoweHaslo123!`
    - Możesz zmienić na dowolne (min. 8 znaków)
-3. Kliknij **🔑 Resetuj hasło**
+3. Kliknij **Resetuj hasło**
 4. **WAŻNE**: Skopiuj wyświetlone hasło i przekaż je użytkownikowi bezpiecznym kanałem
    - Nie wysyłaj hasła przez niezabezpieczony email!
    - Użyj: SMS, Signal, WhatsApp, lub przekaż osobiście
@@ -89,13 +89,13 @@ Następnie zresetuj hasło przez panel administratora i przekaż użytkownikowi.
 
 ---
 
-## 📊 Dashboard statystyk
+## Dashboard statystyk
 
 ### Dostępne metryki
-- 👥 **Łączna liczba użytkowników**
-- 👑 **Administratorzy** - użytkownicy z pełnym dostępem
-- ⭐ **Recenzenci** - mogą głosować i recenzować
-- ✍️ **Współtwórcy** - mogą dodawać komentarze i poprawki
+- Łączna liczba użytkowników
+- Administratorzy - użytkownicy z pełnym dostępem
+- Recenzenci - mogą głosować i recenzować
+- Współtwórcy - mogą dodawać komentarze i poprawki
 
 ### Interpretacja statystyk
 - **Niski % administratorów** (1-2 osoby) = ✅ Dobra praktyka bezpieczeństwa
@@ -104,7 +104,7 @@ Następnie zresetuj hasło przez panel administratora i przekaż użytkownikowi.
 
 ---
 
-## 🔐 Bezpieczeństwo
+## Bezpieczeństwo
 
 ### Checklist bezpieczeństwa dla administratora
 
@@ -134,7 +134,7 @@ Dodaj linię:
 
 ---
 
-## 🔍 Wyszukiwarka
+## Wyszukiwarka
 
 ### Zarządzanie wyszukiwarką
 - **Lokalizacja**: Lewy panel boczny (sidebar)
@@ -150,7 +150,7 @@ docker restart regulamin-sspo-container
 
 ---
 
-## 💬 Moderacja komentarzy i poprawek
+## Moderacja komentarzy i poprawek
 
 ### Wyświetlanie wszystkich komentarzy
 1. Kliknij dowolny dokument w sidebar
@@ -179,7 +179,7 @@ DELETE FROM comments WHERE id = 123;
 
 2. **Akceptacja poprawki**:
    - Przejdź do dokumentu
-   - Kliknij **📝 Poprawki**
+   - Kliknij **Poprawki**
    - Wybierz poprawkę do przeglądu
    - Kliknij **✅ Akceptuj** lub **❌ Odrzuć**
 
@@ -190,7 +190,7 @@ DELETE FROM comments WHERE id = 123;
 
 ---
 
-## 🔧 Rozwiązywanie problemów
+## Rozwiązywanie problemów
 
 ### Problem: Użytkownik nie może się zalogować
 **Diagnoza**:
@@ -240,7 +240,7 @@ docker restart regulamin-sspo-container
 
 ---
 
-## 📈 Monitoring i logi
+## Monitoring i logi
 
 ### Sprawdzenie logów backendu (ostatnie 50 linii)
 ```bash
