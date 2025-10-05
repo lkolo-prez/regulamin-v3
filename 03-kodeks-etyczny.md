@@ -50,24 +50,24 @@ Działalność członków organów Samorządu opiera się na następujących war
 1. Członek organu Samorządu jest zobowiązany do zachowania w tajemnicy informacji poufnych, uzyskanych w związku z pełnioną funkcją, których ujawnienie mogłoby narazić na szkodę interes Samorządu lub prywatność osób trzecich.
 2. Obowiązek zachowania poufności trwa również po zakończeniu kadencji.
 
-### § 8a. Ochrona zgłaszających naruszenia (whistleblowing) i zakaz działań odwetowych
+### <a id="§-8a"></a>§ 9. Ochrona zgłaszających naruszenia (whistleblowing) i zakaz działań odwetowych
 1. Nikt nie może ponosić negatywnych konsekwencji z tytułu w dobrej wierze złożonego zgłoszenia naruszenia Kodeksu, Regulaminu lub przepisów powszechnie obowiązujących. Działania odwetowe są zakazane.
 2. Za działania odwetowe uznaje się w szczególności: groźby, nękanie, szykany, nieuzasadnione wykluczenia z prac organu, blokowanie udziału w projektach, nieuzasadnione obniżenie oceny pracy społecznej.
 3. Zgłoszenia mogą być składane do Komisji Etyki także w formie poufnej; Komisja zapewnia ochronę danych zgłaszającego w granicach prawa i zasad rzetelnego postępowania.
 4. Zgłoszenia anonimowe mogą być rozpoznane, jeżeli zawierają wystarczające informacje umożliwiające wstępną weryfikację i nie naruszają praw osób trzecich; Komisja w pierwszej kolejności dąży do uzupełnienia informacji, jeżeli to możliwe.
 5. Stwierdzone działania odwetowe stanowią poważne naruszenie Kodeksu i mogą skutkować wnioskiem do właściwego organu o odwołanie z funkcji.
 
-### <a id="§-8a"></a><a id="§-9"></a>§ 9. Okres karencji (Cooling-off)
+### <a id="§-9"></a>§ 10. Okres karencji (Cooling-off)
 1. Osoby pełniące funkcję Przewodniczącego Samorządu lub Skarbnika nie mogą, w okresie 6 miesięcy od zakończenia pełnienia funkcji, podejmować odpłatnej współpracy ani być zatrudnione przez podmioty zewnętrzne, które w trakcie ich kadencji uzyskały od Samorządu znaczące korzyści finansowe lub niefinansowe w wyniku decyzji, w których podejmowaniu brali udział.
 2. Przez znaczące korzyści rozumie się umowy lub zlecenia, których łączna wartość w trakcie kadencji przekroczyła kwotę dwukrotności minimalnego wynagrodzenia za pracę obowiązującego w danym roku.
 
 ## DZIAŁ III. ODPOWIEDZIALNOŚĆ I PROCEDURY
 
-### § 10. Nadzór nad przestrzeganiem Kodeksu
+### § 11. Nadzór nad przestrzeganiem Kodeksu
 1. Nadzór nad przestrzeganiem postanowień Kodeksu sprawuje [Komisja Etyki](06-regulamin-komisji-etyki.md).
 2. Każdy student ma prawo zgłosić do Komisji Etyki uzasadnione podejrzenie naruszenia Kodeksu przez członka organu Samorządu.
 
-### § 11. Postępowanie wyjaśniające
+### § 12. Postępowanie wyjaśniające
 1. Komisja Etyki rozpatruje zgłoszenia w sposób bezstronny, zapewniając osobie, której dotyczy zgłoszenie, prawo do złożenia wyjaśnień.
 2. W przypadku stwierdzenia naruszenia Kodeksu, Komisja Etyki, w zależności od wagi naruszenia, może:
    1) udzielić upomnienia;
@@ -77,7 +77,7 @@ Działalność członków organów Samorządu opiera się na następujących war
 
 ## DZIAŁ IV. POSTANOWIENIA KOŃCOWE
 
-### § 12. Wejście w życie i stosowanie
+### § 13. Wejście w życie i stosowanie
 1. Kodeks Etyczny wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 2. Każdy członek organu Samorządu jest zobowiązany do zapoznania się z treścią Kodeksu i złożenia pisemnego oświadczenia o zobowiązaniu się do jego przestrzegania.
 3. Zmiany w Kodeksie wymagają uchwały Parlamentu podjętej większością 2/3 głosów.
