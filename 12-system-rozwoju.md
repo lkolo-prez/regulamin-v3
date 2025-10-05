@@ -196,7 +196,7 @@ System działa w oparciu o:
 - inne akty prawa wewnętrznego SSPO
 
 ### § 23. Wejście w życie
-System wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+System wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 Uchwalony przez Parlament SSPO w dniu ........................

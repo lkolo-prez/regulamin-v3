@@ -77,14 +77,14 @@ Ilekroć w Ordynacji jest mowa o:
 1. Niezwłocznie po zakończeniu głosowania Komisja Rewizyjno-Wyborcza przystępuje do ustalenia wyników.
 2. Mandaty w danym okręgu wyborczym otrzymują kandydaci, którzy uzyskali kolejno największą liczbę głosów.
 3. W przypadku równej liczby głosów decydującej o przyznaniu ostatniego mandatu, przeprowadza się losowanie z udziałem zainteresowanych kandydatów.
-   W wyborach personalnych wymagających bezwzględnej większości stosuje się tryb z § 40b Regulaminu SSPO (druga tura, ewentualna dogrywka, a następnie losowanie).
+   W wyborach personalnych wymagających bezwzględnej większości stosuje się tryb z § 45 Regulaminu SSPO (druga tura, ewentualna dogrywka, a następnie losowanie).
 4. Z przebiegu wyborów sporządza się protokół, który podpisują wszyscy członkowie Komisji.
 5. Oficjalne wyniki wyborów ogłasza Komisja Rewizyjno-Wyborcza w ciągu 48 godzin od zakończenia głosowania.
 
 ### § 10a. Komisja skrutacyjna i transparentność
 1. Na czas ustalania wyników Komisja Rewizyjno-Wyborcza powołuje komisję skrutacyjną spośród swoich członków.
 2. Komisja skrutacyjna sporządza protokół z ustalenia wyników, zawierający: liczbę uprawnionych do głosowania, liczbę głosów oddanych, frekwencję, liczbę głosów ważnych i nieważnych oraz wyniki kandydatów.
-3. Protokół podpisują wszyscy członkowie komisji skrutacyjnej. Protokół jest niezwłocznie publikowany w Rejestrze Uchwał i Aktów Samorządu (§ 37b Regulaminu Samorządu).
+3. Protokół podpisują wszyscy członkowie komisji skrutacyjnej. Protokół jest niezwłocznie publikowany w Rejestrze Uchwał i Aktów Samorządu (§ 40 Regulaminu Samorządu).
 4. Każdy zarejestrowany komitet wyborczy lub kandydat ma prawo delegować po jednym mężu zaufania do każdego okręgu wyborczego. Mąż zaufania jest uprawniony do obserwacji wszystkich czynności skrutacyjnych i ma wgląd do dokumentacji skrutacyjnej na miejscu, bez prawa kopiowania danych osobowych.
 5. Mężowie zaufania mogą zgłaszać uwagi do protokołu. Zgłoszone uwagi stanowią załącznik do protokołu i są publikowane wraz z nim.
 6. Czynności skrutacyjne są jawne dla obserwatorów w rozumieniu ust. 4, z poszanowaniem ochrony danych osobowych i tajności głosowania.

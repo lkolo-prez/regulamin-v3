@@ -28,20 +28,22 @@ Wszystkie istotne zmiany w projekcie są dokumentowane w tym pliku.
 ## [2.2.0] - 2025-10-05
 
 ### 📜 Prawo i procedury
-- 01-regulamin-sspo: dodano §11a ust. 7 (wakat Marszałka), §18a ust. 4 (kworum/większość KRW), §37b ust. 7–8 (retencja i zakaz retroakcji), §40b (wybory personalne: druga tura/dogrywka/losowanie). Uporządkowano kolejność §40a–§40b.
-- 02-ordynacja-wyborcza: doprecyzowano tie-break i dodano odesłanie do §40b dla wyborów personalnych.
-- 20-przewodnik-wdrozeniowy: ujednolicono nazewnictwo (Marszałek/Wicemarszałek/Sekretarz) i odesłania do Rejestru (§37b).
- - 01-regulamin-sspo: doprecyzowano brak zdolności do działania KRW (tymczasowa komisja), standardy testów e‑głosowań i logów (§37a ust. 8–10), SLA dla errat (§37b ust. 9) oraz raportowanie Rzecznika (termin, zakres, publikacja).
- - 05-regulamin-wrs: publikacja w Rejestrze (§37b) i wyraźna nadrzędność aktów centralnych + odesłanie do §45a.
- - 04-regulamin-finansowy: ujednolicono publikację (Rejestr §37b), doprecyzowano protokół inwentaryzacyjny (zakres minimalny) i obowiązek publikacji w 14 dni.
- - 01-regulamin-sspo: usunięto pozostałość o BIP – teraz publikacja sprawozdań finansowych wyłącznie w Rejestrze (§37b).
+- 01-regulamin-sspo: dodano §11a ust. 7 (wakat Marszałka), §18a ust. 4 (kworum/większość KRW), §40 ust. 7–8 (retencja i zakaz retroakcji), §45 (wybory personalne: druga tura/dogrywka/losowanie). Uporządkowano kolejność (dawne §40a–§40b scalone do kolejnych liczb całkowitych).
+- 02-ordynacja-wyborcza: doprecyzowano tie-break i dodano odesłanie do §45 dla wyborów personalnych.
+- 20-przewodnik-wdrozeniowy: ujednolicono nazewnictwo (Marszałek/Wicemarszałek/Sekretarz) i odesłania do Rejestru (§40).
+ - 01-regulamin-sspo: doprecyzowano brak zdolności do działania KRW (tymczasowa komisja), standardy testów e‑głosowań i logów (§39 ust. 8–10), SLA dla errat (§40 ust. 9) oraz raportowanie Rzecznika (termin, zakres, publikacja).
+ - 05-regulamin-wrs: publikacja w Rejestrze (§40) i wyraźna nadrzędność aktów centralnych + odesłanie do §51.
+ - 04-regulamin-finansowy: ujednolicono publikację (Rejestr §40), doprecyzowano protokół inwentaryzacyjny (zakres minimalny) i obowiązek publikacji w 14 dni.
+ - 01-regulamin-sspo: usunięto pozostałość o BIP – teraz publikacja sprawozdań finansowych wyłącznie w Rejestrze (§40).
  - Dodano załącznik: 23-kodeks-publikacyjny.md – operacyjna checklista publikacyjna dla wszystkich organów.
  - 06-regulamin-komisji-etyki: publikacja zanonimizowanych orzeczeń i raportu rocznego w Rejestrze (terminy, RODO), wejście w życie po publikacji.
  - 09-procedury-konsultacyjne: raport z konsultacji publikowany w Rejestrze (7 dni), wejście w życie po publikacji.
- - 03-kodeks-etyczny, 04-regulamin-finansowy, 05-regulamin-wrs, 01-regulamin-sspo: ujednolicone „Wejście w życie” – po publikacji w Rejestrze (§37b) z zachowaniem vacatio legis.
+ - 03-kodeks-etyczny, 04-regulamin-finansowy, 05-regulamin-wrs, 01-regulamin-sspo: ujednolicone „Wejście w życie” – po publikacji w Rejestrze (§40) z zachowaniem vacatio legis.
 
 ### 📚 Dokumentacja
 - 23-kodeks-publikacyjny: dodano tabelaryczny szablon metadanych do wpisów w Rejestrze (organ, identyfikator, daty, status, słowa kluczowe, anonimizacja, linki).
+ - 21-procedury-wizualizacje: zaktualizowano „Proces Legislacyjny” i „Rejestr Uchwał” – teraz pokazują jawnie przepływ „Publikacja w Rejestrze → vacatio legis (7 dni) → wejście w życie”. Naprawiono link do finansów (M → § 8) i dodano stabilne kotwice HTML: `§-37b` (Regulamin SSPO), `§-3`, `§-6`, `§-8` (Regulamin Finansowy).
+ - Globalnie: usunięto paragrafy z literami (np. 36a/37a/37b…) poprzez renumerację do kolejnych liczb całkowitych. Dodano kotwice zgodności wstecznej (legacy) w kluczowych miejscach, aby nie przerywać istniejących łączy.
 
 ### ✅ Spójność i transparentność
 - Wzmocniono przejrzystość: obowiązkowa publikacja w Rejestrze, retencja materiałów i jasne reguły rozstrzygania remisów w wyborach personalnych.

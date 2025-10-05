@@ -39,4 +39,4 @@ Ceremoniał uchwalenia obejmuje w szczególności:
 ## Rozdział IV. Postanowienia Końcowe
 
 ### § 7. Wejście w życie
-Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu SSPO](01-regulamin-sspo.md).
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu SSPO](01-regulamin-sspo.md).

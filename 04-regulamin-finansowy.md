@@ -27,7 +27,7 @@
 
 ## DZIAŁ II. BUDŻET SAMORZĄDU
 
-### § 3. Projekt budżetu
+### <a id="§-3"></a>§ 3. Projekt budżetu
 1. Podstawą gospodarki finansowej Samorządu jest roczny budżet, zwany dalej "Budżetem".
 2. Projekt Budżetu na kolejny rok kalendarzowy przygotowuje Zarząd pod kierownictwem Skarbnika.
 3. Projekt Budżetu musi zawierać:
@@ -42,7 +42,7 @@
 2. W przypadku nieuchwalenia Budżetu w terminie, do czasu jego uchwalenia, podstawą gospodarki finansowej jest prowizorium budżetowe, które stanowi 1/12 Budżetu z roku poprzedniego na każdy miesiąc.
 
 ### § 4a. Jawność budżetu i sprawozdań
-1. Uchwalony Budżet oraz półroczne i roczne sprawozdania z jego wykonania podlegają publikacji w Rejestrze Uchwał i Aktów Samorządu (§ 37b Regulaminu Samorządu) w terminie 7 dni od dnia ich przyjęcia.
+1. Uchwalony Budżet oraz półroczne i roczne sprawozdania z jego wykonania podlegają publikacji w Rejestrze Uchwał i Aktów Samorządu (§ 40 Regulaminu Samorządu) w terminie 7 dni od dnia ich przyjęcia.
 2. Publikacji podlegają również: opinia Komisji Rewizyjno-Wyborczej do projektu Budżetu oraz informacja o wykorzystaniu rezerwy budżetowej, publikowane w Rejestrze.
 
 ### § 5. Zmiany w budżecie
@@ -53,7 +53,7 @@
 
 ## DZIAŁ III. REALIZACJA WYDATKÓW
 
-### § 6. Zasady ogólne
+### <a id="§-6"></a>§ 6. Zasady ogólne
 1. Każdy wydatek musi być zgodny z Budżetem, celowy i udokumentowany.
 2. Dysponentem środków finansowych jest Zarząd. Decyzje o wydatkach powyżej kwoty określonej w odrębnych przepisach Uczelni wymagają akceptacji co najmniej dwóch członków Zarządu, w tym Skarbnika.
 3. Wszystkie zobowiązania finansowe w imieniu Samorządu mogą być zaciągane wyłącznie do wysokości środków posiadanych w Budżecie.
@@ -66,7 +66,7 @@
 ### § 6b. Zasada dwupodpisowości i upoważnienia
 1. Każdy dokument powodujący powstanie zobowiązania finansowego (umowa, zamówienie, polecenie zapłaty) wymaga łącznego podpisu dwóch osób uprawnionych: Skarbnika oraz Przewodniczącego Samorządu albo innego członka Zarządu upoważnionego uchwałą Zarządu.
 2. Dostęp do rachunku bankowego Samorządu i autoryzacja przelewów podlegają zasadzie dwustopniowego zatwierdzania przez dwie osoby uprawnione, o których mowa w ust. 1.
-3. Upoważnienia, o których mowa w ust. 1, są ewidencjonowane w rejestrze upoważnień prowadzonym przez Skarbnika i publikowane w Rejestrze Uchwał i Aktów Samorządu (§ 37b Regulaminu Samorządu) z uwzględnieniem ochrony danych.
+3. Upoważnienia, o których mowa w ust. 1, są ewidencjonowane w rejestrze upoważnień prowadzonym przez Skarbnika i publikowane w Rejestrze Uchwał i Aktów Samorządu (§ 40 Regulaminu Samorządu) z uwzględnieniem ochrony danych.
 4. Zabrania się podpisywania umów in blanco i dokonywania płatności gotówkowych z pominięciem ewidencji.
 
 ### § 6c. Zakaz zadłużania i limity
@@ -83,7 +83,7 @@
 
 ### § 7a. Rejestr umów
 1. Samorząd prowadzi jawny rejestr umów, zawierający co najmniej: datę zawarcia umowy, kontrahenta, przedmiot umowy, okres obowiązywania oraz wartość.
-2. Rejestr umów jest publikowany w Rejestrze Uchwał i Aktów Samorządu (§ 37b Regulaminu Samorządu), z poszanowaniem przepisów o ochronie danych osobowych i tajemnicy przedsiębiorstwa.
+2. Rejestr umów jest publikowany w Rejestrze Uchwał i Aktów Samorządu (§ 40 Regulaminu Samorządu), z poszanowaniem przepisów o ochronie danych osobowych i tajemnicy przedsiębiorstwa.
 
 ### § 7b. Majątek i inwentaryzacja
 1. Samorząd prowadzi ewidencję środków trwałych i wyposażenia, określając dla każdego składnika co najmniej: numer inwentarzowy, datę przyjęcia, źródło finansowania, lokalizację, osobę odpowiedzialną i aktualny stan techniczny.
@@ -93,7 +93,7 @@
 
 ## DZIAŁ IV. SPRAWOZDAWCZOŚĆ I KONTROLA
 
-### § 8. Sprawozdawczość
+### <a id="§-8"></a>§ 8. Sprawozdawczość
 1. Skarbnik przedstawia Zarządowi miesięczne raporty z wykonania Budżetu.
 2. Zarząd przedstawia Parlamentowi oraz Komisji Rewizyjno-Wyborczej sprawozdanie z wykonania Budżetu za każde półrocze w terminie do końca miesiąca następującego po okresie sprawozdawczym.
 3. Roczne sprawozdanie finansowe stanowi podstawę do udzielenia absolutorium Zarządowi przez Parlament.
@@ -114,7 +114,7 @@
 W sprawach nieuregulowanych niniejszym Regulaminem zastosowanie mają odpowiednie przepisy Ustawy, Statutu Uczelni oraz wewnętrzne regulacje Uczelni dotyczące gospodarki finansowej organizacji studenckich.
 
 ### § 11.
-Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 *Wersja v3 - Data aktualizacji: 23 września 2025*
 

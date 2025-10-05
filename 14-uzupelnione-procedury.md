@@ -41,7 +41,7 @@ W przypadku skrócenia kadencji organu, Komisja Wyborcza jest zobowiązana do pr
 Komisja Wyborcza jest zobowiązana do stałego monitorowania i wdrażania nowoczesnych technologii w celu zapewnienia transparentności, bezpieczeństwa i wysokiej frekwencji w wyborach.
 
 ### § 8. Wejście w życie
-Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

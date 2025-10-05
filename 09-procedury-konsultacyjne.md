@@ -39,7 +39,7 @@ Konsultacje mogą być prowadzone w następujących formach:
 ### § 6. Zakończenie i raport
 1. Po zakończeniu konsultacji sporządza się publiczny raport podsumowujący ich przebieg.
 2. Raport zawiera zestawienie zgłoszonych uwag (z anonimizacją danych) oraz informację o sposobie ich uwzględnienia w ostatecznej wersji dokumentu lub decyzji.
-3. Raport publikuje się w Rejestrze Uchwał i Aktów Samorządu (§ 37b [Regulaminu Samorządu](01-regulamin-sspo.md)) w terminie 7 dni od zakończenia konsultacji, z zastosowaniem [Kodeksu Publikacyjnego – Checklisty Rejestru](23-kodeks-publikacyjny.md).
+3. Raport publikuje się w Rejestrze Uchwał i Aktów Samorządu (§ 40 [Regulaminu Samorządu](01-regulamin-sspo.md)) w terminie 7 dni od zakończenia konsultacji, z zastosowaniem [Kodeksu Publikacyjnego – Checklisty Rejestru](23-kodeks-publikacyjny.md).
 
 ## DZIAŁ V. POSTANOWIENIA KOŃCOWE
 
@@ -47,7 +47,7 @@ Konsultacje mogą być prowadzone w następujących formach:
 Zmiana niniejszych procedur może nastąpić w trybie przewidzianym dla zmiany [Regulaminu Samorządu Studenckiego](01-regulamin-sspo.md).
 
 ### § 8. Wejście w życie
-Procedury wchodzą w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+Procedury wchodzą w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

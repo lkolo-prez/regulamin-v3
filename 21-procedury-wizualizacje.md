@@ -112,6 +112,7 @@ graph TD;
         J(Rada Doradcza)
         R[[Rejestr Uchwał i Aktów]]
     end
+    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
 
     A --"Wybierają w wyborach bezpośrednich"--> B;
     A --"Wybierają w wyborach bezpośrednich"--> G;
@@ -233,16 +234,22 @@ graph TD
         D --> E{Drugie czytanie i zgłaszanie poprawek}
     end
 
-    subgraph "Głosowanie i Wejście w Życie"
+    subgraph "Głosowanie, Publikacja i Wejście w życie"
         E --> F(Głosowanie nad całością projektu)
-        F --"Większość 2/3 głosów<br>w obecności co najmniej połowy składu"--> G{Uchwalenie zmiany}
+        F --"Większość 2/3 głosów<br/>w obecności co najmniej połowy składu"--> G{Uchwalenie zmiany}
         F --"Brak wymaganej większości"--> H(Odrzucenie projektu)
-        G --> I(Ogłoszenie uchwalonego tekstu)
-        I --> J(Wejście w życie)
+    G --> R[[Publikacja w Rejestrze Uchwał i Aktów (§ 40)]]
+        R --> V(Vacatio legis: 7 dni, chyba że postanowiono inaczej)
+        V --> J(Wejście w życie)
     end
 
     click A "./01-regulamin-sspo.md" "Zobacz Regulamin SSPO"
     click G "./01-regulamin-sspo.md" "Zobacz Regulamin SSPO"
+    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
+    click J "./01-regulamin-sspo.md" "Regulamin SSPO"
+
+    classDef note fill:#fff3cd,stroke:#856404,color:#333;
+    V:::note
 ```
 
 ### 6. Cykl Budżetowy i Zarządzanie Finansami
@@ -275,7 +282,7 @@ graph TD
     click A "./04-regulamin-finansowy.md#§-8" "Zobacz § 8 Regulaminu Finansowego"
     click E "./04-regulamin-finansowy.md#§-3" "Zobacz § 3 Regulaminu Finansowego"
     click I "./04-regulamin-finansowy.md#§-6" "Zobacz § 6 Regulaminu Finansowego"
-    click M "./04-regulamin-finansowy.md#§-13" "Zobacz § 13 Regulaminu Finansowego"
+    click M "./04-regulamin-finansowy.md#§-8" "Zobacz § 8 Regulaminu Finansowego"
 ```
 
 ### 7. System Wsparcia i Rozwoju Studentów
@@ -307,12 +314,12 @@ graph TD
     click E "./12-system-rozwoju.md" "Zobacz dokument"
 ```
 
-### 8. Posiedzenia Zdalne i Hybrydowe – Standard e‑Głosowań (na podstawie § 37a Regulaminu)
-
+### 8. Posiedzenia Zdalne i Hybrydowe – Standard e‑Głosowań (na podstawie § 39 Regulaminu)
+### 8. Posiedzenia Zdalne i Hybrydowe – Standard e‑Głosowań (na podstawie § 39 Regulaminu)
 ```mermaid
-flowchart TD
-    A[Decyzja o trybie zdalnym/hybrydowym] --> B[Zawiadomienie o posiedzeniu z informacją o trybie];
-    B --> C[Weryfikacja tożsamości uczestników i ustalenie kworum];
+    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
+        G --> R[[Publikacja w Rejestrze Uchwał i Aktów (§ 40)]]
+    click R "./01-regulamin-sspo.md#§-40" "Zobacz § 40"
     C --> D{Czy przewidziane są głosowania tajne?};
     D -- Tak --> E[Test techniczny systemu e‑głosowań];
     E --> F[Protokół z testu (publikacja z protokołem posiedzenia)];
@@ -327,7 +334,7 @@ flowchart TD
     J:::note
 ```
 
-### 9. Rejestr Uchwał i Publikacja Aktów (na podstawie § 37b Regulaminu)
+### 9. Rejestr Uchwał i Publikacja Aktów (na podstawie § 40 Regulaminu)
 
 ```mermaid
 graph TD
@@ -337,7 +344,10 @@ graph TD
         C(Zarząd) --> R
         D(WRS) --> R
     end
-    R --> P(Wejście w życie po 7 dniach, chyba że postanowiono inaczej);
+    subgraph "Po publikacji"
+        R --> V(Vacatio legis: 7 dni, chyba że postanowiono inaczej)
+        V --> P(Wejście w życie)
+    end
     R --> E(Errata do 48h od stwierdzenia omyłki);
     R --> T(Retencja: protokoły/nagrania 5 lat);
 

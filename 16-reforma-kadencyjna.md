@@ -40,7 +40,7 @@ W celu docenienia i motywowania najbardziej zaangażowanych członków, wprowadz
 ## Rozdział IV. Postanowienia Końcowe
 
 ### § 8. Wejście w życie
-Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

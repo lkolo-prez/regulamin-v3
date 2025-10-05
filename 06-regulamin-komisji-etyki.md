@@ -92,7 +92,7 @@ Do zadań Komisji należy:
    4) pouczenie o możliwości odwołania.
 2. W przypadku stwierdzenia naruszenia, Komisja może nałożyć kary przewidziane w [Kodeksie Etycznym](03-kodeks-etyczny.md), od upomnienia po wniosek o odwołanie z funkcji.
 3. Orzeczenie doręcza się stronom na piśmie.
-4. W przypadku spraw o szczególnym znaczeniu dla społeczności studenckiej, zanonimizowane orzeczenie publikuje się w Rejestrze Uchwał i Aktów Samorządu (§ 37b [Regulaminu Samorządu](01-regulamin-sspo.md)) w terminie 14 dni od doręczenia go stronom.
+4. W przypadku spraw o szczególnym znaczeniu dla społeczności studenckiej, zanonimizowane orzeczenie publikuje się w Rejestrze Uchwał i Aktów Samorządu (§ 40 [Regulaminu Samorządu](01-regulamin-sspo.md)) w terminie 14 dni od doręczenia go stronom.
 5. Publikacja, o której mowa w ust. 4, obejmuje wyłącznie treści niezbędne do zrozumienia tezy i motywów rozstrzygnięcia; dane osobowe i informacje wrażliwe podlegają anonimizacji zgodnie z RODO oraz [Kodeksem Publikacyjnym – Checklistą Rejestru](23-kodeks-publikacyjny.md).
 
 ### § 11. Odwołanie
@@ -108,7 +108,7 @@ Do zadań Komisji należy:
 Zmiana niniejszego Regulaminu wymaga uchwały Parlamentu podjętej większością 2/3 głosów.
 
 ### § 13. Wejście w życie
-Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+Regulamin wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 ### § 14. Sprawozdawczość i jawność
 1. Komisja publikuje w Rejestrze Uchwał i Aktów Samorządu roczne, zanonimizowane sprawozdanie ze swojej działalności (zawierające co najmniej statystyki, wnioski i rekomendacje) w terminie do dnia 31 marca za rok poprzedni, stosując [Kodeks Publikacyjny – Checklistę Rejestru](23-kodeks-publikacyjny.md).

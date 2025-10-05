@@ -37,6 +37,6 @@ Wszystkie akty prawne Samorządu muszą być interpretowane i stosowane w sposó
 ## Rozdział III. Postanowienia Końcowe
 
 ### § 6. Wejście w życie
-Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu SSPO](01-regulamin-sspo.md).
+Niniejszy załącznik wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu SSPO](01-regulamin-sspo.md).
 
 

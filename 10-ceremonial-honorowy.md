@@ -56,7 +56,7 @@ Podczas oficjalnych uroczystości obowiązuje następująca kolejność (precede
 Zmiana niniejszego ceremoniału może nastąpić w trybie przewidzianym dla zmiany [Regulaminu Samorządu Studenckiego](01-regulamin-sspo.md).
 
 ### § 9. Wejście w życie
-Ceremoniał wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+Ceremoniał wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 
 
 

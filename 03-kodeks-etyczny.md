@@ -71,7 +71,7 @@ Działalność członków organów Samorządu opiera się na następujących war
 ## DZIAŁ IV. POSTANOWIENIA KOŃCOWE
 
 ### § 11. Wejście w życie i stosowanie
-1. Kodeks Etyczny wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 37b [Regulaminu Samorządu](01-regulamin-sspo.md).
+1. Kodeks Etyczny wchodzi w życie po publikacji w Rejestrze Uchwał i Aktów Samorządu, zgodnie z § 40 [Regulaminu Samorządu](01-regulamin-sspo.md).
 2. Każdy członek organu Samorządu jest zobowiązany do zapoznania się z treścią Kodeksu i złożenia pisemnego oświadczenia o zobowiązaniu się do jego przestrzegania.
 3. Zmiany w Kodeksie wymagają uchwały Parlamentu podjętej większością 2/3 głosów.
 
