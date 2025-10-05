@@ -40,6 +40,7 @@
 21. **[Procedury i Wizualizacje](21-procedury-wizualizacje.md)** (Załącznik nr 20) - określa zasady tworzenia i stosowania wizualizacji procedur.
 22. **[Kodeks Publikacyjny – Checklista Rejestru](23-kodeks-publikacyjny.md)** (Załącznik nr 21) – pomocnicza lista kontrolna dla publikacji w Rejestrze Uchwał i Aktów.
 
+<a id="mapa-renumeracji"></a>
 ### Mapa renumeracji paragrafów (§) – skrót
 
 - Regulamin SSPO (01):

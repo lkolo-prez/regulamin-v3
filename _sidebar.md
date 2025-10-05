@@ -27,6 +27,7 @@
 
 *   **Materiały Pomocnicze**
     *   [18 Indeks Dokumentów](18-indeks-dokumentow.md)
+        * [Mapa renumeracji (§)](18-indeks-dokumentow.md#mapa-renumeracji)
     *   [19 Macierz Powiązań](19-macierz-powiazan.md)
     *   [20 Przewodnik Uchwalenia](20-przewodnik-uchwalenia.md)
     *   [21 Wizualizacje Procedur](21-procedury-wizualizacje.md)
